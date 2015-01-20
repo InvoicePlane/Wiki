@@ -1,0 +1,327 @@
+/* =============================================================================
+   InvoicePlane Wiki
+   Sass Stylesheet
+   v1.0
+   ========================================================================== */
+
+/* =============================================================================
+   Import Bootstrap and other assets
+   ========================================================================== */
+
+// Bootstrap
+@import "bootstrap/bootstrap";
+
+// Lightbox
+@import "lightbox";
+
+// Font: Font-Awesome
+@import "font-awesome/font-awesome";
+
+// Font:Lato
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+
+/* =============================================================================
+   Variables
+   ========================================================================== */
+
+$dfs: 16px;
+$dff: 'Lato', Helvetica, Arial, sans-serif;
+$dlh: $dfs * 1.5;
+$dbr: 6px;
+
+$pagewidth: 950px;
+
+$c_bg:      #fff;
+$c_bg_d:    darken($c_bg,5%);
+
+$c_link:    #2c8edd;
+$c_link_l:  #429ae1;
+$c_link_d:  #2181ce;
+$c_link_l2: #9ac9ef;
+
+$c_draft:       #999999;
+$c_sent:        #3A87AD;
+$c_viewed:      #F89406;
+$c_paid:        #468847;
+$c_approved:    #468847;
+$c_overdue:     #B94A48;
+$c_rejected:    $c_overdue;
+$c_canceled:   #333333;
+
+$c_txt:     #555;
+$c_txt_l:   #777;
+$c_txt_d:   #333;
+
+
+/* =============================================================================
+   Transitions
+   ========================================================================== */
+
+$animspeed: 0.2s;
+
+@mixin transition-bg {
+    transition: background $animspeed;
+    -moz-transition: background $animspeed;
+    -webkit-transition: background $animspeed;
+    -o-transition: background $animspeed;
+}
+@mixin transition-c {
+    transition: color $animspeed;
+    -moz-transition: color $animspeed;
+    -webkit-transition: color $animspeed;
+    -o-transition: color $animspeed;
+}
+@mixin transition-cbg {
+    transition:color $animspeed, background $animspeed;
+    -moz-transition:color $animspeed, background $animspeed;
+    -webkit-transition:color $animspeed, background $animspeed;
+    -o-transition:color $animspeed, background $animspeed;
+}
+
+
+/* =============================================================================
+   Base Styles
+   ========================================================================== */
+
+html {
+    overflow-y: scroll;
+    background: $c_bg_d;
+}
+
+body {
+    font-size: $dfs;
+    font-family: $dff;
+    line-height: $dlh;
+    color: $c_txt;
+    background: $c_bg;
+}
+
+img {
+    max-width: 100%;
+}
+
+code {
+    color: darken($c_link, 15%);
+    background-color: lighten($c_link, 43%);
+}
+
+
+/* =============================================================================
+   Layout
+   ========================================================================== */
+
+.container {
+    max-width: $pagewidth;
+}
+
+.inner {
+    @extend .container;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.navbar-nav > li > a {
+
+    padding-top: 28px;
+    padding-bottom: 27px;
+
+}
+
+#logo {
+    width: 150px;
+    height: 75px;
+    background: url("../img/logo_150x75.png") center center no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+    #logo {
+        background: url("../img/logo_400x200.png") center center no-repeat;
+        background-size: cover;
+    }
+}
+
+#wrapper {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: $c_bg;
+    min-height: 200px;
+}
+
+#sidebar {
+    .nav.nav-stacked a {
+        background: #f6f6f6;
+        font-size: $dfs - 2;
+        border-radius: 2px;
+
+        &:hover {
+            background: $c_link;
+            color: $c_bg;
+        }
+    }
+}
+
+.changelog {
+    font-size: $dfs - 2;
+    .panel-heading {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .released {
+        float: right;
+        color: $c_txt_l;
+        font-weight: normal;
+    }
+}
+
+.article-pagination {
+    margin-top: 40px;
+    font-size: $dfs - 1;
+}
+
+#footerwrapper {
+    background: $c_bg_d;
+    color: #aaa;
+    font-size: $dfs - 1;
+    text-align: right;
+
+    a {
+        color: #888;
+        &:hover {
+            color: #666;
+        }
+    }
+    .nav {
+        margin-bottom: 20px;
+    }
+}
+
+/* =============================================================================
+   Additional Styles
+   ========================================================================== */
+
+.box {
+    @extend .panel;
+    @extend .panel-default;
+    @extend .panel-body;
+}
+.box-xl {
+    padding: 30px 20px;
+}
+
+.btn-xl {
+    @extend .btn-lg;
+    padding: $dfs ($dfs * 1.5);
+    font-size: $dfs + 6;
+}
+
+hr {
+    border-top: 2px solid #efefef;
+    &.hr-xl {
+        margin: 30px 0;
+        border-top: 3px solid #efefef;
+    }
+}
+
+.alert-title {
+    margin-top: 0;
+}
+
+.page-title {
+    margin-top: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-group-vertical > .btn:first-child:not(:last-child) {
+    border-top-right-radius: $dbr - 2 !important;
+}
+
+.media-object-left {
+    @extend .media-object;
+    @extend .pull-left;
+    margin-right: 30px;
+}
+
+.fa-margin-right {
+    margin-right: 8px;
+}
+.fa-margin-left {
+    margin-left: 8px;
+}
+
+.status {
+    font-size: 90%;
+    padding: 3px 6px;
+    border-radius: 2px;
+}
+.status-draft {
+    color: $c_draft;
+    background-color: lighten($c_draft, 35%);
+}
+.status-sent {
+    color: $c_sent;
+    background-color: lighten($c_sent, 45%);
+}
+.status-viewed {
+    color: $c_viewed;
+    background-color: lighten($c_viewed, 40%);
+}
+.status-paid,
+.status-approved {
+    color: $c_paid;
+    background-color: lighten($c_paid, 45%);
+}
+.status-overdue,
+.status-rejected {
+    color: $c_overdue;
+    background-color: lighten($c_overdue, 40%);
+}
+.status-canceled {
+    color: $c_canceled;
+    background-color: lighten($c_canceled, 65%);
+}
+
+/* =============================================================================
+   Responsive Media Queries
+   ========================================================================== */
+
+// Styles for large devices (< lg)
+@media (min-width: 992px) {
+
+}
+
+// Styles for medium devices (sm < md)
+@media (max-width: 991px) {
+
+}
+
+// Styles for  small devices (xs < sm)
+@media (max-width: 767px) {
+
+    #logo { display: none; }
+
+    .navbar-nav > li > a {
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    li.dropdown.open {
+        border-bottom: 1px solid #eee !important;
+    }
+
+}
+
+// Styles for very small devices (< xs)
+@media (max-width: 479px) {
+
+
+
+}
