@@ -79,7 +79,7 @@
         <div class="panel-heading" data-toggle="collapse" data-target="#v111">
             v1.1.1 <span class="released">released 12/21/2014</span>
         </div>
-        <div id="v111" class="panel-body collapse in">
+        <div id="v111" class="panel-body collapse">
             <p>Enhancements</p>
             <ul>
                 <li>Some smaller UI changes</li>
