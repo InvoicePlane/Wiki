@@ -19,7 +19,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-caret-down"></i> <?php echo trans('global.language'); ?>
+                        <i class="fa fa-caret-down"></i>&nbsp; <?php echo trans('global.language'); ?>
                     </a>
                     <ul class="dropdown-menu">
                         <?php
@@ -36,7 +36,7 @@
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-caret-down"></i> <?php echo trans('global.useful_links'); ?>
+                        <i class="fa fa-caret-down"></i>&nbsp; <?php echo trans('global.useful_links'); ?>
                     </a>
                     <ul class="dropdown-menu">
                         <li>

@@ -150,6 +150,7 @@ a {
 
 h1,h2,h3,h4,h5 {
     color: $c_txt;
+    line-height: 1.5;
 }
 h1 {
     font-size: $dfs * 2.5;
@@ -216,7 +217,7 @@ pre {
 }
 
 .navbar-nav>li>.dropdown-menu {
-    border-color: $c_bg_d;
+    border-color: $c_bg_d2;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;

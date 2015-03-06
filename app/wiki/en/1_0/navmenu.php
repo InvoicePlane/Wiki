@@ -1,6 +1,6 @@
 <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <i class="fa fa-caret-down"></i> Wiki
+        <i class="fa fa-caret-down"></i>&nbsp; Wiki
     </a>
     <ul class="dropdown-menu">
         <li><a href="/en/1.0/getting-started">Getting Started</a></li>
