@@ -17,8 +17,8 @@
 // Font: Font-Awesome
 @import "font-awesome/font-awesome";
 
-// Font:Lato
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+// Import Noto Font
+@import "noto/noto";
 
 
 /* =============================================================================
@@ -26,32 +26,35 @@
    ========================================================================== */
 
 $dfs: 16px;
-$dff: 'Lato', Helvetica, Arial, sans-serif;
-$dlh: $dfs * 1.5;
+$dff: 'Noto Sans', Helvetica, Arial, sans-serif;
+$dlh: $dfs * 1.6;
 $dbr: 6px;
 
-$pagewidth: 950px;
+$pagewidth: 1100px;
 
-$c_bg:      #fff;
-$c_bg_d:    darken($c_bg,5%);
+$c_bg: #fff;
+$c_bg_d: darken($c_bg, 3%);
+$c_bg_d2: darken($c_bg, 6%);
 
-$c_link:    #2c8edd;
-$c_link_l:  #429ae1;
-$c_link_d:  #2181ce;
+$c_link: #2c8edd;
+$c_link_l: #429ae1;
+$c_link_d: #2181ce;
 $c_link_l2: #9ac9ef;
 
-$c_draft:       #999999;
-$c_sent:        #3A87AD;
-$c_viewed:      #F89406;
-$c_paid:        #468847;
-$c_approved:    #468847;
-$c_overdue:     #B94A48;
-$c_rejected:    $c_overdue;
-$c_canceled:   #333333;
+$c_draft: #999999;
+$c_sent: #3A87AD;
+$c_viewed: #F89406;
+$c_paid: #468847;
+$c_approved: #468847;
+$c_overdue: #B94A48;
+$c_rejected: #B94A48;
+$c_canceled: #333333;
 
-$c_txt:     #555;
-$c_txt_l:   #777;
-$c_txt_d:   #333;
+$c_txt: #666;
+$c_txt_l: #888;
+$c_txt_l2: #aaa;
+$c_txt_d: #444;
+$c_txt_d2: #222;
 
 
 /* =============================================================================
@@ -73,10 +76,10 @@ $animspeed: 0.2s;
     -o-transition: color $animspeed;
 }
 @mixin transition-cbg {
-    transition:color $animspeed, background $animspeed;
-    -moz-transition:color $animspeed, background $animspeed;
-    -webkit-transition:color $animspeed, background $animspeed;
-    -o-transition:color $animspeed, background $animspeed;
+    transition: color $animspeed, background $animspeed;
+    -moz-transition: color $animspeed, background $animspeed;
+    -webkit-transition: color $animspeed, background $animspeed;
+    -o-transition: color $animspeed, background $animspeed;
 }
 
 
@@ -87,6 +90,7 @@ $animspeed: 0.2s;
 html {
     overflow-y: scroll;
     background: $c_bg_d;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 body {
@@ -102,8 +106,86 @@ img {
 }
 
 code {
-    color: darken($c_link, 15%);
-    background-color: lighten($c_link, 43%);
+    color: $c_txt;
+    background-color: lighten($c_txt_l, 40%);
+    &.blue {
+        color: $c_sent;
+        background-color: lighten($c_sent, 45%);
+    }
+    &.green {
+        color: $c_paid;
+        background-color: lighten($c_paid, 45%);
+    }
+    &.orange {
+        color: $c_viewed;
+        background-color: lighten($c_viewed, 40%);
+    }
+    &.red {
+        color: $c_overdue;
+        background-color: lighten($c_overdue, 40%);
+    }
+}
+
+a {
+    color: $c_link;
+    &:hover {
+        color: $c_link_d;
+        text-decoration: none;
+    }
+    &.ext {
+        margin-right: 3px;
+        &:after {
+            font-family: FontAwesome;
+            content: '\0020';
+            font-size: 60%;
+            position: relative;
+            left: 3px;
+            vertical-align : super;
+        }
+        &:hover:after {
+            content: '\f08e';
+        }
+    }
+}
+
+h1,h2,h3,h4,h5 {
+    color: $c_txt;
+}
+h1 {
+    font-size: $dfs * 2.5;
+    margin-top: $dfs * 2.5 - 10;
+}
+h2 {
+    font-size: $dfs * 2.25;
+    margin-top: $dfs * 2.25 - 10;
+}
+h3 {
+    font-size: $dfs * 2;
+    margin-top: $dfs * 2 - 10;
+}
+h4 {
+    font-size: $dfs * 1.75;
+    margin-top: $dfs * 1.75 - 10;
+}
+h5 {
+    font-size: $dfs * 1.5;
+    margin-top: $dfs * 1.5 - 10;
+}
+
+hr {
+    border-top: 2px solid $c_bg_d;
+    &.hr-xs {
+        margin: 15px 0;
+        border-top: 1px solid $c_bg_d;
+    }
+    &.hr-xl {
+        margin: 30px 0;
+        border-top: 3px solid $c_bg_d;
+    }
+}
+
+pre {
+    border: none;
 }
 
 
@@ -121,11 +203,30 @@ code {
     padding-bottom: 40px;
 }
 
-.navbar-nav > li > a {
+.navbar {
+    background: $c_bg_d;
+    border-bottom: 0;
+}
 
-    padding-top: 28px;
-    padding-bottom: 27px;
+.navbar-nav  {
+    > li > a {
+        padding-top: 28px;
+        padding-bottom: 27px;
+    }
+}
 
+.navbar-nav>li>.dropdown-menu {
+    border-color: $c_bg_d;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus {
+    background: $c_bg_d2;
 }
 
 #logo {
@@ -151,15 +252,36 @@ only screen and (min-device-pixel-ratio: 2) {
     min-height: 200px;
 }
 
-#sidebar {
-    .nav.nav-stacked a {
-        background: #f6f6f6;
-        font-size: $dfs - 2;
-        border-radius: 2px;
+#content {
+    p {
+        text-align: justify;
+    }
+    pre {
+        margin: 20px 0 20px;
+    }
+}
 
+#sidebar {
+    a {
+        color: $c_txt_l;
         &:hover {
-            background: $c_link;
-            color: $c_bg;
+            color: $c_link_l;
+        }
+    }
+    ul {
+        list-style: none;
+        padding-left: 20px;
+        font-size: $dfs - 1;
+        li {
+            position: relative;
+            &.active:before {
+                color: lighten($c_txt_l, 10%);
+                position:absolute;
+                font-family: FontAwesome;
+                top:0;
+                left:-15px;
+                content: "\f0da";
+            }
         }
     }
 }
@@ -203,6 +325,29 @@ only screen and (min-device-pixel-ratio: 2) {
    Additional Styles
    ========================================================================== */
 
+.fa-credit-invoice {
+    &:before {
+        content: '-';
+    }
+    &:after {
+        font-family: FontAwesome;
+        content: '\f155';
+    }
+}
+
+.fa-read-only {
+    @extend .fa-ban;
+}
+
+.headline-link .fa {
+    font-size: 60%;
+    color: $c_txt_l2;
+    vertical-align: middle;
+    &:hover {
+        color: $c_link_l;
+    }
+}
+
 .box {
     @extend .panel;
     @extend .panel-default;
@@ -218,12 +363,8 @@ only screen and (min-device-pixel-ratio: 2) {
     font-size: $dfs + 6;
 }
 
-hr {
-    border-top: 2px solid #efefef;
-    &.hr-xl {
-        margin: 30px 0;
-        border-top: 3px solid #efefef;
-    }
+.alert {
+    border: none;
 }
 
 .alert-title {
@@ -287,6 +428,15 @@ hr {
     background-color: lighten($c_canceled, 65%);
 }
 
+.tooltip {
+    .tooltip-inner {
+        background: $c_link;
+    }
+    &.bottom .tooltip-arrow {
+        border-bottom-color: $c_link;
+    }
+}
+
 /* =============================================================================
    Responsive Media Queries
    ========================================================================== */
@@ -321,7 +471,5 @@ hr {
 
 // Styles for very small devices (< xs)
 @media (max-width: 479px) {
-
-
 
 }

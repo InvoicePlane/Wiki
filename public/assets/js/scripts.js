@@ -10,3 +10,7 @@
 if (window.innerWidth < 768) {
     $('.btn-group').addClass('btn-group-vertical');
 }
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});

@@ -13,7 +13,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="<?php echo str_replace('.','-',$current_view_name)?>">
+<body id="<?php echo IP::formatViewName($current_page_name); ?>">
 
 <div id="top">
 
@@ -39,7 +39,10 @@
         </div>
 
         <div id="sidebar" class="col-xs-12 col-sm-3 col-sm-pull-9">
-            <?php echo View::make('elements.sidebar'); ?>
+            <?php echo View::make(IP::getLocAndVer(true).'.sidebar')->with(array(
+                    'current_view_name' => $current_view_name,
+                    'current_page_name' => $current_page_name,
+            )); ?>
         </div>
 
     </div>

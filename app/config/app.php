@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://wiki.invoiceplane.com',
+	'url' => 'https://wiki.invoiceplane.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -63,6 +63,10 @@ return array(
 	| by the translation service provider. You are free to set this value
 	| to any of the locales which will be supported by the application.
 	|
+    'de' => array(
+            'langcode' => 'de',
+            'lang' => 'German'
+        )
 	*/
 
     'available_locales' => array(
@@ -70,10 +74,6 @@ return array(
             'langcode' => 'en',
             'lang' => 'English'
         ),
-        'de' => array(
-            'langcode' => 'de',
-            'lang' => 'German'
-        )
     ),
 
 	/*
@@ -88,6 +88,24 @@ return array(
 	*/
 
 	'fallback_locale' => 'en',
+
+    /*
+	|--------------------------------------------------------------------------
+	| Current InvoicePlane app version
+	|--------------------------------------------------------------------------
+	*/
+
+    'version' => '1_0',
+
+    /*
+	|--------------------------------------------------------------------------
+	| Available InvoicePlane app versions
+	|--------------------------------------------------------------------------
+	*/
+
+    'versions' => array(
+        '1_0'
+    ),
 
 	/*
 	|--------------------------------------------------------------------------

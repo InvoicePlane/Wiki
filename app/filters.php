@@ -11,26 +11,23 @@
 |
 */
 
-App::before(function($request)
-{
+App::before(function ($request) {
     // Language handling
     $languages = Config::get('app.available_locales');
-    if ( isset( $languages[Request::segment(1)] ) ) {
+
+    if (isset($languages[Request::segment(1)])) {
         Session::put('locale', Request::segment(1));
     } else {
-        Session::put('locale',  Config::get('app.locale') );
+        Session::put('locale', Config::get('app.locale'));
     }
 
-    if ( Session::has('locale') ) {
-
+    if (Session::has('locale')) {
         App::setLocale(Session::get('locale'));
-
     }
 });
 
 
-App::after(function($request, $response)
-{
+App::after(function ($request, $response) {
     //
 });
 
@@ -45,25 +42,19 @@ App::after(function($request, $response)
 |
 */
 
-Route::filter('auth', function()
-{
-	if (Auth::guest())
-	{
-		if (Request::ajax())
-		{
-			return Response::make('Unauthorized', 401);
-		}
-		else
-		{
-			return Redirect::guest('login');
-		}
-	}
+Route::filter('auth', function () {
+    if (Auth::guest()) {
+        if (Request::ajax()) {
+            return Response::make('Unauthorized', 401);
+        } else {
+            return Redirect::guest('login');
+        }
+    }
 });
 
 
-Route::filter('auth.basic', function()
-{
-	return Auth::basic();
+Route::filter('auth.basic', function () {
+    return Auth::basic();
 });
 
 /*
@@ -77,9 +68,8 @@ Route::filter('auth.basic', function()
 |
 */
 
-Route::filter('guest', function()
-{
-	if (Auth::check()) return Redirect::to('/');
+Route::filter('guest', function () {
+    if (Auth::check()) return Redirect::to('/');
 });
 
 /*
@@ -93,12 +83,10 @@ Route::filter('guest', function()
 |
 */
 
-Route::filter('csrf', function()
-{
-	if (Session::token() != Input::get('_token'))
-	{
-		throw new Illuminate\Session\TokenMismatchException;
-	}
+Route::filter('csrf', function () {
+    if (Session::token() != Input::get('_token')) {
+        throw new Illuminate\Session\TokenMismatchException;
+    }
 });
 
 /*
@@ -106,8 +94,10 @@ Route::filter('csrf', function()
 | Share current View name
 |--------------------------------------------------------------------------
 */
-View::composer('*', function($view){
+View::composer('*', function ($view) {
 
     View::share('current_view_name', $view->getName());
+
+    View::share('current_page_name', str_replace(IP::getLocAndVer(true).'.', '', $view->getName()));
 
 });
