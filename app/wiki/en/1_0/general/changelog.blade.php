@@ -9,10 +9,96 @@
     <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
     <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v120">
+            v1.2.0 <span class="released">released 01/27/2015</span>
+        </div>
+        <div id="v120" class="panel-body collapse in">
+            <p>New Features</p>
+            <ul>
+                <li>Items are replaced by products with full category (family) and purchase price support</li>
+                <li>Support for credit invoices added</li>
+                <li>Invoices can now only be deleted under certain circumstances</li>
+                <li>Ability to set a period for quote / invoice overviews on dashboard</li>
+                <li>Ability to choose a default country for clients</li>
+                <li>Sidebar is now disabled by default, you can enable it in the settings</li>
+                <li>Ability to choose an own title for the browser window</li>
+                <li>InvoicePlane sends a mail to the administrator if a quote was rejected / approved</li>
+                <li>Client payments are now shown in the client details</li>
+                <li>Amounts can now be displayed in a monospace font</li>
+                <li>The update check was improved and InvoicePlane news will be displayed on the settings page</li>
+                <li>Ability to set a custom footer for invoice pdf files with support for HTML and CSS</li>
+            </ul>
+
+            <p>Enhancements</p>
+            <ul>
+                <li>Invoices are sorted by their ID</li>
+                <li>InvoicePlane now uses the Noto font</li>
+                <li>Assets were updated</li>
+                <li>URL keys are now 15 characters long (before: 32)</li>
+            </ul>
+
+            <p>Bugs</p>
+            <ul>
+                <li>Sidebar width and height fixed</li>
+                <li>Fixed responsive tables on mobile devices</li>
+                <li>Fix for wrong working cancel button</li>
+                <li>Various language fixes</li>
+                <li>Various other small UI and design fixes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v112">
+            v1.1.2 <span class="released">released 01/27/2015</span>
+        </div>
+        <div id="v112" class="panel-body collapse">
+            <p>Enhancements</p>
+            <ul>
+                <li>jQuery, Bootstrap, Modernizer were updated</li>
+                <li>Invoices are now sorted by their ID</li>
+                <li>Settings page tabs are now displayed on top of the page</li>
+                <li>UI improvements for invoice and quote tables</li>
+                <li>Updatechecks will now use https</li>
+                <li>Empty custom fields are now removed from the client details</li>
+                <li>Sidebar with fixed height and UI</li>
+                <li>Favicon added</li>
+                <li>Amounts are now displayed correctly</li>
+                <li>Other various smaller UI improvements</li>
+            </ul>
+
+            <p>Bugs</p>
+            <ul>
+                <li>Fixed cancel send email button</li>
+                <li>Fixed timezone errors</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v111">
+            v1.1.1 <span class="released">released 12/21/2014</span>
+        </div>
+        <div id="v111" class="panel-body collapse in">
+            <p>Enhancements</p>
+            <ul>
+                <li>Some smaller UI changes</li>
+                <li>Set default value for type of template</li>
+            </ul>
+
+            <p>Bugs</p>
+            <ul>
+                <li>Fixed wrong VAT and tax ID in quote templates</li>
+                <li>Fixed problems with PHP short tags</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
         <div class="panel-heading" data-toggle="collapse" data-target="#v110">
             v1.1.0 <span class="released">released 11/09/2014</span>
         </div>
-        <div id="v110" class="panel-body collapse in">
+        <div id="v110" class="panel-body collapse">
             <p>New Features</p>
             <ul>
                 <li>Check for new updates added to the system settings</li>
