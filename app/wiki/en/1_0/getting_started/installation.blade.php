@@ -8,8 +8,7 @@
         less.</p>
 
     <ol>
-        <li><a href="https://invoiceplane.com/downloads">Download</a> and unzip the InvoicePlane full install package.
-        </li>
+        <li><a href="https://invoiceplane.com/downloads">Download</a> and copy all files to your server.</li>
         <li>Create an empty database on your web server.</li>
         <li>Upload the InvoicePlane files to your web server, either into its own subdirectory or into the public root
             of the web server.
@@ -18,16 +17,23 @@
         </li>
     </ol>
 
-    <?php // @TODO Add Screenshots ?>
-
-    <div class="alert alert-warning">
-        <p>If you want to install InvoicePlane in a subdirectory please follow <a
-                    href="https://community.invoiceplane.com/t/solved-installation-help/42/6">these instructions</a>.
-        </p>
-    </div>
-
     <p>Once the installer finished, the installation is complete and you may log into InvoicePlane using the email
         address and password you have chosen during the installation.</p>
+
+    <h3 id="subdir">
+        Run InvoicePlane in a sub directory <?php IP::headlineLink('/en/1.0/getting-started/installation#subdir'); ?>
+    </h3>
+
+    <p>If you want to run InvoicePlane in a sub directory (e.g. <code>http://yourdomain.com/invoices/</code>) you have to modify the <code>.htaccess</code> file which is located in the root directory. You must add the line</p>
+    <pre>RewriteBase /sub-directory</pre>
+    <p>where <code>sub-directory</code> is the directory you want to use. The content of the file should look like this:</p>
+    <pre>RewriteEngine on
+RewriteBase /sub-directory
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]</pre>
+
+
 
     <?php
     $article_pagination = array(
