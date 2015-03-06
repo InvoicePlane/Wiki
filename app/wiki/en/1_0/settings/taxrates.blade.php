@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Taxrates</h2>
+    <h2 class="page-title">Taxrates</h2>
 
     <p>If you want to add taxes to products / items or invoices you have to configure them on the Taxrates settings page.</p>
 

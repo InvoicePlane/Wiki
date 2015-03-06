@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h2>Changelog</h2>
+<h2 class="page-title">Changelog</h2>
 
 <div class="changelog">
 

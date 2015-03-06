@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Recurring Invoices</h2>
+    <h2 class="page-title">Recurring Invoices</h2>
 
     <p>Oftentimes instead of sending an invoice as a one time charge, you need to send an email to a client on a
         schedule. For example, you may be offering web hosting to your clients, and most likely they are paying for your

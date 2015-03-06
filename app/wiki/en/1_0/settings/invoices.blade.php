@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Invoice Settings</h2>
+    <h2 class="page-title">Invoice Settings</h2>
 
     <p>On the invoice settings page you can set a lot of options to control how invoices should behave.</p>
 

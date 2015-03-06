@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Invoice Groups</h2>
+    <h2 class="page-title">Invoice Groups</h2>
 
     <p>When a new invoice or quote is created, InvoicePlane uses invoice groups to determine the next invoice or quote number and how it should be structured. InvoicePlane comes with two default invoice groups - Invoice Default and Quote Default. Both groups will generate simple incremental ID's starting at the number 1, but the Quote Default will be prefixed with "QUO".</p>
 

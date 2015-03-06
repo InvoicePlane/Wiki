@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h2>Modules</h2>
+<h2 class="page-title">Modules</h2>
 
 <ul>
     <li><a href="/en/1.0/modules/clients">Clients</a></li>

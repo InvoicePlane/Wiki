@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Payment Methods</h2>
+    <h2 class="page-title">Payment Methods</h2>
 
     <p>Payment Methods</p>
 

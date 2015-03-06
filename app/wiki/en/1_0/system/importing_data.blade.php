@@ -2,18 +2,22 @@
 
 @section('content')
 
-    <h2>Importing Data</h2>
+    <h2 class="page-title">Importing Data</h2>
 
-    <p>InvoicePlane can import data from any system as long as it is provided in comma delimited CSV format and is structured according to the details below. The data import tool can be accessed by clicking the Settings icon and choosing the Import Data item.</p>
+    <p>InvoicePlane can import data from any system as long as it is provided in comma delimited CSV format and is
+        structured according to the details below. The data import tool can be accessed by clicking the Settings icon
+        and choosing the Import Data item.</p>
 
     <p>The import tool assumes the following:</p>
 
     <p>The file names will be exactly as they are listed below.<br/>
         All of the columns listed below must be present in the files, even if there is no data in the column.<br/>
-        The first row of each file must contain the file headings, and those headings must be named exactly as they are listed below.<br/>
+        The first row of each file must contain the file headings, and those headings must be named exactly as they are
+        listed below.<br/>
         The files must all be in comma delimited CSV format.<br/>
         The files to import must be located in your uploads/import folder.<br/>
-        The email address in the invoice file must be an email address of an actual user account currently in InvoicePlane.<br/>
+        The email address in the invoice file must be an email address of an actual user account currently in
+        InvoicePlane.<br/>
         If any of the rules above are not met, the import will not work as expected.</p>
 
     <p><b>File names and columns</b></p>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h2>License for InvoicePlane</h2>
+<h2 class="page-title">License for InvoicePlane</h2>
 
 <p>
     ==================================================<br/>

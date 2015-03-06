@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h2>System</h2>
+<h2 class="page-title">System</h2>
 
 <ul>
     <li><a href="/en/1.0/system/translation-localization">Translation / Localization</a></li>

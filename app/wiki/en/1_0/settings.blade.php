@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h2>Settings</h2>
+<h2 class="page-title">Settings</h2>
 
 <ul>
     <li>

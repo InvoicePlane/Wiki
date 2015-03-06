@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h2>Getting Started</h2>
+<h2 class="page-title">Getting Started</h2>
 
 <ul>
     <li><a href="/en/1.0/getting-started/requirements">Requirements</a></li>

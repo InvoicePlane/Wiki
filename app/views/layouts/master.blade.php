@@ -22,11 +22,6 @@
     <div id="wrapper" class="container">
 
         <div id="content" class="col-xs-12 col-sm-9 col-sm-push-3">
-			<div class="alert alert-danger">
-				<b>Caution!</b><br/>
-				This wiki is <b>not</b> finished yet and should not be used as a reference in any way.<br/>
-				Please use the up-to-date wiki at the <a href="https://github.com/InvoicePlane/InvoicePlane/wiki">official repository</a>!
-			</div>
 			
             @yield('content')
 

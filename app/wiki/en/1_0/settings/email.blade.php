@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Email Settings</h2>
+    <h2 class="page-title">Email Settings</h2>
 
     <p>Before InvoicePlane can send emails you have to configure he email settings here. You can choose between three different ways to send emails.</p>
 

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Quote Settings</h2>
+    <h2 class="page-title">Quote Settings</h2>
 
     <p>The general settings page sets a lot of options that will change the look &amp; feel of the whole application or that are needed for some special purposes.</p>
 

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Updatecheck</h2>
+    <h2 class="page-title">Updatecheck</h2>
 
     <p>On the updatecheck page InvoicePlane checks for updates with contacting our website. The result of the check will be displayed below the version.<br/>Additionally the latest news will be displayed below the updatecheck.</p>
 

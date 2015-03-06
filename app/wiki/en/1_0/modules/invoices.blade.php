@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Invoices</h2>
+    <h2 class="page-title">Invoices</h2>
 
     <h3 id="lifecycle">
         The Invoice Lifecycle <?php IP::headlineLink('/en/1.0/modules/invoices#lifecycle'); ?>

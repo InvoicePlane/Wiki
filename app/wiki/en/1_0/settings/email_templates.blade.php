@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Email Templates</h2>
+    <h2 class="page-title">Email Templates</h2>
 
     <p>Instead of having to type the body of an email each time an invoice or quote is emailed from InvoicePlane, email templates can be customized to your liking, giving you a set of predefined templates to choose from.</p>
 

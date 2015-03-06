@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Help: Setup a Cron</h2>
+    <h2 class="page-title">Help: Setup a Cron</h2>
 
     <p>If you want to use <a href="/en/1.0/modules/recurring-invoices">recurring invoices</a> you have to setup a cron
         that opens the url listed on the recurring invoices page. A cron is basically a script that runs on predefined

@@ -1,4 +1,4 @@
-<h4>InvoicePlane Wiki</h4>
+<h4 class="page-title">InvoicePlane Wiki</h4>
 
 <hr/>
 

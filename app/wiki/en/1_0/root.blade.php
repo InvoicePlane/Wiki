@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>InvoicePlane Wiki</h1>
+    <h1 class="page-title">InvoicePlane Wiki</h1>
 
     <div class="alert alert-info">
         <p>Welcome to the InvoicePlane Wiki.<br/>If you want to know how to use InvoicePlane or if you have any questions take a look at this wiki. You should find a lot of useful information about the software and each module.</p>

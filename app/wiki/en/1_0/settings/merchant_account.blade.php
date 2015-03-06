@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2>Merchant Account Settings</h2>
+    <h2 class="page-title">Merchant Account Settings</h2>
 
     <p>The merchant account is needed if you want to offer online payments via PayPal to your customers. Before you can configure the merchant account you have to get credentials from PayPal. Follow <a href="https://developer.paypal.com/docs/classic/api/apiCredentials/" class="ext">these instructions</a> to get the credentials needed on this settings page.</p>
 
