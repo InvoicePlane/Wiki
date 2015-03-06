@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo trans('global.site_title') ?></title>
 
+    <link rel="icon" type="image/png" href="/assets/img/logo_64x64.png">
     <link href="/assets/css/style.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
