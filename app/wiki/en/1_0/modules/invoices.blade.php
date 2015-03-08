@@ -174,6 +174,17 @@
         with<br/>
         <code>$config['enable_invoice_deletion'] = TRUE;</code></p>
 
+    <h3 id="read-only">
+        Read-only <?php IP::headlineLink('/en/1.0/modules/invoices#read-only'); ?>
+    </h3>
+
+    <p>InvoicePlane will set invoices to read-only based on its status and the invoice can't be changed anymore. You can change the status that will be used for the read-only mode in the settings.<br/>
+        If you don't want invoices to be set to read-only you can disable this feature. Open <code>/application/config/config.php</code>
+        and replace<br/>
+        <code>$config['disable_read_only'] = FALSE;</code><br/>
+        with<br/>
+        <code>$config['disable_read_only'] = TRUE;</code></p>
+
 
     <?php
     $article_pagination = array(

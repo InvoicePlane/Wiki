@@ -9,10 +9,47 @@
     <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
     <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v112">
+            v1.2.1 <span class="released">released 03/08/2015</span>
+        </div>
+        <div id="v112" class="panel-body collapse in">
+            <p>Enhancements</p>
+            <ul>
+                <li>InvoicePlane now ships with some languages by default</li>
+                <li>Quarter is now available as Dashboard period</li>
+                <li>User can choose when invoice should be set to read-only</li>
+                <li>Copying invoices now uses the current date</li>
+                <li>Read-only can be disabled in the config</li>
+                <li>Client details page were updated</li>
+                <li>mPDF updated to the latest version</li>
+                <li>Codeigniter updated to 2.2.1</li>
+                <li>Invoices now open in a new tab</li>
+                <li>PDF templates updated, custom.css can now be used for templates</li>
+                <li>InvoicePlane now supports svg images as a logo</li>
+                <li>Navbar is not longer fixed to top which solves mobile device issues</li>
+            </ul>
+
+            <p>Bugs</p>
+            <ul>
+                <li>Dashboard period calculations fixed</li>
+                <li>Bug with special characters in PDFs fixed</li>
+                <li>Bug where empty invoices were set to read-only fixed</li>
+                <li>App uses MySQLi be default now</li>
+                <li>Smaller UI fixes</li>
+                <li>Bug with timezone handling fixed</li>
+                <li>Bug with datepicker language file fixed</li>
+                <li>Bug with datepicker language file fixed</li>
+                <li>Bug with datepicker language file fixed</li>
+                <li>Bug with datepicker language file fixed</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
         <div class="panel-heading" data-toggle="collapse" data-target="#v120">
             v1.2.0 <span class="released">released 01/27/2015</span>
         </div>
-        <div id="v120" class="panel-body collapse in">
+        <div id="v120" class="panel-body collapse">
             <p>New Features</p>
             <ul>
                 <li>Items are replaced by products with full category (family) and purchase price support</li>
