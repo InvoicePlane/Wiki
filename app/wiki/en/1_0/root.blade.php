@@ -12,6 +12,7 @@
         <li><a href="/en/1.0/general/about">What is InvoicePlane?</a></li>
         <li><a href="/en/1.0/general/changelog">Changelog</a></li>
         <li><a href="/en/1.0/general/license">License</a></li>
+        <li><a href="/en/1.0/general/faq">FAQ</a></li>
     </ul>
 
     <h2>Getting started</h2>

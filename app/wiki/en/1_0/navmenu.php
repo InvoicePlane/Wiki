@@ -9,3 +9,4 @@
         <li><a href="/en/1.0/system">System</a></li>
     </ul>
 </li>
+<li><a href="/en/1.0/general/faq">FAQ</a></li>

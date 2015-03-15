@@ -4,6 +4,26 @@
 
 <h2 class="page-title">License for InvoicePlane</h2>
 
+<h3>Copyright</h3>
+<p>
+    The name 'InvoicePlane' and the InvoicePlane logo are original copyright
+    of InvoicePlane.com / Kovah.de and the following restrictions apply to
+    both of them:
+</p>
+
+<strong class="text-success">You are allowed to:</strong>
+<ul>
+    <li>use the name 'InvoicePlane' or the InvoicePlane logo in any context directly
+        related to the application or the project. This includes the application itself,
+        local communities and news or blog posts about InvoicePlane.</li>
+</ul>
+<strong class="text-danger">You are not allowed to:</strong>
+<ul>
+    <li>use the name 'InvoicePlane' or the InvoicePlane logo in any context that is <b>not</b> related to the project and</li>
+    <li>alter the name 'InvoicePlane' or the InvoicePlane logo in any way.</li>
+</ul>
+
+<h3>License</h3>
 <p>
     ==================================================<br/>
 License for InvoicePlane<br/>

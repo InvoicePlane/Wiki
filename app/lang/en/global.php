@@ -8,6 +8,7 @@ return array(
     'wiki' => 'Wiki',
     'language' => 'Language',
     'top' => 'Top',
+    'faq' => 'FAQ',
 
     // Links
     'useful_links' => 'Useful Links',
