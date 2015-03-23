@@ -15,12 +15,14 @@
 <ul>
     <li>use the name 'InvoicePlane' or the InvoicePlane logo in any context directly
         related to the application or the project. This includes the application itself,
-        local communities and news or blog posts about InvoicePlane.</li>
+        local communities and news or blog posts about InvoicePlane or</li>
+	<li>use the name 'InvoicePlane' or the InvoicePlane logo to provide professional support or hosting for the InvoicePlane application.</li>
 </ul>
 <strong class="text-danger">You are not allowed to:</strong>
 <ul>
-    <li>use the name 'InvoicePlane' or the InvoicePlane logo in any context that is <b>not</b> related to the project and</li>
-    <li>alter the name 'InvoicePlane' or the InvoicePlane logo in any way.</li>
+    <li>use the name 'InvoicePlane' or the InvoicePlane logo in any context that is <b>not</b> related to the project,</li>
+    <li>alter the name 'InvoicePlane' or the InvoicePlane logo in any way or</li>
+    <li>sell or redistribute the application under the name 'InvoicePlane' and the InvoicePlane logo.</li>
 </ul>
 
 <h3>License</h3>
