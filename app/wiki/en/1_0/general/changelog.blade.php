@@ -9,10 +9,53 @@
     <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
     <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v132">
+            v1.3.2 <span class="released">released 05/03/2015</span>
+        </div>
+        <div id="v132" class="panel-body collapse in">
+            <p>Improvements</p>
+            <ul>
+                <li>{{ IP::devLink('IP-247') }} - Improved filter form handling</li>
+                <li>{{ IP::devLink('IP-251') }} - Improved language support</li>
+                <li>{{ IP::devLink('IP-257') }} - Error logging is now disabled by default</li>
+                <li>{{ IP::devLink('IP-274') }} - Some fields now have to be unique</li>
+            </ul>
+
+            <p>Fixed Bugs</p>
+            <ul>
+                <li>{{ IP::devLink('IP-239') }} - Payment method was not inserted</li>
+                <li>{{ IP::devLink('IP-241') }} - Invoices were not set to Paid after adding a payment</li>
+                <li>{{ IP::devLink('IP-245') }} - Inputfield for product prices were not formatted correctly</li>
+                <li>{{ IP::devLink('IP-248') }} - Clients could be added twice</li>
+                <li>{{ IP::devLink('IP-249') }} - Very slow PDF generation and site loading</li>
+                <li>{{ IP::devLink('IP-258') }} - VAT ID was displayed in the Custom Fields section</li>
+                <li>{{ IP::devLink('IP-260') }} - Email Templates: HTML editor did not work correctly</li>
+                <li>{{ IP::devLink('IP-261') }} - Email Templates: Template tags were not inserted</li>
+                <li>{{ IP::devLink('IP-262') }} - Resolved MySQL issues in v1.2.0 update script</li>
+                <li>{{ IP::devLink('IP-263') }} - Resolved error with missing country language files</li>
+                <li>{{ IP::devLink('IP-273') }} - Link on dashboard now works with installs on sub-directory</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v131">
+            v1.3.1 <span class="released">released 04/14/2015</span>
+        </div>
+        <div id="v131" class="panel-body collapse">
+            <p>Bugs</p>
+            <ul>
+                <li>Product names are now properly escaped</li>
+                <li>PDF password issues have been resolved</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
         <div class="panel-heading" data-toggle="collapse" data-target="#v130">
             v1.3.0 <span class="released">released 04/12/2015</span>
         </div>
-        <div id="v130" class="panel-body collapse in">
+        <div id="v130" class="panel-body collapse">
             <p>New Features</p>
             <ul>
                 <li>Support for HTML and CSS in Email templates</li>
@@ -23,7 +66,7 @@
                 <li>Ability to set the number of items in lists</li>
             </ul>
 
-            <p>Enhancements</p>
+            <p>Improvements</p>
             <ul>
                 <li>"Move" icons added to quote item tables</li>
                 <li>Time of the invoice creation is now stored in the database</li>
@@ -34,7 +77,7 @@
                 <li>Several other smaller improvements</li>
             </ul>
 
-            <p>Bugs</p>
+            <p>Fixed Bugs</p>
             <ul>
                 <li>Menu bar fixed for mobile devices</li>
                 <li>Recurring invoices now can be created from read-only invoices</li>
@@ -52,7 +95,7 @@
             v1.2.1 <span class="released">released 03/08/2015</span>
         </div>
         <div id="v121" class="panel-body collapse">
-            <p>Enhancements</p>
+            <p>Improvements</p>
             <ul>
                 <li>InvoicePlane now ships with some languages by default</li>
                 <li>Quarter is now available as Dashboard period</li>
@@ -102,7 +145,7 @@
                 <li>Ability to set a custom footer for invoice pdf files with support for HTML and CSS</li>
             </ul>
 
-            <p>Enhancements</p>
+            <p>Improvements</p>
             <ul>
                 <li>Invoices are sorted by their ID</li>
                 <li>InvoicePlane now uses the Noto font</li>
@@ -126,7 +169,7 @@
             v1.1.2 <span class="released">released 01/27/2015</span>
         </div>
         <div id="v112" class="panel-body collapse">
-            <p>Enhancements</p>
+            <p>Improvements</p>
             <ul>
                 <li>jQuery, Bootstrap, Modernizer were updated</li>
                 <li>Invoices are now sorted by their ID</li>
@@ -153,7 +196,7 @@
             v1.1.1 <span class="released">released 12/21/2014</span>
         </div>
         <div id="v111" class="panel-body collapse">
-            <p>Enhancements</p>
+            <p>Improvements</p>
             <ul>
                 <li>Some smaller UI changes</li>
                 <li>Set default value for type of template</li>
@@ -182,7 +225,7 @@
                 <li>Custom.css added for your own styles</li>
             </ul>
 
-            <p>Enhancements</p>
+            <p>Improvements</p>
             <ul>
                 <li>Invoice / quote amounts can now be higher (eg. 1.000.000.000)</li>
                 <li>.gitignore for better development added</li>
@@ -223,7 +266,7 @@
                 <li>Ping question after the setup removed</li>
             </ul>
 
-            <p>Enhancements</p>
+            <p>Improvements</p>
             <ul>
                 <li>Adjust the alert box margins</li>
                 <li>Padding of panels with tables should be removed</li>

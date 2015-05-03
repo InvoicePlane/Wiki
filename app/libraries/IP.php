@@ -63,4 +63,9 @@ class IP
     {
         echo '<a href="'.$url.'" class="headline-link" title="'.trans('global.link_to_headline').'"><i class="fa fa-link"></i></a>&nbsp;';
     }
+
+    public static function devLink($issue_id)
+    {
+        echo '<a href="https://development.invoiceplane.com/browse/'.$issue_id.'">'.$issue_id.'</a>';
+    }
 }
