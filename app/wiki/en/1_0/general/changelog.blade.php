@@ -9,10 +9,49 @@
     <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
     <div class="panel panel-default">
-        <div class="panel-heading" data-toggle="collapse" data-target="#v112">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v130">
+            v1.3.0 <span class="released">released 04/12/2015</span>
+        </div>
+        <div id="v130" class="panel-body collapse in">
+            <p>New Features</p>
+            <ul>
+                <li>Support for HTML and CSS in Email templates</li>
+                <li>Complete redesign of the Dashboard</li>
+                <li>Ability to add notes to quotes</li>
+                <li>Ability to pre-set a payment method for an invoice</li>
+                <li>Ability to add passwords to PDF files for invoices and quotes</li>
+                <li>Ability to set the number of items in lists</li>
+            </ul>
+
+            <p>Enhancements</p>
+            <ul>
+                <li>"Move" icons added to quote item tables</li>
+                <li>Time of the invoice creation is now stored in the database</li>
+                <li>Optimization of the application assets</li>
+                <li>Optimization of the application layout files and structure</li>
+                <li>InvoicePlane now uses the Source Pro font family (Source Sans Pro and Source Code Pro)</li>
+                <li>Invoice Groups can now contain up to 100 characters</li>
+                <li>Several other smaller improvements</li>
+            </ul>
+
+            <p>Bugs</p>
+            <ul>
+                <li>Menu bar fixed for mobile devices</li>
+                <li>Recurring invoices now can be created from read-only invoices</li>
+                <li>Fix of the import form</li>
+                <li>Remove of debug functions from the updatecheck</li>
+                <li>Fix of the datepicker language loading</li>
+                <li>Fix of several report problems</li>
+                <li>Several other smaller fixes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v121">
             v1.2.1 <span class="released">released 03/08/2015</span>
         </div>
-        <div id="v112" class="panel-body collapse in">
+        <div id="v121" class="panel-body collapse">
             <p>Enhancements</p>
             <ul>
                 <li>InvoicePlane now ships with some languages by default</li>
@@ -37,9 +76,6 @@
                 <li>App uses MySQLi be default now</li>
                 <li>Smaller UI fixes</li>
                 <li>Bug with timezone handling fixed</li>
-                <li>Bug with datepicker language file fixed</li>
-                <li>Bug with datepicker language file fixed</li>
-                <li>Bug with datepicker language file fixed</li>
                 <li>Bug with datepicker language file fixed</li>
             </ul>
         </div>
