@@ -11,30 +11,31 @@
 // Bootstrap
 @import "bootstrap/bootstrap";
 
-// Lightbox
+// Lightbox & Syntax Highlight
 @import "lightbox";
 
 // Font: Font-Awesome
 @import "font-awesome/font-awesome";
 
-// Import Noto Font
-@import "noto/noto";
+// Import Fonts
+@import "source-sans-pro";
+@import "source-code-pro";
 
 
 /* =============================================================================
    Variables
    ========================================================================== */
 
-$dfs: 16px;
-$dff: 'Noto Sans', Helvetica, Arial, sans-serif;
+$dfs: 17px;
+$dff: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 $dlh: $dfs * 1.6;
 $dbr: 6px;
 
-$pagewidth: 1100px;
+$pagewidth: 1200px;
 
 $c_bg: #fff;
-$c_bg_d: darken($c_bg, 3%);
-$c_bg_d2: darken($c_bg, 6%);
+$c_bg_d: darken($c_bg, 5%);
+$c_bg_d2: darken($c_bg, 10%);
 
 $c_link: #2c8edd;
 $c_link_l: #429ae1;
@@ -105,7 +106,7 @@ img {
     max-width: 100%;
 }
 
-code {
+code, pre {
     color: $c_txt;
     background-color: lighten($c_txt_l, 40%);
     &.blue {
@@ -189,6 +190,10 @@ pre {
     border: none;
 }
 
+code, pre, .mono {
+    font-family: 'Source Code Pro', Menlo, Monaco, monospace;
+}
+
 
 /* =============================================================================
    Layout
@@ -207,6 +212,7 @@ pre {
 .navbar {
     background: $c_bg_d;
     border-bottom: 0;
+    margin-bottom: 0;
 }
 
 .navbar-nav  {
@@ -218,6 +224,7 @@ pre {
 
 .navbar-nav>li>.dropdown-menu {
     border-color: $c_bg_d2;
+    border-top: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -247,13 +254,16 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 
 #wrapper {
-    padding-top: 25px;
-    padding-bottom: 25px;
     background: $c_bg;
     min-height: 200px;
 }
-
+#row-wrapper {
+    overflow: hidden;
+}
 #content {
+    padding: 25px;
+    padding-bottom: 1000px;
+    margin-bottom: -1000px;
     p {
         text-align: justify;
     }
@@ -263,11 +273,18 @@ only screen and (min-device-pixel-ratio: 2) {
 }
 
 #sidebar {
+    background: $c_bg_d;
+    padding: 25px;
+    padding-bottom: 1000px;
+    margin-bottom: -1000px;
     a {
         color: $c_txt_l;
         &:hover {
-            color: $c_link_l;
+            color: $c_txt;
         }
+    }
+    hr {
+        border-top-color: $c_bg_d2;
     }
     ul {
         list-style: none;
@@ -276,7 +293,7 @@ only screen and (min-device-pixel-ratio: 2) {
         li {
             position: relative;
             &.active:before {
-                color: lighten($c_txt_l, 10%);
+                color: lighten($c_txt_l, 5%);
                 position:absolute;
                 font-family: FontAwesome;
                 top:0;
@@ -310,6 +327,8 @@ only screen and (min-device-pixel-ratio: 2) {
     color: #aaa;
     font-size: $dfs - 1;
     text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
 
     a {
         color: #888;

@@ -25,13 +25,13 @@
     </h3>
 
     <p>If you want to run InvoicePlane in a sub directory (e.g. <code>http://yourdomain.com/invoices/</code>) you have to modify the <code>.htaccess</code> file which is located in the root directory. You must add the line</p>
-    <pre><code class="language-none">RewriteBase /sub-directory</code></pre>
+    <pre>RewriteBase /sub-directory</pre>
     <p>where <code>sub-directory</code> is the directory you want to use. The content of the file should look like this:</p>
-    <pre><code class="language-none">RewriteEngine on
+    <pre>RewriteEngine on
 RewriteBase /sub-directory
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule . index.php [L]</code></pre>
+RewriteRule . index.php [L]</pre>
 
 
 

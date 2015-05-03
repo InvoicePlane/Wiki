@@ -20,33 +20,41 @@
 
     <?php echo View::make('elements.nav'); ?>
 
-    <div id="wrapper" class="container">
+    <div id="wrapper" class="container-fluid">
 
-        <div id="content" class="col-xs-12 col-sm-9 col-sm-push-3">
-			
-            @yield('content')
+        <div id="row-wrapper" class="row">
 
-            <?php
-            if ( isset($article_pagination) ) {
-                echo View::make('elements.article_pagination')->with('article_pagination',$article_pagination);
-            }
-            ?>
+            <div id="content" class="col-xs-12 col-sm-8 col-sm-push-4">
+
+                @yield('content')
+
+                <?php
+                if ( isset($article_pagination) ) {
+                    echo View::make('elements.article_pagination')->with('article_pagination',$article_pagination);
+                }
+                ?>
+
+                <br/>
+
+            </div>
+
+            <div id="sidebar" class="col-xs-12 col-sm-4 col-sm-pull-8">
+                <?php echo View::make(IP::getLocAndVer(true).'.sidebar')->with(array(
+                        'current_view_name' => $current_view_name,
+                        'current_page_name' => $current_page_name,
+                )); ?>
+            </div>
+
+            <div id="footerwrapper" class="col-xs-12">
+                <div class="inner">
+                    <?php echo View::make('elements.footer'); ?>
+                </div>
+            </div>
 
         </div>
 
-        <div id="sidebar" class="col-xs-12 col-sm-3 col-sm-pull-9">
-            <?php echo View::make(IP::getLocAndVer(true).'.sidebar')->with(array(
-                    'current_view_name' => $current_view_name,
-                    'current_page_name' => $current_page_name,
-            )); ?>
-        </div>
 
-    </div>
 
-    <div id="footerwrapper">
-        <div class="inner">
-            <?php echo View::make('elements.footer'); ?>
-        </div>
     </div>
 
 </div>
