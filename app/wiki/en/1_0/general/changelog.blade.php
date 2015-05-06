@@ -7,12 +7,27 @@
 <div class="changelog">
 
     <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
+	
+	<div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v133">
+            v1.3.3 <span class="released">released 05/06/2015</span>
+        </div>
+        <div id="v132" class="panel-body collapse in">
+            <p>Fixed Bugs</p>
+            <ul>
+                <li>{{ IP::devLink('IP-278') }} - Payment methods can't be modified after saving</li>
+                <li>{{ IP::devLink('IP-277') }} - Product families can't be modified after saving</li>
+                <li>{{ IP::devLink('IP-276') }} - Email Templates can't be modified after saving</li>
+                <li>{{ IP::devLink('IP-275') }} - Clients can't be modified after saving</li>
+            </ul>
+        </div>
+    </div>
 
     <div class="panel panel-default">
         <div class="panel-heading" data-toggle="collapse" data-target="#v132">
             v1.3.2 <span class="released">released 05/03/2015</span>
         </div>
-        <div id="v132" class="panel-body collapse in">
+        <div id="v132" class="panel-body collapse">
             <p>Improvements</p>
             <ul>
                 <li>{{ IP::devLink('IP-247') }} - Improved filter form handling</li>
