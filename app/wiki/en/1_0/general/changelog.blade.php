@@ -7,12 +7,52 @@
 <div class="changelog">
 
     <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
-	
-	<div class="panel panel-default">
+
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v140">
+            v1.4.0 <span class="released">released 05/20/2015</span>
+        </div>
+        <div id="v140" class="panel-body collapse in">
+            <p>New Features</p>
+            <ul>
+                <li>{{ IP::devLink('IP-86') }} - Option to enter discounts on quotes / invoices</li>
+                <li>{{ IP::devLink('IP-202') }} - Invoice PDFs will now be archived</li>
+                <li>{{ IP::devLink('IP-236') }} - Option to send all outgoing emailt as BCC to the admin</li>
+                <li>{{ IP::devLink('IP-237') }} - Option to set pre-set payment method</li>
+                <li>{{ IP::devLink('IP-211') }} - Attachments for emails</li>
+                <li>{{ IP::devLink('IP-215') }} - Option to hcange the client on draft invoices / quotes</li>
+                <li>{{ IP::devLink('IP-252') }} - Option to add custom language strings</li>
+                <li>{{ IP::devLink('IP-269') }} - Duplicate "Add new Row / Product" buttons on bottom of item table</li>
+            </ul>
+
+            <p>Improvements</p>
+            <ul>
+                <li>{{ IP::devLink('IP-232') }} - Show sum of payments in payment report</li>
+                <li>{{ IP::devLink('IP-242') }} - Completely overhaul of the quote / invoice edit screens</li>
+                <li>{{ IP::devLink('IP-264') }} - Product descriptions are now available as a textarea</li>
+                <li>{{ IP::devLink('IP-265') }} - The client name is now displayed above the detail pages</li>
+                <li>{{ IP::devLink('IP-270') }} - The client select was improved</li>
+                <li>{{ IP::devLink('IP-282') }} - The app now indicates loading</li>
+                <li>{{ IP::devLink('IP-283') }} - Item amounts can now be larger (up to 20 numbers)</li>
+                <li>{{ IP::devLink('IP-270') }} - The client select was improved</li>
+                <li>{{ IP::devLink('IP-270') }} - The setup process was optimized</li>
+                <li>Various other smaller improvements</li>
+            </ul>
+
+            <p>Fixed Bugs</p>
+            <ul>
+                <li>{{ IP::devLink('IP-205') }} - Some pages of the guest login were not displayed correctly</li>
+                <li>{{ IP::devLink('IP-280') }} - Improved support for non-latin characters on PDF files</li>
+                <li>{{ IP::devLink('IP-270') }} - Fix where clients couldn't be added in the new select form</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
         <div class="panel-heading" data-toggle="collapse" data-target="#v133">
             v1.3.3 <span class="released">released 05/06/2015</span>
         </div>
-        <div id="v132" class="panel-body collapse in">
+        <div id="v133" class="panel-body collapse in">
             <p>Fixed Bugs</p>
             <ul>
                 <li>{{ IP::devLink('IP-278') }} - Payment methods can't be modified after saving</li>
