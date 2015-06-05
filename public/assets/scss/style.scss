@@ -258,12 +258,12 @@ only screen and (min-device-pixel-ratio: 2) {
     min-height: 200px;
 }
 #row-wrapper {
-    overflow: hidden;
+    //overflow: hidden;
 }
 #content {
     padding: 25px;
-    padding-bottom: 1000px;
-    margin-bottom: -1000px;
+    //padding-bottom: 1000px;
+    //margin-bottom: -1000px;
     p {
         text-align: justify;
     }
@@ -275,8 +275,8 @@ only screen and (min-device-pixel-ratio: 2) {
 #sidebar {
     background: $c_bg_d;
     padding: 25px;
-    padding-bottom: 1000px;
-    margin-bottom: -1000px;
+    //padding-bottom: 1000px;
+    //margin-bottom: -1000px;
     a {
         color: $c_txt_l;
         &:hover {
