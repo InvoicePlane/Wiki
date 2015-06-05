@@ -24,7 +24,14 @@
 
         <div id="row-wrapper" class="row">
 
-            <div id="content" class="col-xs-12 col-sm-8 col-sm-push-4">
+            <div id="sidebar" class="col-xs-12 col-sm-4">
+                <?php echo View::make(IP::getLocAndVer(true).'.sidebar')->with(array(
+                        'current_view_name' => $current_view_name,
+                        'current_page_name' => $current_page_name,
+                )); ?>
+            </div>
+
+            <div id="content" class="col-xs-12 col-sm-8">
 
                 @yield('content')
 
@@ -36,13 +43,6 @@
 
                 <br/>
 
-            </div>
-
-            <div id="sidebar" class="col-xs-12 col-sm-4 col-sm-pull-8">
-                <?php echo View::make(IP::getLocAndVer(true).'.sidebar')->with(array(
-                        'current_view_name' => $current_view_name,
-                        'current_page_name' => $current_page_name,
-                )); ?>
             </div>
 
             <div id="footerwrapper" class="col-xs-12">
@@ -59,8 +59,8 @@
 
 </div>
 
-<script src="/assets/js/jquery_2.0.3.min.js"></script>
-<script src="/assets/js/bootstrap_3.2.0.min.js"></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
 <script src="/assets/js/scripts.min.js"></script>
 <script src="/assets/js/lightbox.min.js"></script>
 

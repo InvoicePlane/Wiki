@@ -17,5 +17,5 @@ Route::get('/', ['as' => 'home', function() {
     return Redirect::to('/'.$default_locale.'/'.IP::urlVersion($default_version));
 }]);
 
-Route::get('{locale}/{version}/{dir?}/{page?}', 'WikiController@getPage')
+Route::get('{locale}/{version?}/{dir?}/{page?}', 'WikiController@getPage')
     ->where('version', '[0-9\.]+');
