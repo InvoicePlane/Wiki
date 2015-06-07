@@ -7,12 +7,33 @@
 <div class="changelog">
 
     <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
+	
+	<div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v141">
+            v1.4.1 <span class="released">released 06/07/2015</span>
+        </div>
+        <div id="v141" class="panel-body collapse in">
+            <p>Fixed Bugs</p>
+            <ul>
+                <li>{{ IP::devLink('IP-286') }} - Discount input fields are now disabled on read-only invoices</li>
+                <li>{{ IP::devLink('IP-287') }} - “Create product” without a valid “Family” should not throw a SQL/PHP error</li>
+                <li>{{ IP::devLink('IP-288') }} - Fix for wrong discount calculations, now working without invoice taxes</li>
+                <li>{{ IP::devLink('IP-290') }} - Fix where the payment method couldn't be changed if empty</li>
+				<li>{{ IP::devLink('IP-292') }} - New guest users can now be added without required country field</li>
+				<li>{{ IP::devLink('IP-294') }} - Invoices can't be saved now with completely empty items</li>
+				<li>{{ IP::devLink('IP-295') }} - Fix where items can be deleted even if in read-only</li>
+				<li>{{ IP::devLink('IP-296') }} - Fix for errors because of missing language strings</li>
+				<li>{{ IP::devLink('IP-297') }} - Fix for errors because of undefined variables</li>
+				<li>{{ IP::devLink('IP-298') }} - Loading screen was optimized</li>
+            </ul>
+        </div>
+    </div>
 
     <div class="panel panel-default">
         <div class="panel-heading" data-toggle="collapse" data-target="#v140">
             v1.4.0 <span class="released">released 05/20/2015</span>
         </div>
-        <div id="v140" class="panel-body collapse in">
+        <div id="v140" class="panel-body collapse">
             <p>New Features</p>
             <ul>
                 <li>{{ IP::devLink('IP-86') }} - Option to enter discounts on quotes / invoices</li>
@@ -52,7 +73,7 @@
         <div class="panel-heading" data-toggle="collapse" data-target="#v133">
             v1.3.3 <span class="released">released 05/06/2015</span>
         </div>
-        <div id="v133" class="panel-body collapse in">
+        <div id="v133" class="panel-body collapse">
             <p>Fixed Bugs</p>
             <ul>
                 <li>{{ IP::devLink('IP-278') }} - Payment methods can't be modified after saving</li>
