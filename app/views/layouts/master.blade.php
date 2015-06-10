@@ -53,7 +53,7 @@
 
         </div>
 
-
+        <?php echo View::make(IP::getLocAndVer(true).'.notifications'); ?>
 
     </div>
 
