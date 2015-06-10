@@ -144,6 +144,25 @@
     <p>The order in which an item appears on a quote or invoice can be changed by dragging the row to a new position
         with the <code><i class="fa fa-bars"></i></code> icon.</p>
 
+    <h4 id="discounts">
+        Discounts <?php IP::headlineLink('/en/1.0/modules/invoices#discounts'); ?>
+    </h4>
+
+    <p>With the release of InvoicePlane 1.4.0 we introduced discounts for each quotes and invoices. There are two separate types of discounts which can by applied:</p>
+
+    <ul>
+        <li>Item Discounts</li>
+        <li>Invoice Discounts</li>
+    </ul>
+
+    <h5>Item Discounts</h5>
+
+    <p>Item discounts can be added for each item itself as an amount that will be subtract from the item subtotal. Item discounts can only be added as an amount, not as an percentage.</p>
+
+    <h5>Invoice Discounts</h5>
+
+    <p>Invoice discounts can be added for the whole invoice directly above the invoice total. You can either choose to add a discount as an amount (e.g. 200 $) or as a percentage of the subtotal (e.g. 5%).</p>
+
     <h4 id="add-tax">
         Adding Tax <?php IP::headlineLink('/en/1.0/modules/invoices#add-tax'); ?>
     </h4>
@@ -160,6 +179,8 @@
         if appropriate, and then select the invoice date and invoice group and press the <code
                 class="green">Submit</code> button. All items, taxes and amounts from the source invoice will be copied
         to a new invoice.</p>
+
+    <hr>
 
     <h3 id="delete">
         Invoice Deletion <?php IP::headlineLink('/en/1.0/modules/invoices#delete'); ?>
@@ -178,7 +199,8 @@
         Read-only <?php IP::headlineLink('/en/1.0/modules/invoices#read-only'); ?>
     </h3>
 
-    <p>InvoicePlane will set invoices to read-only based on its status and the invoice can't be changed anymore. You can change the status that will be used for the read-only mode in the settings.<br/>
+    <p>InvoicePlane will set invoices to read-only based on its status and the invoice can't be changed anymore. You can
+        change the status that will be used for the read-only mode in the settings.<br/>
         If you don't want invoices to be set to read-only you can disable this feature. Open <code>/application/config/config.php</code>
         and replace<br/>
         <code>$config['disable_read_only'] = FALSE;</code><br/>

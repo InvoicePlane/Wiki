@@ -107,8 +107,8 @@
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.0/system',
-                    'title' => 'System',
+                    'url' => '/en/1.0/templates',
+                    'title' => 'Templates',
                     'type' => 'section'
             )
     );
