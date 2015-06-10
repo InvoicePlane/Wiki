@@ -122,6 +122,27 @@
         </table>
     </div>
 
+    <h3 id="interface">
+        System settings <?php IP::headlineLink('/en/1.0/settings/general#system'); ?>
+    </h3>
+
+    <div class="table-responsive">
+        <table class="table table-condensed table-striped">
+            <tr>
+                <td>Send all outgoing emails as BCC to the admin account</td>
+                <td>If you enable this option <b>every</b> outgoing email is sent as an anonymous copy (BCC) to the
+                    administrator. The administrator is the user that was created during the InvoicePlane setup.
+                </td>
+            </tr>
+            <tr>
+                <td>Cron Key</td>
+                <td>You will need this cron key to setup <a href="/en/1.0/modules/recurring-invoices">recurring
+                        invoices</a>.
+                </td>
+            </tr>
+        </table>
+    </div>
+
     <?php
     $article_pagination = array(
             'previous' => array(
