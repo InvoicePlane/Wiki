@@ -45,8 +45,8 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.0/settings',
-                    'title' => 'Settings',
+                    'url' => '/en/1.0/templates',
+                    'title' => 'Templates',
                     'type' => 'section'
             ),
             'next' => array(
