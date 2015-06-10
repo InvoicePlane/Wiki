@@ -127,6 +127,25 @@
     <p>The order in which an item appears on a quote or invoice can be changed by dragging the row to a new position
         with the <code><i class="fa fa-bars"></i></code> icon.</p>
 
+    <h4 id="discounts">
+        Discounts <?php IP::headlineLink('/en/1.0/modules/invoices#discounts'); ?>
+    </h4>
+
+    <p>With the release of InvoicePlane 1.4.0 we introduced discounts for each quotes and invoices. There are two separate types of discounts which can by applied:</p>
+
+    <ul>
+        <li>Item Discounts</li>
+        <li>Quote Discounts</li>
+    </ul>
+
+    <h5>Item Discounts</h5>
+
+    <p>Item discounts can be added for each item itself as an amount that will be subtract from the item subtotal. Item discounts can only be added as an amount, not as an percentage.</p>
+
+    <h5>Quote Discounts</h5>
+
+    <p>Quote discounts can be added for the whole quote directly above the quote total. You can either choose to add a discount as an amount (e.g. 200 $) or as a percentage of the subtotal (e.g. 5%).</p>
+
     <h4 id="add-tax">
         Add Tax to Quote <?php IP::headlineLink('/en/1.0/modules/quotes#add-tax'); ?>
     </h4>
