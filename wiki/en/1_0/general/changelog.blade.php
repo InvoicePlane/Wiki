@@ -7,12 +7,44 @@
 <div class="changelog">
 
     <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v143">
+            v1.4.3 <span class="released">released 06/21/2015</span>
+        </div>
+        <div id="v143" class="panel-body collapse in">
+            <p>Fixed Bugs</p>
+            <ul>
+                <li>{{ IP::devLink('IP-304') }} - Fixed bug where password fields were empty on settings pages</li>
+                <li>{{ IP::devLink('IP-303') }} - Fixed bug where quotes or invoices couldn't be saved because of an 'Incorrect decimal value'</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v142">
+            v1.4.2 <span class="released">released 06/14/2015</span>
+        </div>
+        <div id="v142" class="panel-body collapse">
+            <p>Improvements</p>
+            <ul>
+                <li>{{ IP::devLink('IP-302') }} - Increased the loading overlay timeout</li>
+            </ul>
+            
+            <p>Fixed Bugs</p>
+            <ul>
+                <li>{{ IP::devLink('IP-299') }} - Fixed bug where invoices no longer accepted item prices between 0 and 1 (e.g. 0,75)</li>
+                <li>{{ IP::devLink('IP-300') }} - Fixed bug with BCC for emails</li>
+                <li>{{ IP::devLink('IP-301') }} - Fixed bug where special characters in client names broke invoice/quote creation</li>
+            </ul>
+        </div>
+    </div>
 	
 	<div class="panel panel-default">
         <div class="panel-heading" data-toggle="collapse" data-target="#v141">
             v1.4.1 <span class="released">released 06/07/2015</span>
         </div>
-        <div id="v141" class="panel-body collapse in">
+        <div id="v141" class="panel-body collapse">
             <p>Fixed Bugs</p>
             <ul>
                 <li>{{ IP::devLink('IP-286') }} - Discount input fields are now disabled on read-only invoices</li>
