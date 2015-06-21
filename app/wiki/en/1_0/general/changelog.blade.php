@@ -7,12 +7,25 @@
 <div class="changelog">
 
     <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-target="#v143">
+            v1.4.3 <span class="released">released 06/21/2015</span>
+        </div>
+        <div id="v143" class="panel-body collapse in">
+            <p>Fixed Bugs</p>
+            <ul>
+                <li>{{ IP::devLink('IP-304') }} - Fixed bug where password fields were empty on settings pages</li>
+                <li>{{ IP::devLink('IP-303') }} - Fixed bug where quotes or invoices couldn't be saved because of an 'Incorrect decimal value'</li>
+            </ul>
+        </div>
+    </div>
     
     <div class="panel panel-default">
         <div class="panel-heading" data-toggle="collapse" data-target="#v142">
             v1.4.2 <span class="released">released 06/14/2015</span>
         </div>
-        <div id="v142" class="panel-body collapse in">
+        <div id="v142" class="panel-body collapse">
             <p>Improvements</p>
             <ul>
                 <li>{{ IP::devLink('IP-302') }} - Increased the loading overlay timeout</li>
