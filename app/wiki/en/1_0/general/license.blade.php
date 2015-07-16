@@ -25,6 +25,16 @@
     <li>sell or redistribute the application under the name 'InvoicePlane' and the InvoicePlane logo.</li>
 </ul>
 
+<hr>
+
+<h3>InvoicePlane Usage Permits</h3>
+
+<ul>
+    <li><a href="http://www.softaculous.com/" rel="nofollow">Softaculous</a> is permitted to add InvoicePlane to their AutoInstaller.</li>
+</ul>
+
+<hr>
+
 <h3>License</h3>
 <p>
     ==================================================<br/>
