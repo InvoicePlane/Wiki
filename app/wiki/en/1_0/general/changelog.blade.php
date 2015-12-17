@@ -16,24 +16,24 @@
                 <p>Improvement</p>
                 <ul>
                     <li>{{ IP::devLink('IP-293') }} - Custom title for public view of quotes / invoices</li>
-                    <li>{{ IP::devLink('IP-312') }} - Current logged in user not displayed</li>
+                    <li>{{ IP::devLink('IP-312') }} - Current logged in user now displayed</li>
                     <li>{{ IP::devLink('IP-355') }} - Overhaul the PDF templates</li>
+					<li>{{ IP::devLink('IP-333') }} - Upgrade of the PHPMailer library</li>
                     <li>Various other code improvements and smaller corrections</li>
                 </ul>
                 <p>Fixed Bugs</p>
                 <ul>
                     <li>{{ IP::devLink('IP-291') }} - Let CodeIgniter also accept new domain names</li>
                     <li>{{ IP::devLink('IP-306') }} - PDF: invoice details not properly aligned</li>
-                    <li>{{ IP::devLink('IP-308') }} - Invoice in archive is empty (zero bytes)</li>
-                    <li>{{ IP::devLink('IP-310') }} - Taxes and products do not respect separator and decimal</li>
-                    <li>{{ IP::devLink('IP-315') }} - Array definition incompatible with PHP &lt; 5.4</li>
-                    <li>{{ IP::devLink('IP-328') }} - Problems with functions in number_helper.php</li>
-                    <li>{{ IP::devLink('IP-331') }} - Emails for recurring invoices do not process the CSS styles</li>
-                    <li>{{ IP::devLink('IP-332') }} - missing lang file when you have set other language</li>
-                    <li>{{ IP::devLink('IP-333') }} - PHPMailer bug with TLS</li>
-                    <li>{{ IP::devLink('IP-336') }} - Editing a product will cause the price to change</li>
+                    <li>{{ IP::devLink('IP-308') }} - Invoice in archive was empty (zero bytes)</li>
+                    <li>{{ IP::devLink('IP-310') }} - Taxes and products didn't respect separator and decimal</li>
+                    <li>{{ IP::devLink('IP-315') }} - Array definitions were incompatible with PHP &lt; 5.4</li>
+                    <li>{{ IP::devLink('IP-328') }} - Fixed Problems with functions in number_helper.php</li>
+                    <li>{{ IP::devLink('IP-331') }} - Emails for recurring invoices didn't process CSS styles</li>
+                    <li>{{ IP::devLink('IP-332') }} - Missing lang file when you have set other language</li>
+                    <li>{{ IP::devLink('IP-336') }} - Editing a product caused the price to change</li>
                     <li>{{ IP::devLink('IP-346') }} - Create payment - Payment method will not be saved</li>
-                    <li>{{ IP::devLink('IP-349') }} - Custom Field Length</li>
+                    <li>{{ IP::devLink('IP-349') }} - Custom field input length increased</li>
                 </ul>
             </div>
         </div>
