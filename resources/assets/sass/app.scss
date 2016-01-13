@@ -1,0 +1,51 @@
+@import "bootstrap-import";
+@import "font-awesome";
+
+///////////////////////
+
+$c_major:   #97b618;
+$c_feature: #edbd00;
+$c_hotfix:  #af1c28;
+$c_beta:    #8abff2;
+$c_alpha:   #c18af2;
+
+///////////////////////
+
+.ip-main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.type- {
+  &major {
+    color: $c_major;
+  }
+  &feature {
+    color: $c_feature;
+  }
+  &hotfix {
+    color: $c_hotfix;
+  }
+  &beta {
+    color: $c_beta;
+  }
+  &alpha {
+    color: $c_alpha;
+  }
+}
+
+.fa-margin-right {
+  margin-right: .5rem;
+}
+.fa-margin-left {
+  margin-left: .5rem;
+}
+
+hr.hr-xl {
+  margin: 2rem 0;
+}
+
+.alert-title,
+.page-title {
+  margin-top: 0;
+}

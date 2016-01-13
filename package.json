@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "bower": "^1.6.5",
+    "laravel-elixir": "^3.4.2"
+  }
+}
