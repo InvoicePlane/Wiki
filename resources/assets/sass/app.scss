@@ -2,36 +2,232 @@
 @import "font-awesome";
 
 ///////////////////////
-
-$c_major:   #97b618;
-$c_feature: #edbd00;
-$c_hotfix:  #af1c28;
-$c_beta:    #8abff2;
-$c_alpha:   #c18af2;
-
+// App Variables
 ///////////////////////
 
-.ip-main {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+$screen-sm:   544px;
+$screen-md:   768px;
+$screen-lg:   992px;
+$screen-xl:   1200px;
+
+$color-status-draft:              #999999;
+$color-status-sent:               #3A87AD;
+$color-status-viewed:             #F89406;
+$color-status-paid-approved:      #468847;
+$color-status-rejected-overdue:   #B94A48;
+$color-status-canceled:           #333333;
+
+$color-sidebar-bg:      $brand-primary;
+$color-sidebar-color:   $gray-lighter;
+$color-sidebar-link:    $gray-lightest;
+
+@mixin transition-std($transition) {
+  transition: $transition 0.2s ease-out;
+  -moz-transition: $transition 0.2s ease-out;
+  -webkit-transition: $transition 0.2s ease-out;
+  -o-transition: $transition 0.2s ease-out;
 }
 
-.type- {
-  &major {
-    color: $c_major;
+///////////////////////
+// Layout
+///////////////////////
+
+#app {
+  width: 100%;
+
+  @media screen and (min-width: $screen-lg) {
+    display: table;
   }
-  &feature {
-    color: $c_feature;
+}
+
+#sidebar {
+  width: 320px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: $color-sidebar-bg;
+  color: $color-sidebar-color;
+  left: -320px;
+  z-index: $zindex-navbar;
+  @include transition-std(left);
+
+  &.show-sidebar {
+    left: 0;
+    @include transition-std(left);
   }
-  &hotfix {
-    color: $c_hotfix;
+
+  @media screen and (min-width: $screen-lg) {
+    width: 25%;
+    display: table-cell;
+    vertical-align: top;
+    left: 0;
   }
-  &beta {
-    color: $c_beta;
+
+  a {
+    color: $color-sidebar-link;
+    @include hover-focus-active {
+      color: $color-sidebar-link;
+    }
   }
-  &alpha {
-    color: $c_alpha;
+
+  .sidebar-top {
+    padding: 1rem;
+    border-bottom: 1px solid lighten($color-sidebar-bg, 5%);
   }
+}
+
+#main {
+  width: 100%;
+  padding: 2rem 2rem 5rem;
+  position: relative;
+
+  @media screen and (min-width: $screen-lg) {
+    display: table-cell;
+    vertical-align: top;
+    width: 75%;
+  }
+}
+
+.sidebar-toggle-wrapper {
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.sidebar-toggle {
+  cursor: pointer;
+}
+
+#footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  right: 2rem;
+  font-size: 0.9rem;
+}
+
+///////////////////////
+// Sidebar Menu
+///////////////////////
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+
+  li {
+    width: 100%;
+
+    a {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      font-size: 1.1rem;
+
+      &:hover{
+        background-color: lighten($color-sidebar-bg, 5%);
+      }
+    }
+
+    &.divider {
+      margin: 1rem 0;
+      border-bottom: 1px solid lighten($color-sidebar-bg, 10%);
+    }
+  }
+
+  .has-submenu {
+    background-color: lighten($color-sidebar-bg, 5%);
+
+    .menu-icon {
+      padding: 0.3rem 0.5rem;
+
+      &:before {
+        content: "\f107";
+      }
+    }
+
+    &.collapsed {
+      background-color: $color-sidebar-bg;
+
+      &:hover{
+        background-color: lighten($color-sidebar-bg, 5%);
+      }
+
+      .menu-icon:before {
+        content: "\f104";
+      }
+    }
+  }
+
+  .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: lighten($color-sidebar-bg, 5%);
+
+    li {
+      padding: 0;
+
+      a {
+        font-size: 0.9rem;
+
+
+        &:hover {
+          background-color: lighten($color-sidebar-bg, 10%);
+        }
+      }
+
+      &.divider {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+///////////////////////
+// Status labels
+///////////////////////
+
+.status {
+  padding: 2px 4px;
+  border-radius: 2px;
+
+  &.status-draft {
+    background: lighten($color-status-draft, 35%);
+    color: $color-status-draft;
+  }
+  &.status-sent {
+    background: lighten($color-status-sent, 40%);
+    color: $color-status-sent;
+  }
+  &.status-viewed {
+    background: lighten($color-status-viewed, 40%);
+    color: $color-status-viewed;
+  }
+  &.status-paid,
+  &.status-approved{
+    background: lighten($color-status-paid-approved, 50%);
+    color: $color-status-paid-approved;
+  }
+  &.status-rejected,
+  &.status-overdue{
+    background: lighten($color-status-rejected-overdue, 40%);
+    color: $color-status-rejected-overdue;
+  }
+  &.status-canceled {
+    background: lighten($color-status-canceled, 60%);
+    color: $color-status-canceled;
+  }
+}
+
+///////////////////////
+// Misc
+///////////////////////
+
+.fa-fw {
+  width: 1rem;
+  text-align: center;
 }
 
 .fa-margin-right {
@@ -48,4 +244,19 @@ hr.hr-xl {
 .alert-title,
 .page-title {
   margin-top: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background-color: $gray-lightest;
+  border-left: 1px solid $gray-lighter;
+}
+::-webkit-scrollbar-thumb {
+  background-color: darken($gray-lighter, 10%);
 }
