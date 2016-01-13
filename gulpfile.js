@@ -8,8 +8,8 @@ elixir(function (mix) {
     var paths = {
         'jquery': bower_path + "/jquery/dist",
         'bootstrap': bower_path + "/bootstrap",
-        'fontawesome': bower_path + "/fontawesome",
-        'tablesorter': bower_path + "/tablesorter"
+        'tether': bower_path + "/tether",
+        'fontawesome': bower_path + "/fontawesome"
     };
 
     // Compile SCSS
@@ -22,8 +22,8 @@ elixir(function (mix) {
     // Combine all JS files
     mix.scripts([
         paths.jquery + '/jquery.min.js',
-        paths.bootstrap + '/dist/js/bootstrap.min.js',
-        paths.tablesorter + '/jquery.tablesorter.js'
+        paths.tether + '/dist/js/tether.min.js',
+        paths.bootstrap + '/dist/js/bootstrap.min.js'
     ], 'public/assets/js/dependencies.js', bower_path);
 
     mix.scripts('resources/assets/js/app.js', 'public/assets/js/app.js');

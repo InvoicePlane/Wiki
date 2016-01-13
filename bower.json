@@ -3,6 +3,7 @@
   "devDependencies": {
     "bootstrap": "~4.0.0-alpha",
     "jquery": "~2.1.*",
+    "tether": "~1.1.1",
     "fontawesome": "~4.*"
   }
 }
