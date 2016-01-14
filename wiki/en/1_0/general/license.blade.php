@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    License for InvoicePlane
+@endsection
+
 @section('content')
 
 <h2 class="page-title">License for InvoicePlane</h2>

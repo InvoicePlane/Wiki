@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Help: Setup a Cron
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Help: Setup a Cron</h2>

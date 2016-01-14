@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    System
+@endsection
+
 @section('content')
 
 <h2 class="page-title">System</h2>

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Getting Started
+@endsection
+
 @section('content')
 
 <h2 class="page-title">Getting Started</h2>

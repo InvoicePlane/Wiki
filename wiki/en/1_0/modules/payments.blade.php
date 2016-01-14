@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Payments
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Payments</h2>

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Updatecheck
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Updatecheck</h2>

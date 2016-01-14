@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Update InvoicePlane
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Update InvoicePlane</h2>

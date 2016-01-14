@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    General Information
+@endsection
+
 @section('content')
 
 <h2 class="page-title">General information</h2>

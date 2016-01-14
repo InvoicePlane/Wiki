@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Templates
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Templates</h2>

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Custom Fields
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Custom Fields</h2>

@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Requirements
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Requirements</h2>

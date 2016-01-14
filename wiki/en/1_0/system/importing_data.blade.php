@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Importing Data
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Importing Data</h2>

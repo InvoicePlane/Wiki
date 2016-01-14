@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Translation / Localization
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Translation / Localization</h2>

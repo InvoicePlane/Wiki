@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Merchant Account Settings
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Merchant Account Settings</h2>

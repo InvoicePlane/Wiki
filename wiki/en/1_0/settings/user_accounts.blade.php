@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    User Accounts
+@endsection
+
 @section('content')
 
     <h2 class="page-title">User Accounts</h2>

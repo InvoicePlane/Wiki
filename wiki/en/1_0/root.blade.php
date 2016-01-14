@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    InvoicePlane Wiki
+@endsection
+
 @section('content')
 
     <div class="alert alert-info">

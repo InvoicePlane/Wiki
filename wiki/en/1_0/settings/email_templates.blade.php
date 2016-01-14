@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Email Templates
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Email Templates</h2>

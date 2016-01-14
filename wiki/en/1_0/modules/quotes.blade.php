@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Quotes
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Quotes</h2>

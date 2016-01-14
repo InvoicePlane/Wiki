@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Upgrade form FusionInvoice
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Upgrade form FusionInvoice v1.x</h2>

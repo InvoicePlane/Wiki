@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Changelog
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Changelog</h2>

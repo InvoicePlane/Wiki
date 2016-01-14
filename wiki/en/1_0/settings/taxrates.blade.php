@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Taxrates
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Taxrates</h2>

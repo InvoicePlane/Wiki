@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Quickstart
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Quickstart</h2>

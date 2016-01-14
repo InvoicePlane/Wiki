@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    FAQ - Frequently Asked Questions
+@endsection
+
 @section('content')
 
     <h2 class="page-title">FAQ - Frequently Asked Questions</h2>

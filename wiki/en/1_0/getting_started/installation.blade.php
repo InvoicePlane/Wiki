@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    Installation
+@endsection
+
 @section('content')
 
     <h2 class="page-title">Installation</h2>
