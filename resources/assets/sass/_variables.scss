@@ -655,13 +655,13 @@ $close-text-shadow:           0 1px 0 #fff !default;
 
 // Code
 
-$code-color:                  #bd4147 !default;
-$code-bg:                     #f7f7f9 !default;
+$code-color:                  $gray-light !default;
+$code-bg:                     $gray-lightest !default;
 
 $kbd-color:                   #fff !default;
 $kbd-bg:                      #333 !default;
 
-$pre-bg:                      #f7f7f9 !default;
+$pre-bg:                      $gray-lightest !default;
 $pre-color:                   $gray-dark !default;
-$pre-border-color:            #ccc !default;
+$pre-border-color:            $gray-lighter !default;
 $pre-scrollable-max-height:   340px !default;

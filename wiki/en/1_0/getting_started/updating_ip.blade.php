@@ -28,6 +28,11 @@
                     'url' => '/en/1.0/getting-started/quickstart',
                     'title' => 'Quickstart',
                     'type' => 'article'
+            ),
+            'next' => array(
+                    'url' => '/en/1.0/modules/',
+                    'title' => 'Modules',
+                    'type' => 'section'
             )
     );
     ?>

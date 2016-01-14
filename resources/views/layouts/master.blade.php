@@ -29,6 +29,8 @@
         
         <div id="content">
             @yield('content')
+
+            @include('includes.article_pagination')
         </div>
         
         @include('includes.footer')

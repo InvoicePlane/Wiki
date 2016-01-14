@@ -14,6 +14,8 @@ return [
     'community_forums' => 'Community Forums',
     'github' => 'Github Repository',
 
+    'link_to_headline' => 'Link to this Headline',
+
     'lang.en' => 'English',
     'lang.de' => 'German - Deutsch',
 ];

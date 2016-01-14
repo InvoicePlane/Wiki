@@ -135,6 +135,7 @@ a.ext {
   left: 1rem;
   right: 1rem;
   font-size: 0.9rem;
+  opacity: 0.8;
 
   @media screen and (min-width: $screen-lg) {
     left: 2rem;
@@ -222,7 +223,7 @@ a.ext {
 }
 
 ///////////////////////
-// Status labels
+// Content
 ///////////////////////
 
 .status {
@@ -255,6 +256,29 @@ a.ext {
     background: lighten($color-status-canceled, 60%);
     color: $color-status-canceled;
   }
+}
+
+.headline-link {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+.article-pagination {
+  margin-top: 2rem;
+}
+
+.fa-credit-invoice {
+  &:before {
+    content: '-';
+  }
+  &:after {
+    font-family: FontAwesome;
+    content: '\f155';
+  }
+}
+
+.fa-read-only {
+  @extend .fa-ban;
 }
 
 ///////////////////////
