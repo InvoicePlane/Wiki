@@ -22,16 +22,15 @@
     <div id="sidebar">
         @include('includes.sidebar')
     </div>
-
-    <div class="sidebar-toggle-wrapper hidden-lg-up">
-        <a href="#" class="sidebar-toggle">
-            <i class="fa fa-bars fa-margin-right hidden-lg-up"></i> Menu
-        </a>
-    </div>
-
+    
     <div id="main">
 
-        @yield('content')
+        @include('includes.topbar')
+        
+        <div id="content">
+            @yield('content')
+        </div>
+        
         @include('includes.footer')
         
     </div>

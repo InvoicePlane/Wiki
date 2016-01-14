@@ -53,7 +53,12 @@ class WikiController extends Controller
         }
 
         if (view()->exists($requested_page)) {
-            return view($requested_page);
+
+            $sidebar_content_view = $locale . '.' . $version . '.sidebar';
+            
+            return view($requested_page)->with([
+                'sidebar_content' => view($sidebar_content_view)
+            ]);
         }
 
         return redirect()->to('/' . $locale . '/' . str_replace('_', '.', $default_version));
