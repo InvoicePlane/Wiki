@@ -57,6 +57,10 @@ a.ext {
   }
 }
 
+.sidebar-visible {
+  overflow: hidden;
+}
+
 #sidebar {
   width: 320px;
   position: fixed;
@@ -69,7 +73,7 @@ a.ext {
   z-index: $zindex-navbar;
   @include transition-std(left);
 
-  &.show-sidebar {
+  .sidebar-visible & {
     left: 0;
     @include transition-std(left);
   }
@@ -96,18 +100,23 @@ a.ext {
 
 #main {
   width: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
   position: relative;
 
   @media screen and (min-width: $screen-lg) {
     display: table-cell;
     vertical-align: top;
     width: 75%;
+    padding-bottom: 5rem;
   }
 }
 
 #content {
-  padding: 2rem;
+  padding: 1rem;
+  
+  @media screen and (min-width: $screen-lg) {
+    padding: 2rem;
+  }
 }
 
 .top-bar {
@@ -123,9 +132,14 @@ a.ext {
 #footer {
   position: absolute;
   bottom: 1rem;
-  left: 2rem;
-  right: 2rem;
+  left: 1rem;
+  right: 1rem;
   font-size: 0.9rem;
+
+  @media screen and (min-width: $screen-lg) {
+    left: 2rem;
+    right: 2rem;
+  }
 }
 
 ///////////////////////
