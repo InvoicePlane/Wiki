@@ -15,9 +15,7 @@
             <ul>
                 <li>PHP > 5.3.0</li>
                 <li>MySQL > 4.x</li>
-                <li>mCrypt Extension activated (<a
-                            href="http://aryo.lecture.ub.ac.id/easy-install-php-mcrypt-extension-on-ubuntu-linux/"
-                            class="ext">How-To</a>)
+                <li>mCrypt Extension activated (<a href="http://aryo.lecture.ub.ac.id/easy-install-php-mcrypt-extension-on-ubuntu-linux/" class="ext">How-To</a>)
                 </li>
             </ul>
         </li>

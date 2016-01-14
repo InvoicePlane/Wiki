@@ -8,7 +8,7 @@
 
     <h2 class="page-title">Help: Setup a Cron</h2>
 
-    <p>If you want to use <a href="/en/1.0/modules/recurring-invoices">recurring invoices</a> you have to setup a cron
+    <p>If you want to use <a href="{{ url('en/1.0/modules/recurring-invoices') }}">recurring invoices</a> you have to setup a cron
         that opens the url listed on the recurring invoices page. A cron is basically a script that runs on predefined
         times. You can setup a cron that runs every minute, every third hour per day or yearly. For recurring invoices
         you should run the cron daily.</p>

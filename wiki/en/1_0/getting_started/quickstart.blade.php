@@ -27,7 +27,7 @@
     <p>Before you start with invoicing you should check the application settings on <code>http://www.your-domain.com/settings</code>
         and set for example the currency, how the amounts should be formatted and so on.</p>
 
-    <p>More information about available settings can be found on the <a href="/en/1.0/modules/settings">Settings</a>
+    <p>More information about available settings can be found on the <a href="{{ url('en/1.0/modules/settings') }}">Settings</a>
         page.</p>
 
     <hr/>
@@ -39,7 +39,7 @@
     <p>Click <code>Clients</code> from the main menu at the top of the page and select <code>Add Client</code>. Fill in
         as much information as needed and submit the form.</p>
 
-    <p>More information about the client management can be found on the <a href="/en/1.0/modules/clients">Clients</a>
+    <p>More information about the client management can be found on the <a href="{{ url('en/1.0/modules/clients') }}">Clients</a>
         page.</p>
 
     <hr/>
@@ -51,7 +51,7 @@
     <p>If you have products which should appear on your invoices or quotes you can create them form the
         <code>Products</code> menu.</p>
 
-    <p>More information about products can be found on the <a href="/en/1.0/modules/products">Products</a> page.</p>
+    <p>More information about products can be found on the <a href="{{ url('en/1.0/modules/products') }}">Products</a> page.</p>
 
     <hr/>
 
@@ -90,7 +90,7 @@
         automatically entered back into InvoicePlane, eliminating the need to manually enter an offline payment. Online
         payments require additional setup before they can be used.</p>
 
-    <p>More information about payments can be found on the <a href="/en/1.0/modules/payments">Payments</a> page.</p>
+    <p>More information about payments can be found on the <a href="{{ url('en/1.0/modules/payments') }}">Payments</a> page.</p>
 
     <?php
     $article_pagination = array(

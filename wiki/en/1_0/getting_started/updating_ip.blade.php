@@ -10,8 +10,7 @@
 
     <ol>
         <li>Make a backup of your database and all files.</li>
-        <li>Download the latest version from <a href="https://invoiceplane.com/downloads"
-                                                class="ext">InvoicePlane.com</a>.
+        <li>Download the latest version from <a href="https://invoiceplane.com/downloads" class="ext">InvoicePlane.com</a>.
         </li>
         <li>Copy all files to the root directory of your InvoicePlane installation but <b>do not</b> overwrite the file
             <code>/application/config/database.php</code>!

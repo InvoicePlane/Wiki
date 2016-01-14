@@ -42,6 +42,8 @@
                 <li>client_mobile</li>
                 <li>client_email</li>
                 <li>client_web</li>
+                <li>client_vat_id</li>
+                <li>client_tax_code</li>
                 <li>client_active (1 for active, 0 for inactive)</li>
             </ul>
         </li>

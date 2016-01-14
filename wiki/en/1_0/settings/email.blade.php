@@ -9,7 +9,7 @@
     <h2 class="page-title">Email Settings</h2>
 
     <p>Before InvoicePlane can send emails you have to configure he email settings here. You can choose between three different ways to send emails.<br/>
-    If you don't want that invoice and quote pdf files are automatically attached to emails disable this feature by changing <code>Attach Quote/Invoice on email?</code> to <cod>No</cod></p>
+    If you don't want that invoice and quote pdf files are automatically attached to emails disable this feature by changing <code>Attach Quote/Invoice on email?</code> to <code>No</code></p>
 
     <p>
         <a href="//invoiceplane.com/content/screenshots/web/ip_settings_mail.jpg" rel="lightbox">
