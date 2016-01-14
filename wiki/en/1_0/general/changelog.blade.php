@@ -8,11 +8,11 @@
 
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v144">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v144">
                 v1.4.4 <span class="released">released 12/13/2015</span>
             </div>
-            <div id="v144" class="panel-body collapse in">
+            <div id="v144" class="card-block collapse in">
                 <p>Improvement</p>
                 <ul>
                     <li>{{ IP::devLink('IP-293') }} - Custom title for public view of quotes / invoices</li>
@@ -38,11 +38,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v143">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v143">
                 v1.4.3 <span class="released">released 06/21/2015</span>
             </div>
-            <div id="v143" class="panel-body collapse">
+            <div id="v143" class="card-block collapse">
                 <p>Fixed Bugs</p>
                 <ul>
                     <li>{{ IP::devLink('IP-304') }} - Fixed bug where password fields were empty on settings pages</li>
@@ -53,11 +53,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v142">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v142">
                 v1.4.2 <span class="released">released 06/14/2015</span>
             </div>
-            <div id="v142" class="panel-body collapse">
+            <div id="v142" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>{{ IP::devLink('IP-302') }} - Increased the loading overlay timeout</li>
@@ -76,11 +76,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v141">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v141">
                 v1.4.1 <span class="released">released 06/07/2015</span>
             </div>
-            <div id="v141" class="panel-body collapse">
+            <div id="v141" class="card-block collapse">
                 <p>Fixed Bugs</p>
                 <ul>
                     <li>{{ IP::devLink('IP-286') }} - Discount input fields are now disabled on read-only invoices</li>
@@ -102,11 +102,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v140">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v140">
                 v1.4.0 <span class="released">released 05/20/2015</span>
             </div>
-            <div id="v140" class="panel-body collapse">
+            <div id="v140" class="card-block collapse">
                 <p>New Features</p>
                 <ul>
                     <li>{{ IP::devLink('IP-86') }} - Option to enter discounts on quotes / invoices</li>
@@ -144,11 +144,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v133">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v133">
                 v1.3.3 <span class="released">released 05/06/2015</span>
             </div>
-            <div id="v133" class="panel-body collapse">
+            <div id="v133" class="card-block collapse">
                 <p>Fixed Bugs</p>
                 <ul>
                     <li>{{ IP::devLink('IP-278') }} - Payment methods can't be modified after saving</li>
@@ -159,11 +159,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v132">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v132">
                 v1.3.2 <span class="released">released 05/03/2015</span>
             </div>
-            <div id="v132" class="panel-body collapse">
+            <div id="v132" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>{{ IP::devLink('IP-247') }} - Improved filter form handling</li>
@@ -189,11 +189,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v131">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v131">
                 v1.3.1 <span class="released">released 04/14/2015</span>
             </div>
-            <div id="v131" class="panel-body collapse">
+            <div id="v131" class="card-block collapse">
                 <p>Bugs</p>
                 <ul>
                     <li>Product names are now properly escaped</li>
@@ -202,11 +202,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v130">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v130">
                 v1.3.0 <span class="released">released 04/12/2015</span>
             </div>
-            <div id="v130" class="panel-body collapse">
+            <div id="v130" class="card-block collapse">
                 <p>New Features</p>
                 <ul>
                     <li>Support for HTML and CSS in Email templates</li>
@@ -241,11 +241,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v121">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v121">
                 v1.2.1 <span class="released">released 03/08/2015</span>
             </div>
-            <div id="v121" class="panel-body collapse">
+            <div id="v121" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>InvoicePlane now ships with some languages by default</li>
@@ -275,11 +275,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v120">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v120">
                 v1.2.0 <span class="released">released 01/27/2015</span>
             </div>
-            <div id="v120" class="panel-body collapse">
+            <div id="v120" class="card-block collapse">
                 <p>New Features</p>
                 <ul>
                     <li>Items are replaced by products with full category (family) and purchase price support</li>
@@ -315,11 +315,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v112">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v112">
                 v1.1.2 <span class="released">released 01/27/2015</span>
             </div>
-            <div id="v112" class="panel-body collapse">
+            <div id="v112" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>jQuery, Bootstrap, Modernizer were updated</li>
@@ -342,11 +342,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v111">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v111">
                 v1.1.1 <span class="released">released 12/21/2014</span>
             </div>
-            <div id="v111" class="panel-body collapse">
+            <div id="v111" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>Some smaller UI changes</li>
@@ -361,11 +361,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v110">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v110">
                 v1.1.0 <span class="released">released 11/09/2014</span>
             </div>
-            <div id="v110" class="panel-body collapse">
+            <div id="v110" class="card-block collapse">
                 <p>New Features</p>
                 <ul>
                     <li>Check for new updates added to the system settings</li>
@@ -395,11 +395,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v102">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v102">
                 v1.0.2 <span class="released">released 08/28/2014</span>
             </div>
-            <div id="v102" class="panel-body collapse">
+            <div id="v102" class="card-block collapse">
                 <p>Bugs</p>
                 <ul>
                     <li>Hotfix release for issues with tax rates and sum in quotes and invoices.</li>
@@ -407,11 +407,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v101">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v101">
                 v1.0.1 <span class="released">released 08/23/2014</span>
             </div>
-            <div id="v101" class="panel-body collapse">
+            <div id="v101" class="card-block collapse">
                 <p>General</p>
                 <ul>
                     <li>Ping question after the setup removed</li>
@@ -441,11 +441,11 @@
             </div>
         </div>
 
-        <div class="panel panel-default">
-            <div class="panel-heading" data-toggle="collapse" data-target="#v102">
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v100">
                 v1.0.0 <span class="released">released 07/12/2014</span>
             </div>
-            <div id="v100" class="panel-body collapse">
+            <div id="v100" class="card-block collapse">
                 <p>Initial version</p>
             </div>
         </div>

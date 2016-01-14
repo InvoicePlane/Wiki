@@ -281,6 +281,17 @@ a.ext {
   @extend .fa-ban;
 }
 
+.changelog {
+  .card-header {
+    cursor: pointer;
+
+    .released {
+      float: right;
+      opacity: 0.6;
+    }
+  }
+}
+
 ///////////////////////
 // Misc
 ///////////////////////

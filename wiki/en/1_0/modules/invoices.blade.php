@@ -120,7 +120,7 @@
         <li><code>Delete</code> - Delete the invoice*</li>
     </ul>
 
-    <p class="small">* Invoice deletion is not available for all invoices. Please see the </p>
+    <p class="small">* Invoice deletion is not available for all invoices. Please read the information for <a href="/en/1.0/modules/invoices#delete">invoice deletion</a>.</p>
 
     <h4 id="add-products">
         Add Products <?php IP::headlineLink('/en/1.0/modules/invoices#add-products'); ?>

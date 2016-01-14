@@ -1,4 +1,7 @@
 <li>
+    <a href="{{ url('en/1.0/general') }}">General information</a>
+</li>
+<li>
     <a href="{{ url('en/1.0/getting-started') }}">Getting Started</a>
 </li>
 <li>
