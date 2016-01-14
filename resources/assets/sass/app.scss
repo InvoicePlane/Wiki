@@ -49,6 +49,14 @@ a.ext {
 // Layout
 ///////////////////////
 
+body {
+  padding-top: 3.5rem;
+  
+  @media screen and (min-width: $screen-lg) {
+    padding-top: 0;
+  }
+}
+
 #app {
   width: 100%;
 
@@ -120,9 +128,18 @@ a.ext {
 }
 
 .top-bar {
+  position: fixed;
+  top: 0;
   padding: 1rem;
   width: 100%;
+  background: $body-bg;
   border-bottom: 1px solid $gray-lighter;
+  z-index: $zindex-navbar - 10;
+
+  @media screen and (min-width: $screen-lg) {
+    position: relative;
+    top: auto;
+  }
 }
 
 .sidebar-toggle {
