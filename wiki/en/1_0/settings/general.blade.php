@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td>Language</td>
-                <td>Choose the <a href="/en/1.0/system/translation-localization">language</a> for the application</td>
+                <td>Choose the <a href="{{ url('en/1.0/system/translation-localization') }}">language</a> for the application</td>
             </tr>
             <tr>
                 <td>First day of the Week</td>
@@ -119,7 +119,7 @@
             </tr>
             <tr>
                 <td>Cron Key</td>
-                <td>You will need this cron key to setup <a href="/en/1.0/modules/recurring-invoices">recurring
+                <td>You will need this cron key to setup <a href="{{ url('en/1.0/modules/recurring-invoices') }}">recurring
                         invoices</a>.
                 </td>
             </tr>
@@ -140,7 +140,7 @@
             </tr>
             <tr>
                 <td>Cron Key</td>
-                <td>You will need this cron key to setup <a href="/en/1.0/modules/recurring-invoices">recurring
+                <td>You will need this cron key to setup <a href="{{ url('en/1.0/modules/recurring-invoices') }}">recurring
                         invoices</a>.
                 </td>
             </tr>

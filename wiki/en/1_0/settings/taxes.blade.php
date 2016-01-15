@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>Default Invoice Tax Rate</td>
-                <td>Choose the <a href="/en/1.0/settings/taxrates">Taxrate</a> that should be applied to an invoice by default</td>
+                <td>Choose the <a href="{{ url('en/1.0/settings/taxrates') }}">Taxrate</a> that should be applied to an invoice by default</td>
             </tr>
             <tr>
                 <td>Default Invoice Tax Rate</td>
@@ -32,7 +32,7 @@
             </tr>
             <tr>
                 <td>Default Invoice Tax Rate</td>
-                <td>Choose the <a href="/en/1.0/settings/taxrates">Taxrate</a> that should be applied to every product of an invoice by default</td>
+                <td>Choose the <a href="{{ url('en/1.0/settings/taxrates') }}">Taxrate</a> that should be applied to every product of an invoice by default</td>
             </tr>
         </table>
     </div>

@@ -28,7 +28,7 @@
             <code>es_AR</code></li>
         <li>Paste the folder to the following directory of your InvoicePlane installation:
             <code>/application/language/</code></li>
-        <li>Apply the language in your <a href="/en/1.0/settings/general">general settings</a>.</li>
+        <li>Apply the language in your <a href="{{ url('en/1.0/settings/general') }}">general settings</a>.</li>
     </ol>
 
     <p>Your folder structure should look like this:</p>

@@ -59,7 +59,7 @@
 
     <p>Clients can be granted permission to log into InvoicePlane to view their quotes and invoices, approve or reject
         quotes and pay their invoices. See the <code>Guest Account</code> section of the <a
-                href="/en/1.0/settings/user-accounts">User Accounts</a> page for instructions on creating logins for
+                href="{{ url('en/1.0/settings/user-accounts') }}">User Accounts</a> page for instructions on creating logins for
         your clients.</p>
 
 

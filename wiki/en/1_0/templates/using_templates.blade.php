@@ -26,7 +26,7 @@
         <li><code>/application/views/quote_templates/pdf</code> for quotes</li>
     </ul>
 
-    <p>You can select which templates should be used in the system settings for either <a href="/en/1.0/settings/invoices">Invoices</a> or <a href="/en/1.0/settings/quotes">Quotes</a>. You can find the select boxes below the headline "Templates". Simply select the template, save and the template will be used for the next quote or invoice.</p>
+    <p>You can select which templates should be used in the system settings for either <a href="{{ url('en/1.0/settings/invoices') }}">Invoices</a> or <a href="{{ url('en/1.0/settings/quotes') }}">Quotes</a>. You can find the select boxes below the headline "Templates". Simply select the template, save and the template will be used for the next quote or invoice.</p>
 
     <?php
     $article_pagination = array(

@@ -17,12 +17,12 @@
         Requirements <?php IP::headlineLink('/en/1.0/modules/recurring-invoices#requirements'); ?>
     </h3>
 
-    <p>For recurring invoices to generate properly, you must create a <a href="/en/1.0/help/setup_cron">CRON job</a> or
+    <p>For recurring invoices to generate properly, you must create a <a href="{{ url('en/1.0/help/setup_cron') }}">CRON job</a> or
         a scheduled task that opens the following URL once per day:</p>
 
     <pre>http://your-domain.com/invoices/cron/recur/your-cron-key-here</pre>
 
-    <p>Replace <code>your-cron-key-here</code> with the generated cron key in <a href="/en/1.0/settings/general">System
+    <p>Replace <code>your-cron-key-here</code> with the generated cron key in <a href="{{ url('en/1.0/settings/general') }}">System
             Settings</a>.</p>
 
     <h3 id="add-recurring">
