@@ -1,16 +1,19 @@
 ![InvoicePlane](http://invoiceplane.com/content/logo/PNG/logo_300x150.png)
-#### _InvoicePlane Wiki_
+#### _Wiki Files_
 
-===
+These are the official wiki files of the InvoicePlane Wiki located at  https://wiki.invoiceplane.com
 
-### Support / Development / Chat
+### Contribute / Translate the Wiki
 
-[![Wiki](https://img.shields.io/badge/Help%3A-Official%20Wiki-429ae1.svg)](https://wiki.invoiceplane.com/)    
-[![Community Forums](https://img.shields.io/badge/Help%3A-Community%20Forums-429ae1.svg)](https://community.invoiceplane.com/)    
-[![Issue Tracker](https://img.shields.io/badge/Development%3A-Issue%20Tracker-429ae1.svg)](https://development.invoiceplane.com/)    
-[![Roadmap](https://img.shields.io/badge/Development%3A-Roadmap-429ae1.svg)](https://go.invoiceplane.com/roadmapv1)    
-[![Gitter chat](https://img.shields.io/badge/Chat%3A-Gitter-green.svg)](https://gitter.im/InvoicePlane/InvoicePlane)    
-[![Freenode](https://img.shields.io/badge/Chat%3A-Freenode%20(IRC)-green.svg)](irc://irc.freenode.net/InvoicePlane)    
+If you want to help translating the Wiki follow these steps:
+
+1. Clone this repoitory to your computer.
+2. Duplicate the `en` folder inside the wiki directory.
+3. Rename the duplicate to the 2-letter-language-code of the language you want to translate.
+4. Translate the files.
+5. Create a pull request to the official repository.
+
+After that we will take care of the rest and the implementation into the wiki.
 
 ---
   
