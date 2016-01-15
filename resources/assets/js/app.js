@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-    
     $(".sidebar-toggle").click(function(e){
         e.preventDefault();
         $("body").toggleClass("sidebar-visible");

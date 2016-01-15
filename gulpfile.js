@@ -24,7 +24,9 @@ elixir(function (mix) {
     mix.scripts([
         paths.jquery + '/jquery.min.js',
         paths.tether + '/dist/js/tether.min.js',
-        paths.bootstrap + '/dist/js/bootstrap.min.js',
+        paths.bootstrap + '/js/dist/util.js',
+        paths.bootstrap + '/js/dist/collapse.js',
+        paths.bootstrap + '/js/dist/dropdown.js',
         paths.lightbox + '/dist/js/lightbox.min.js'
     ], 'public/assets/js/dependencies.js', bower_path);
 
