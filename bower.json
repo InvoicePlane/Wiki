@@ -5,5 +5,8 @@
     "jquery": "~2.1.*",
     "tether": "~1.1.1",
     "fontawesome": "~4.*"
+  },
+  "dependencies": {
+    "lightbox2": "~2.8.2"
   }
 }

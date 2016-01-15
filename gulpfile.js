@@ -9,6 +9,7 @@ elixir(function (mix) {
         'jquery': bower_path + "/jquery/dist",
         'bootstrap': bower_path + "/bootstrap",
         'tether': bower_path + "/tether",
+        'lightbox': bower_path + "/lightbox2",
         'fontawesome': bower_path + "/fontawesome"
     };
 
@@ -23,7 +24,8 @@ elixir(function (mix) {
     mix.scripts([
         paths.jquery + '/jquery.min.js',
         paths.tether + '/dist/js/tether.min.js',
-        paths.bootstrap + '/dist/js/bootstrap.min.js'
+        paths.bootstrap + '/dist/js/bootstrap.min.js',
+        paths.lightbox + '/dist/js/lightbox.min.js'
     ], 'public/assets/js/dependencies.js', bower_path);
 
     mix.scripts('resources/assets/js/app.js', 'public/assets/js/app.js');
