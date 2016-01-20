@@ -77,9 +77,24 @@
                     <li>Change the value of <code>log_threshold</code> from <code>0</code> to <code>2</code></li>
                     <li>Try again what caused the spinning cog.</li>
                     <li>Open the file <code>/application/logs/</code>, open the log file and copy the whole content.</li>
-                    <li>Save the content on <a href="https://paste.invoiceplane.com">Paste.InvoicePlane.com</a> and post this link with a small description to the <a href="https://community.invoiceplane.com">Community Forums</a>.<br/>
+                    <li>Save the content on a log sharing service like <a href="http://hastebin.com/">Hastebin.com</a> and post this link with a small description to the <a href="https://community.invoiceplane.com">Community Forums</a>.<br/>
                     You will get further help there.</li>
                 </ol>
+            </div>
+        </div>
+		
+		<div id="error03" class="card">
+            <div class="card-header">
+                I can't add more than 4 items to quotes or invoices
+            </div>
+            <div class="card-block">
+                <p>This problem may occurs because of a configuration of your nginx webserver. The server error should look like this:</p>
+				<pre><code>upstream sent too big header while reading response header from upstream</code></pre>
+				<p>To solve this problem you should try to add / update your nginx configuration with the following settings:</p>
+				<pre><code>proxy_buffer_size   128k;
+proxy_buffers   4 256k;
+proxy_busy_buffers_size   256k;</code></pre>
+				<p class="small">Please check <a href="http://stackoverflow.com/a/27551259/1203515">this comment</a> for more details.</p>
             </div>
         </div>
 
