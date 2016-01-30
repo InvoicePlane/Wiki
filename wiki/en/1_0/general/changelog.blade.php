@@ -11,12 +11,37 @@
     <div class="changelog">
 
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
+		
+		<div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v145">
+                v1.4.5 <span class="released">released 01/31/2015</span>
+            </div>
+            <div id="v145" class="card-block collapse in">
+                <p>Improvement</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-356') }} - Hide discount columns on PDF templates if no item has a discount</li>
+                    <li>{{ IP::devLink('IP-357') }} - Disable URL rewriting by default to prevent problems with .htaccess</li>
+                    <li>{{ IP::devLink('IP-358') }} - Optimize the PDF templates</li>
+					<li>{{ IP::devLink('IP-377') }} - Update all assets</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-359') }} - Fix for incorrect integer value: '' for column 'payment_method'</li>
+                    <li>{{ IP::devLink('IP-361') }} - htmlspecialchars() missing on client edit screen</li>
+                    <li>{{ IP::devLink('IP-363') }} - Custom title still missing for the login page</li>
+                    <li>{{ IP::devLink('IP-373') }} - Templates displays wrong zips from user / client</li>
+                    <li>{{ IP::devLink('IP-374') }} - Model declarations are not compatible with Response_Model</li>
+                    <li>{{ IP::devLink('IP-375') }} - Dashboard calculates only the last 10 overdue invoices</li>
+                    <li>{{ IP::devLink('IP-376') }} - Remove deprecated / unnecessary code from the layout</li>
+                </ul>
+            </div>
+        </div>
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v144">
                 v1.4.4 <span class="released">released 12/13/2015</span>
             </div>
-            <div id="v144" class="card-block collapse in">
+            <div id="v144" class="card-block collapse">
                 <p>Improvement</p>
                 <ul>
                     <li>{{ IP::devLink('IP-293') }} - Custom title for public view of quotes / invoices</li>
