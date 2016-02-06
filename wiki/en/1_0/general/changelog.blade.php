@@ -13,10 +13,31 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 		
 		<div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v146">
+                v1.4.6 <span class="released">released 02/07/2015</span>
+            </div>
+            <div id="v146" class="card-block collapse in">
+                <p>Improvement</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-383') }} - Update lib_mysql to use mysqli</li>
+                    <li>{{ IP::devLink('IP-384') }} - Add a debug mode to make error reporting easier</li>
+					<li>{{ IP::devLink('IP-385') }} - Optimize the login and password reset handling</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-310') }} - Taxes and products do not respect separator and decimal</li>
+                    <li>{{ IP::devLink('IP-379') }} - Quotes / invoices sums are not calculated</li>
+                    <li>{{ IP::devLink('IP-380') }} - Assets were not updated in the setup layout</li>
+                    <li>{{ IP::devLink('IP-381') }} - Datepicker not working in some modals</li>
+                </ul>
+            </div>
+        </div>
+		
+		<div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v145">
                 v1.4.5 <span class="released">released 01/31/2015</span>
             </div>
-            <div id="v145" class="card-block collapse in">
+            <div id="v145" class="card-block collapse">
                 <p>Improvement</p>
                 <ul>
                     <li>{{ IP::devLink('IP-356') }} - Hide discount columns on PDF templates if no item has a discount</li>
