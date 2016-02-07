@@ -73,11 +73,11 @@
             <div class="card-block">
                 <p>This problem occurs if the application is stuck because of an error.</p>
                 <ol>
-                    <li>Open the file <code>/application/config/config.php</code> of your InvoicePlane installation.</li>
-                    <li>Change the value of <code>log_threshold</code> from <code>0</code> to <code>2</code></li>
+                    <li>Enable the debug mode in the system settings in the General Settings tab.</li>
                     <li>Try again what caused the spinning cog.</li>
-                    <li>Open the file <code>/application/logs/</code>, open the log file and copy the whole content.</li>
-                    <li>Save the content on a log sharing service like <a href="http://hastebin.com/">Hastebin.com</a> and post this link with a small description to the <a href="https://community.invoiceplane.com">Community Forums</a>.<br/>
+                    <li>Open the folder <code>/application/logs/</code>, open the log file and copy the whole content.</li>
+                    <li>Open the console of your browser (<a href="http://webmasters.stackexchange.com/a/77337/20720">Tutorial</a>), the error may be logged there.</li>
+                    <li>Save the content on the log and the output of the browser console to <a href="https://paste.invoiceplane.com/">Paste.InvoicePlane.com</a> and post this link with a small description to the <a href="https://community.invoiceplane.com">Community Forums</a>.<br/>
                     You will get further help there.</li>
                 </ol>
             </div>

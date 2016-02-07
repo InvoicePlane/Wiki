@@ -141,7 +141,12 @@
             <tr>
                 <td>Cron Key</td>
                 <td>You will need this cron key to setup <a href="{{ url('en/1.0/modules/recurring-invoices') }}">recurring
-                        invoices</a>.
+                        invoices</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Enable Debug Mode</td>
+                <td>The debug mode enables logging for the application. The logs can be found in the <code>/application/logs</code> folder or in your browser console.</a>
                 </td>
             </tr>
         </table>
