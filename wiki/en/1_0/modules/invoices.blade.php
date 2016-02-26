@@ -197,7 +197,13 @@
         and replace<br/>
         <code>$config['enable_invoice_deletion'] = FALSE;</code><br/>
         with<br/>
-        <code>$config['enable_invoice_deletion'] = TRUE;</code></p>
+        <code>$config['enable_invoice_deletion'] = TRUE;</code><br/>
+        To see the delete option in the pulldown, you also need to replace
+        <code>$config['disable_read_only'] = FALSE;</code><br/>
+        with<br/>
+        <code>$config['disable_read_only'] = TRUE;</code></p><br/>
+        Read only needs to be disabled, otherwise the options menu is not complete.
+        </p>
 
     <h3 id="read-only">
         Read-only <?php IP::headlineLink('/en/1.0/modules/invoices#read-only'); ?>
