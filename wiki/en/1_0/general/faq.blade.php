@@ -55,6 +55,29 @@
         </div>
 
         <h3>Errors</h3>
+        
+        <div id="debugmode" class="card">
+            <div class="card-header">
+                You have problems and need help? Use the debug mode.
+            </div>
+            <div class="card-block">
+                <p>You have a problem with some errors, you are stuck and need help? We would like to help you but first we need some help from you: error logs.</p>
+                <ol>
+                    <li>Enable the debug mode in the system settings in the General Settings tab.</li>
+                    <li>Try again what caused the error, e.g. creating a new invoice which does not work.</li>
+                    <li>
+                        Get the log files:
+                        <ul>
+                            <li>Open the folder <code>/application/logs/</code>, open the log file and copy the whole content.</li>
+                            <li>Search your web server error logs.</li>
+                            <li>Open the console of your browser (<a href="http://webmasters.stackexchange.com/a/77337/20720">Tutorial</a>), the error may be logged there.</li>
+                        </ul>
+                    </li>
+                    <li>Save the content on the logs and the output of the browser console to <a href="https://paste.invoiceplane.com/">Paste.InvoicePlane.com</a> and post this link with a small description to the <a href="https://community.invoiceplane.com">Community Forums</a>.<br/>
+                    You will get further help there.</li>
+                </ol>
+            </div>
+        </div>
 
         <div id="error01" class="card">
             <div class="card-header">
@@ -71,15 +94,7 @@
                 There is a large spinning cog (<i class="fa fa-cog"></i>) after I clicked a button and now nothing happens
             </div>
             <div class="card-block">
-                <p>This problem occurs if the application is stuck because of an error.</p>
-                <ol>
-                    <li>Enable the debug mode in the system settings in the General Settings tab.</li>
-                    <li>Try again what caused the spinning cog.</li>
-                    <li>Open the folder <code>/application/logs/</code>, open the log file and copy the whole content.</li>
-                    <li>Open the console of your browser (<a href="http://webmasters.stackexchange.com/a/77337/20720">Tutorial</a>), the error may be logged there.</li>
-                    <li>Save the content on the log and the output of the browser console to <a href="https://paste.invoiceplane.com/">Paste.InvoicePlane.com</a> and post this link with a small description to the <a href="https://community.invoiceplane.com">Community Forums</a>.<br/>
-                    You will get further help there.</li>
-                </ol>
+                <p>This problem occurs if the application is stuck because of an error. Please follow the instructions for the <a href="#debugmode">debug mode</a></p>
             </div>
         </div>
 		
