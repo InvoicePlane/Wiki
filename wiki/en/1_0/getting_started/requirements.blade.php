@@ -15,8 +15,16 @@
             <ul>
                 <li>PHP > 5.3.0</li>
                 <li>MySQL > 4.x</li>
-                <li>mCrypt Extension activated (<a href="http://aryo.lecture.ub.ac.id/easy-install-php-mcrypt-extension-on-ubuntu-linux/" class="ext">How-To</a>)
-                </li>
+                <li>And Following PHP Extensions:</li>
+                <ul>
+                    <li>php-hash</li>
+                    <li>php-mcrypt (<a href="http://aryo.lecture.ub.ac.id/easy-install-php-mcrypt-extension-on-ubuntu-linux/" class="ext">How-To</a>)</li>
+                    <li>php-json</li>
+                    <li>php-zlib</li>
+                    <li>php-openssl</li>
+                    <li>php-recode</li>
+                    <li>php-xmlrpc</li>
+                </ul>
             </ul>
         </li>
         <li>and a modern and up-to-date web browser.</li>
