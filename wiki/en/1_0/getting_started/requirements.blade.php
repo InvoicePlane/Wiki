@@ -24,6 +24,7 @@
                     <li>php-openssl</li>
                     <li>php-recode</li>
                     <li>php-xmlrpc</li>
+                    <li>php-gd</li>
                 </ul>
             </ul>
         </li>
