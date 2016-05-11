@@ -19,6 +19,8 @@
                 <ul>
                     <li>php-hash</li>
                     <li>php-mcrypt (<a href="http://aryo.lecture.ub.ac.id/easy-install-php-mcrypt-extension-on-ubuntu-linux/" class="ext">How-To</a>)</li>
+                    <li>php-mbstring</li>
+                    <li>php-mysqli</li>
                     <li>php-json</li>
                     <li>php-zlib</li>
                     <li>php-openssl</li>
