@@ -11,12 +11,49 @@
     <div class="changelog">
 
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
+        
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v147">
+                v1.4.7 <span class="released">released 02/07/2016</span>
+            </div>
+            <div id="v147" class="card-block collapse in">
+                 <p>New Features</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-412') }} - Implementation ZUGFeRD XML for PDFs</li>
+                </ul>
+                <p>Improvement</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-104') }} - Custom fields are not copied when Invoice is duplicated</li>
+                    <li>{{ IP::devLink('IP-255') }} - Do not generate invoice number for draft invoices</li>
+					<li>{{ IP::devLink('IP-322') }} - Invoice item_name database field should be larger</li>
+                    <li>{{ IP::devLink('IP-404') }} - mPDF does not show image errors</li>
+                    <li>{{ IP::devLink('IP-406') }} - Update the web preview for invoices and quotes</li>
+					<li>{{ IP::devLink('IP-407') }} - Add attachments to the web views for invoices and quotes</li>
+                    <li>{{ IP::devLink('IP-408') }} - Add reference to products to items</li>
+                    <li>{{ IP::devLink('IP-417') }} - Improve product database handling</li>
+					<li>{{ IP::devLink('IP-421') }} - Allow items to have empty description, quantity and price</li>
+                    <li>{{ IP::devLink('IP-422') }} - Improve session security</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-301') }} - Special characters in Client Name breaks invoice/quote creation</li>
+                    <li>{{ IP::devLink('IP-303') }} - Incorrect decimal value: '' for column 'item_discount_amount'</li>
+                    <li>{{ IP::devLink('IP-330') }} - Quotes still use the "Quote Number" translation string</li>
+                    <li>{{ IP::devLink('IP-386') }} - Discounts are lost when converting quote to invoice</li>
+                    <li>{{ IP::devLink('IP-399') }} - Description of Paypal appear "0"</li>
+                    <li>{{ IP::devLink('IP-400') }} - PDF Report has unwanted file security Password</li>
+                    <li>{{ IP::devLink('IP-401') }} - Forgot Password does not honor System Mail Settings</li>
+                    <li>{{ IP::devLink('IP-413') }} - Tax does not get copied on recurring invoices</li>
+                    <li>{{ IP::devLink('IP-419') }} - Don’t mark drafts with invoice_total == 0 as paid</li>
+                </ul>
+            </div>
+        </div>
 		
 		<div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v146">
                 v1.4.6 <span class="released">released 02/07/2015</span>
             </div>
-            <div id="v146" class="card-block collapse in">
+            <div id="v146" class="card-block collapse">
                 <p>Improvement</p>
                 <ul>
                     <li>{{ IP::devLink('IP-383') }} - Update lib_mysql to use mysqli</li>
