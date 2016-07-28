@@ -9,7 +9,10 @@
     <h2 class="page-title">Installation</h2>
 
     <p>For those of you comfortable with installing web applications, installing InvoicePlane should take 5 minutes or
-        less.</p>
+        less.
+        <br>
+        Follow <a href="https://www.rosehosting.com/blog/install-invoiceplane-on-a-centos-vps/">this</a> step-by-step guide if you are using CentOS.
+        </p>
 
     <ol>
         <li><a href="https://invoiceplane.com/downloads">Download</a> and extract the archive.</li>
