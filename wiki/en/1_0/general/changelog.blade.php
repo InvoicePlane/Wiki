@@ -11,12 +11,32 @@
     <div class="changelog">
 
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
-        
+
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v148">
+                v1.4.8 <span class="released">released 31/07/2016</span>
+            </div>
+            <div id="v148" class="card-block collapse in">
+                <p>Improvement</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-255') }} - Do not generate invoice number for draft invoices</li>
+                    <li>{{ IP::devLink('IP-425') }} - Improve language handling and displaying for empty translations</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-424') }} - item_subtotal in default template</li>
+                    <li>{{ IP::devLink('IP-428') }} - Subfolder detection not working on Windows</li>
+                    <li>{{ IP::devLink('IP-430') }} - Hide inactive clients in client list</li>
+                    <li>{{ IP::devLink('IP-432') }} - SQL field types lead to problems with some MySQL versions</li>
+                </ul>
+            </div>
+        </div>
+
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v147">
                 v1.4.7 <span class="released">released 02/07/2016</span>
             </div>
-            <div id="v147" class="card-block collapse in">
+            <div id="v147" class="card-block collapse">
                  <p>New Features</p>
                 <ul>
                     <li>{{ IP::devLink('IP-412') }} - Implementation ZUGFeRD XML for PDFs</li>
