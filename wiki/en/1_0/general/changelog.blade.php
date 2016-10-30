@@ -68,7 +68,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v147">
-                v1.4.7 <span class="released">released 02/07/2016</span>
+                v1.4.7 <span class="released">released 2016-07-02</span>
             </div>
             <div id="v147" class="card-block collapse">
                  <p>New Features</p>
@@ -105,7 +105,7 @@
 		
 		<div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v146">
-                v1.4.6 <span class="released">released 02/07/2015</span>
+                v1.4.6 <span class="released">released 2016-02-07</span>
             </div>
             <div id="v146" class="card-block collapse">
                 <p>Improvement</p>
@@ -126,7 +126,7 @@
 		
 		<div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v145">
-                v1.4.5 <span class="released">released 01/31/2015</span>
+                v1.4.5 <span class="released">released 2016-01-31</span>
             </div>
             <div id="v145" class="card-block collapse">
                 <p>Improvement</p>
@@ -151,7 +151,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v144">
-                v1.4.4 <span class="released">released 12/13/2015</span>
+                v1.4.4 <span class="released">released 2015-12-13</span>
             </div>
             <div id="v144" class="card-block collapse">
                 <p>Improvement</p>
@@ -181,7 +181,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v143">
-                v1.4.3 <span class="released">released 06/21/2015</span>
+                v1.4.3 <span class="released">released 2015-06-21</span>
             </div>
             <div id="v143" class="card-block collapse">
                 <p>Fixed Bugs</p>
@@ -196,7 +196,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v142">
-                v1.4.2 <span class="released">released 06/14/2015</span>
+                v1.4.2 <span class="released">released 2015-06-14</span>
             </div>
             <div id="v142" class="card-block collapse">
                 <p>Improvements</p>
@@ -219,7 +219,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v141">
-                v1.4.1 <span class="released">released 06/07/2015</span>
+                v1.4.1 <span class="released">released 2015-06-07</span>
             </div>
             <div id="v141" class="card-block collapse">
                 <p>Fixed Bugs</p>
@@ -245,7 +245,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v140">
-                v1.4.0 <span class="released">released 05/20/2015</span>
+                v1.4.0 <span class="released">released 2015-05-20</span>
             </div>
             <div id="v140" class="card-block collapse">
                 <p>New Features</p>
@@ -287,7 +287,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v133">
-                v1.3.3 <span class="released">released 05/06/2015</span>
+                v1.3.3 <span class="released">released 2015-05-06</span>
             </div>
             <div id="v133" class="card-block collapse">
                 <p>Fixed Bugs</p>
@@ -302,7 +302,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v132">
-                v1.3.2 <span class="released">released 05/03/2015</span>
+                v1.3.2 <span class="released">released 2015-05-03</span>
             </div>
             <div id="v132" class="card-block collapse">
                 <p>Improvements</p>
@@ -332,7 +332,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v131">
-                v1.3.1 <span class="released">released 04/14/2015</span>
+                v1.3.1 <span class="released">released 2015-04-14</span>
             </div>
             <div id="v131" class="card-block collapse">
                 <p>Bugs</p>
@@ -345,7 +345,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v130">
-                v1.3.0 <span class="released">released 04/12/2015</span>
+                v1.3.0 <span class="released">released 2015-04-12</span>
             </div>
             <div id="v130" class="card-block collapse">
                 <p>New Features</p>
@@ -384,7 +384,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v121">
-                v1.2.1 <span class="released">released 03/08/2015</span>
+                v1.2.1 <span class="released">released 2015-03-08</span>
             </div>
             <div id="v121" class="card-block collapse">
                 <p>Improvements</p>
@@ -418,7 +418,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v120">
-                v1.2.0 <span class="released">released 01/27/2015</span>
+                v1.2.0 <span class="released">released 2015-02-22</span>
             </div>
             <div id="v120" class="card-block collapse">
                 <p>New Features</p>
@@ -458,7 +458,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v112">
-                v1.1.2 <span class="released">released 01/27/2015</span>
+                v1.1.2 <span class="released">released 2015-01-27</span>
             </div>
             <div id="v112" class="card-block collapse">
                 <p>Improvements</p>
@@ -485,7 +485,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v111">
-                v1.1.1 <span class="released">released 12/21/2014</span>
+                v1.1.1 <span class="released">released 2014-12-21</span>
             </div>
             <div id="v111" class="card-block collapse">
                 <p>Improvements</p>
@@ -504,7 +504,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v110">
-                v1.1.0 <span class="released">released 11/09/2014</span>
+                v1.1.0 <span class="released">released 2014-11-09</span>
             </div>
             <div id="v110" class="card-block collapse">
                 <p>New Features</p>
@@ -538,7 +538,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v102">
-                v1.0.2 <span class="released">released 08/28/2014</span>
+                v1.0.2 <span class="released">released 2014-08-28</span>
             </div>
             <div id="v102" class="card-block collapse">
                 <p>Bugs</p>
@@ -550,7 +550,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v101">
-                v1.0.1 <span class="released">released 08/23/2014</span>
+                v1.0.1 <span class="released">released 2014-08-23</span>
             </div>
             <div id="v101" class="card-block collapse">
                 <p>General</p>
@@ -584,7 +584,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v100">
-                v1.0.0 <span class="released">released 07/12/2014</span>
+                v1.0.0 <span class="released">released 2014-07-12</span>
             </div>
             <div id="v100" class="card-block collapse">
                 <p>Initial version</p>
