@@ -13,10 +13,44 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
-            <div class="card-header" data-toggle="collapse" data-target="#v148">
-                v1.4.8 <span class="released">released 31/07/2016</span>
+            <div class="card-header" data-toggle="collapse" data-target="#v149">
+                v1.4.9 <span class="released">released 2016-10-30</span>
             </div>
-            <div id="v148" class="card-block collapse in">
+            <div id="v149" class="card-block collapse in">
+                <p>New Features</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-447') }} - InvoicePlane now ships with a config file for Docker</li>
+                </ul>
+                <p>Improvement</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-186') }} - New optiosn for recurring invoices</li>
+                    <li>{{ IP::devLink('IP-422') }} - Improved security for sessions</li>
+                    <li>{{ IP::devLink('IP-444') }} - mPDF updated to version 6.1</li>
+                    <li>{{ IP::devLink('IP-450') }} - Problems with URLs solved</li>
+                    <li>{{ IP::devLink('IP-454') }} - Updated default data and settings</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-382') }} - Fix for layout issues</li>
+                    <li>{{ IP::devLink('IP-434') }} - Smaller fixes for the guest view</li>
+                    <li>{{ IP::devLink('IP-435') }} - Fixed displaying of amounts for taxes</li>
+                    <li>{{ IP::devLink('IP-436') }} - Fix for payments for recurring invoices</li>
+                    <li>{{ IP::devLink('IP-440') }} - Emails can now be sent with an empty body</li>
+                    <li>{{ IP::devLink('IP-441') }} - Clients can now be added to user accounts again</li>
+                    <li>{{ IP::devLink('IP-443') }} - Guest views are now more secure</li>
+                    <li>{{ IP::devLink('IP-445') }} - Fixed alert messages for user password reset</li>
+                    <li>{{ IP::devLink('IP-446') }} - Fixed the 'Today' button of the datepicker</li>
+                    <li>{{ IP::devLink('IP-448') }} - Fixed issue with mPDf and the translation function</li>
+                    <li>{{ IP::devLink('IP-449') }} - Updated logging and updated debug mode</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v148">
+                v1.4.8 <span class="released">released 2016-07-31</span>
+            </div>
+            <div id="v148" class="card-block collapse">
                 <p>Improvement</p>
                 <ul>
                     <li>{{ IP::devLink('IP-255') }} - Do not generate invoice number for draft invoices</li>
