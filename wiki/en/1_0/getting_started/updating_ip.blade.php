@@ -9,12 +9,15 @@
     <h2 class="page-title">Update InvoicePlane</h2>
 
     <ol>
-        <li>Make a backup of your database and all files.</li>
-        <li>Download the latest version from <a href="https://invoiceplane.com/downloads" class="ext">InvoicePlane.com</a>.
+        <li><b>Make a backup of your database and all files!</b> This is very important to prevent any data loss.</li>
+        <li>Download the latest version from <a href="https://invoiceplane.com/downloads" class="ext">InvoicePlane.com</a>.</li>
+        <li>Copy all files to the root directory of your InvoicePlane installation but <b>do not</b> overwrite the following files:
+            <ul>
+                <li><code>/application/config/database.php</code></li>
+                <li>Customized templates in <code>/application/views/</code></li>
+            </ul>
         </li>
-        <li>Copy all files to the root directory of your InvoicePlane installation but <b>do not</b> overwrite the file
-            <code>/application/config/database.php</code>!
-        </li>
+        <li>Update the URL in the <code>/index.php</code> file.</li>
         <li>Open <code>http://yourdomain.com/setup</code> and follow the instructions. The app will run all updates on
             it's own.
         </li>
