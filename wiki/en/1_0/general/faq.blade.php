@@ -63,18 +63,17 @@
             <div class="card-block">
                 <p>You have a problem with some errors, you are stuck and need help? We would like to help you but first we need some help from you: error logs.</p>
                 <ol>
-                    <li>Enable the debug mode in the system settings in the General Settings tab.</li>
+                    <li>Enable the debug mode by setting the <code>IP_DEBUG</code> option in the <code>/index.php</code> file to <code>'true'</code></li>
                     <li>Try again what caused the error, e.g. creating a new invoice which does not work.</li>
                     <li>
                         Get the log files:
                         <ul>
                             <li>Open the folder <code>/application/logs/</code>, open the log file and copy the whole content.</li>
-                            <li>Search your web server error logs.</li>
+                            <li>Take a look at your web servers error logs.</li>
                             <li>Open the console of your browser (<a href="http://webmasters.stackexchange.com/a/77337/20720">Tutorial</a>), the error may be logged there.</li>
                         </ul>
                     </li>
-                    <li>Save the content on the logs and the output of the browser console to <a href="https://paste.invoiceplane.com/">Paste.InvoicePlane.com</a> and post this link with a small description to the <a href="https://community.invoiceplane.com">Community Forums</a>.<br/>
-                    You will get further help there.</li>
+                    <li>Save the content on the logs and the output of the browser console to <a href="https://paste.invoiceplane.com/">Paste.InvoicePlane.com</a> and post this link with a small description to the <a href="https://community.invoiceplane.com">Community Forums</a>.<br/>You will get further help there.</li>
                 </ol>
             </div>
         </div>
