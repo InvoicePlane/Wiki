@@ -11,12 +11,25 @@
     <div class="changelog">
 
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
+        
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v1410">
+                v1.4.10 <span class="released">released 2016-11-12</span>
+            </div>
+            <div id="v149" class="card-block collapse in">
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-382') }} - Fix for layout issues</li>
+                    <li>{{ IP::devLink('IP-434') }} - Smaller fixes for the guest view</li>
+                </ul>
+            </div>
+        </div>
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v149">
                 v1.4.9 <span class="released">released 2016-10-30</span>
             </div>
-            <div id="v149" class="card-block collapse in">
+            <div id="v149" class="card-block collapse">
                 <p>New Features</p>
                 <ul>
                     <li>{{ IP::devLink('IP-447') }} - InvoicePlane now ships with a config file for Docker</li>
