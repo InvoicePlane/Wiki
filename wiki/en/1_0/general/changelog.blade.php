@@ -19,8 +19,8 @@
             <div id="v149" class="card-block collapse in">
                 <p>Fixed Bugs</p>
                 <ul>
-                    <li>{{ IP::devLink('IP-382') }} - Fix for layout issues</li>
-                    <li>{{ IP::devLink('IP-434') }} - Smaller fixes for the guest view</li>
+                    <li>{{ IP::devLink('IP-455') }} - Fixes the ZUGFeRD implementation for PDF files</li>
+                    <li>{{ IP::devLink('IP-457') }} - Patch for security vulnerability</li>
                 </ul>
             </div>
         </div>
