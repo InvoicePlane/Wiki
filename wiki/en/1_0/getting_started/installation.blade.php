@@ -17,6 +17,7 @@
         <li>Upload the files to your web server, either into its own subdirectory or into the public root
             of the web server.
         </li>
+        <li>Open <code>index.php</code> and set your URL like instructed in the file.</li>
         <li>Run the InvoicePlane installer from your web browser and follow his instructions: <code>http://your-domain.com/index.php/setup</code>
         </li>
     </ol>
