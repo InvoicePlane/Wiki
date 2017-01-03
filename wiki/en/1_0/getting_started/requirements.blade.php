@@ -9,12 +9,13 @@
     <h2 class="page-title">Requirements</h2>
 
     <p>If you want to use InvoicePlane you have to follow these requirements:</p>
+
     <ul>
         <li>
             A webserver / webhost with the following specifications:
             <ul>
                 <li>MySQL > 5.x</li>
-                <li>PHP > 5.4.0 with the following PHP extensions:</li>
+                <li>PHP > 5.5.0 with the following PHP extensions:</li>
                 <ul>
                     <li>php-gd</li>
                     <li>php-hash</li>
@@ -31,6 +32,10 @@
         </li>
         <li>and a modern and up-to-date web browser.</li>
     </ul>
+    
+    <div class="alert alert-danger">
+        <p>Please notice that PHP 5.5 is no longer supported and should not be used anymore for producton environments!</p>
+    </div>
 
     <?php
     $article_pagination = array(
