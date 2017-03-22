@@ -46,7 +46,7 @@
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.0/settings/merchant-account',
+                    'url' => '/en/1.0/settings/online-payments',
                     'title' => 'Merchant Account Settings',
                     'type' => 'article'
             )

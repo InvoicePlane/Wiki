@@ -25,7 +25,7 @@
         <a href="/en/1.0/settings/email">eMail Settings</a>
     </li>
     <li>
-        <a href="/en/1.0/settings/merchant-account">Merchant Account</a>
+        <a href="/en/1.0/settings/online-payments">Online Payments</a>
     </li>
     <li>
         <a href="/en/1.0/settings/updatecheck">Updatecheck</a>
