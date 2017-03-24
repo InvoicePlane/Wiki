@@ -6,9 +6,88 @@
 
 @section('content')
 
-<h2 class="page-title">About InvoicePlane</h2>
+    <h2 class="page-title">About InvoicePlane</h2>
 
-<p>InvoicePlane is an open source software which was built to offer a free application for client management, invoicing and payment tracking.<br/>
-    If you want to learn more about the application take a look at the <a href="https://invoiceplane.com/" class="ext">official website</a>.</p>
+    <img src="https://invoiceplane.com/assets/img/preview.jpg" alt="Preview for InvoicePlane" class="mb-2">
+
+    <div class="alert alert-info text-center">
+        <p class="mt-2 mb-2">
+            InvoicePlane is a self-hosted open source application for managing your quotes, invoices, clients and
+            payments.<br>
+            Installed more than 30.000 times in 180 countries.
+        </p>
+    </div>
+
+    <div id="features" class="mt-5">
+        <div class="row mb-4">
+
+            <div class="col text-center">
+                <div class="card card-block" style="height: 100%;">
+                    <i class="fa fa-3x fa-dollar text-primary mb-2"></i>
+
+                    <h3>Quotes, Invoices, Payments</h3>
+
+                    <p>InvoicePlane is a solid app to manage your complete billing circle: from quotes over invoices to
+                        payments.</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="card card-block" style="height: 100%;">
+                    <i class="fa fa-3x fa-users text-primary mb-2"></i>
+
+                    <h3>Manage your Clients</h3>
+
+                    <p>The application provides CRM-like management for your clients. Enter contact details, notes or
+                        add
+                        custom fields.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mb-4">
+
+            <div class="col text-center">
+                <div class="card card-block" style="height: 100%;">
+                    <i class="fa fa-3x fa-cogs text-primary mb-2"></i>
+
+                    <h3>Customize InvoicePlane</h3>
+
+                    <p>You can customize InvoicePlane to make sure it fits your needs: amount formats, email and PDF
+                        templates and many more.</p>
+                </div>
+            </div>
+
+            <div class="col text-center">
+                <div class="card card-block" style="height: 100%;">
+                    <i class="fa fa-3x fa-credit-card text-primary mb-2"></i>
+
+                    <h3>One-Click Online Payments</h3>
+
+                    <p>Let your clients use PayPal to pay the invoices. Online, with just one simple click.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row mb-4">
+
+            <div class="col text-center">
+                <div class="card card-block" style="height: 100%;">
+                    <i class="fa fa-3x fa-globe text-primary mb-2"></i>
+
+                    <h3>Multilanguage Interface</h3>
+
+                    <p>InvoicePlane is fully translated into 23 languages by community members and more languages are
+                        coming
+                        soon.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <p>
+        <a href="https://invoiceplane.com/" class="btn btn-primary btn-lg">Learn more on InvoicePlane.com</a>
+    </p>
 
 @stop

@@ -6,10 +6,19 @@
 
 @section('content')
 
-    <div class="alert alert-info">
-        <p>Welcome to the InvoicePlane Wiki.<br/>If you want to know how to use InvoicePlane or if you have any
+    <h1>
+        <img src="{{ asset('assets/img/logo_300x150.png') }}" alt="InvoicePlane">
+        <span class="sr-only">InvoicePlane Wiki</span>
+    </h1>
+
+    <div class="jumbotron">
+        <h2>Welcome to the InvoicePlane Wiki</h2>
+        <p class="lead">
+            If you want to know how to use InvoicePlane or if you have any
             questions take a look at this wiki. You should find a lot of useful information about the software and each
-            module.</p>
+            module.
+        </p>
+
     </div>
 
     <h2>About InvoicePlane</h2>
