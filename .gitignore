@@ -1,8 +1,4 @@
 /vendor
 /node_modules
 _ide_helper.php
-/resources/assets/sources
-/public/assets/js
-/public/assets/css
-/public/build
 .env

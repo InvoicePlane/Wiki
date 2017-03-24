@@ -9,7 +9,7 @@
 
     <link rel="icon" href="{{ asset('assets/img/logo_64x64.png') }}" type="image/png"/>
 
-    <link href="{{ elixir('assets/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/build/app.css') }}" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -41,8 +41,8 @@
 
 </div>
 
-<script src="{{ elixir('assets/js/dependencies.js') }}"></script>
-<script src="{{ elixir('assets/js/app.js') }}"></script>
+<script src="{{ asset('assets/build/dependencies.min.js') }}"></script>
+<script src="{{ asset('assets/build/app.min.js') }}"></script>
 
 <!-- Piwik -->
 <script type="text/javascript">
