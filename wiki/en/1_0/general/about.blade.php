@@ -19,9 +19,9 @@
     </div>
 
     <div id="features" class="mt-5">
-        <div class="row mb-4">
+        <div class="row">
 
-            <div class="col text-center">
+            <div class="col text-center  mb-4">
                 <div class="card card-block" style="height: 100%;">
                     <i class="fa fa-3x fa-dollar text-primary mb-2"></i>
 
@@ -32,7 +32,7 @@
                 </div>
             </div>
 
-            <div class="col text-center">
+            <div class="col text-center  mb-4">
                 <div class="card card-block" style="height: 100%;">
                     <i class="fa fa-3x fa-users text-primary mb-2"></i>
 
@@ -45,9 +45,9 @@
             </div>
 
         </div>
-        <div class="row mb-4">
+        <div class="row">
 
-            <div class="col text-center">
+            <div class="col text-center mb-4">
                 <div class="card card-block" style="height: 100%;">
                     <i class="fa fa-3x fa-cogs text-primary mb-2"></i>
 
@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="col text-center">
+            <div class="col text-center mb-4">
                 <div class="card card-block" style="height: 100%;">
                     <i class="fa fa-3x fa-credit-card text-primary mb-2"></i>
 
@@ -69,9 +69,9 @@
             </div>
 
         </div>
-        <div class="row mb-4">
+        <div class="row">
 
-            <div class="col text-center">
+            <div class="col text-center mb-4">
                 <div class="card card-block" style="height: 100%;">
                     <i class="fa fa-3x fa-globe text-primary mb-2"></i>
 
@@ -87,7 +87,7 @@
     </div>
 
     <p>
-        <a href="https://invoiceplane.com/" class="btn btn-primary btn-lg">Learn more on InvoicePlane.com</a>
+        <a href="https://invoiceplane.com/" class="btn btn-primary">Learn more on InvoicePlane.com</a>
     </p>
 
 @stop
