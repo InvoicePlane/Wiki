@@ -14,7 +14,7 @@
         <li><a href="https://invoiceplane.com/downloads">Download</a> and extract the archive.</li>
         <li>Create an empty database on your web server.</li>
         <li>Upload the files to your web server, either into its own subdirectory or into the public root of the web server.</li>
-        <li>Make a copy of the <code>ipconfig.php.example</code> file and rename it to <code>ipconfig.php</code>.</li>
+        <li>Make a copy of the <code>ipconfig.php.example</code> file and rename the copy to <code>ipconfig.php</code></li>
         <li>Open the <code>ipconfig.php</code> file and add your URL in it.</li>
         <li>Run the InvoicePlane installer from your web browser and follow his instructions: <code>http://your-domain.com/index.php/setup</code>
         </li>
