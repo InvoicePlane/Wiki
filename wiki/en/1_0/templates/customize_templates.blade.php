@@ -17,10 +17,11 @@
         Please remember: Before doing any customizations, make a copy of a default template! If you make changes in the
         default templates they will be overwritten on updates.
     </div>
+
     <div class="alert alert-info">
         Hint: PDF templates will be generated with a PDF engine called mPDF. This means that some styles may not work
         because of conversion from HTML to PDF. If you need help with styling please refer to the <a
-                href="http://mpdf1.com/manual/index.php">mPDF documentation</a>.
+                href="https://mpdf.github.io/" class="ext">mPDF documentation</a>.
     </div>
 
     <h3 id="look-feel">
@@ -89,7 +90,8 @@ stdClass Object
             </tr>
             <tr>
                 <td><b>Format amounts</b><br>
-                    If you want to display amounts you have to use this code in order to display the amount in the correct format.
+                    If you want to display amounts you have to use this code in order to display the amount in the
+                    correct format.
                 </td>
                 <td>
                     <pre>&lt;?php echo format_currency($invoice->variable_name); ?&gt;</pre>
@@ -98,7 +100,8 @@ stdClass Object
             <tr>
                 <td>
                     <b>Conditional Statements</b><br/>
-                    Only display code if a variable is not empty. This could be used for example if you don't want to display the taxes column if there are no taxes.
+                    Only display code if a variable is not empty. This could be used for example if you don't want to
+                    display the taxes column if there are no taxes.
                 </td>
                 <td>
                     <pre>&lt;?php if(!empty($invoice->variable_name)): ?&gt;
@@ -121,16 +124,16 @@ stdClass Object
 
     <?php
     $article_pagination = array(
-            'previous' => array(
-                    'url' => '/en/1.0/templates/using-templates',
-                    'title' => 'Using Templates',
-                    'type' => 'article'
-            ),
-            'next' => array(
-                    'url' => '/en/1.0/system/',
-                    'title' => 'System',
-                    'type' => 'section'
-            )
+        'previous' => array(
+            'url' => '/en/1.0/templates/using-templates',
+            'title' => 'Using Templates',
+            'type' => 'article'
+        ),
+        'next' => array(
+            'url' => '/en/1.0/system/',
+            'title' => 'System',
+            'type' => 'section'
+        )
     );
     ?>
 

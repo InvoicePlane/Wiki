@@ -39,8 +39,7 @@
                     <h3>Manage your Clients</h3>
 
                     <p>The application provides CRM-like management for your clients. Enter contact details, notes or
-                        add
-                        custom fields.</p>
+                        add custom fields.</p>
                 </div>
             </div>
 
@@ -77,9 +76,7 @@
 
                     <h3>Multilanguage Interface</h3>
 
-                    <p>InvoicePlane is fully translated into 23 languages by community members and more languages are
-                        coming
-                        soon.</p>
+                    <p>InvoicePlane is fully translated into 23 languages by community members and more languages are coming soon.</p>
                 </div>
             </div>
 
