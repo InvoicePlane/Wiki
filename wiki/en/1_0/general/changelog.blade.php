@@ -16,7 +16,7 @@
             <div class="card-header" data-toggle="collapse" data-target="#v1410">
                 v1.4.10 <span class="released">released 2016-11-12</span>
             </div>
-            <div id="v149" class="card-block collapse in">
+            <div id="v1410" class="card-block collapse in">
                 <p>Fixed Bugs</p>
                 <ul>
                     <li>{{ IP::devLink('IP-455') }} - Fixes the ZUGFeRD implementation for PDF files</li>
