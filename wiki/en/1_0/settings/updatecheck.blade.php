@@ -19,7 +19,7 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.0/settings/online-payments',
+                    'url' => '/en/1.0/settings/merchant-account',
                     'title' => 'Merchant Account Settings',
                     'type' => 'article'
             ),

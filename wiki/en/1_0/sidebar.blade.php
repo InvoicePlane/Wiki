@@ -50,7 +50,7 @@
         <li><a href="{{ url('en/1.0/settings/quotes') }}">Quotes Settings</a></li>
         <li><a href="{{ url('en/1.0/settings/taxes') }}">Tax Settings</a></li>
         <li><a href="{{ url('en/1.0/settings/email') }}">eMail Settings</a></li>
-        <li><a href="{{ url('en/1.0/settings/online-payments') }}">Online Payments</a></li>
+        <li><a href="{{ url('en/1.0/settings/merchant-account') }}">Merchant Account</a></li>
         <li><a href="{{ url('en/1.0/settings/updatecheck') }}">Updatecheck</a></li>
         <li><a href="{{ url('en/1.0/settings/custom-fields') }}">Custom Fields</a></li>
         <li><a href="{{ url('en/1.0/settings/email-templates') }}">eMail Templates</a></li>
