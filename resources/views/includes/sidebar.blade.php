@@ -9,7 +9,7 @@
         <li>
             <a href="#" data-toggle="collapse" data-target="#submenu-languages" class="has-submenu collapsed">
                 @lang('global.languages')
-                <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
+                    <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
             </a>
             <ul id="submenu-languages" class="submenu collapse">
                 @foreach(Config::get('app.available_locales') as $locale)
@@ -19,13 +19,13 @@
         </li>
         <li>
             <a href="#" data-toggle="collapse" data-target="#submenu-versions" class="has-submenu collapsed">
-                @lang('global.versions')
+                @lang('global.version') {{ $current_version }}
                 <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
             </a>
             <ul id="submenu-versions" class="submenu collapse">
                 @foreach(Config::get('app.versions') as $version)
                     <li>
-                        <a href="{{ url(App::getLocale() . '/' . str_replace('_', '.', $version)) }}">
+                        <a href="{{ url(App::getLocale() . '/' . str_replace('_', '.', $version) . $current_url) }}">
                             {{ str_replace('_', '.', $version) }}
                         </a>
                     </li>
@@ -42,7 +42,7 @@
         <li>
             <a href="#" data-toggle="collapse" data-target="#submenu-links" class="has-submenu collapsed">
                 @lang('global.links')
-                <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
+                    <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
             </a>
             <ul id="submenu-links" class="submenu collapse">
                 <li>
