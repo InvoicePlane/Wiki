@@ -158,6 +158,12 @@
         Choose the appropriate tax rate and placement from the window that appears and press the <code class="green">Submit</code>
         button. That tax will be calculated against the quote total.</p>
 
+    <div class="alert alert-warning">
+        Caution! Do not mix item and quote taxes. Both tax methods were implemented for countries with different law structures and do not work together very well. If you use both tax method at the same time we can't promise that all calculations are executed correctly.
+        <br>
+        Also, do <b>not</b> use item taxes to apply any service charges or similar extra charges. If you need to apply charges, add a new item or calculate the charges manually.
+    </div>
+
     <h4 id="copy-quote">
         Copying the Quote <?php IP::headlineLink('/en/1.0/modules/quotes#copy-quote'); ?>
     </h4>

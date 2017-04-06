@@ -168,12 +168,18 @@
     <p>Invoice discounts can be added for the whole invoice directly above the invoice total. You can either choose to add a discount as an amount (e.g. 200 $) or as a percentage of the subtotal (e.g. 5%).</p>
 
     <h4 id="add-tax">
-        Adding Tax <?php IP::headlineLink('/en/1.0/modules/invoices#add-tax'); ?>
+        Adding Taxes <?php IP::headlineLink('/en/1.0/modules/invoices#add-tax'); ?>
     </h4>
 
     <p>To apply a tax against the entire invoice, choose <code>Add Invoice Tax</code> from the Options button. Choose
         the appropriate tax rate and placement from the window that appears and press the <code>Submit</code> button.
         That tax will be calculated against the invoice total.</p>
+
+    <div class="alert alert-warning">
+        Caution! Do not mix item and invoice taxes. Both tax methods were implemented for countries with different law structures and do not work together very well. If you use both tax method at the same time we can't promise that all calculations are executed correctly.
+        <br>
+        Also, do <b>not</b> use item taxes to apply any service charges or similar extra charges. If you need to apply charges, add a new item or calculate the charges manually.
+    </div>
 
     <h4 id="copy">
         Copying an Invoice <?php IP::headlineLink('/en/1.0/modules/invoices#copy'); ?>
