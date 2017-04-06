@@ -9,7 +9,7 @@
     <h2 class="page-title">Quotes</h2>
 
     <h3 id="lifecycle">
-        The Quote Lifecycle <?php IP::headlineLink('/en/1.5/modules/quotes#lifecycle'); ?>
+        The Quote Lifecycle <?php IP::headlineLink('/en/1.0/modules/quotes#lifecycle'); ?>
     </h3>
 
     <p>Quote statuses follow the lifecycle of a quote from draft to approved and allow you to keep track of where each
@@ -48,7 +48,7 @@
     </ul>
 
     <h3 id="view-quote">
-        Viewing Quotes <?php IP::headlineLink('/en/1.5/modules/quotes#view-quote'); ?>
+        Viewing Quotes <?php IP::headlineLink('/en/1.0/modules/quotes#view-quote'); ?>
     </h3>
 
     <p>To view the quote list, click <code>Quotes</code> from the main menu and select <code>View Quotes</code>.</p>
@@ -75,7 +75,7 @@
     </ul>
 
     <h3 id="create-quote">
-        Creating a Quote <?php IP::headlineLink('/en/1.5/modules/quotes#create-quote'); ?>
+        Creating a Quote <?php IP::headlineLink('/en/1.0/modules/quotes#create-quote'); ?>
     </h3>
 
     <p>To create a new quote, either choose <code>Quotes</code> from the main menu and select <code>Create Quote</code>,
@@ -110,7 +110,7 @@
     </ul>
 
     <h4 id="add-products">
-        Adding Products <?php IP::headlineLink('/en/1.5/modules/quotes#add-products'); ?>
+        Adding Products <?php IP::headlineLink('/en/1.0/modules/quotes#add-products'); ?>
     </h4>
 
     <p>To add saved products, press the <code>Add Product</code> button. Choose the product you want to add and mark the
@@ -125,14 +125,14 @@
     </p>
 
     <h4 id="item-order">
-        Changing Item Order <?php IP::headlineLink('/en/1.5/modules/quotes#item-order'); ?>
+        Changing Item Order <?php IP::headlineLink('/en/1.0/modules/quotes#item-order'); ?>
     </h4>
 
     <p>The order in which an item appears on a quote or invoice can be changed by dragging the row to a new position
         with the <code><i class="fa fa-bars"></i></code> icon.</p>
 
     <h4 id="discounts">
-        Discounts <?php IP::headlineLink('/en/1.5/modules/invoices#discounts'); ?>
+        Discounts <?php IP::headlineLink('/en/1.0/modules/invoices#discounts'); ?>
     </h4>
 
     <p>With the release of InvoicePlane 1.4.0 we introduced discounts for each quotes and invoices. There are two separate types of discounts which can by applied:</p>
@@ -151,15 +151,21 @@
     <p>Quote discounts can be added for the whole quote directly above the quote total. You can either choose to add a discount as an amount (e.g. 200 $) or as a percentage of the subtotal (e.g. 5%).</p>
 
     <h4 id="add-tax">
-        Add Tax to Quote <?php IP::headlineLink('/en/1.5/modules/quotes#add-tax'); ?>
+        Add Tax to Quote <?php IP::headlineLink('/en/1.0/modules/quotes#add-tax'); ?>
     </h4>
 
     <p>To apply a tax against the entire quote, choose <code>Add Quote Tax</code> from the <code>Options</code> button.
         Choose the appropriate tax rate and placement from the window that appears and press the <code class="green">Submit</code>
         button. That tax will be calculated against the quote total.</p>
 
+    <div class="alert alert-warning">
+        Caution! Do not mix item and quote taxes. Both tax methods were implemented for countries with different law structures and do not work together very well. If you use both tax method at the same time we can't promise that all calculations are executed correctly.
+        <br>
+        Also, do <b>not</b> use item taxes to apply any service charges or similar extra charges. If you need to apply charges, add a new item or calculate the charges manually.
+    </div>
+
     <h4 id="copy-quote">
-        Copying the Quote <?php IP::headlineLink('/en/1.5/modules/quotes#copy-quote'); ?>
+        Copying the Quote <?php IP::headlineLink('/en/1.0/modules/quotes#copy-quote'); ?>
     </h4>
 
     <p>To copy a quote, choose <code>Copy Quote</code> from the <code>Options</code> button on the edit quote page.
@@ -167,7 +173,7 @@
         items, taxes and amounts from the source quote will be copied to a new quote.</p>
 
     <h4 id="quote-to-invoice">
-        Generate Invoice from Quote <?php IP::headlineLink('/en/1.5/modules/quotes#quote-to-invoice'); ?>
+        Generate Invoice from Quote <?php IP::headlineLink('/en/1.0/modules/quotes#quote-to-invoice'); ?>
     </h4>
 
     <p>
@@ -185,12 +191,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/modules/clients',
+                    'url' => '/en/1.0/modules/clients',
                     'title' => 'Clients',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/modules/invoices',
+                    'url' => '/en/1.0/modules/invoices',
                     'title' => 'Invoices',
                     'type' => 'article'
             )
