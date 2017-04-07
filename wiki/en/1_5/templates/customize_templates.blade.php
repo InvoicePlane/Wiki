@@ -37,26 +37,79 @@
         First Steps <?php IP::headlineLink('/en/1.5/templates/customize-templates#first-steps'); ?>
     </h3>
 
-    <p>Before you start to add any new fields or create conditional statements you should get an overview of which
-        variables are availalbe for the quote or invoice. Therefore go to the bottom of the template and add the
-        following code directly above the <code>&lt;/body&gt;</code> tag. Replace <em>invoice</em> with <em>quote</em>
-        if you edit a quote template.</p>
+    <p>InvoicePlane already provides a lot of data for all templates. The table below gives you an overview on which variables are available in the templates.</p>
 
-    <pre>
-&lt;pre&gt;&lt;?php print_r($invoice); ?&gt;&lt;/pre&gt;
-    </pre>
+    <h4>Invoice Templates</h4>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tr>
+                <th>Variable</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>$invoice</code></td>
+                <td>It holds data about the invoice itself, the user that created the invoice and the client that is selected for the invoice. It also provides all payments if there are any in the database.</td>
+            </tr>
+            <tr>
+                <td><code>$invoice_tax_rates</code></td>
+                <td>Provides information about all tax rates that were applied to the invoice</td>
+            </tr>
+            <tr>
+                <td><code>$items</code></td>
+                <td>Contians all invoice items with their corresponding data.</td>
+            </tr>
+            <tr>
+                <td><code>$payment_method</code></td>
+                <td>Provides information about the selected payment method.</td>
+            </tr>
+            <tr>
+                <td><code>$custom_fields</code></td>
+                <td>Contians custom fields for the invoice, the user, the client and if available for the parent quote.</td>
+            </tr>
+        </table>
+    </div>
+
+    <h4>Quote Templates</h4>
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tr>
+                <th>Variable</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>$quote</code></td>
+                <td>It holds data about the quotes itself, the user that created the quote and the client that is selected for the quotes.</td>
+            </tr>
+            <tr>
+                <td><code>$quote_tax_rates</code></td>
+                <td>Provides information about all tax rates that were applied to the quote.</td>
+            </tr>
+            <tr>
+                <td><code>$items</code></td>
+                <td>Contians all quote items with their corresponding data.</td>
+            </tr>
+            <tr>
+                <td><code>$custom_fields</code></td>
+                <td>Contians custom fields for the quote, the user and the client.</td>
+            </tr>
+        </table>
+    </div>
+
+    <p>If you want to know which data is available in every variable go to the bottom of the template and add the following code directly above the <code>&lt;/body&gt;</code> tag. Replace <em>invoice</em> with the name of the variable your want to look up.</p>
+
+    <pre>&lt;pre&gt;&lt;?php print_r($invoice); ?&gt;&lt;/pre&gt;</pre>
 
     <p>If you load the template now you will see something like this but with hundred more lines:</p>
 
-    <pre>
-stdClass Object
+    <pre>stdClass Object
 (
- [invoice_custom_id] => 13
+ [client_id] => 13
  [invoice_id] => 24
- [invoice_custom_archive_id] =>
- [client_custom_id] => 8
-...
-    </pre>
+ [user_id] => 2
+ [invoice_group_id] => 8
+...</pre>
 
     <p>This is the list of all available variables where the part in the brackets (e.g. <code>invoice_id</code>) is the
         name of the variable and the part after the <code>=></code> is the content of the variable.</p>
