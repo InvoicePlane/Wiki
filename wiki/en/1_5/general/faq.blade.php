@@ -63,7 +63,7 @@
             <div class="card-block">
                 <p>You have a problem with some errors, you are stuck and need help? We would like to help you but first we need some help from you: error logs.</p>
                 <ol>
-                    <li>Enable the debug mode by replaceing <code>IP_DEBUG</code> with <code>IP_DEBUG</code> in the <code>/ipconfig.php</code> file.</li>
+                    <li>Enable the debug mode by replaceing <code>ENABLE_DEBUG=false</code> with <code>ENABLE_DEBUG=true</code> in the <code>/ipconfig.php</code> file.</li>
                     <li>Try again what caused the error, e.g. creating a new invoice which does not work.</li>
                     <li>
                         Get the log files:
