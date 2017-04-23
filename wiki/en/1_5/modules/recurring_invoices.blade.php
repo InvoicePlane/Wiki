@@ -68,7 +68,7 @@
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/modules/payments',
+                    'url' => '/en/1.5/modules/tasks_projects',
                     'title' => 'Payments',
                     'type' => 'article'
             )

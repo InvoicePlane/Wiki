@@ -273,12 +273,14 @@ body {
     background: lighten($color-status-sent, 40%);
     color: $color-status-sent;
   }
-  &.status-viewed {
+  &.status-viewed,
+  &.status-in-progress {
     background: lighten($color-status-viewed, 40%);
     color: $color-status-viewed;
   }
   &.status-paid,
-  &.status-approved {
+  &.status-approved,
+  &.status-completed {
     background: lighten($color-status-paid-approved, 50%);
     color: $color-status-paid-approved;
   }

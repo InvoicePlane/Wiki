@@ -8,9 +8,7 @@
 
     <h2 class="page-title">Customize Templates</h2>
 
-    <p>As already mentioned you <em>should</em> customize the template files. They are very basic and may not include
-        any new features that were introduced in the latest releases.<br/>
-        For the customization you just need some little knowledge of HTML and CSS. PHP knowledge is not needed by
+    <p>For the customization you just need some little knowledge of HTML and CSS. PHP knowledge is not needed by
         default but may help if you want to achieve special layouts or functions.</p>
 
     <div class="alert alert-warning">
@@ -67,6 +65,10 @@
                 <td><code>$custom_fields</code></td>
                 <td>Contians custom fields for the invoice, the user, the client and if available for the parent quote.</td>
             </tr>
+            <tr>
+                <td><code>$show_item_discounts</code></td>
+                <td>Is true if there are any items with a discount, is false if not. Can be used to display the additional discount column only if there are discounts to display.</td>
+            </tr>
         </table>
     </div>
 
@@ -93,6 +95,10 @@
             <tr>
                 <td><code>$custom_fields</code></td>
                 <td>Contians custom fields for the quote, the user and the client.</td>
+            </tr>
+            <tr>
+                <td><code>$show_item_discounts</code></td>
+                <td>Is true if there are any items with a discount, is false if not. Can be used to display the additional discount column only if there are discounts to display.</td>
             </tr>
         </table>
     </div>

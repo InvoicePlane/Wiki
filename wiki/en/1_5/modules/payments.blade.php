@@ -76,7 +76,7 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/modules/recurring-invoices',
+                    'url' => '/en/1.5/modules/tasks_projects',
                     'title' => 'Recurring Invoices',
                     'type' => 'article'
             ),
