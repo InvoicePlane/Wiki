@@ -33,6 +33,8 @@
 
     <div class="alert alert-warning">Please follow the next steps <b>before</b> running the update / setup!</div>
 
+    <h4>General Upgrade</h4>
+
     <ol>
         <li>The most important change: InvoicePlane now uses a new configuration file that is completely independent from the code itself. This means you set the configuration file once and you will never have to worry about overwriting some important settings. To migrate the configuration, follow these steps:
             <ul>
@@ -48,9 +50,19 @@
         <li>Custom fields were overhauled and are now stored in an entirely other way than before. The setup will convert all existing custom fields. However, double-check if all fields were correctly migrated and if all values are still present. If not, report this bug to the community forums with as much information as possible.</li>
         <li>If you used the merchant settings for online payments before, you have to enter all credentials again as they can't be migrated automatically.
             <br>You can now select from a list of online payment providers. See the <a href="/en/1.5/settings/online-payments">Online Payment</a> page for more information.</li>
+    </ol>
+
+    <h4>Other notable changes</h4>
+
+    <p>The following changes may not affect all users as they address specific parts of the application.</p>
+
+    <ul>
+        <li>The variable `$show-discounts` was renamed to `$show-item-discounts` for PDF templates. If you use the variable, please update it. Please review the
+            <a href="/en/1.5/templates/customize-templates">Customize Templates</a> page for more information about the variables.</li>
+        <li>The files for custom CSS (`custom.css` and `custom-pdf.css`) moved to the `assets/core/css` folder. Make sure you transfer your custom styles to these files.</li>
         <li>If you modified any mPDF settings or added custom fonts, you have to copy these changes to the new location of mPDF which is now stored in this directory:
             <br><code>/vendor/mpdf/mpdf</code></li>
-    </ol>
+    </ul>
 
     <div class="alert alert-info">
         <?php echo trans('global.footernotice') ?>
