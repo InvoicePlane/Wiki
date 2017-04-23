@@ -48,7 +48,7 @@
 
     <p>After selecting a provider InvoicePlane will show you a configuration box will all needed settings. Make sure to enable the provider first. After that fill all needed information. Again: if you are not shure which fields to fill, contact your provider.</p>
 
-    <div class="alert alert-warning">It is highly recommended to test if the online payment is working correctly using the <b>Test Mode</b> is available. This allows you to pay online without transfering real money.</div>
+    <div class="alert alert-warning">It is highly recommended to test if the online payment is working correctly using the <b>Test Mode</b> if available. This allows you to pay online without transfering real money.</div>
 
     <h2>Missing providers</h2>
 
