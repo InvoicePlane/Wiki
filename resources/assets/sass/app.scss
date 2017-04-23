@@ -18,12 +18,12 @@ $color-status-paid-approved: #468847;
 $color-status-rejected-overdue: #B94A48;
 $color-status-canceled: #333333;
 
-$color-sidebar-bg:          $brand-primary;
-$color-sidebar-color:       $gray-lighter;
-$color-sidebar-link:        rgba(255, 255, 255, .75);
-$color-sidebar-link-hover:  rgba(255, 255, 255, 1);
+$color-sidebar-bg: $brand-primary;
+$color-sidebar-color: $gray-lighter;
+$color-sidebar-link: rgba(255, 255, 255, .75);
+$color-sidebar-link-hover: rgba(255, 255, 255, 1);
 
-$font-size-root:    16px;
+$font-size-root: 16px;
 
 @mixin transition-std($transition) {
   transition: $transition 0.2s ease-out;
@@ -319,6 +319,10 @@ body {
 }
 
 .changelog {
+  .card {
+    margin-bottom: $spacer;
+  }
+
   .card-header {
     cursor: pointer;
 
