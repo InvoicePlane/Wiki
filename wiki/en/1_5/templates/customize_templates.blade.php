@@ -35,7 +35,8 @@
         First Steps <?php IP::headlineLink('/en/1.5/templates/customize-templates#first-steps'); ?>
     </h3>
 
-    <p>InvoicePlane already provides a lot of data for all templates. The table below gives you an overview on which variables are available in the templates.</p>
+    <p>InvoicePlane already provides a lot of data for all templates. The table below gives you an overview on which
+        variables are available in the templates.</p>
 
     <h4>Invoice Templates</h4>
 
@@ -47,7 +48,9 @@
             </tr>
             <tr>
                 <td><code>$invoice</code></td>
-                <td>It holds data about the invoice itself, the user that created the invoice and the client that is selected for the invoice. It also provides all payments if there are any in the database.</td>
+                <td>It holds data about the invoice itself, the user that created the invoice and the client that is
+                    selected for the invoice. It also provides all payments if there are any in the database.
+                </td>
             </tr>
             <tr>
                 <td><code>$invoice_tax_rates</code></td>
@@ -63,11 +66,15 @@
             </tr>
             <tr>
                 <td><code>$custom_fields</code></td>
-                <td>Contians custom fields for the invoice, the user, the client and if available for the parent quote.</td>
+                <td>Contians custom fields for the invoice, the user, the client and if available for the parent
+                    quote.
+                </td>
             </tr>
             <tr>
                 <td><code>$show_item_discounts</code></td>
-                <td>Is true if there are any items with a discount, is false if not. Can be used to display the additional discount column only if there are discounts to display.</td>
+                <td>Is true if there are any items with a discount, is false if not. Can be used to display the
+                    additional discount column only if there are discounts to display.
+                </td>
             </tr>
         </table>
     </div>
@@ -82,7 +89,9 @@
             </tr>
             <tr>
                 <td><code>$quote</code></td>
-                <td>It holds data about the quotes itself, the user that created the quote and the client that is selected for the quotes.</td>
+                <td>It holds data about the quotes itself, the user that created the quote and the client that is
+                    selected for the quotes.
+                </td>
             </tr>
             <tr>
                 <td><code>$quote_tax_rates</code></td>
@@ -98,24 +107,28 @@
             </tr>
             <tr>
                 <td><code>$show_item_discounts</code></td>
-                <td>Is true if there are any items with a discount, is false if not. Can be used to display the additional discount column only if there are discounts to display.</td>
+                <td>Is true if there are any items with a discount, is false if not. Can be used to display the
+                    additional discount column only if there are discounts to display.
+                </td>
             </tr>
         </table>
     </div>
 
-    <p>If you want to know which data is available in every variable go to the bottom of the template and add the following code directly above the <code>&lt;/body&gt;</code> tag. Replace <em>invoice</em> with the name of the variable your want to look up.</p>
+    <p>If you want to know which data is available in every variable go to the bottom of the template and add the
+        following code directly above the <code>&lt;/body&gt;</code> tag. Replace <em>invoice</em> with the name of the
+        variable your want to look up.</p>
 
     <pre>&lt;pre&gt;&lt;?php print_r($invoice); ?&gt;&lt;/pre&gt;</pre>
 
     <p>If you load the template now you will see something like this but with hundred more lines:</p>
 
-    <pre>stdClass Object
+    <pre><code>stdClass Object
 (
  [client_id] => 13
  [invoice_id] => 24
  [user_id] => 2
  [invoice_group_id] => 8
-...</pre>
+...</code></pre>
 
     <p>This is the list of all available variables where the part in the brackets (e.g. <code>invoice_id</code>) is the
         name of the variable and the part after the <code>=></code> is the content of the variable.</p>
@@ -180,6 +193,28 @@
             </tbody>
         </table>
     </div>
+
+    <h3 id="debugging">
+        Debugging Templates <?php IP::headlineLink('/en/1.5/templates/customize-templates#debugging'); ?>
+    </h3>
+
+    <p>The PDF engine is not that good in handling errors or HTML that is broken due to PHP errors. You may get output
+        like this:</p>
+
+    <pre><code>Severity: Notice
+Message: Undefined offset: 2
+Filename: src/Tag.php
+Line Number: 1806
+...</code></pre>
+
+    <p>To know what is wrong with your template, you have to add a small code line in your template helper. Open the
+        file <code>application/helpers/pdf_helper.php</code> and add</p>
+
+    <p>Place <code>print_r($html);exit;</code> at line 98 for invoice templates.</p>
+    <p>Place <code>print_r($html);exit;</code> at line 250 for quote templates.</p>
+
+    <p>This will output the plain HTML that will be used to generate your PDF files. If there are any problems with
+        missing or faulty variables or wrong PHP code, you should see the corresponding output here.</p>
 
     <?php
     $article_pagination = array(
