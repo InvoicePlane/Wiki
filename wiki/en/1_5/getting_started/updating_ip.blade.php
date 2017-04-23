@@ -53,6 +53,7 @@
             </ul>
             <p class="alert alert-warning">Make sure you follow he instructions in the <code>ipconfig.php</code> file if you use a subdomain or a subfolder to run InvoicePlane.</p>
         </li>
+        <li>After the configuration is migrated, copy the contents of your old <code>uploads/</code> folder into the new one.</li>
         <li>You can now run the setup by opening <code>IP_URL=http://your-domain.com/index.php/setup</code> in your browser. The setup will then upgrade the database, migrate the custom fields and set a new encription key for you.</li>
     </ol>
 
