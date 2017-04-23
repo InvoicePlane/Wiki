@@ -11,12 +11,67 @@
     <div class="changelog">
 
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
+
+        <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v150">
+                v1.5.0 <span class="released">released 2017-04-23</span>
+            </div>
+            <div id="v150" class="card-block collapse in">
+                <p>New Features</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-46') }} - Add more custom field types</li>
+                    <li>{{ IP::devLink('IP-162') }} - Support for <a href="/en/1.5/modules/tasks_projects">Tasks and Projects</a></li>
+                    <li>{{ IP::devLink('IP-219') }} - Add option to filter products by family while adding to invoice</li>
+                    <li>{{ IP::devLink('IP-317') }} - Support for more than 25 payment gateways using the Omnipay library</li>
+                    <li>{{ IP::devLink('IP-338') }} - InvoicePlane now supports themes</li>
+                    <li>{{ IP::devLink('IP-475') }} - Users can now select units to choose from when adding items / products</li>
+                    <li>{{ IP::devLink('IP-485') }} - Implement CSRF protection</li>
+                    <li>{{ IP::devLink('IP-491') }} - Users can now set a language per client and user</li>
+                    <li>{{ IP::devLink('IP-499') }} - Support for Sumex (Swiss Medical Invoices)</li>
+                </ul>
+                <p>Improvement</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-464') }} - Include the from/to dates in the report PDFs</li>
+                    <li>{{ IP::devLink('IP-465') }} - Support non-standard MySQL ports</li>
+                    <li>{{ IP::devLink('IP-476') }} - Make all quote data available to an invoice if available</li>
+                    <li>{{ IP::devLink('IP-481') }} - Add default_item_tax_rate setting to output</li>
+                    <li>{{ IP::devLink('IP-484') }} - Implement an .env file to store per-setup configuration</li>
+                    <li>{{ IP::devLink('IP-488') }} - Allow to use two digit year number in quote and invoice numbers</li>
+                    <li>{{ IP::devLink('IP-493') }} - Restructure assets to be compatible with theme support</li>
+                    <li>{{ IP::devLink('IP-494') }} - Update mPDF source to a IP fork, update the pdf helper</li>
+                    <li>{{ IP::devLink('IP-495') }} - Make email addresses mandatory for clients</li>
+                    <li>{{ IP::devLink('IP-496') }} - Add email address to client selects to differ in case of duplicate names</li>
+                    <li>{{ IP::devLink('IP-500') }} - Make attachments available in web templates for quotes and invoices</li>
+                    <li>{{ IP::devLink('IP-502') }} - Extend the sidebar with new modules</li>
+                    <li>{{ IP::devLink('IP-503') }} - Dynamically load clients for client select forms</li>
+                    <li>{{ IP::devLink('IP-504') }} - Unify the interface</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-291') }} - The system now supports all new domain names</li>
+                    <li>{{ IP::devLink('IP-301') }} - Special characters no longer break the interface</li>
+                    <li>{{ IP::devLink('IP-420') }} - Multiple recurring invoices get computed correctly if on same month</li>
+                    <li>{{ IP::devLink('IP-456') }} - Missing echo in quotes_view.php (guest) was added</li>
+                    <li>{{ IP::devLink('IP-459') }} - Fixes a security problem with user-uploaded files</li>
+                    <li>{{ IP::devLink('IP-462') }} - Fixes a security problem with cross-user inputs</li>
+                    <li>{{ IP::devLink('IP-468') }} - Fixes a bug where user couldn't login</li>
+                    <li>{{ IP::devLink('IP-469') }} - Remove logo link not translated in settings</li>
+                    <li>{{ IP::devLink('IP-472') }} - Invoice no longer shown as paid despite client didn't paid complete amount</li>
+                    <li>{{ IP::devLink('IP-477') }} - Nonstandard address format in templates</li>
+                    <li>{{ IP::devLink('IP-483') }} - Small code fixes</li>
+                    <li>{{ IP::devLink('IP-487') }} - Fixes bug where credit invoices couldn't be paid because "Payment amount cannot exceed invoice balance"</li>
+                    <li>{{ IP::devLink('IP-489') }} - Invoices are now set to read-only after adding complete payment</li>
+                    <li>{{ IP::devLink('IP-497') }} - Public quotes now have a approve / reject functionality</li>
+                    <li>{{ IP::devLink('IP-501') }} - Fixes bug where client custom fields are not saved to the database</li>
+                </ul>
+            </div>
+        </div>
         
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v1410">
                 v1.4.10 <span class="released">released 2016-11-12</span>
             </div>
-            <div id="v1410" class="card-block collapse in">
+            <div id="v1410" class="card-block collapse">
                 <p>Fixed Bugs</p>
                 <ul>
                     <li>{{ IP::devLink('IP-455') }} - Fixes the ZUGFeRD implementation for PDF files</li>
