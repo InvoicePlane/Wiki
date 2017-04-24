@@ -168,7 +168,7 @@
 
     <p>To access a specific custom field, you have to use the followng code example:</p>
 
-    <pre><code>&lt?php echo $custom_fields['client']['CRM ID'] ?&gt</code></pre>
+    <pre><code>&lt;?php echo $custom_fields['client']['CRM ID'] ?&gt;</code></pre>
 
     <p>where <em>client</em> should be the group and <em>CRM ID</em> should be the label of your custom field. Using the
         code example would simply output <code>346999-13400</code> in your template.</p>
@@ -179,9 +179,9 @@
 
     <p>Yes/no fields will have the value <code>1</code> for yes and <code>0</code> for no. This way you can use the custom field in conditional statements like this:</p>
 
-    <pre><code>&lt?php if ($custom_fields['quote']['Special discount offered?']) {
+    <pre><code>&lt;?php if ($custom_fields['quote']['Special discount offered?']) {
   // Do something here if yes was selected for the 'Special discount offered?' custom field
-} ?%gt</code></pre>
+} ?&gt;</code></pre>
 
     <h3 id="code-examples">
         Code Examples <?php IP::headlineLink('/en/1.5/templates/customize-templates#code-examples'); ?>
