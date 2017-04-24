@@ -133,6 +133,56 @@
     <p>This is the list of all available variables where the part in the brackets (e.g. <code>invoice_id</code>) is the
         name of the variable and the part after the <code>=></code> is the content of the variable.</p>
 
+    <h3 id="custom-fields">
+        Adding Custom Fields <?php IP::headlineLink('/en/1.5/templates/customize-templates#custom-fields'); ?>
+    </h3>
+
+    <p>Custom fields work in a special way. As custom fields are added by the user there is no way to define which
+        fields will be available. Therefore InvoicePlane searches for all available custom fields before printing the
+        template. All fields are stored in the <code>$custom_fields</code> variable that may look like this:</p>
+
+    <pre><code>Array
+(
+    [invoice] => Array
+        (
+            [Sent at] => 2016-11-15
+        )
+    [client] => Array
+        (
+            [CRM ID] => 346999-13400
+            [has Supervisor] => 1
+            [Supervisors] => 1
+        )
+    [user] => Array
+        ()
+    [quote] => Array
+        (
+            [Sent at] => 2016-11-10
+            [Special discount offered?] => 0
+        )
+)</code></pre>
+
+    <p>The <code>$custom_fields</code> variable is a collection of all custom field types that group all available
+        custom fields. As you can see in the example, the invoice has a custom field named <em>Sent at</em>, the client
+        has a field called <em>CRM ID</em> and so on.</p>
+
+    <p>To access a specific custom field, you have to use the followng code example:</p>
+
+    <pre><code>&lt?php echo $custom_fields['client']['CRM ID'] ?&gt</code></pre>
+
+    <p>where <em>client</em> should be the group and <em>CRM ID</em> should be the label of your custom field. Using the
+        code example would simply output <code>346999-13400</code> in your template.</p>
+
+    <h4 id="custom-fields-boolean">
+        Yes / No Custom Fields <?php IP::headlineLink('/en/1.5/templates/customize-templates#custom-fields-boolean'); ?>
+    </h4>
+
+    <p>Yes/no fields will have the value <code>1</code> for yes and <code>0</code> for no. This way you can use the custom field in conditional statements like this:</p>
+
+    <pre><code>&lt?php if ($custom_fields['quote']['Special discount offered?']) {
+  // Do something here if yes was selected for the 'Special discount offered?' custom field
+} ?%gt</code></pre>
+
     <h3 id="code-examples">
         Code Examples <?php IP::headlineLink('/en/1.5/templates/customize-templates#code-examples'); ?>
     </h3>

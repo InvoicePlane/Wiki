@@ -45,34 +45,26 @@
         object (so a custom field created for the client object will appear on the client form).</p>
 
     <h3 id="add-to-template">
-        Adding Custom Fields to Invoice
-        Templates <?php IP::headlineLink('/en/1.5/settings/custom-fields#add-to-template'); ?>
+        Adding Custom Fields to Templates <?php IP::headlineLink('/en/1.5/settings/custom-fields#add-to-template'); ?>
     </h3>
 
-    Simply creating the custom field won't place it on our invoice. We still need to modify the invoice template to do so.
-
-    To output this value to an invoice, take note of the Column value (in this case it's <code>client_custom_tax_id_number</code>). Edit an invoice template and add the following line where you'd like it to display:
-    <pre>
-&lt;?php echo $invoice->client_custom_tax_id_number; ?&gt;
-</pre>
-
-
-    Now any time an invoice is generated using the template you modified, the custom field will display along with the value you entered for that client.
-
-    This same procedure is used for adding custom fields to any of the other available objects and for adding those fields to our invoices.
+    <p>
+        Please take a look at the <a href="/en/1.5/templates/customize-templates#custom-fields">Customize Templates
+            page</a> for more information about custom fields in templates.
+    </p>
 
     <?php
     $article_pagination = array(
-            'previous' => array(
-                    'url' => '/en/1.5/settings/updatecheck',
-                    'title' => 'Updatecheck',
-                    'type' => 'article'
-            ),
-            'next' => array(
-                    'url' => '/en/1.5/settings/email-templates',
-                    'title' => 'Email Templates',
-                    'type' => 'article'
-            )
+        'previous' => array(
+            'url' => '/en/1.5/settings/updatecheck',
+            'title' => 'Updatecheck',
+            'type' => 'article'
+        ),
+        'next' => array(
+            'url' => '/en/1.5/settings/email-templates',
+            'title' => 'Email Templates',
+            'type' => 'article'
+        )
     );
     ?>
 
