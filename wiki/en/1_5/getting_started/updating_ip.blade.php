@@ -41,7 +41,7 @@
 
     <ol>
         <li>First of all, make a backup of your current installation in another folder you can easily access in the next steps.</li>
-        <li>Then, delete everything in your InvoicePlane folder. <b>Everything</b>. You have a backup, so don't worry. This is very important as many old files are now deprecated and may lead to problems if you keep them.</li>
+        <li>Then, delete everything in your InvoicePlane folder. <b>Everything</b>. You have a backup, so don't worry. This is very important as many old files are now deprecated and may lead to problems if you keep them. Don't forget to also delete the hidden <code>.htaccess</code> file.</li>
         <li>Now, copy the contents of the 1.5.0 package into the InvoicePlane folder.</li>
         <li>We will migrate some of your configuration to the new files now. All actions will take place in your InvoicePlane folder.
             <ul>
