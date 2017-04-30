@@ -27,8 +27,8 @@
                     <li>{{ IP::devLink('IP-507') }} - Copy Quote not working correctly</li>
                     <li>{{ IP::devLink('IP-508') }} - Password can't be changed for user accounts</li>
                     <li>{{ IP::devLink('IP-509') }} - Custom fields are not processed for email templates</li>
-                    <li>{{ IP::devLink('IP-513') }} - Newline to <br> in product descriptions</li>
-                    <li>{{ IP::devLink('IP-517') }} - ipconfig.php access blocking needs update</li>
+                    <li>{{ IP::devLink('IP-513') }} - Newline to &lt;br&gt; in product descriptions</li>
+                    <li>{{ IP::devLink('IP-517') }} - Fix for the ipconfig.php access blocking</li>
                     <li>{{ IP::devLink('IP-518') }} - MySQL: Headers and client library minor version mismatch</li>
                 </ul>
             </div>
