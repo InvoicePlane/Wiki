@@ -13,10 +13,10 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
-            <div class="card-header" data-toggle="collapse" data-target="#v1410">
-                v1.4.10 <span class="released">released 2016-11-12</span>
+            <div class="card-header" data-toggle="collapse" data-target="#v151">
+                v1.5.1 <span class="released">released 2017-04-30</span>
             </div>
-            <div id="v1410" class="card-block collapse in">
+            <div id="v151" class="card-block collapse in">
                 <p>Improvements</p>
                 <ul>
                     <li>{{ IP::devLink('IP-511') }} - Let the user disable the setup from the ipconfig.php file</li>
