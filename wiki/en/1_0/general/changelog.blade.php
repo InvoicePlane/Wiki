@@ -13,10 +13,32 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v1410">
+                v1.4.10 <span class="released">released 2016-11-12</span>
+            </div>
+            <div id="v1410" class="card-block collapse in">
+                <p>Improvements</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-511') }} - Let the user disable the setup from the ipconfig.php file</li>
+                    <li>{{ IP::devLink('IP-514') }} - Add a password strength meter</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-507') }} - Copy Quote not working correctly</li>
+                    <li>{{ IP::devLink('IP-508') }} - Password can't be changed for user accounts</li>
+                    <li>{{ IP::devLink('IP-509') }} - Custom fields are not processed for email templates</li>
+                    <li>{{ IP::devLink('IP-513') }} - Newline to <br> in product descriptions</li>
+                    <li>{{ IP::devLink('IP-517') }} - ipconfig.php access blocking needs update</li>
+                    <li>{{ IP::devLink('IP-518') }} - MySQL: Headers and client library minor version mismatch</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v150">
                 v1.5.0 <span class="released">released 2017-04-23</span>
             </div>
-            <div id="v150" class="card-block collapse in">
+            <div id="v150" class="card-block collapse">
                 <p>New Features</p>
                 <ul>
                     <li>{{ IP::devLink('IP-46') }} - Add more custom field types</li>
