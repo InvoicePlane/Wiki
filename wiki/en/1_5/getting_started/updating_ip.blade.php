@@ -8,6 +8,20 @@
 
     <h2 class="page-title">Update InvoicePlane</h2>
 
+    <h3>Contents</h3>
+
+    <ol>
+        <li><a href="#general">General upgrade information</a></li>
+        <li><a href="#upgrade-from-previous">Upgrade to InvoicePlane 1.5.0 from a previous version</a></li>
+        <li><a href="#upgrade-to-151">Upgrade to InvoicePlane 1.5.1</a></li>
+    </ol>
+
+    <hr>
+
+    <h3 id="general">
+        General upgrade information <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#general'); ?>
+    </h3>
+
     <div class="alert alert-warning">
         Before you start: <b>Make a backup of your database and all files!</b> There will be no support if you missed to make a backup and lost any data.
     </div>
@@ -74,6 +88,18 @@
         <li>The files for custom CSS (`custom.css` and `custom-pdf.css`) moved to the `assets/core/css` folder. Make sure you transfer your custom styles to these files.</li>
         <li>If you modified any mPDF settings or added custom fonts, you have to copy these changes to the new location of mPDF which is now stored in this directory:
             <br><code>/vendor/mpdf/mpdf</code></li>
+    </ul>
+
+    <hr>
+
+    <h3 id="upgrade-to-151">
+        Upgrade from 1.5.0 to 1.5.1 <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-to-151'); ?>
+    </h3>
+
+    <p>If you upgrade InvoicePlane from version 1.5.0 to 1.5.1 please follow these additional steps.</p>
+
+    <ul>
+        <li>Open the <code>ipconfig.php</code> file with a text editor and remove the hash (<code>#</code>) in the first line so the first characters of the file are <code>&lt;?php</code>.</li>
     </ul>
 
     <div class="alert alert-info">
