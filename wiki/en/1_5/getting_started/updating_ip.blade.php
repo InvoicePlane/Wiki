@@ -40,6 +40,7 @@
             <ul>
                 <li>The <code>ipconfig.php</code> file</li>
                 <li>Customized templates in the <code>application/views/</code> folder</li>
+                <li>The files for custom styles: <code>assets/core/css/custom.css</code> and <code>assets/core/css/custom-pdf.css</code></li>
             </ul>
         </li>
         <li>Open <code>http://yourdomain.com/index.php/setup</code> and follow the instructions. The app will run all updates onit's own.</li>
@@ -111,6 +112,7 @@
     <ul>
         <li>Open the <code>ipconfig.php</code> file with a text editor and remove the hash (<code>#</code>) in the first line so the first characters of the file are <code>&lt;?php</code>.</li>
         <li>Delete the following folder and its content as it's no longer needed: <code>application/modules/setup/libraries</code></li>
+        <li>You can now disable the setup from your ipconfig.php file. To do so, copy <code>DISABLE_SETUP=false</code> to your ipconfig.php and change it to <code>DISABLE_SETUP=true</code>. You can remove the corresponding line from your .htaccess file if you want.</li>
     </ul>
 
     <div class="alert alert-info">
