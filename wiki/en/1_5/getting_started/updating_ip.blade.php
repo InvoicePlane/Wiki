@@ -12,8 +12,13 @@
 
     <ol>
         <li><a href="#general">General upgrade information</a></li>
-        <li><a href="#upgrade-from-previous">Upgrade to InvoicePlane 1.5.0 from a previous version</a></li>
-        <li><a href="#upgrade-to-151">Upgrade to InvoicePlane 1.5.1</a></li>
+        <li>
+            Additional steps for specific versions
+            <ul>
+                <li><a href="#upgrade-from-previous">Upgrade to InvoicePlane 1.5.0 from a previous version</a></li>
+                <li><a href="#upgrade-to-151">Upgrade to InvoicePlane 1.5.1</a></li>
+            </ul>
+        </li>
     </ol>
 
     <hr>
@@ -21,6 +26,8 @@
     <h3 id="general">
         General upgrade information <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#general'); ?>
     </h3>
+
+    <p>These steps are <b>always</b> required to make sure that InvoicePlane is updated correctly and the version number get's updated for your installation. Please make sure you read the additional information below if you upgrade to a specific version. For some versions additional steps are required.</p>
 
     <div class="alert alert-warning">
         Before you start: <b>Make a backup of your database and all files!</b> There will be no support if you missed to make a backup and lost any data.
@@ -31,8 +38,8 @@
         <li>Download the latest version from <a href="https://invoiceplane.com/downloads" class="ext">InvoicePlane.com</a>.</li>
         <li>Copy all files to the root directory of your InvoicePlane installation but <b>do not</b> overwrite the following files:
             <ul>
-                <li>The <code>/ipconfig.php</code> file</li>
-                <li>Customized templates in <code>/application/views/</code></li>
+                <li>The <code>ipconfig.php</code> file</li>
+                <li>Customized templates in the <code>application/views/</code> folder</li>
             </ul>
         </li>
         <li>Open <code>http://yourdomain.com/index.php/setup</code> and follow the instructions. The app will run all updates onit's own.</li>
@@ -41,17 +48,21 @@
 
     <hr>
 
-    <h3 id="upgrade-from-previous">
-        Upgrade to InvoicePlane 1.5.0 from a previous version <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-from-previous'); ?>
+    <h3 id="additional-steps">
+        Additional steps for specific versions <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#additional-steps'); ?>
     </h3>
+
+    <h4 id="upgrade-from-previous">
+        Upgrade to InvoicePlane 1.5.0 from a previous version <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-from-previous'); ?>
+    </h4>
 
     <p>Version 1.5.0 comes with some changes that require your attention. Be very careful and keep in mind to make a backup before you start. Make sure to read all instructions completely as we do not support any broken installations because you didn't followed this guid.</p>
 
     <div class="alert alert-warning">Please follow the next steps <b>before</b> running the update / setup!</div>
 
-    <h4 id="upgrade-general">
+    <h5 id="upgrade-general">
         General Upgrade <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-general'); ?>
-    </h4>
+    </h5>
 
     <ol>
         <li>First of all, make a backup of your current installation in another folder you can easily access in the next steps.</li>
@@ -73,10 +84,9 @@
 
     <p>Please notice: if you used custom templates or modified other files, take a look at the following section.</p>
 
-
-    <h4 id="other-changes">
+    <h5 id="other-changes">
         Other notable changes <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#other-changes'); ?>
-    </h4>
+    </h5>
 
     <p>The following changes may not affect all users as they address specific parts of the application.</p>
 
@@ -92,9 +102,9 @@
 
     <hr>
 
-    <h3 id="upgrade-to-151">
+    <h4 id="upgrade-to-151">
         Upgrade from 1.5.0 to 1.5.1 <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-to-151'); ?>
-    </h3>
+    </h4>
 
     <p>If you upgrade InvoicePlane from version 1.5.0 to 1.5.1 please follow these additional steps.</p>
 
