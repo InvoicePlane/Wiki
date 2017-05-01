@@ -27,7 +27,7 @@
         General upgrade information <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#general'); ?>
     </h3>
 
-    <p>These steps are <b>always</b> required to make sure that InvoicePlane is updated correctly and the version number get's updated for your installation. Please make sure you read the additional information below if you upgrade to a specific version. For some versions additional steps are required.</p>
+    <p>These steps are <b>always</b> required to make sure that InvoicePlane is updated correctly and the version number get's updated for your installation. Please make sure you read the additional information below before starting your upgrade if you upgrade to a specific version. For some versions additional steps are required.</p>
 
     <div class="alert alert-warning">
         Before you start: <b>Make a backup of your database and all files!</b> There will be no support if you missed to make a backup and lost any data.
@@ -56,7 +56,7 @@
         Upgrade to InvoicePlane 1.5.0 from a previous version <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-from-previous'); ?>
     </h4>
 
-    <p>Version 1.5.0 comes with some changes that require your attention. Be very careful and keep in mind to make a backup before you start. Make sure to read all instructions completely as we do not support any broken installations because you didn't followed this guid.</p>
+    <p>Version 1.5.0 comes with some changes that require your attention. Be very careful and keep in mind to make a backup before you start. Make sure to read all instructions completely as we do not support any broken installations because you didn't followed this guide.</p>
 
     <div class="alert alert-warning">Please follow the next steps <b>before</b> running the update / setup!</div>
 
@@ -106,10 +106,11 @@
         Upgrade from 1.5.0 to 1.5.1 <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-to-151'); ?>
     </h4>
 
-    <p>If you upgrade InvoicePlane from version 1.5.0 to 1.5.1 please follow these additional steps.</p>
+    <p>If you upgrade InvoicePlane from version 1.5.0 to 1.5.1 please follow these additional steps:</p>
 
     <ul>
         <li>Open the <code>ipconfig.php</code> file with a text editor and remove the hash (<code>#</code>) in the first line so the first characters of the file are <code>&lt;?php</code>.</li>
+        <li>Delete the following folder and its content as it's no longer needed: <code>application/modules/setup/libraries</code></li>
     </ul>
 
     <div class="alert alert-info">
