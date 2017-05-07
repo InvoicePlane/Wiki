@@ -13,10 +13,33 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v152">
+                v1.5.2 <span class="released">released 2017-05-07</span>
+            </div>
+            <div id="v152" class="card-block collapse in">
+                <p>Improvements</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-471') }} - New setting: verify SMTP certificates</li>
+                    <li>{{ IP::devLink('IP-520') }} - New setting: open reports in a new tab</li>
+                    <li>{{ IP::devLink('IP-522') }} - Guest can now pay online without having to login</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-506') }} - Solves 404 errors for online payments</li>
+                    <li>{{ IP::devLink('IP-515') }} - SMTP Setup with SSL no longer fails</li>
+                    <li>{{ IP::devLink('IP-519') }} - Users couldn't search for quotes, invoices or payments</li>
+                    <li>{{ IP::devLink('IP-524') }} - Recurring invoices: error in interval dropdown</li>
+                    <li>{{ IP::devLink('IP-525') }} - Solved: Undefined property: CI::$mdl_settings in Setup</li>
+                    <li>{{ IP::devLink('IP-526') }} - Solved: Can't use function return value in write context in Setup.php on line 338</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v151">
                 v1.5.1 <span class="released">released 2017-04-30</span>
             </div>
-            <div id="v151" class="card-block collapse in">
+            <div id="v151" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>{{ IP::devLink('IP-511') }} - Let the user disable the setup from the ipconfig.php file</li>

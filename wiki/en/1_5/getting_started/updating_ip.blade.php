@@ -115,6 +115,14 @@
         <li>You can now disable the setup from your ipconfig.php file. To do so, copy <code>DISABLE_SETUP=false</code> to your ipconfig.php and change it to <code>DISABLE_SETUP=true</code>. You can remove the corresponding line from your .htaccess file if you want.</li>
     </ul>
 
+    <h4 id="upgrade-to-152">
+        Upgrade from 1.5.1 to 1.5.2 <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-to-152'); ?>
+    </h4>
+
+    <p>There are no additional tasks to do if you upgrade InvoicePlane from version 1.5.1 to 1.5.2</p>
+
+    <hr>
+
     <div class="alert alert-info">
         <?php echo trans('global.footernotice') ?>
     </div>
