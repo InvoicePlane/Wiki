@@ -36,13 +36,13 @@
         <li>An up-to-date web browser. We do recommend using either Google Chrome, Firefox or the latest version of Safari. Internet Explorer is only supported from version 11.</li>
     </ul>
 
-    <p>
+    <div class="alert alert-warning">
         Many users reported issues with the following hosting providers:<br>
         Go Daddy shared hosting
-    </p>
+    </div>
 
     <div class="alert alert-danger">
-        <p>Please notice that PHP 5.5 is no longer supported and should <b>not</b> be used anymore for producton environments!</p>
+        Please notice that PHP 5.5 is no longer supported and should <b>not</b> be used anymore for producton environments!
     </div>
 
     <?php
