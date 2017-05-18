@@ -8,11 +8,11 @@
 
     <h2 class="page-title">Requirements</h2>
 
-    <p>If you want to use InvoicePlane you have to follow these requirements:</p>
+    <p>If you want to use InvoicePlane you have to follow these requirements to use the application.</p>
 
     <ul>
         <li>
-            A webserver / webhost with the following specifications:
+            A webserver / shared hosting with the following specifications:
             <ul>
                 <li>MySQL > 5.5 or the equivalent version of MariaDB</li>
                 <li>PHP > 5.6, using PHP 7.0 or 7.1 is recommended</li>
@@ -37,7 +37,7 @@
     </ul>
 
     <div class="alert alert-warning">
-        Many users reported issues with the following hosting providers:<br>
+        Please be aware that many users reported issues with the following hosting providers:<br>
         Go Daddy shared hosting
     </div>
 
