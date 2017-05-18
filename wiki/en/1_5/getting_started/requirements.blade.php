@@ -14,9 +14,10 @@
         <li>
             A webserver / webhost with the following specifications:
             <ul>
-                <li>MySQL > 5.x</li>
+                <li>MySQL > 5.5 or the equivalent version of MariaDB</li>
+                <li>PHP > 5.6, using PHP 7.0 or 7.1 is recommended</li>
                 <li>
-                    PHP > 5.6.0 with the following PHP extensions:
+                    The following PHP extensions must be installed and activated:
                     <ul>
                         <li>php-gd</li>
                         <li>php-hash</li>
@@ -32,11 +33,16 @@
                 </li>
             </ul>
         </li>
-        <li>A modern and up-to-date web browser.</li>
+        <li>An up-to-date web browser. We do recommend using either Google Chrome, Firefox or the latest version of Safari. Internet Explorer is only supported from version 11.</li>
     </ul>
 
+    <p>
+        Many users reported issues with the following hosting providers:<br>
+        Go Daddy shared hosting
+    </p>
+
     <div class="alert alert-danger">
-        <p>Please notice that PHP 5.5 is no longer supported and should not be used anymore for productonenvironments!</p>
+        <p>Please notice that PHP 5.5 is no longer supported and should <b>not</b> be used anymore for producton environments!</p>
     </div>
 
     <?php
