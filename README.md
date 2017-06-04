@@ -3,7 +3,7 @@
 
 ### Contribute to this wiki
 
-If oyu want to contribute to this wiki please follow the general project structure and do only add new sections if this was discussed with the project lead.
+If you want to contribute to this wiki please follow the general project structure and do only add new sections if this was discussed with the project lead.
 
 #### Add a new language
 
