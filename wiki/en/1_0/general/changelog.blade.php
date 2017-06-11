@@ -13,6 +13,27 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v153">
+                v1.5.3 <span class="released">released 2017-06-11</span>
+            </div>
+            <div id="v153" class="card-block collapse in">
+                <p>Improvements</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-522') }} - Clients do not have to login to pay an invoice</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-528') }} - Email template is now loaded for quote emails again</li>
+                    <li>{{ IP::devLink('IP-534') }} - Passwordreset is working again</li>
+                    <li>{{ IP::devLink('IP-535') }} - Fix for some online payment providers which required a description for the payment</li>
+                    <li>{{ IP::devLink('IP-536') }} - The SMTP password is now saved permanently</li>
+                    <li>{{ IP::devLink('IP-537') }} - Copying quotes and invoices is working again</li>
+                    <li>{{ IP::devLink('IP-541') }} - Fix for the public quote / invoice views, not showing a 404 page instead of errors</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v152">
                 v1.5.2 <span class="released">released 2017-05-07</span>
             </div>
