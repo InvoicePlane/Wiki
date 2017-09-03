@@ -14,7 +14,7 @@
 
         <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v154">
-                v1.5.4 <span class="released">released 2017-06-11</span>
+                v1.5.4 <span class="released">released 2017-09-03</span>
             </div>
             <div id="v154" class="card-block collapse in">
                 <p>Improvements</p>
@@ -29,7 +29,7 @@
                     <li>{{ IP::devLink('IP-527') }} - Fixes a dashboard problem</li>
                     <li>{{ IP::devLink('IP-529') }} - Fixes the Zugferd implementation</li>
                     <li>{{ IP::devLink('IP-547') }} - Clients can now approve/reject quotes without logging in again</li>
-                    <li>{{ IP::devLink('IP-551') }} - Custom Fields ({{{ip_cf_x}}}) are available in email templates</li>
+                    <li>{{ IP::devLink('IP-551') }} - Custom Fields (ip_cf_x) are available in email templates</li>
                     <li>{{ IP::devLink('IP-552') }} - Worldpay is now fully supported</li>
                     <li>{{ IP::devLink('IP-555') }} - Recurring invoices do work again</li>
                     <li>{{ IP::devLink('IP-556') }} - Recurring invoices now keep item_discount</li>
