@@ -13,10 +13,42 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v154">
+                v1.5.4 <span class="released">released 2017-06-11</span>
+            </div>
+            <div id="v154" class="card-block collapse in">
+                <p>Improvements</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-544]') }} - Improved client search</li>
+                    <li>{{ IP::devLink('IP-549]') }} - HTML Emails now contain a plaintext body to reduce spam score</li>
+                    <li>{{ IP::devLink('IP-560]') }} - Items in recurring invoices can now b toggled</li>
+                    <li>{{ IP::devLink('IP-573]') }} - Multiple Choice custom fields are now available in templates</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-527') }} - Fixes a dashboard problem</li>
+                    <li>{{ IP::devLink('IP-529') }} - Fixes the Zugferd implementation</li>
+                    <li>{{ IP::devLink('IP-547') }} - Clients can now approve/reject quotes without logging in again</li>
+                    <li>{{ IP::devLink('IP-551') }} - Custom Fields ({{{ip_cf_x}}}) are available in email templates</li>
+                    <li>{{ IP::devLink('IP-552') }} - Worldpay is now fully supported</li>
+                    <li>{{ IP::devLink('IP-555') }} - Recurring invoices do work again</li>
+                    <li>{{ IP::devLink('IP-556') }} - Recurring invoices now keep item_discount</li>
+                    <li>{{ IP::devLink('IP-572') }} - Recurring invoices are now computed correctly</li>
+                </ul>
+                <p>Updated Libraries</p>
+                <ul>
+                    <li>PhpMailer (v5.2.23 => v5.2.25)</li>
+                    <li>Payfast Payment Provider (v2.1.2 => v2.1.3)</li>
+                    <li>Stripe Payment Provider (v2.4.6 => V2.4.7)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v153">
                 v1.5.3 <span class="released">released 2017-06-11</span>
             </div>
-            <div id="v153" class="card-block collapse in">
+            <div id="v153" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>{{ IP::devLink('IP-522') }} - Clients do not have to login to pay an invoice</li>

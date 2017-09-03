@@ -146,6 +146,10 @@
     [invoice] => Array
         (
             [Sent at] => 2016-11-15
+            [Contributors] => [
+                0 => Marty McFly
+                1 => Jennifer McFly
+            ]
         )
     [client] => Array
         (
