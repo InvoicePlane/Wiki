@@ -15,7 +15,7 @@
             A webserver / shared hosting with the following specifications:
             <ul>
                 <li>MySQL > 5.5 or the equivalent version of MariaDB</li>
-                <li>PHP > 5.6, using PHP 7.0 or 7.1 is recommended</li>
+                <li>PHP > 7.0 (PHP 5.6 may not be supported any longer)</li>
                 <li>
                     The following PHP extensions must be installed and activated:
                     <ul>
