@@ -13,10 +13,41 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v155">
+                v1.5.5 <span class="released">released 2017-10-29</span>
+            </div>
+            <div id="v155" class="card-block collapse in">
+                <p>Improvements</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-608]') }} - Dropdown fields are now translated</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-571') }} - Resolves the <em>unlink(/uploads/temp/mpdf): Is a directory</em> error</li>
+                    <li>{{ IP::devLink('IP-574') }} - Resolves the <em>Cannot use [ ] for reading in Mdl_custom_fields.php on line 257</em> error</li>
+                    <li>{{ IP::devLink('IP-577') }} - Resolves the <em>Undefined property: CI::$mdl_invoice_tax_rates</em> error</li>
+                    <li>{{ IP::devLink('IP-579') }} - Further client details are now escaped properly</li>
+                    <li>{{ IP::devLink('IP-587') }} - Product units are now preserved when copying invoices / quotes</li>
+                    <li>{{ IP::devLink('IP-588') }} - The payment method is set correctly when copying invoices</li>
+                    <li>{{ IP::devLink('IP-589') }} - The correct default tax rate is set for products</li>
+                    <li>{{ IP::devLink('IP-590') }} - Searching for products can now be triggered with the return key</li>
+                    <li>{{ IP::devLink('IP-605') }} - Custom fields are now available in web templates again</li>
+                    <li>{{ IP::devLink('IP-606') }} - Create quote / invoice modal does now escape usernames correctly</li>
+                </ul>
+                <p>Updated Libraries</p>
+                <ul>
+                    <li>Codeigniter Framework (v3.1.5 => v3.1.6)</li>
+                    <li>Sagepay Payment Provider (v2.4.0 => v2.4.1)</li>
+                    <li>Worldpay Payment Provider (v2.2.1 => V2.2.2)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v154">
                 v1.5.4 <span class="released">released 2017-09-03</span>
             </div>
-            <div id="v154" class="card-block collapse in">
+            <div id="v154" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>{{ IP::devLink('IP-544]') }} - Improved client search</li>
