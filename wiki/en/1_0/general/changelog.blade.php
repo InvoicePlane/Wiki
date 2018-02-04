@@ -16,12 +16,12 @@
             <div class="card-header" data-toggle="collapse" data-target="#v156">
                 v1.5.6 <span class="released">released 2018-02-04</span>
             </div>
-            <div id="v156" class="card-block collapse in">
+            <div id="v156" class="card-block collapse show">
                 <p>Improvements</p>
                 <ul>
-                    <li>{{ IP::devLink('IP-623]') }} - User can now specify different invoice and quote PDF footers</li>
-                    <li>{{ IP::devLink('IP-608]') }} - Email validation is now handled by the core framework</li>
-                    <li>{{ IP::devLink('IP-608]') }} - The client select now accepts 1 character and selects the latest client by default</li>
+                    <li>{{ IP::devLink('IP-623') }} - User can now specify different invoice and quote PDF footers</li>
+                    <li>{{ IP::devLink('IP-608') }} - Email validation is now handled by the core framework</li>
+                    <li>{{ IP::devLink('IP-608') }} - The client select now accepts 1 character and selects the latest client by default</li>
                 </ul>
                 <p>Fixed Bugs</p>
                 <ul>
