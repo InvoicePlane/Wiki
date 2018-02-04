@@ -13,6 +13,45 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v156">
+                v1.5.6 <span class="released">released 2018-02-04</span>
+            </div>
+            <div id="v156" class="card-block collapse in">
+                <p>Improvements</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-623]') }} - User can now specify different invoice and quote PDF footers</li>
+                    <li>{{ IP::devLink('IP-608]') }} - Email validation is now handled by the core framework</li>
+                    <li>{{ IP::devLink('IP-608]') }} - The client select now accepts 1 character and selects the latest client by default</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-510') }} - Fixes the import to work properly</li>
+                    <li>{{ IP::devLink('IP-533') }} - Fixes the invoice logo URL</li>
+                    <li>{{ IP::devLink('IP-543') }} - Fixes the HTML email tempalte handling</li>
+                    <li>{{ IP::devLink('IP-602') }} - IP now sets the correct invoice ID if sending invoices per mail</li>
+                    <li>{{ IP::devLink('IP-603') }} - IP now sets the correct quote ID if sending quotes per mail</li>
+                    <li>{{ IP::devLink('IP-609') }} - Fixes a problem with the ZUGFerd implementation</li>
+                    <li>{{ IP::devLink('IP-610') }} - Resolves a problem with the client database table</li>
+                    <li>{{ IP::devLink('IP-611') }} - Fixes the "Undefined property: CI::$mdl_invoice_amounts" error for recurring invoices</li>
+                    <li>{{ IP::devLink('IP-613') }} - Fixes an issues the prevents client selection for projects</li>
+                    <li>{{ IP::devLink('IP-617') }} - Multiple email addresses now work for sending invoices and quotes</li>
+                    <li>{{ IP::devLink('IP-620') }} - Invoice name with space can now be downloaded in the archive page</li>
+                    <li>{{ IP::devLink('IP-621') }} - PDF template now changes when changing email templates</li>
+
+                </ul>
+                <p>Updated Libraries</p>
+                <ul>
+                    <li>PHPMailer (v5.2.26 => v6.0.3)</li>
+                    <li>mPDF (v6 => v7.0.3)</li>
+                    <li>Authorizenet Payment Provider (v2.5.0 => v2.5.1)</li>
+                    <li>Firstdata Payment Provider (v2.3.0 => V2.4.0)</li>
+                    <li>Payflow Payment Provider (v2.2.2 => V2.3.0)</li>
+                    <li>PayPal Payment Provider (v2.6.3 => V2.6.4)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v155">
                 v1.5.5 <span class="released">released 2017-10-29</span>
             </div>
