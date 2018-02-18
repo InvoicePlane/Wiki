@@ -13,10 +13,33 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v157">
+                v1.5.7 <span class="released">released 2018-02-18</span>
+            </div>
+            <div id="v157" class="card-block collapse show">
+                <p>Improvements</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-641') }} - Browsers will use correct CSS and JavaScript files which prevents cache issues</li>
+                    <li>{{ IP::devLink('IP-643') }} - InvoicePlane is now compatible with PHP 7.2</li>
+                    <li>{{ IP::devLink('IP-650') }} - Logs for online payments are now viewable from the frontend</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-596') }} - Password Reset now honours IP mail settings, the user can set a specific sender address in the settings</li>
+                    <li>{{ IP::devLink('IP-647') }} - Quote / invoice creation does not fail due to client select anymore</li>
+                    <li>{{ IP::devLink('IP-648') }} - Credit invoices work again correctly</li>
+                    <li>{{ IP::devLink('IP-649') }} - Quote / Invoice and item deletion is working again</li>
+                    <li>{{ IP::devLink('IP-652') }} - Testmode for online payments is working again</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v156">
                 v1.5.6 <span class="released">released 2018-02-04</span>
             </div>
-            <div id="v156" class="card-block collapse show">
+            <div id="v156" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>{{ IP::devLink('IP-623') }} - User can now specify different invoice and quote PDF footers</li>
