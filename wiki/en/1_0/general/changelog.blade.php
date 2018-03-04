@@ -13,10 +13,30 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v158">
+                v1.5.8 <span class="released">released 2018-03-04</span>
+            </div>
+            <div id="v158" class="card-block collapse show">
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-640') }} - Some custom fields displayed wrong values in PDFs</li>
+                    <li>{{ IP::devLink('IP-649') }} - Deleting tax rates working again</li>
+                    <li>{{ IP::devLink('IP-656') }} - Update check is working correctly again</li>
+                    <li>Smaller code corrections</li>
+                </ul>
+                <p>Updated Libraries</p>
+                <ul>
+                    <li>eWay Payment Provider (v2.2.1 => v2.2.2)</li>
+                    <li>Payfast Payment Provider (v2.1.3 => v2.2.0)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v157">
                 v1.5.7 <span class="released">released 2018-02-18</span>
             </div>
-            <div id="v157" class="card-block collapse show">
+            <div id="v157" class="card-block collapse">
                 <p>Improvements</p>
                 <ul>
                     <li>{{ IP::devLink('IP-641') }} - Browsers will use correct CSS and JavaScript files which prevents cache issues</li>
@@ -30,7 +50,6 @@
                     <li>{{ IP::devLink('IP-648') }} - Credit invoices work again correctly</li>
                     <li>{{ IP::devLink('IP-649') }} - Quote / Invoice and item deletion is working again</li>
                     <li>{{ IP::devLink('IP-652') }} - Testmode for online payments is working again</li>
-
                 </ul>
             </div>
         </div>
@@ -60,7 +79,6 @@
                     <li>{{ IP::devLink('IP-617') }} - Multiple email addresses now work for sending invoices and quotes</li>
                     <li>{{ IP::devLink('IP-620') }} - Invoice name with space can now be downloaded in the archive page</li>
                     <li>{{ IP::devLink('IP-621') }} - PDF template now changes when changing email templates</li>
-
                 </ul>
                 <p>Updated Libraries</p>
                 <ul>
