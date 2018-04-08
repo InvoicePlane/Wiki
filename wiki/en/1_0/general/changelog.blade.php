@@ -13,10 +13,41 @@
         <div class="alert alert-info">Click on an older version to show the detailed changelog.</div>
 
         <div class="card">
+            <div class="card-header" data-toggle="collapse" data-target="#v159">
+                v1.5.9 <span class="released">released 2018-04-08</span>
+            </div>
+            <div id="v159" class="card-block collapse show">
+                <p>Improvements</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-681') }} - Added more schedules for recurring invoices</li>
+                    <li>{{ IP::devLink('IP-688') }} - Made the list item count setting customizable</li>
+                </ul>
+                <p>Fixed Bugs</p>
+                <ul>
+                    <li>{{ IP::devLink('IP-679') }} - Fixes duplicate invoice number generation</li>
+                    <li>{{ IP::devLink('IP-680') }} - Recurring invoices can be deleted again</li>
+                    <li>{{ IP::devLink('IP-686') }} - Fixed issue with Select2 locale file</li>
+                    <li>{{ IP::devLink('IP-687') }} - Users can remove clients from user accounts again</li>
+                </ul>
+                <p>Updated Libraries</p>
+                <ul>
+                    <li>Codeigniter Framework (v3.1.6 => v3.1.8)</li>
+                    <li>PHPMailer (v6.0.3 => v6.0.5)</li>
+                    <li>paragonie/random_compat (v2.0.11 => v2.0.12)</li>
+                    <li>symfony/http-foundation (v2.8.35 => v2.8.38)</li>
+                    <li>symfony/event-dispatcher (v2.8.35 => v2.8.38)</li>
+                    <li>DropZone (v5.3.0 => v5.4.0)</li>
+                    <li>Bootstrap Datepicker (v1.7.1 => v1.8.0)</li>
+                    <li>PostCSS (v6.0.18 => v6.0.21)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
             <div class="card-header" data-toggle="collapse" data-target="#v158">
                 v1.5.8 <span class="released">released 2018-03-04</span>
             </div>
-            <div id="v158" class="card-block collapse show">
+            <div id="v158" class="card-block collapse">
                 <p>Fixed Bugs</p>
                 <ul>
                     <li>{{ IP::devLink('IP-640') }} - Some custom fields displayed wrong values in PDFs</li>
