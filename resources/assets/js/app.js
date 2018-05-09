@@ -5,8 +5,8 @@ $(document).ready(function(){
     });
 
     lightbox.option({
-        'fadeDuration': 200,
-        'resizeDuration': 200,
+        'fadeDuration': 150,
+        'resizeDuration': 150,
         'wrapAround': true
     })
 });

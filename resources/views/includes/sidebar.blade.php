@@ -2,7 +2,7 @@
 
     <div class="sidebar-top">
         <a href="{{ \Config::get('app.url')  }}">@lang('global.wiki')</a>
-        <a href="#" class="sidebar-toggle pull-right"><i class="fa fa-close hidden-lg-up"></i></a>
+        <a href="#" class="sidebar-toggle pull-right"><i class="fa fa-close"></i></a>
     </div>
 
     <ul class="menu">
@@ -15,7 +15,7 @@
         <li>
             <a href="#" data-toggle="collapse" data-target="#submenu-links" class="has-submenu collapsed">
                 @lang('global.links')
-                    <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
+                <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
             </a>
             <ul id="submenu-links" class="submenu collapse">
                 <li>

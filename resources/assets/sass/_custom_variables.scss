@@ -1,0 +1,26 @@
+///////////////////////
+// App Variables
+///////////////////////
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$color-status-draft: #999999;
+$color-status-sent: #3A87AD;
+$color-status-viewed: #F89406;
+$color-status-paid-approved: #468847;
+$color-status-rejected-overdue: #B94A48;
+$color-status-canceled: #333333;
+
+$color-sidebar-bg: $primary;
+$color-sidebar-color: $gray-200;
+$color-sidebar-link: rgba(255, 255, 255, .75);
+$color-sidebar-link-hover: rgba(255, 255, 255, 1);
+
+$font-size-root: 16px;
+
+@mixin transition-std($transition) {
+  transition: $transition 0.2s ease-out;
+}

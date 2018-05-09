@@ -1,9 +1,9 @@
 {
   "private": true,
   "dependencies": {
-    "bootstrap": "~4.0.0-alpha.6",
+    "bootstrap": "~4.0.0",
     "jquery": "~2.1.*",
-    "tether": "~1.1.1",
+    "popper.js": "^1.14.3",
     "font-awesome": "~4.*",
     "lightbox2": "~2.8.2",
     "grunt": "^1.0.1",
