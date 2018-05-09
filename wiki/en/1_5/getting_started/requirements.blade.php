@@ -8,14 +8,16 @@
 
     <h2 class="page-title">Requirements</h2>
 
-    <p>If you want to use InvoicePlane you have to follow these requirements to use the application.</p>
+    <p>
+        If you want to use InvoicePlane you have to follow these requirements to use the application.
+    </p>
 
     <ul>
         <li>
             A webserver / shared hosting with the following specifications:
             <ul>
-                <li>MySQL > 5.5 or the equivalent version of MariaDB</li>
-                <li>PHP > 7.0 (PHP 5.6 may not be supported any longer)</li>
+                <li>MySQL >= 5.5 or the equivalent version of MariaDB</li>
+                <li>PHP >= 7.0 (PHP 5.6 may not be supported any longer)</li>
                 <li>
                     The following PHP extensions must be installed and activated:
                     <ul>
@@ -33,7 +35,10 @@
                 </li>
             </ul>
         </li>
-        <li>An up-to-date web browser. We do recommend using either Google Chrome, Firefox or the latest version of Safari. Internet Explorer is only supported from version 11.</li>
+        <li>
+            An up-to-date web browser. We do recommend using either Google Chrome, Firefox or the latest version of
+            Safari. Internet Explorer is only supported from version 11.
+        </li>
     </ul>
 
     <div class="alert alert-warning">
@@ -42,7 +47,8 @@
     </div>
 
     <div class="alert alert-danger">
-        Please notice that PHP 5.5 is no longer supported and should <b>not</b> be used anymore for producton environments!
+        Please notice that PHP 5.5 is no longer supported and should <b>not</b> be used anymore for producton
+        environments!
     </div>
 
     <?php
