@@ -8,26 +8,28 @@
         </li>
     </ul>
 
-    <ul class="nav justify-content-end pull-right">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-               aria-expanded="false">
-                @lang('global.languages')
-            </a>
-            <div class="dropdown-menu dropdown-menu-right text-right">
-                @foreach(Config::get('app.available_locales') as $locale)
-                    <a href="{{ url($locale['langcode']) }}" class="dropdown-item small">
-                        @lang('global.lang.' . $locale['langcode'])
-                    </a>
-                @endforeach
-            </div>
-        </li>
+    <ul class="nav">
+        @if(count(config('app.available_locales')) > 1)
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                   aria-expanded="false">
+                    @lang('global.language') ({{ strtoupper(App::getLocale()) }})
+                </a>
+                <div class="dropdown-menu">
+                    @foreach(config('app.available_locales') as $locale)
+                        <a href="{{ url($locale['langcode']) }}" class="dropdown-item small">
+                            @lang('global.lang.' . $locale['langcode'])
+                        </a>
+                    @endforeach
+                </div>
+            </li>
+        @endif
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                aria-expanded="false">
                 @lang('global.version') {{ $current_version }}
             </a>
-            <div class="dropdown-menu dropdown-menu-right text-right">
+            <div class="dropdown-menu">
                 @foreach(Config::get('app.versions') as $version)
                     <a href="{{ url(App::getLocale() . '/' . str_replace('_', '.', $version) . $current_url) }}"
                        class="dropdown-item small">

@@ -16,7 +16,7 @@ return [
 
     'link_to_headline' => 'Link to this Headline',
 
-    'footernotice' => 'If you encounter any problems please write a support request in the <a href="https://community.invoiceplane.com" class="ext">official forums</a>.',
+    'footernotice' => 'If you encounter any problems please post a support request in the <a href="https://community.invoiceplane.com" class="ext">communtiy forums</a>.',
 
     'lang.en' => 'English',
     'lang.de' => 'German - Deutsch',
