@@ -8,11 +8,11 @@
         </li>
     </ul>
 
-    <ul class="nav">
+    <div class="nav">
         @if(count(config('app.available_locales')) > 1)
-            <li class="nav-item dropdown">
+            <div class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                   aria-expanded="false">
+                        aria-expanded="false">
                     @lang('global.language') ({{ strtoupper(App::getLocale()) }})
                 </a>
                 <div class="dropdown-menu">
@@ -22,22 +22,20 @@
                         </a>
                     @endforeach
                 </div>
-            </li>
-        @endif
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-               aria-expanded="false">
-                @lang('global.version') {{ $current_version }}
-            </a>
-            <div class="dropdown-menu">
-                @foreach(Config::get('app.versions') as $version)
-                    <a href="{{ url(App::getLocale() . '/' . str_replace('_', '.', $version) . $current_url) }}"
-                       class="dropdown-item small">
-                        {{ str_replace('_', '.', $version) }}
-                    </a>
-                @endforeach
             </div>
-        </li>
-    </ul>
+        @endif
+        <div class="navbar-text">
+            Version:
+        </div>
+        @foreach(Config::get('app.versions') as $version)
+            @php $version = str_replace('_', '.', $version); @endphp
+            <div class="nav-item @if($current_version == $version) active @endif">
+                <a href="{{ url(App::getLocale() . '/' . $version . $current_url) }}"
+                        class="nav-link">
+                    {{ $version }}
+                </a>
+            </div>
+        @endforeach
+    </div>
 
 </div>
