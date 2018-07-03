@@ -7,7 +7,7 @@
 @section('content')
 
     <h1>
-        <img src="{{ asset('assets/img/logo_300x150.png') }}" alt="InvoicePlane">
+        <img src="{{ asset('assets/img/logo.svg') }}" alt="InvoicePlane" width="300px">
         <span class="sr-only">InvoicePlane Wiki</span>
     </h1>
 
