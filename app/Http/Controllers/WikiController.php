@@ -12,6 +12,13 @@ class WikiController extends Controller
         $default_locale = Config::get('app.locale');
         $default_version = Config::get('app.version');
 
+        // Check if the requested page has a redirect
+        $redirects = Config::get('routes.redirects');
+
+        if (isset($redirects[$version][$dir][$page])) {
+            return redirect()->to($redirects[$version][$dir][$page]);
+        }
+
         // Redirect to the default locale if the requested one is not available
         $locales = Config::get('app.available_locales');
         if (!isset($locales[$locale])) {
@@ -62,16 +69,16 @@ class WikiController extends Controller
             // Check if the page exists for an older version
             $reverse_versions = array_reverse($versions);
 
-            foreach ($reverse_versions as $version) {
-                $requested_page = $locale . '.' . $version . $requested_view;
+            foreach($reverse_versions as $old_version) {
+                $requested_page = $locale . '.' . $old_version . $requested_view;
 
                 if (view()->exists($requested_page)) {
                     // View found, redirect to the page
-                    return redirect()->to('/' . $locale . '/' . str_replace('_', '.', $version) . $current_url);
-                } else {
-                    $requested_page = '';
-                    continue;
+                    return redirect()->to('/' . $locale . '/' . str_replace('_', '.', $old_version) . $current_url);
                 }
+
+                $requested_page = '';
+                continue;
             }
 
         }
@@ -88,7 +95,7 @@ class WikiController extends Controller
             ]);
 
             return view($requested_page)->with([
-                'sidebar_content' => view($sidebar_content_view)
+                'sidebar_content' => view($sidebar_content_view),
             ]);
         }
 
