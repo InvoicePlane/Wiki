@@ -25,7 +25,7 @@
     </div>
 
     <h3 id="look-feel">
-        Customize the Look and Feel <?php IP::headlineLink('/en/1.0/templates/customize-templates#look-feel'); ?>
+        Customize the Look and Feel <?= IP::headlineLink('/en/1.0/templates/customize-templates#look-feel'); ?>
     </h3>
 
     <p>First of all please remember that there is a basic styling for each template. The files use two CSS stylesheets
@@ -34,7 +34,7 @@
         edit the templates.css as changes will be overwritten on updates.</p>
 
     <h3 id="first-steps">
-        First Steps <?php IP::headlineLink('/en/1.0/templates/customize-templates#first-steps'); ?>
+        First Steps <?= IP::headlineLink('/en/1.0/templates/customize-templates#first-steps'); ?>
     </h3>
 
     <p>Before you start to add any new fields or create conditional statements you should get an overview of which
@@ -62,7 +62,7 @@ stdClass Object
         name of the variable and the part after the <code>=></code> is the content of the variable.</p>
 
     <h3 id="code-examples">
-        Code Examples <?php IP::headlineLink('/en/1.0/templates/customize-templates#code-examples'); ?>
+        Code Examples <?= IP::headlineLink('/en/1.0/templates/customize-templates#code-examples'); ?>
     </h3>
 
     <p>Here is a list of some examples for code that can be used to display variables.<br/>

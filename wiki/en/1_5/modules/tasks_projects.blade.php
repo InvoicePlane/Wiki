@@ -11,13 +11,13 @@
     <p>InvoicePlane provides basic task management that is integrated into the invoice workflow. You can link tasks to projects and projects to clients to structure everthing.</p>
 
     <h3 id="projects">
-        Projects <?php IP::headlineLink('/en/1.5/modules/tasks_projects#projects'); ?>
+        Projects <?= IP::headlineLink('/en/1.5/modules/tasks_projects#projects'); ?>
     </h3>
 
     <p>Projects can be added from the navigation bar. You can chose the project name and a client. Choosing a client is optional. If you choose a client, tasks that are assigned to this project can onl be added to invoices for the same client.</p>
 
     <h3 id="tasks">
-        Tasks <?php IP::headlineLink('/en/1.5/modules/tasks_projects#tasks'); ?>
+        Tasks <?= IP::headlineLink('/en/1.5/modules/tasks_projects#tasks'); ?>
     </h3>
 
     <p>Tasks can be added from the navigation bar. They have several fields that are explained in the following table.</p>
@@ -60,7 +60,7 @@
     </div>
 
     <h4 id="task-status">
-        Task Status <?php IP::headlineLink('/en/1.5/modules/tasks_projects#task-status'); ?>
+        Task Status <?= IP::headlineLink('/en/1.5/modules/tasks_projects#task-status'); ?>
     </h4>
 
     <p>A task can have one off the following statuses. Please notice that only completed tasks can be added to invoices.</p>
@@ -87,7 +87,7 @@
     </div>
 
     <h4 id="tasks-invoices">
-        Tasks in Invoices <?php IP::headlineLink('/en/1.5/modules/tasks_projects#tasks-invoices'); ?>
+        Tasks in Invoices <?= IP::headlineLink('/en/1.5/modules/tasks_projects#tasks-invoices'); ?>
     </h4>
 
     <p>Inside invoices you can add tasks to an invoice. Therefore, use the "Add Task" button. This will open a new panel where all available tasks will be listed. Please notice that the following requirements must be fullfilled for a tasks to be available:</p>

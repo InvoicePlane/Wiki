@@ -14,7 +14,7 @@
         month, wouldn't it? InvoicePlane can keep this sorted for you.</p>
 
     <h3 id="requirements">
-        Requirements <?php IP::headlineLink('/en/1.5/modules/recurring-invoices#requirements'); ?>
+        Requirements <?= IP::headlineLink('/en/1.5/modules/recurring-invoices#requirements'); ?>
     </h3>
 
     <p>For recurring invoices to generate properly, you must create a <a href="{{ url('en/1.5/help/setup_cron') }}">CRON job</a> or
@@ -26,7 +26,7 @@
             Settings</a>.</p>
 
     <h3 id="add-recurring">
-        Create a recurring Invoice <?php IP::headlineLink('/en/1.5/modules/recurring-invoices#add-recurring'); ?>
+        Create a recurring Invoice <?= IP::headlineLink('/en/1.5/modules/recurring-invoices#add-recurring'); ?>
     </h3>
 
     <p>To create an invoice which will automatically recur at a specific frequency, the first step is to create the
@@ -47,7 +47,7 @@
         empty.</p>
 
     <h3 id="view">
-        Viewing Recurring Invoices <?php IP::headlineLink('/en/1.5/modules/recurring-invoices#view'); ?>
+        Viewing Recurring Invoices <?= IP::headlineLink('/en/1.5/modules/recurring-invoices#view'); ?>
     </h3>
 
     <p>

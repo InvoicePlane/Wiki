@@ -9,7 +9,7 @@
     <h2 class="page-title">Payments</h2>
 
     <h3 id="view">
-        View Payments <?php IP::headlineLink('/en/1.0/modules/payments#view'); ?>
+        View Payments <?= IP::headlineLink('/en/1.0/modules/payments#view'); ?>
     </h3>
 
     <p>To view the payment list, click <code>Payments</code> from the main menu and select <code>View Payments</code>.
@@ -24,7 +24,7 @@
     <p>To navigate between pages, use the pager buttons located on the submenu bar.</p>
 
     <h3 id="add">
-        Entering a Payment <?php IP::headlineLink('/en/1.0/modules/payments#add'); ?>
+        Entering a Payment <?= IP::headlineLink('/en/1.0/modules/payments#add'); ?>
     </h3>
 
     <p>To enter a payment, either choose <code>Payments</code> from the main menu and select <code>Enter Payment</code>,
@@ -41,14 +41,14 @@
         enter any pertinent notes and press the <code>Save</code> button near the top right of the page.</p>
 
     <h3 id="online">
-        Online Payments <?php IP::headlineLink('/en/1.0/modules/payments#online'); ?>
+        Online Payments <?= IP::headlineLink('/en/1.0/modules/payments#online'); ?>
     </h3>
 
     <p>InvoicePlane can be configured to allow clients to make payments online. The only payment gateway currently
         tested with InvoicePlane is PayPal.</p>
 
     <h4 id="paypal">
-        Configure PayPal for Online Payments <?php IP::headlineLink('/en/1.0/modules/payments#paypal'); ?>
+        Configure PayPal for Online Payments <?= IP::headlineLink('/en/1.0/modules/payments#paypal'); ?>
     </h4>
 
     <p>To configure InvoicePlane integration with PayPal, you must first have valid PayPal API credentials. If you

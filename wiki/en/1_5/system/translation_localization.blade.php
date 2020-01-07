@@ -12,7 +12,7 @@
         please visit the <a href="http://translations.invoiceplane.com/" class="ext">translation repository</a>.</p>
 
     <h3 id="install">
-        Install a new translation <?php IP::headlineLink('/en/1.5/system/translation-localization#install'); ?>
+        Install a new translation <?= IP::headlineLink('/en/1.5/system/translation-localization#install'); ?>
     </h3>
 
     <div class="alert alert-warning">
@@ -49,7 +49,7 @@
     </pre>
     
     <h3 id="customize">
-        Customize translations <?php IP::headlineLink('/en/1.5/system/translation-localization#customize'); ?>
+        Customize translations <?= IP::headlineLink('/en/1.5/system/translation-localization#customize'); ?>
     </h3>
     
     <p>You are able to replace all language strings in the application with your own strings. We added a file called <code>custom_lang.php</code> which is located in every language folder (see above).</p>

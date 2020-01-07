@@ -21,7 +21,7 @@
     </ul>
 
     <h4 id="setup-server">
-        Use your own Server <?php IP::headlineLink('/en/1.0/help/setup-cron#setup-server'); ?>
+        Use your own Server <?= IP::headlineLink('/en/1.0/help/setup-cron#setup-server'); ?>
     </h4>
 
     <p>As there are various different types of operating software for web servers (e.g. Ubuntu, CentOS, Windows Server or even Mac OSX Server) there is not <em>one</em> tutorial on how to setup a cron. Because of this we listed tutorials for the most used systems below and wrote an example for Unix-based operating systems.</p>
@@ -39,7 +39,7 @@
     <p>where <code>yoursite.com</code> is the domain you use for InvoicePlane and <code>your-cron-key</code> the cron key from your settings.</p>
 
     <h4 id="setup-online">
-        Use an Online Service <?php IP::headlineLink('/en/1.0/help/setup-cron#online'); ?>
+        Use an Online Service <?= IP::headlineLink('/en/1.0/help/setup-cron#online'); ?>
     </h4>
 
     <p>There are a lot of online services that offer running a cron for you, for example <a href="https://cron-job.org/en/" class="ext">cron-job.org</a> or <a href="http://www.mywebcron.com" class="ext">mywebcron.com</a> any many other.<br/>Please read the documentation of the service you use to know how to setup a cron with their system.</p>

@@ -18,7 +18,7 @@
     </p>
 
     <h3 id="general">
-        General settings <?php IP::headlineLink('/en/1.0/settings/general#general'); ?>
+        General settings <?= IP::headlineLink('/en/1.0/settings/general#general'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -68,7 +68,7 @@
     </div>
 
     <h3 id="dashboard">
-        Dashboard settings <?php IP::headlineLink('/en/1.0/settings/general#dashboard'); ?>
+        Dashboard settings <?= IP::headlineLink('/en/1.0/settings/general#dashboard'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -89,7 +89,7 @@
     </div>
 
     <h3 id="interface">
-        Interface settings <?php IP::headlineLink('/en/1.0/settings/general#interface'); ?>
+        Interface settings <?= IP::headlineLink('/en/1.0/settings/general#interface'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -127,7 +127,7 @@
     </div>
 
     <h3 id="interface">
-        System settings <?php IP::headlineLink('/en/1.0/settings/general#system'); ?>
+        System settings <?= IP::headlineLink('/en/1.0/settings/general#system'); ?>
     </h3>
 
     <div class="table-responsive">

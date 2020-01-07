@@ -9,7 +9,7 @@
     <h2 class="page-title">Quickstart</h2>
 
     <h3 id="login">
-        Logging In <?php IP::headlineLink('/en/1.0/getting-started/quickstart#login'); ?>
+        Logging In <?= IP::headlineLink('/en/1.0/getting-started/quickstart#login'); ?>
     </h3>
 
     <p>If InvoicePlane was installed into the root of your web server:<br/>
@@ -21,7 +21,7 @@
     <hr/>
 
     <h3 id="config">
-        Configure the Application <?php IP::headlineLink('/en/1.0/getting-started/quickstart#config'); ?>
+        Configure the Application <?= IP::headlineLink('/en/1.0/getting-started/quickstart#config'); ?>
     </h3>
 
     <p>Before you start with invoicing you should check the application settings on <code>http://www.your-domain.com/settings</code>
@@ -33,7 +33,7 @@
     <hr/>
 
     <h3 id="add-client">
-        Adding a Client <?php IP::headlineLink('/en/1.0/getting-started/quickstart#add-client'); ?>
+        Adding a Client <?= IP::headlineLink('/en/1.0/getting-started/quickstart#add-client'); ?>
     </h3>
 
     <p>Click <code>Clients</code> from the main menu at the top of the page and select <code>Add Client</code>. Fill in
@@ -45,7 +45,7 @@
     <hr/>
 
     <h3 id="add-products">
-        Adding Products <?php IP::headlineLink('/en/1.0/getting-started/quickstart#add-products'); ?>
+        Adding Products <?= IP::headlineLink('/en/1.0/getting-started/quickstart#add-products'); ?>
     </h3>
 
     <p>If you have products which should appear on your invoices or quotes you can create them form the
@@ -56,7 +56,7 @@
     <hr/>
 
     <h3 id="create-invoice">
-        Creating an Invoice <?php IP::headlineLink('/en/1.0/getting-started/quickstart#create-invoice'); ?>
+        Creating an Invoice <?= IP::headlineLink('/en/1.0/getting-started/quickstart#create-invoice'); ?>
     </h3>
 
     <p>Click <code>Invoices</code> from the main menu at the top of the page and select <code>Create Invoice</code>.
@@ -69,7 +69,7 @@
         add new rows with the <code>Add new Row</code> button.</p>
 
     <h4 id="create-invoice">
-        Send the invoice <?php IP::headlineLink('/en/1.0/getting-started/quickstart#send-invoice'); ?>
+        Send the invoice <?= IP::headlineLink('/en/1.0/getting-started/quickstart#send-invoice'); ?>
     </h4>
 
     <p>If viewing a list of invoices, click the <code>Options</code> button on the row of the invoice to send. If
@@ -80,7 +80,7 @@
     <hr/>
 
     <h3 id="enter-payment">
-        Entering a Payment <?php IP::headlineLink('/en/1.0/getting-started/quickstart#enter-payment'); ?>
+        Entering a Payment <?= IP::headlineLink('/en/1.0/getting-started/quickstart#enter-payment'); ?>
     </h3>
 
     <p>Offline payments are entered by clicking <code>Payments</code> from the main menu at the top of the page and

@@ -17,7 +17,7 @@
     </ul>
 
     <h3 id="pdf">
-        Using PDF Templates <?php IP::headlineLink('/en/1.5/templates/using-templates#pdf'); ?>
+        Using PDF Templates <?= IP::headlineLink('/en/1.5/templates/using-templates#pdf'); ?>
     </h3>
 
     <p>All PDF templates can be found in the following folders of the application:</p>

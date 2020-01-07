@@ -38,7 +38,7 @@
     </p>
 
     <h3 id="subdir">
-        Run InvoicePlane in a sub directory <?php IP::headlineLink('/en/1.5/getting-started/installation#subdir'); ?>
+        Run InvoicePlane in a sub directory <?= IP::headlineLink('/en/1.5/getting-started/installation#subdir'); ?>
     </h3>
 
     <p>
@@ -68,7 +68,7 @@ RewriteRule . index.php [L]</code></pre>
 
 
     <h3 id="htaccess">
-        Remove index.php from the URL <?php IP::headlineLink('/en/1.5/getting-started/installation#htaccess'); ?>
+        Remove index.php from the URL <?= IP::headlineLink('/en/1.5/getting-started/installation#htaccess'); ?>
     </h3>
 
     <p>

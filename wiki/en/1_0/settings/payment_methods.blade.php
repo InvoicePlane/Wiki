@@ -17,7 +17,7 @@
     </p>
 
     <h3 id="add">
-        Add a Payment Method <?php IP::headlineLink('/en/1.0/settings/payment-methods#add'); ?>
+        Add a Payment Method <?= IP::headlineLink('/en/1.0/settings/payment-methods#add'); ?>
     </h3>
 
     <p>To add a new payment method, click the settings icon <code><i class="fa fa-cogs"></i></code> near the right hand side of the main menu, select <code>Payment Methods</code>, and click the <code>New</code> button near the top right of the page.</p>

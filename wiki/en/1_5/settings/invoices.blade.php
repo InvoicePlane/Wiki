@@ -17,7 +17,7 @@
     </p>
 
     <h3 id="general">
-        General settings <?php IP::headlineLink('/en/1.5/settings/general#general'); ?>
+        General settings <?= IP::headlineLink('/en/1.5/settings/general#general'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -58,7 +58,7 @@
     </div>
 
     <h3 id="templates">
-        Templates <?php IP::headlineLink('/en/1.5/settings/invoices#templates'); ?>
+        Templates <?= IP::headlineLink('/en/1.5/settings/invoices#templates'); ?>
     </h3>
 
     <p>All following settings allow you to set default PDF and email templates for different states and purposes. At the end in the PDF Footer you can enter information that should be placed at the bottom of each PDF template.</p>

@@ -1,19 +1,16 @@
 <?php
+
 namespace App;
 
-/*
-|--------------------------------------------------------------------------
-| IP helper Class
-|--------------------------------------------------------------------------
-|
-| This class contains some helper functions that doesn't fit into other
-| classes.
-|
-*/
-
+/**
+ * Class IP
+ *
+ * This class contains some helper functions that doesn't fit into other classes.
+ *
+ * @package App
+ */
 class IP
 {
-
     /**
      * IP::now()
      * Returns the current timestamp in two formats:
@@ -38,7 +35,7 @@ class IP
      */
     public static function formatViewName($view_name)
     {
-        $out = preg_replace('/[\.\_]/', '-', $view_name);
+        $out = preg_replace('/[._]/', '-', $view_name);
         return str_replace('sites-', '', $out);
     }
 
@@ -49,11 +46,11 @@ class IP
      */
     public static function sidebarActiveCheck($view_name, $check)
     {
-        if ($view_name == $check) {
+        if ($view_name === $check) {
             return 'class="active"';
-        } else {
-            return null;
         }
+
+        return null;
     }
 
     /**
@@ -63,9 +60,10 @@ class IP
     public static function getLocAndVer($outputForView = false)
     {
         if ($outputForView === true) {
-            return Config::get('app.locale').'.'.Config::get('app.version');
+            return config('app.locale') . '.' . config('app.version');
         }
-        return '/'.Config::get('app.locale').'/'.str_replace('_', '.', Config::get('app.version'));
+
+        return '/' . config('app.locale') . '/' . str_replace('_', '.', config('app.version'));
     }
 
     /**
@@ -79,17 +77,23 @@ class IP
 
     /**
      * @param $url
+     * @return string
      */
     public static function headlineLink($url)
     {
-        echo '<a href="'.$url.'" class="headline-link" title="'.trans('global.link_to_headline').'"><i class="fa fa-link"></i></a>&nbsp;';
+        return sprintf(
+            '<a href="%s" class="headline-link" title="%s"><i class="fa fa-link"></i></a>&nbsp;',
+            $url,
+            trans('global.link_to_headline')
+        );
     }
 
     /**
      * @param $issue_id
+     * @return string
      */
     public static function devLink($issue_id)
     {
-        echo '<a href="https://development.invoiceplane.com/browse/'.$issue_id.'">'.$issue_id.'</a>';
+        return '<a href="https://development.invoiceplane.com/browse/' . $issue_id . '">' . $issue_id . '</a>';
     }
 }

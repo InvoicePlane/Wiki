@@ -17,7 +17,7 @@
     </p>
 
     <h3 id="add">
-        Add a new Taxrate <?php IP::headlineLink('/en/1.5/settings/taxrates#add'); ?>
+        Add a new Taxrate <?= IP::headlineLink('/en/1.5/settings/taxrates#add'); ?>
     </h3>
 
     <p>To add a new taxrate, click the settings icon <code><i class="fa fa-cogs"></i></code> near the right hand side of the main menu, select <code>Taxrates</code>, and click the <code>New</code> button near the top right of the page.</p>

@@ -24,7 +24,7 @@
     </ul>
 
     <h4 id="setup-server">
-        Use your own Server <?php IP::headlineLink('/en/1.5/help/setup-cron#setup-server'); ?>
+        Use your own Server <?= IP::headlineLink('/en/1.5/help/setup-cron#setup-server'); ?>
     </h4>
 
     <p>
@@ -60,7 +60,7 @@
     </p>
 
     <h4 id="setup-online">
-        Use an Online Service <?php IP::headlineLink('/en/1.5/help/setup-cron#online'); ?>
+        Use an Online Service <?= IP::headlineLink('/en/1.5/help/setup-cron#online'); ?>
     </h4>
 
     <p>

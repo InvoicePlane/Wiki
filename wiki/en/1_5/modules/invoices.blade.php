@@ -9,7 +9,7 @@
     <h2 class="page-title">Invoices</h2>
 
     <h3 id="lifecycle">
-        The Invoice Lifecycle <?php IP::headlineLink('/en/1.0/modules/invoices#lifecycle'); ?>
+        The Invoice Lifecycle <?= IP::headlineLink('/en/1.0/modules/invoices#lifecycle'); ?>
     </h3>
 
     <p>Invoice statuses follow the lifecycle of an invoice from draft to paid and allow you to keep track of where each
@@ -57,7 +57,7 @@
     </ul>
 
     <h3 id="view">
-        Viewing Invoices <?php IP::headlineLink('/en/1.0/modules/quotes#view-quote'); ?>
+        Viewing Invoices <?= IP::headlineLink('/en/1.0/modules/quotes#view-quote'); ?>
     </h3>
 
     <p>To view the invoice list, click <code>Invoices</code> from the main menu and select <code>View Invoices</code>.
@@ -88,7 +88,7 @@
     <p class="small">* This is only available for invoices with the draft status or if Invoice Deletion was enabled.</p>
 
     <h3 id="add">
-        Creating an Invoice <?php IP::headlineLink('/en/1.0/modules/invoices#add'); ?>
+        Creating an Invoice <?= IP::headlineLink('/en/1.0/modules/invoices#add'); ?>
     </h3>
 
     <p>To create a new invoice, either choose <code>Invoices</code> from the main menu and select <code>Create
@@ -127,7 +127,7 @@
     <p class="small">* Invoice deletion is not available for all invoices. Please read the information for <a href="{{ url('en/1.0/modules/invoices#delete') }}">invoice deletion</a>.</p>
 
     <h4 id="add-products">
-        Add Products <?php IP::headlineLink('/en/1.0/modules/invoices#add-products'); ?>
+        Add Products <?= IP::headlineLink('/en/1.0/modules/invoices#add-products'); ?>
     </h4>
 
     <p>To add saved products, press the <code>Add Product</code> button. Choose the product you want to add and mark the
@@ -142,14 +142,14 @@
     </p>
 
     <h4 id="item-order">
-        Changing Item Order <?php IP::headlineLink('/en/1.0/modules/invoices#item-order'); ?>
+        Changing Item Order <?= IP::headlineLink('/en/1.0/modules/invoices#item-order'); ?>
     </h4>
 
     <p>The order in which an item appears on a quote or invoice can be changed by dragging the row to a new position
         with the <code><i class="fa fa-bars"></i></code> icon.</p>
 
     <h4 id="discounts">
-        Discounts <?php IP::headlineLink('/en/1.0/modules/invoices#discounts'); ?>
+        Discounts <?= IP::headlineLink('/en/1.0/modules/invoices#discounts'); ?>
     </h4>
 
     <p>With the release of InvoicePlane 1.4.0 we introduced discounts for each quotes and invoices. There are two separate types of discounts which can by applied:</p>
@@ -168,7 +168,7 @@
     <p>Invoice discounts can be added for the whole invoice directly above the invoice total. You can either choose to add a discount as an amount (e.g. 200 $) or as a percentage of the subtotal (e.g. 5%).</p>
 
     <h4 id="add-tax">
-        Adding Taxes <?php IP::headlineLink('/en/1.0/modules/invoices#add-tax'); ?>
+        Adding Taxes <?= IP::headlineLink('/en/1.0/modules/invoices#add-tax'); ?>
     </h4>
 
     <p>To apply a tax against the entire invoice, choose <code>Add Invoice Tax</code> from the Options button. Choose
@@ -182,7 +182,7 @@
     </div>
 
     <h4 id="copy">
-        Copying an Invoice <?php IP::headlineLink('/en/1.0/modules/invoices#copy'); ?>
+        Copying an Invoice <?= IP::headlineLink('/en/1.0/modules/invoices#copy'); ?>
     </h4>
 
     <p>To copy an invoice, choose <code>Copy Invoice</code> from the <code>Options</code> menu. Change the client name,
@@ -193,7 +193,7 @@
     <hr>
 
     <h3 id="delete">
-        Invoice Deletion <?php IP::headlineLink('/en/1.0/modules/invoices#delete'); ?>
+        Invoice Deletion <?= IP::headlineLink('/en/1.0/modules/invoices#delete'); ?>
     </h3>
 
     <p>By default InvoicePlane prevents the deletion of invoices because it's legally forbidden to delete invoices that
@@ -212,7 +212,7 @@
         </p>
 
     <h3 id="read-only">
-        Read-only <?php IP::headlineLink('/en/1.0/modules/invoices#read-only'); ?>
+        Read-only <?= IP::headlineLink('/en/1.0/modules/invoices#read-only'); ?>
     </h3>
 
     <p>InvoicePlane will set invoices to read-only based on its status and the invoice can't be changed anymore. You can

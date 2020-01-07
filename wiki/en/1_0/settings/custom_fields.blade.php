@@ -27,7 +27,7 @@
     </p>
 
     <h3 id="add">
-        Adding a Custom Field <?php IP::headlineLink('/en/1.0/settings/custom-fields#add'); ?>
+        Adding a Custom Field <?= IP::headlineLink('/en/1.0/settings/custom-fields#add'); ?>
     </h3>
 
     <p>To add a new custom field click on the settings icon <code><i class="fa fa-cogs"></i></code> in the menubar and
@@ -46,7 +46,7 @@
 
     <h3 id="add-to-template">
         Adding Custom Fields to Invoice
-        Templates <?php IP::headlineLink('/en/1.0/settings/custom-fields#add-to-template'); ?>
+        Templates <?= IP::headlineLink('/en/1.0/settings/custom-fields#add-to-template'); ?>
     </h3>
 
     Simply creating the custom field won't place it on our invoice. We still need to modify the invoice template to do so.

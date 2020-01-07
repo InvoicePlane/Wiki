@@ -24,7 +24,7 @@
     <hr>
 
     <h3 id="general">
-        General upgrade information <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#general'); ?>
+        General upgrade information <?= IP::headlineLink('/en/1.5/getting-started/updating-ip#general'); ?>
     </h3>
 
     <p>
@@ -68,12 +68,12 @@
 
     <h3 id="additional-steps">
         Additional steps for specific
-        versions <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#additional-steps'); ?>
+        versions <?= IP::headlineLink('/en/1.5/getting-started/updating-ip#additional-steps'); ?>
     </h3>
 
     <h4 id="upgrade-from-previous">
         Upgrade to InvoicePlane 1.5.0 from a previous
-        version <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-from-previous'); ?>
+        version <?= IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-from-previous'); ?>
     </h4>
 
     <p>
@@ -85,7 +85,7 @@
     <div class="alert alert-warning">Please follow the next steps <b>before</b> running the update / setup!</div>
 
     <h5 id="upgrade-general">
-        General Upgrade <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-general'); ?>
+        General Upgrade <?= IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-general'); ?>
     </h5>
 
     <ol>
@@ -138,7 +138,7 @@
     <p>Please notice: if you used custom templates or modified other files, take a look at the following section.</p>
 
     <h5 id="other-changes">
-        Other notable changes <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#other-changes'); ?>
+        Other notable changes <?= IP::headlineLink('/en/1.5/getting-started/updating-ip#other-changes'); ?>
     </h5>
 
     <p>The following changes may not affect all users as they address specific parts of the application.</p>
@@ -178,7 +178,7 @@
     <hr>
 
     <h4 id="upgrade-to-151">
-        Upgrade from 1.5.0 to 1.5.1 <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-to-151'); ?>
+        Upgrade from 1.5.0 to 1.5.1 <?= IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-to-151'); ?>
     </h4>
 
     <p>If you upgrade InvoicePlane from version 1.5.0 to 1.5.1 please follow these additional steps:</p>
@@ -199,7 +199,7 @@
     </ul>
 
     <h4 id="upgrade-to-152">
-        Upgrade from 1.5.1 to 1.5.2 <?php IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-to-152'); ?>
+        Upgrade from 1.5.1 to 1.5.2 <?= IP::headlineLink('/en/1.5/getting-started/updating-ip#upgrade-to-152'); ?>
     </h4>
 
     <p>There are no additional tasks to do if you upgrade InvoicePlane from version 1.5.1 to 1.5.2</p>

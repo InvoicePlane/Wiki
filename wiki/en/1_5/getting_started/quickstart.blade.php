@@ -9,7 +9,7 @@
     <h2 class="page-title">Quickstart</h2>
 
     <h3 id="login">
-        Logging In <?php IP::headlineLink('/en/1.5/getting-started/quickstart#login'); ?>
+        Logging In <?= IP::headlineLink('/en/1.5/getting-started/quickstart#login'); ?>
     </h3>
 
     <p>
@@ -27,7 +27,7 @@
     <hr/>
 
     <h3 id="config">
-        Configure the Application <?php IP::headlineLink('/en/1.5/getting-started/quickstart#config'); ?>
+        Configure the Application <?= IP::headlineLink('/en/1.5/getting-started/quickstart#config'); ?>
     </h3>
 
     <p>
@@ -43,7 +43,7 @@
     <hr/>
 
     <h3 id="add-client">
-        Adding a Client <?php IP::headlineLink('/en/1.5/getting-started/quickstart#add-client'); ?>
+        Adding a Client <?= IP::headlineLink('/en/1.5/getting-started/quickstart#add-client'); ?>
     </h3>
 
     <p>
@@ -59,7 +59,7 @@
     <hr/>
 
     <h3 id="add-products">
-        Adding Products <?php IP::headlineLink('/en/1.5/getting-started/quickstart#add-products'); ?>
+        Adding Products <?= IP::headlineLink('/en/1.5/getting-started/quickstart#add-products'); ?>
     </h3>
 
     <p>
@@ -75,7 +75,7 @@
     <hr/>
 
     <h3 id="create-invoice">
-        Creating an Invoice <?php IP::headlineLink('/en/1.5/getting-started/quickstart#create-invoice'); ?>
+        Creating an Invoice <?= IP::headlineLink('/en/1.5/getting-started/quickstart#create-invoice'); ?>
     </h3>
 
     <p>
@@ -92,7 +92,7 @@
     </p>
 
     <h4 id="create-invoice">
-        Send the invoice <?php IP::headlineLink('/en/1.5/getting-started/quickstart#send-invoice'); ?>
+        Send the invoice <?= IP::headlineLink('/en/1.5/getting-started/quickstart#send-invoice'); ?>
     </h4>
 
     <p>
@@ -105,7 +105,7 @@
     <hr/>
 
     <h3 id="enter-payment">
-        Entering a Payment <?php IP::headlineLink('/en/1.5/getting-started/quickstart#enter-payment'); ?>
+        Entering a Payment <?= IP::headlineLink('/en/1.5/getting-started/quickstart#enter-payment'); ?>
     </h3>
 
     <p>

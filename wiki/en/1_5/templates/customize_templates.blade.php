@@ -23,7 +23,7 @@
     </div>
 
     <h3 id="look-feel">
-        Customize the Look and Feel <?php IP::headlineLink('/en/1.5/templates/customize-templates#look-feel'); ?>
+        Customize the Look and Feel <?= IP::headlineLink('/en/1.5/templates/customize-templates#look-feel'); ?>
     </h3>
 
     <p>First of all please remember that there is a basic styling for each template. The files use two CSS stylesheets
@@ -32,7 +32,7 @@
         edit the templates.css as changes will be overwritten on updates.</p>
 
     <h3 id="first-steps">
-        First Steps <?php IP::headlineLink('/en/1.5/templates/customize-templates#first-steps'); ?>
+        First Steps <?= IP::headlineLink('/en/1.5/templates/customize-templates#first-steps'); ?>
     </h3>
 
     <p>InvoicePlane already provides a lot of data for all templates. The table below gives you an overview on which
@@ -134,7 +134,7 @@
         name of the variable and the part after the <code>=></code> is the content of the variable.</p>
 
     <h3 id="custom-fields">
-        Adding Custom Fields <?php IP::headlineLink('/en/1.5/templates/customize-templates#custom-fields'); ?>
+        Adding Custom Fields <?= IP::headlineLink('/en/1.5/templates/customize-templates#custom-fields'); ?>
     </h3>
 
     <p>Custom fields work in a special way. As custom fields are added by the user there is no way to define which
@@ -178,7 +178,7 @@
         code example would simply output <code>346999-13400</code> in your template.</p>
 
     <h4 id="custom-fields-boolean">
-        Yes / No Custom Fields <?php IP::headlineLink('/en/1.5/templates/customize-templates#custom-fields-boolean'); ?>
+        Yes / No Custom Fields <?= IP::headlineLink('/en/1.5/templates/customize-templates#custom-fields-boolean'); ?>
     </h4>
 
     <p>Yes/no fields will have the value <code>1</code> for yes and <code>0</code> for no. This way you can use the custom field in conditional statements like this:</p>
@@ -188,7 +188,7 @@
 } ?&gt;</code></pre>
 
     <h3 id="code-examples">
-        Code Examples <?php IP::headlineLink('/en/1.5/templates/customize-templates#code-examples'); ?>
+        Code Examples <?= IP::headlineLink('/en/1.5/templates/customize-templates#code-examples'); ?>
     </h3>
 
     <p>Here is a list of some examples for code that can be used to display variables.<br/>
@@ -249,7 +249,7 @@
     </div>
 
     <h3 id="debugging">
-        Debugging Templates <?php IP::headlineLink('/en/1.5/templates/customize-templates#debugging'); ?>
+        Debugging Templates <?= IP::headlineLink('/en/1.5/templates/customize-templates#debugging'); ?>
     </h3>
 
     <p>The PDF engine is not that good in handling errors or HTML that is broken due to PHP errors. You may get output

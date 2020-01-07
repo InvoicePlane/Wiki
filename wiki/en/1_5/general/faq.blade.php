@@ -14,7 +14,7 @@
 
         <div id="general01" class="card">
             <div class="card-header">
-                Can I sell / redistribute InvoicePlane? <?php IP::headlineLink('/en/1.5/general/faq#general01'); ?>
+                Can I sell / redistribute InvoicePlane? <?= IP::headlineLink('/en/1.5/general/faq#general01'); ?>
             </div>
             <div class="card-block">
                 <p class="text-success">InvoicePlane is a free software and it will never be a commercial product! We
@@ -39,7 +39,7 @@
         <div id="debugmode" class="card">
             <div class="card-header">
                 You have problems and need help? Use the debug
-                mode. <?php IP::headlineLink('/en/1.5/general/faq#debugmode'); ?>
+                mode. <?= IP::headlineLink('/en/1.5/general/faq#debugmode'); ?>
             </div>
             <div class="card-block">
                 <p>You have a problem with some errors, you are stuck and need help? We would like to help you but first
@@ -77,7 +77,7 @@
         <div id="error01" class="card">
             <div class="card-header">
                 I copied InvoicePlane to my webserver but I get blank pages or an error 404 or
-                500 <?php IP::headlineLink('/en/1.5/general/faq#error01'); ?>
+                500 <?= IP::headlineLink('/en/1.5/general/faq#error01'); ?>
             </div>
             <div class="card-block">
                 <p>
@@ -96,7 +96,7 @@
         <div id="error02" class="card">
             <div class="card-header">
                 There is a large spinning cog (<i class="fa fa-cog"></i>) after I clicked a button and now nothing
-                happens <?php IP::headlineLink('/en/1.5/general/faq#error02'); ?>
+                happens <?= IP::headlineLink('/en/1.5/general/faq#error02'); ?>
             </div>
             <div class="card-block">
                 <p>
@@ -109,7 +109,7 @@
         <div id="error03" class="card">
             <div class="card-header">
                 I can't add more than 3 or 4 items to quotes or
-                invoices <?php IP::headlineLink('/en/1.5/general/faq#error03'); ?>
+                invoices <?= IP::headlineLink('/en/1.5/general/faq#error03'); ?>
             </div>
             <div class="card-block">
                 <p>This problem may occurs because of a configuration of your nginx webserver. The server error should
@@ -135,7 +135,7 @@ fastcgi_busy_buffers_size 256k;</code></pre>
         <div id="settings01" class="card">
             <div class="card-header">
                 Where can I set the default invoice / quote
-                groups? <?php IP::headlineLink('/en/1.5/general/faq#settings01'); ?>
+                groups? <?= IP::headlineLink('/en/1.5/general/faq#settings01'); ?>
             </div>
             <div class="card-block">
                 <p>You can set the default invoice / quote groups at <code>System settings > Invoices > Default Invoice
@@ -149,7 +149,7 @@ fastcgi_busy_buffers_size 256k;</code></pre>
 
         <div id="custom01" class="card">
             <div class="card-header">
-                How can I customize the templates? <?php IP::headlineLink('/en/1.5/general/faq#custom01'); ?>
+                How can I customize the templates? <?= IP::headlineLink('/en/1.5/general/faq#custom01'); ?>
             </div>
             <div class="card-block">
                 <p>You can find all templates in the following directories:</p>
