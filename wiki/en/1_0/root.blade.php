@@ -6,19 +6,18 @@
 
 @section('content')
 
-    <h1>
+    <h1 class="mb-4">
         <img src="{{ asset('assets/img/logo.svg') }}" alt="InvoicePlane" width="300px">
         <span class="sr-only">InvoicePlane Wiki</span>
     </h1>
 
     <div class="jumbotron">
         <h2>Welcome to the InvoicePlane Wiki</h2>
-        <p class="lead">
+        <p class="lead mb-0">
             If you want to know how to use InvoicePlane or if you have any
             questions take a look at this wiki. You should find a lot of useful information about the software and each
             module.
         </p>
-
     </div>
 
     <h2>About InvoicePlane</h2>
