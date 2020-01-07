@@ -3,6 +3,7 @@ module.exports = function (grunt) {
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
+  const sass = require('node-sass');
 
   // MODULES
 
@@ -17,6 +18,7 @@ module.exports = function (grunt) {
   grunt.config('sass', {
     dev: {
       options: {
+        implementation: sass,
         outputStyle: 'extended',
         sourceMap: true
       },
@@ -26,6 +28,7 @@ module.exports = function (grunt) {
     },
     build: {
       options: {
+        implementation: sass,
         outputStyle: 'compressed'
       },
       files: {
@@ -39,9 +42,7 @@ module.exports = function (grunt) {
       options: {
         map: true,
         processors: [
-          require('autoprefixer')({
-            browsers: 'last 3 version'
-          })
+          require('autoprefixer')()
         ]
       },
       src: [
@@ -52,9 +53,7 @@ module.exports = function (grunt) {
       options: {
         map: false,
         processors: [
-          require('autoprefixer')({
-            browsers: 'last 3 version'
-          })
+          require('autoprefixer')()
         ]
       },
       src: [
