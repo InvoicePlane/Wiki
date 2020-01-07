@@ -1,7 +1,7 @@
 <div class="sidebar-inner">
 
     <div class="sidebar-top">
-        <a href="{{ \Config::get('app.url')  }}">@lang('global.wiki')</a>
+        <a href="{{ config('app.url')  }}">@lang('global.wiki')</a>
         <a href="#" class="sidebar-toggle pull-right"><i class="fa fa-close"></i></a>
     </div>
 
@@ -22,10 +22,10 @@
                     <a href="https://invoiceplane.com">@lang('global.website')</a>
                 </li>
                 <li>
-                    <a href="#">@lang('global.community_forums')</a>
+                    <a href="https://community.invoiceplane.com">@lang('global.community_forums')</a>
                 </li>
                 <li>
-                    <a href="#">@lang('global.github')</a>
+                    <a href="https://github.com/InvoicePlane">@lang('global.github')</a>
                 </li>
             </ul>
         </li>

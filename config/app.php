@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => 'https://wiki.invoiceplane.com',
+    'url' => env('APP_URL', 'https://wiki.invoiceplane.com'),
 
     /*
     |--------------------------------------------------------------------------
