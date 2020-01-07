@@ -6,7 +6,8 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
-        "laravel/framework": "5.2.*"
+        "laravel/framework": "5.2.*",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.1",
@@ -38,11 +39,6 @@
         ],
         "post-install-cmd": [
             "php artisan clear-compiled",
-            "php artisan optimize"
-        ],
-        "pre-update-cmd": [
-            "php artisan clear-compiled",
-            "php artisan ide-helper:generate",
             "php artisan optimize"
         ],
         "post-update-cmd": [
