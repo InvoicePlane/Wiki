@@ -16,7 +16,7 @@
     "grunt-sass": "^3.1.0",
     "load-grunt-tasks": "^5.1.0",
     "node-sass": "^4.13.0",
-    "postcss": "^7.0.26",
+    "postcss": "^7.0.36",
     "autoprefixer": "^9.7.3"
   },
   "scripts": {
