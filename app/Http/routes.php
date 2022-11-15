@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\WikiController;
+
 Route::get('/', [
     'as' => 'home',
     function () {
@@ -11,3 +13,6 @@ Route::get('/', [
 
 Route::get('{locale}/{version?}/{dir?}/{page?}', 'WikiController@getPage')
     ->where('version', '[0-9\.]+');
+
+
+Route::get('/test','WikiController@getTestPage');

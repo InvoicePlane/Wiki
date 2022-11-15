@@ -102,4 +102,9 @@ class WikiController extends Controller
         // Load the default page
         return redirect()->to('/' . $locale . '/' . str_replace('_', '.', $default_version));
     }
+
+    public function getTestPage()
+    {
+        return "TEST";
+    }
 }

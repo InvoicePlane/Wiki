@@ -106,6 +106,7 @@ $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
+$enable-pointer-cursor-for-buttons: true !default;
 
 
 // Spacing
@@ -243,6 +244,7 @@ $font-size-sm:                ($font-size-base * .875) !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
+$font-weight-bolder:          800 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
@@ -280,6 +282,7 @@ $text-muted:                  $gray-600 !default;
 
 $blockquote-small-color:      $gray-600 !default;
 $blockquote-font-size:        ($font-size-base * 1.25) !default;
+$blockquote-small-font-size:        ($font-size-base) !default;
 
 $hr-border-color:             rgba($black, .1) !default;
 $hr-border-width:             $border-width !default;
@@ -321,6 +324,8 @@ $table-dark-accent-bg:        rgba($white, .05) !default;
 $table-dark-hover-bg:         rgba($white, .075) !default;
 $table-dark-border-color:     lighten($gray-900, 7.5%) !default;
 $table-dark-color:            $body-bg !default;
+$table-color:                 $table-dark-color;
+$table-hover-color:           $table-dark-color;
 
 $table-striped-order:         odd !default;
 
