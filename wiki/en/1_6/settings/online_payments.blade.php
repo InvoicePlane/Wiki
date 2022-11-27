@@ -10,37 +10,7 @@
 
     <h2 class="page-title">Online Payment Settings</h2>
 
-    <p>InvoicePlane supports various different online payment providers like <b>PayPal</b>, <b>Stripe</b> or even the
-        Bitcoin provider <b>Coinbase</b>. The following providers are supported by default.</p>
-
-    <ul>
-        <li><a href="https://www.authorize.net/" class="ext">AuthorizeNet</a></li>
-        <li><a href="https://www.buckaroo-payments.com/" class="ext">Buckaroo Ideal</a></li>
-        <li><a href="https://www.buckaroo-payments.com/" class="ext">Buckaroo PayPal</a></li>
-        <li><a href="https://www.cardsave.net/" class="ext">CardSave</a></li>
-        <li><a href="https://www.coinbase.com/" class="ext">Coinbase</a></li>
-        <li><a href="https://www.eway.com.au/" class="ext">Eway Rapid</a></li>
-        <li><a href="https://www.firstdata.com/en_us/home.html" class="ext">FirstData Connect</a></li>
-        <li><a href="https://gocardless.com/en-eu/" class="ext">GoCardless</a></li>
-        <li><a href="https://www.mastercard.com/gateway/payment-processing/online-credit-card-and-debit-card-payment-processing.html" class="ext">MasterCard Internet Gateway Service</a></li>
-        <li><a href="https://www.mollie.com/en/" class="ext">Mollie</a></li>
-        <li><a href="https://www.multisafepay.com/" class="ext">MultiSafepay</a></li>
-        <li><a href="https://shop.nets.eu/web/no" class="ext">Netaxept</a></li>
-        <li><a href="https://processing.paysafe.com/eu-en/" class="ext">NetBanx</a></li>
-        <li><a href="https://www.payfast.co.za/" class="ext">PayFast</a></li>
-        <li><a href="https://www.paypal.com" class="ext">Payflow Pro</a></li>
-        <li><a href="https://www.paymentexpress.com/" class="ext">PaymentExpress</a></li>
-        <li><a href="https://www.paypal.com" class="ext">PayPal</a></li>
-        <li><a href="https://pin.net.au/" class="ext">Pin</a></li>
-        <li><a href="https://www.sagepay.co.uk/" class="ext">SagePay</a></li>
-        <li><a href="https://www.securepay.com.au/" class="ext">SecurePay</a></li>
-        <li><a href="https://stripe.com/" class="ext">Stripe</a></li>
-        <li><a href="https://www.targetpay.com/" class="ext">Targetpay Directbanking</a></li>
-        <li><a href="https://www.targetpay.com/" class="ext">Targetpay Ideal</a></li>
-        <li><a href="https://www.targetpay.com/" class="ext">Targetpay MrCash</a></li>
-        <li><a href="https://www.2checkout.com/" class="ext">TwoCheckout</a></li>
-        <li><a href="http://www.worldpay.com/us" class="ext">WorldPay</a></li>
-    </ul>
+    <p>InvoicePlane 1.6 supports only <b>Stripe</b> by default as a payment gateway. The reason why the other providers were dropped can be fount <a href="/en/1.6/getting-started/updating-ip#16-breaking-changes" target="_blank">here</a>. Please let us know what payment method you are missing at <a href="https://github.com/InvoicePlane/InvoicePlane/issues" target="_blank">GitHub</a></p>
 
     <h3>Configure your payment provider</h3>
 
@@ -57,12 +27,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/settings/email',
+                    'url' => '/en/1.6/settings/email',
                     'title' => 'eMail Settings',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/updatecheck',
+                    'url' => '/en/1.6/settings/updatecheck',
                     'title' => 'Updatecheck',
                     'type' => 'article'
             )

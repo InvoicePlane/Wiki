@@ -27,7 +27,7 @@
     </p>
 
     <h3 id="add">
-        Adding a Custom Field <?= IP::headlineLink('/en/1.5/settings/custom-fields#add'); ?>
+        Adding a Custom Field <?= IP::headlineLink('/en/1.6/settings/custom-fields#add'); ?>
     </h3>
 
     <p>To add a new custom field click on the settings icon <code><i class="fa fa-cogs"></i></code> in the menubar and
@@ -45,23 +45,23 @@
         object (so a custom field created for the client object will appear on the client form).</p>
 
     <h3 id="add-to-template">
-        Adding Custom Fields to Templates <?= IP::headlineLink('/en/1.5/settings/custom-fields#add-to-template'); ?>
+        Adding Custom Fields to Templates <?= IP::headlineLink('/en/1.6/settings/custom-fields#add-to-template'); ?>
     </h3>
 
     <p>
-        Please take a look at the <a href="/en/1.5/templates/customize-templates#custom-fields">Customize Templates
+        Please take a look at the <a href="/en/1.6/templates/customize-templates#custom-fields">Customize Templates
             page</a> for more information about custom fields in templates.
     </p>
 
     <?php
     $article_pagination = array(
         'previous' => array(
-            'url' => '/en/1.5/settings/updatecheck',
+            'url' => '/en/1.6/settings/updatecheck',
             'title' => 'Updatecheck',
             'type' => 'article'
         ),
         'next' => array(
-            'url' => '/en/1.5/settings/email-templates',
+            'url' => '/en/1.6/settings/email-templates',
             'title' => 'Email Templates',
             'type' => 'article'
         )

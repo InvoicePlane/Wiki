@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <td>Default Invoice Tax Rate</td>
-                <td>Choose the <a href="{{ url('en/1.5/settings/taxrates') }}">Taxrate</a> that should be applied to an invoice by default</td>
+                <td>Choose the <a href="{{ url('en/1.6/settings/taxrates') }}">Taxrate</a> that should be applied to an invoice by default</td>
             </tr>
             <tr>
                 <td>Default Invoice Tax Rate</td>
@@ -32,7 +32,7 @@
             </tr>
             <tr>
                 <td>Default Invoice Tax Rate</td>
-                <td>Choose the <a href="{{ url('en/1.5/settings/taxrates') }}">Taxrate</a> that should be applied to every product of an invoice by default</td>
+                <td>Choose the <a href="{{ url('en/1.6/settings/taxrates') }}">Taxrate</a> that should be applied to every product of an invoice by default</td>
             </tr>
         </table>
     </div>
@@ -40,12 +40,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/settings/quotes',
+                    'url' => '/en/1.6/settings/quotes',
                     'title' => 'Quote Settings',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/email',
+                    'url' => '/en/1.6/settings/email',
                     'title' => 'eMail Settings',
                     'type' => 'article'
             )

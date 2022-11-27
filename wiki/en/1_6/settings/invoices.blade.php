@@ -17,7 +17,7 @@
     </p>
 
     <h3 id="general">
-        General settings <?= IP::headlineLink('/en/1.5/settings/general#general'); ?>
+        General settings <?= IP::headlineLink('/en/1.6/settings/general#general'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -28,7 +28,7 @@
             </tr>
             <tr>
                 <td>Default Invoicegroup</td>
-                <td>Select the <a href="{{ url('en/1.5/settings/invoicegroups') }}">Invoicegroup</a> that should be used by default</td>
+                <td>Select the <a href="{{ url('en/1.6/settings/invoicegroups') }}">Invoicegroup</a> that should be used by default</td>
             </tr>
             <tr>
                 <td>Set the Invoice to read-only on</td>
@@ -58,7 +58,7 @@
     </div>
 
     <h3 id="templates">
-        Templates <?= IP::headlineLink('/en/1.5/settings/invoices#templates'); ?>
+        Templates <?= IP::headlineLink('/en/1.6/settings/invoices#templates'); ?>
     </h3>
 
     <p>All following settings allow you to set default PDF and email templates for different states and purposes. At the end in the PDF Footer you can enter information that should be placed at the bottom of each PDF template.</p>
@@ -66,12 +66,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/settings/general',
+                    'url' => '/en/1.6/settings/general',
                     'title' => 'General Settings',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/quotes',
+                    'url' => '/en/1.6/settings/quotes',
                     'title' => 'Quote Settings',
                     'type' => 'article'
             )

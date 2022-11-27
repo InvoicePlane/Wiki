@@ -41,12 +41,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/settings/taxes',
+                    'url' => '/en/1.6/settings/taxes',
                     'title' => 'Tax Settings',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/online-payments',
+                    'url' => '/en/1.6/settings/online-payments',
                     'title' => 'Merchant Account Settings',
                     'type' => 'article'
             )

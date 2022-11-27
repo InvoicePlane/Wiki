@@ -85,12 +85,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/system/translation-localization',
+                    'url' => '/en/1.6/system/translation-localization',
                     'title' => 'Translation / Localization',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/system/upgrade-from-fusioninvoice',
+                    'url' => '/en/1.6/system/upgrade-from-fusioninvoice',
                     'title' => 'Upgrade form FusionInvoice',
                     'type' => 'article'
             )

@@ -17,7 +17,7 @@
     </p>
 
     <h3 id="general">
-        General settings <?= IP::headlineLink('/en/1.5/settings/general#general'); ?>
+        General settings <?= IP::headlineLink('/en/1.6/settings/general#general'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -32,7 +32,7 @@
             </tr>
             <tr>
                 <td>Default Quotegroup</td>
-                <td>Select the <a href="{{ url('en/1.5/settings/invoicegroups') }}">Quotegroup (aka Invoicegroups)</a> that should be used by default</td>
+                <td>Select the <a href="{{ url('en/1.6/settings/invoicegroups') }}">Quotegroup (aka Invoicegroups)</a> that should be used by default</td>
             </tr>
             <tr>
                 <td>Mark Quotes as sent when PDF is generated</td>
@@ -42,7 +42,7 @@
     </div>
 
     <h3 id="templates">
-        Templates <?= IP::headlineLink('/en/1.5/settings/invoices#templates'); ?>
+        Templates <?= IP::headlineLink('/en/1.6/settings/invoices#templates'); ?>
     </h3>
 
     <p>All following settings allow you to set default PDF and email templates for different states and purposes.</p>
@@ -50,12 +50,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/settings/invoices',
+                    'url' => '/en/1.6/settings/invoices',
                     'title' => 'Invoice Settings',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/taxes',
+                    'url' => '/en/1.6/settings/taxes',
                     'title' => 'Tax Settings',
                     'type' => 'article'
             )

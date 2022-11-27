@@ -17,7 +17,7 @@
     </p>
 
     <h3 id="add">
-        Add a Payment Method <?= IP::headlineLink('/en/1.5/settings/payment-methods#add'); ?>
+        Add a Payment Method <?= IP::headlineLink('/en/1.6/settings/payment-methods#add'); ?>
     </h3>
 
     <p>To add a new payment method, click the settings icon <code><i class="fa fa-cogs"></i></code> near the right hand side of the main menu, select <code>Payment Methods</code>, and click the <code>New</code> button near the top right of the page.</p>
@@ -33,12 +33,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/settings/invoicegroups',
+                    'url' => '/en/1.6/settings/invoicegroups',
                     'title' => 'Invoicegroups',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/taxrates',
+                    'url' => '/en/1.6/settings/taxrates',
                     'title' => 'Taxrates',
                     'type' => 'article'
             )

@@ -19,12 +19,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/settings/online-payments',
+                    'url' => '/en/1.6/settings/online-payments',
                     'title' => 'Merchant Account Settings',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/custom-fields',
+                    'url' => '/en/1.6/settings/custom-fields',
                     'title' => 'Custom Fields',
                     'type' => 'article'
             )

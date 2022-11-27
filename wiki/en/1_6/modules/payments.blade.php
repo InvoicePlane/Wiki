@@ -9,7 +9,7 @@
     <h2 class="page-title">Payments</h2>
 
     <h3 id="view">
-        View Payments <?= IP::headlineLink('/en/1.5/modules/payments#view'); ?>
+        View Payments <?= IP::headlineLink('/en/1.6/modules/payments#view'); ?>
     </h3>
 
     <p>To view the payment list, click <code>Payments</code> from the main menu and select <code>View Payments</code>.
@@ -24,7 +24,7 @@
     <p>To navigate between pages, use the pager buttons located on the submenu bar.</p>
 
     <h3 id="add">
-        Entering a Payment <?= IP::headlineLink('/en/1.5/modules/payments#add'); ?>
+        Entering a Payment <?= IP::headlineLink('/en/1.6/modules/payments#add'); ?>
     </h3>
 
     <p>To enter a payment, either choose <code>Payments</code> from the main menu and select <code>Enter Payment</code>,
@@ -41,29 +41,28 @@
         enter any pertinent notes and press the <code>Save</code> button near the top right of the page.</p>
 
     <h3 id="online">
-        Online Payments <?= IP::headlineLink('/en/1.5/modules/payments#online'); ?>
+        Online Payments <?= IP::headlineLink('/en/1.6/modules/payments#online'); ?>
     </h3>
 
     <p>InvoicePlane can be configured to allow clients to make payments online. The only payment gateway currently
-        tested with InvoicePlane is PayPal.</p>
+        tested with InvoicePlane is Stripe.</p>
 
-    <h4 id="paypal">
-        Configure PayPal for Online Payments <?= IP::headlineLink('/en/1.5/modules/payments#paypal'); ?>
+    <h4 id="stripe">
+        Configure Stripe for Online Payments <?= IP::headlineLink('/en/1.6/modules/payments#stripe'); ?>
     </h4>
 
-    <p>To configure InvoicePlane integration with PayPal, you must first have valid PayPal API credentials. If you
-        don't, follow <a href="https://developer.paypal.com/docs/classic/api/apiCredentials/" class="ext">these
+    <p>To configure InvoicePlane integration with Stripe, you must first have a valid Stripe API Secret Key. If you
+        don't, follow <a href="https://stripe.com/docs/keys#create-api-secret-key" target="_blank" class="ext">these
             instructions</a> first to obtain the credentials.</p>
 
     <p>Once you have your API credentials, perform the following in InvoicePlane:</p>
 
     <ol>
         <li>Click the <code>Settings</code> icon and choose the <code>System Settings</code> entry.</li>
-        <li>Click the <code>Merchant Account</code> tab.</li>
+        <li>Click the <code>online payment</code> tab.</li>
         <li>Set <code>Enable Online Payments</code> to <code>Yes</code>.</li>
-        <li>Choose the appropriate <code>Merchant Driver</code>.</li>
-        <li>Set the <code>Test Mode</code> to <code>No</code>.</li>
-        <li>Enter the username, password and signature obtained from PayPal.</li>
+        <li>Choose <code>Stripe</code> as a merchant driver (only one available in InvoicePlane 1.6).</li>
+        <li>Enter the Secret Keyy and the Publishable Key obtained from Stripe.</li>
         <li>Select the appropriate currency code.</li>
         <li>Press the <code>Save</code> button.</li>
     </ol>
@@ -76,12 +75,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/modules/tasks_projects',
+                    'url' => '/en/1.6/modules/tasks_projects',
                     'title' => 'Recurring Invoices',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings',
+                    'url' => '/en/1.6/settings',
                     'title' => 'Settings',
                     'type' => 'section'
             )

@@ -10,43 +10,43 @@
 
 <ul>
     <li>
-        <a href="/en/1.5/settings/general">General Settings</a>
+        <a href="/en/1.6/settings/general">General Settings</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/invoices">Invoice Settings</a>
+        <a href="/en/1.6/settings/invoices">Invoice Settings</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/quotes">Quotes Settings</a>
+        <a href="/en/1.6/settings/quotes">Quotes Settings</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/taxes">Tax Settings</a>
+        <a href="/en/1.6/settings/taxes">Tax Settings</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/email">eMail Settings</a>
+        <a href="/en/1.6/settings/email">eMail Settings</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/online-payments">Online Payments</a>
+        <a href="/en/1.6/settings/online-payments">Online Payments</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/updatecheck">Updatecheck</a>
+        <a href="/en/1.6/settings/updatecheck">Updatecheck</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/custom-fields">Custom Fields</a>
+        <a href="/en/1.6/settings/custom-fields">Custom Fields</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/email-templates">eMail Templates</a>
+        <a href="/en/1.6/settings/email-templates">eMail Templates</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/invoice-groups">Invoice Groups</a>
+        <a href="/en/1.6/settings/invoice-groups">Invoice Groups</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/payment-methods">Payment Methods</a>
+        <a href="/en/1.6/settings/payment-methods">Payment Methods</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/taxrates">Taxrates</a>
+        <a href="/en/1.6/settings/taxrates">Taxrates</a>
     </li>
     <li>
-        <a href="/en/1.5/settings/user-accounts">User Accounts</a>
+        <a href="/en/1.6/settings/user-accounts">User Accounts</a>
     </li>
 </ul>
 

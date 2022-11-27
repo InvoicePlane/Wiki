@@ -18,7 +18,7 @@
     </p>
 
     <h3 id="general">
-        General settings <?= IP::headlineLink('/en/1.5/settings/general#general'); ?>
+        General settings <?= IP::headlineLink('/en/1.6/settings/general#general'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -29,7 +29,7 @@
             </tr>
             <tr>
                 <td>Language</td>
-                <td>Choose the <a href="{{ url('en/1.5/system/translation-localization') }}">language</a> for the application</td>
+                <td>Choose the <a href="{{ url('en/1.6/system/translation-localization') }}">language</a> for the application</td>
             </tr>
             <tr>
                 <td>First day of the Week</td>
@@ -68,7 +68,7 @@
     </div>
 
     <h3 id="dashboard">
-        Dashboard settings <?= IP::headlineLink('/en/1.5/settings/general#dashboard'); ?>
+        Dashboard settings <?= IP::headlineLink('/en/1.6/settings/general#dashboard'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -89,7 +89,7 @@
     </div>
 
     <h3 id="interface">
-        Interface settings <?= IP::headlineLink('/en/1.5/settings/general#interface'); ?>
+        Interface settings <?= IP::headlineLink('/en/1.6/settings/general#interface'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -119,7 +119,7 @@
             </tr>
             <tr>
                 <td>Cron Key</td>
-                <td>You will need this cron key to setup <a href="{{ url('en/1.5/modules/recurring-invoices') }}">recurring
+                <td>You will need this cron key to setup <a href="{{ url('en/1.6/modules/recurring-invoices') }}">recurring
                         invoices</a>.
                 </td>
             </tr>
@@ -127,7 +127,7 @@
     </div>
 
     <h3 id="interface">
-        System settings <?= IP::headlineLink('/en/1.5/settings/general#system'); ?>
+        System settings <?= IP::headlineLink('/en/1.6/settings/general#system'); ?>
     </h3>
 
     <div class="table-responsive">
@@ -140,7 +140,7 @@
             </tr>
             <tr>
                 <td>Cron Key</td>
-                <td>You will need this cron key to setup <a href="{{ url('en/1.5/modules/recurring-invoices') }}">recurring
+                <td>You will need this cron key to setup <a href="{{ url('en/1.6/modules/recurring-invoices') }}">recurring
                         invoices</a>
                 </td>
             </tr>
@@ -155,12 +155,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/modules',
+                    'url' => '/en/1.6/modules',
                     'title' => 'Modules',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/invoices',
+                    'url' => '/en/1.6/settings/invoices',
                     'title' => 'Invoice Settings',
                     'type' => 'article'
             )

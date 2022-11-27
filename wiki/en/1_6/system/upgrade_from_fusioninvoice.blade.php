@@ -47,7 +47,7 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/system/importing-data',
+                    'url' => '/en/1.6/system/importing-data',
                     'title' => 'Importing Data',
                     'type' => 'article'
             )

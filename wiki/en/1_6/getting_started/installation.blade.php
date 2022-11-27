@@ -13,7 +13,7 @@
 
     <ol>
         <li>
-            <a href="https://invoiceplane.com/downloads">Download</a> and extract the archive.
+            <a href="https://invoiceplane.com/downloads" target="_blank">Download</a> and extract the archive.
         </li>
         <li>
             Create an empty database on your web server.
@@ -38,7 +38,7 @@
     </p>
 
     <h3 id="subdir">
-        Run InvoicePlane in a sub directory <?= IP::headlineLink('/en/1.5/getting-started/installation#subdir'); ?>
+        Run InvoicePlane in a sub directory <?= IP::headlineLink('/en/1.6/getting-started/installation#subdir'); ?>
     </h3>
 
     <p>
@@ -68,7 +68,7 @@ RewriteRule . index.php [L]</code></pre>
 
 
     <h3 id="htaccess">
-        Remove index.php from the URL <?= IP::headlineLink('/en/1.5/getting-started/installation#htaccess'); ?>
+        Remove index.php from the URL <?= IP::headlineLink('/en/1.6/getting-started/installation#htaccess'); ?>
     </h3>
 
     <p>
@@ -76,7 +76,7 @@ RewriteRule . index.php [L]</code></pre>
     </p>
 
     <ol>
-        <li>Make sure that <a href="https://go.invoiceplane.com/apachemodrewrite">mod_rewrite</a> is enabled on your web
+        <li>Make sure that <a href="https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html" target="_blank">mod_rewrite</a> is enabled on your web
             server.
         </li>
         <li>Open the file <code>ipconfig.php</code></li>
@@ -88,12 +88,12 @@ RewriteRule . index.php [L]</code></pre>
     <?php
     $article_pagination = array(
         'previous' => array(
-            'url' => '/en/1.5/getting-started/requirements',
+            'url' => '/en/1.6/getting-started/requirements',
             'title' => 'Requirements',
             'type' => 'article'
         ),
         'next' => array(
-            'url' => '/en/1.5/getting-started/quickstart',
+            'url' => '/en/1.6/getting-started/quickstart',
             'title' => 'Quickstart',
             'type' => 'article'
         )

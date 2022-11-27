@@ -9,7 +9,7 @@
     <h2 class="page-title">Clients</h2>
 
     <h3 id="view-clients">
-        View Clients <?= IP::headlineLink('/en/1.5/modules/clients#view-clients'); ?>
+        View Clients <?= IP::headlineLink('/en/1.6/modules/clients#view-clients'); ?>
     </h3>
 
     <p>To view the client list, click <code>Clients</code> from the main menu and select <code>View Clients</code>.</p>
@@ -35,7 +35,7 @@
     </ul>
 
     <h3 id="add-clients">
-        Add new Clients <?= IP::headlineLink('/en/1.5/modules/clients#add-clients'); ?>
+        Add new Clients <?= IP::headlineLink('/en/1.6/modules/clients#add-clients'); ?>
     </h3>
 
     <p>To add a new client, either choose <code>Clients</code> from the main menu and select <code>Add Client</code>, or
@@ -50,23 +50,23 @@
 
     <p>When adding a new client, the only field required is the <code>Client Name</code> field, although if you plan to
         email invoices and quotes to your clients, the <code>Email Address</code> field should be filled in as well. Any
-        <a href="/en/1.5/settings/custom-fields">custom fields</a> created for client records will display at the bottom
+        <a href="/en/1.6/settings/custom-fields">custom fields</a> created for client records will display at the bottom
         of the client form.</p>
 
     <h3 id="client-login">
-        Client Logins <?= IP::headlineLink('/en/1.5/modules/clients#client-login'); ?>
+        Client Logins <?= IP::headlineLink('/en/1.6/modules/clients#client-login'); ?>
     </h3>
 
     <p>Clients can be granted permission to log into InvoicePlane to view their quotes and invoices, approve or reject
         quotes and pay their invoices. See the <code>Guest Account</code> section of the <a
-                href="{{ url('en/1.5/settings/user-accounts') }}">User Accounts</a> page for instructions on creating logins for
+                href="{{ url('en/1.6/settings/user-accounts') }}">User Accounts</a> page for instructions on creating logins for
         your clients.</p>
 
 
     <?php
     $article_pagination = array(
             'next' => array(
-                    'url' => '/en/1.5/modules/quotes',
+                    'url' => '/en/1.6/modules/quotes',
                     'title' => 'Quotes',
                     'type' => 'article'
             )

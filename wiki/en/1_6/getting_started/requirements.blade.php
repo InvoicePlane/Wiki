@@ -17,7 +17,7 @@
             A webserver / shared hosting with the following specifications:
             <ul>
                 <li>MySQL >= 5.5 or the equivalent version of MariaDB</li>
-                <li>PHP >= 7.0 (PHP 5.6 may not be supported any longer)</li>
+                <li>PHP >= 8.0</li>
                 <li>
                     The following PHP extensions must be installed and activated:
                     <ul>
@@ -36,25 +36,20 @@
             </ul>
         </li>
         <li>
-            An up-to-date web browser. We do recommend using either Google Chrome, Firefox or the latest version of
-            Safari. Internet Explorer is only supported from version 11.
+            An up-to-date web browser. We do recommend using either <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>, <a href="https://www.microsoft.com/en-us/edge" target="_blank">Microsoft Edge</a>, the latest version of
+            <a href="https://www.apple.com/safari" target="_blank">Safari</a> or any of the other leading browsers around the internet. Please note that since Microsoft introduced <a href="https://www.microsoft.com/en-us/edge" target="_blank">Microsoft Edge</a>, Internet Explorer is not supported anymore.
         </li>
     </ul>
 
     <div class="alert alert-warning">
-        Please be aware that many users reported issues with the following hosting providers:<br>
-        Go Daddy shared hosting
-    </div>
-
-    <div class="alert alert-danger">
-        Please notice that PHP 5.5 is no longer supported and should <b>not</b> be used anymore for producton
-        environments!
+        Please notice that PHP =< 8 is no longer supported and should <b>not</b> be used anymore for producton
+        environments! (see <a href="https://www.php.net/supported-versions.php" target="_blank">php version support</a> for more information)
     </div>
 
     <?php
     $article_pagination = array(
         'next' => array(
-            'url' => '/en/1.5/getting-started/installation',
+            'url' => '/en/1.6/getting-started/installation',
             'title' => 'Installation',
             'type' => 'article'
         )

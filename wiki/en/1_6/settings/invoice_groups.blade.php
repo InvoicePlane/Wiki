@@ -17,7 +17,7 @@
     </p>
 
     <h3 id="configure">
-        Configure an Invoice Group <?= IP::headlineLink('/en/1.5/settings/invoice-groups#configure'); ?>
+        Configure an Invoice Group <?= IP::headlineLink('/en/1.6/settings/invoice-groups#configure'); ?>
     </h3>
 
     <p>These default groups can be customized and any number of new groups can be created. Each group has a number of options.</p>
@@ -56,7 +56,7 @@
     </div>
 
     <h4 id="prefix">
-        Format the Identifier <?= IP::headlineLink('/en/1.5/settings/invoice-groups#identifier'); ?>
+        Format the Identifier <?= IP::headlineLink('/en/1.6/settings/invoice-groups#identifier'); ?>
     </h4>
 
     <div class="alert alert-warning">Caution! The identifier <b>must</b> contain the <code>&#123;&#123;&#123;ID&#125;&#125;&#125;</code> tag no matter where!</div>
@@ -94,7 +94,7 @@
     </div>
 
     <h4 id="examples">
-        Formatting Examples <?= IP::headlineLink('/en/1.5/settings/invoice-groups#examples'); ?>
+        Formatting Examples <?= IP::headlineLink('/en/1.6/settings/invoice-groups#examples'); ?>
     </h4>
 
     <div class="table-responsive">
@@ -129,12 +129,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/settings/email-templates',
+                    'url' => '/en/1.6/settings/email-templates',
                     'title' => 'Email Templates',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/payment-methods',
+                    'url' => '/en/1.6/settings/payment-methods',
                     'title' => 'Payment Methods',
                     'type' => 'article'
             )

@@ -9,7 +9,7 @@
     <h2 class="page-title">Help: Setup a Cron</h2>
 
     <p>
-        If you want to use <a href="{{ url('en/1.5/modules/recurring-invoices') }}">recurring invoices</a> you have to
+        If you want to use <a href="{{ url('en/1.6/modules/recurring-invoices') }}">recurring invoices</a> you have to
         setup a cron
         that opens the url listed on the recurring invoices page. A cron is basically a script that runs on predefined
         times. You can setup a cron that runs every minute, every third hour per day or yearly. For recurring invoices
@@ -24,7 +24,7 @@
     </ul>
 
     <h4 id="setup-server">
-        Use your own Server <?= IP::headlineLink('/en/1.5/help/setup-cron#setup-server'); ?>
+        Use your own Server <?= IP::headlineLink('/en/1.6/help/setup-cron#setup-server'); ?>
     </h4>
 
     <p>
@@ -60,7 +60,7 @@
     </p>
 
     <h4 id="setup-online">
-        Use an Online Service <?= IP::headlineLink('/en/1.5/help/setup-cron#online'); ?>
+        Use an Online Service <?= IP::headlineLink('/en/1.6/help/setup-cron#online'); ?>
     </h4>
 
     <p>

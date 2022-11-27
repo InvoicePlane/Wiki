@@ -9,7 +9,7 @@
     <h2 class="page-title">Quickstart</h2>
 
     <h3 id="login">
-        Logging In <?= IP::headlineLink('/en/1.5/getting-started/quickstart#login'); ?>
+        Logging In <?= IP::headlineLink('/en/1.6/getting-started/quickstart#login'); ?>
     </h3>
 
     <p>
@@ -27,7 +27,7 @@
     <hr/>
 
     <h3 id="config">
-        Configure the Application <?= IP::headlineLink('/en/1.5/getting-started/quickstart#config'); ?>
+        Configure the Application <?= IP::headlineLink('/en/1.6/getting-started/quickstart#config'); ?>
     </h3>
 
     <p>
@@ -36,14 +36,14 @@
     </p>
 
     <p>
-        More information about available settings can be found on the <a href="{{ url('en/1.5/modules/settings') }}">Settings</a>
+        More information about available settings can be found on the <a href="{{ url('en/1.6/modules/settings') }}">Settings</a>
         page.
     </p>
 
     <hr/>
 
     <h3 id="add-client">
-        Adding a Client <?= IP::headlineLink('/en/1.5/getting-started/quickstart#add-client'); ?>
+        Adding a Client <?= IP::headlineLink('/en/1.6/getting-started/quickstart#add-client'); ?>
     </h3>
 
     <p>
@@ -52,14 +52,14 @@
     </p>
 
     <p>
-        More information about the client management can be found on the <a href="{{ url('en/1.5/modules/clients') }}">Clients</a>
+        More information about the client management can be found on the <a href="{{ url('en/1.6/modules/clients') }}">Clients</a>
         page.
     </p>
 
     <hr/>
 
     <h3 id="add-products">
-        Adding Products <?= IP::headlineLink('/en/1.5/getting-started/quickstart#add-products'); ?>
+        Adding Products <?= IP::headlineLink('/en/1.6/getting-started/quickstart#add-products'); ?>
     </h3>
 
     <p>
@@ -68,14 +68,14 @@
     </p>
 
     <p>
-        More information about products can be found on the <a href="{{ url('en/1.5/modules/products') }}">Products</a>
+        More information about products can be found on the <a href="{{ url('en/1.6/modules/products') }}">Products</a>
         page.
     </p>
 
     <hr/>
 
     <h3 id="create-invoice">
-        Creating an Invoice <?= IP::headlineLink('/en/1.5/getting-started/quickstart#create-invoice'); ?>
+        Creating an Invoice <?= IP::headlineLink('/en/1.6/getting-started/quickstart#create-invoice'); ?>
     </h3>
 
     <p>
@@ -92,7 +92,7 @@
     </p>
 
     <h4 id="create-invoice">
-        Send the invoice <?= IP::headlineLink('/en/1.5/getting-started/quickstart#send-invoice'); ?>
+        Send the invoice <?= IP::headlineLink('/en/1.6/getting-started/quickstart#send-invoice'); ?>
     </h4>
 
     <p>
@@ -105,7 +105,7 @@
     <hr/>
 
     <h3 id="enter-payment">
-        Entering a Payment <?= IP::headlineLink('/en/1.5/getting-started/quickstart#enter-payment'); ?>
+        Entering a Payment <?= IP::headlineLink('/en/1.6/getting-started/quickstart#enter-payment'); ?>
     </h3>
 
     <p>
@@ -120,19 +120,19 @@
     </p>
 
     <p>
-        More information about payments can be found on the <a href="{{ url('en/1.5/modules/payments') }}">Payments</a>
+        More information about payments can be found on the <a href="{{ url('en/1.6/modules/payments') }}">Payments</a>
         page.
     </p>
 
     <?php
     $article_pagination = array(
         'previous' => array(
-            'url' => '/en/1.5/getting-started/installation',
+            'url' => '/en/1.6/getting-started/installation',
             'title' => 'Installation',
             'type' => 'article'
         ),
         'next' => array(
-            'url' => '/en/1.5/getting-started/updating-ip',
+            'url' => '/en/1.6/getting-started/updating-ip',
             'title' => 'Updating InvoicePlane',
             'type' => 'article'
         )

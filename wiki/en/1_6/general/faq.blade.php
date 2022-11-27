@@ -39,7 +39,7 @@
         <div id="debugmode" class="card">
             <div class="card-header">
                 You have problems and need help? Use the debug
-                mode. <?= IP::headlineLink('/en/1.5/general/faq#debugmode'); ?>
+                mode. <?= IP::headlineLink('/en/1.6/general/faq#debugmode'); ?>
             </div>
             <div class="card-block">
                 <p>You have a problem with some errors, you are stuck and need help? We would like to help you but first

@@ -17,7 +17,7 @@
     </p>
 
     <h3 id="add">
-        Creating an Email Template <?= IP::headlineLink('/en/1.5/settings/email-templates#add'); ?>
+        Creating an Email Template <?= IP::headlineLink('/en/1.6/settings/email-templates#add'); ?>
     </h3>
 
     <p>To create a new email template, click the settings icon <code><i class="fa fa-cogs"></i></code> near the right hand side of the main menu, select <code>Email Templates</code>, and click the <code>New</code> button near the top right of the page.</p>
@@ -31,7 +31,7 @@
     <p>Template variables can be inserted into the body of your email by clicking the name of the variable to include from the list below the form. The example above shows what an email template for a new invoice might look like.</p>
 
     <h3 id="default-templates">
-        Setting Default Email Templates <?= IP::headlineLink('/en/1.5/settings/email-templates#default-templates'); ?>
+        Setting Default Email Templates <?= IP::headlineLink('/en/1.6/settings/email-templates#default-templates'); ?>
     </h3>
 
     <p>To access the settings for your default templates, click the settings icon <code><i class="fa fa-cogs"></i></code>, select <code>System Settings</code>, and choose either the <code>Invoices</code> or the <code>Quotes</code> tab</p>
@@ -56,12 +56,12 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/settings/custom-fields',
+                    'url' => '/en/1.6/settings/custom-fields',
                     'title' => 'Custom Fields',
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.5/settings/invoicegroups',
+                    'url' => '/en/1.6/settings/invoicegroups',
                     'title' => 'Invoicegroups',
                     'type' => 'article'
             )

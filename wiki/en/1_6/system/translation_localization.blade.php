@@ -12,7 +12,7 @@
         please visit the <a href="http://translations.invoiceplane.com/" class="ext">translation repository</a>.</p>
 
     <h3 id="install">
-        Install a new translation <?= IP::headlineLink('/en/1.5/system/translation-localization#install'); ?>
+        Install a new translation <?= IP::headlineLink('/en/1.6/system/translation-localization#install'); ?>
     </h3>
 
     <div class="alert alert-warning">
@@ -28,7 +28,7 @@
             <code>es_AR</code></li>
         <li>Paste the folder to the following directory of your InvoicePlane installation:
             <code>/application/language/</code></li>
-        <li>Apply the language in your <a href="{{ url('en/1.5/settings/general') }}">general settings</a>.</li>
+        <li>Apply the language in your <a href="{{ url('en/1.6/settings/general') }}">general settings</a>.</li>
     </ol>
 
     <p>Your folder structure should look like this:</p>
@@ -49,7 +49,7 @@
     </pre>
     
     <h3 id="customize">
-        Customize translations <?= IP::headlineLink('/en/1.5/system/translation-localization#customize'); ?>
+        Customize translations <?= IP::headlineLink('/en/1.6/system/translation-localization#customize'); ?>
     </h3>
     
     <p>You are able to replace all language strings in the application with your own strings. We added a file called <code>custom_lang.php</code> which is located in every language folder (see above).</p>
@@ -80,12 +80,12 @@ $lang = array(
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.5/templates',
+                    'url' => '/en/1.6/templates',
                     'title' => 'Templates',
                     'type' => 'section'
             ),
             'next' => array(
-                    'url' => '/en/1.5/system/importing-data',
+                    'url' => '/en/1.6/system/importing-data',
                     'title' => 'Importing Data',
                     'type' => 'article'
             )
