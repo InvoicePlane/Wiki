@@ -63,7 +63,8 @@
 
                     <h3>One-Click Online Payments</h3>
 
-                    <p>Let your clients pay the invoices by using Stripe (other payment providers to come, please open an issue on <a href="https://github.com/InvoicePlane/InvoicePlane/issues" target?"_blank">GitHub</a> if you are missing a provider).</p>
+                    <p>Let your clients pay the invoices by using one of 25 different online payment providers like
+                        PayPal, Stripe or even using Bitcoins via Coinbase.</p>
                 </div>
             </div>
 
