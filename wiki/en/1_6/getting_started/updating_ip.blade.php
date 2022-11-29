@@ -102,7 +102,7 @@
             </code>
             Place the <strong>location</strong> of your newly moved ipconfig.php file. So if you moved it <strong>outside the document root</strong> then your new code will be:
             <code>
-                $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '../ipconfig.php');
+                $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '/../ipconfig.php');
             </code>
             <strong>OR</strong>
             <code>
