@@ -119,8 +119,38 @@
         <li>If you were using the online payments module please navigate to <code>//your-domain.com/settings</code> and to the tab <code>online payment</code> and disable all payment methods that are not <i>stripe</i>. InvoicePlane 1.6 at the moment supports only Stripe as a payment gateway.</li>
     </ul>
     <div class="alert alert-warning">
-        Protect your newly renamed .env file
+        Protect your newly renamed .env file, <strong>Do not skip this step!</strong>
     </div>
+    <ul>
+        <li>Apache</li>
+        <li>Add a .htaccess file in the same directory as your newly named config file, for example cust123.env with the following contents:
+            <code>
+                <Files "cust123.env">
+                Require all denied
+                </Files>
+            </code>
+        </li>
+        <li>Other option: Add a .htaccess file in the same directory as your newly named config file, for example cust123.env with the following contents:
+            <code>
+                <Files "cust123.env">
+                Order Allow,Deny
+                Deny from all
+                </Files>
+            </code>
+        </li>
+    </ul>
+    <ul>
+        <li>Nginx</li>
+        <li>In your nginx config file for your specific site, you can add:
+            <code>
+                # Block access to dot files
+                location ~ /\. {
+                    deny  all;
+                }
+            </code>
+            It will prevent all visitors for accessing files that start with a <code>dot</code>
+        </li>
+    </ul>
     <div class="alert alert-info">
         <?php echo trans('global.footernotice') ?>
     </div>
