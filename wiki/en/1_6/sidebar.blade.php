@@ -5,10 +5,10 @@
         <span class="pull-right"><span class="menu-icon fa fa-fw"></span></span>
     </a>
     <ul id="submenu-10-general" class="submenu collapse @if($current_dir == 'general') show @endif">
-        <li><a href="{{ url('en/1.0/general/about') }}">What is InvoicePlane?</a></li>
-        <li><a href="{{ url('en/1.0/general/changelog') }}">Changelog</a></li>
-        <li><a href="{{ url('en/1.0/general/license') }}">License</a></li>
-        <li><a href="{{ url('en/1.0/general/faq') }}">FAQ</a></li>
+        <li><a href="{{ url('en/1.6/general/about') }}">What is InvoicePlane?</a></li>
+        <li><a href="{{ url('en/1.6/general/changelog') }}">Changelog</a></li>
+        <li><a href="{{ url('en/1.6/general/license') }}">License</a></li>
+        <li><a href="{{ url('en/1.6/general/faq') }}">FAQ</a></li>
     </ul>
 </li>
 <li>

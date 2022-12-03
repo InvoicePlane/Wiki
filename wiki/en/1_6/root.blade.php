@@ -23,10 +23,10 @@
     <h2>About InvoicePlane</h2>
 
     <ul>
-        <li><a href="{{ url('en/1.0/general/about') }}">What is InvoicePlane?</a></li>
-        <li><a href="{{ url('en/1.0/general/changelog') }}">Changelog</a></li>
-        <li><a href="{{ url('en/1.0/general/license') }}">License</a></li>
-        <li><a href="{{ url('en/1.0/general/faq') }}">FAQ</a></li>
+        <li><a href="{{ url('en/1.6/general/about') }}">What is InvoicePlane?</a></li>
+        <li><a href="{{ url('en/1.6/general/changelog') }}">Changelog</a></li>
+        <li><a href="{{ url('en/1.6/general/license') }}">License</a></li>
+        <li><a href="{{ url('en/1.6/general/faq') }}">FAQ</a></li>
     </ul>
 
     <h2>Getting started</h2>
