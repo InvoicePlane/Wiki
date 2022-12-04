@@ -6,7 +6,7 @@ services:
   # --- PHP 7.3
   php:
     container_name: "invoiceplane-wiki-php"
-    image: bitnami/php-fpm:7.3
+    image: bitnami/php-fpm:7.4
     volumes:
       - .:/app:delegated
       - ./resources/docker/php/php-dev.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
@@ -28,7 +28,7 @@ services:
     container_name: "invoiceplane-wiki-redis"
     image: bitnami/redis:5.0
     environment:
-      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_PASSWORD=invoiceplane
     ports:
       - "127.0.0.1:6379:6379"
 
