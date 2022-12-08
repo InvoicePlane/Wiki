@@ -9,7 +9,7 @@
     <h2 class="page-title">Translation / Localization</h2>
 
     <p>InvoicePlane comes with the English language by default. To contribute to or to download other language packs
-        please visit the <a href="http://translations.invoiceplane.com/" class="ext">translation repository</a>.</p>
+        please visit the <a href="https://crowdin.com/project/invoiceplane" target="_blank" class="ext">translation repository</a>.</p>
 
     <h3 id="install">
         Install a new translation <?= IP::headlineLink('/en/1.6/system/translation-localization#install'); ?>
@@ -21,7 +21,7 @@
     </div>
 
     <ol>
-        <li>Download the translation pack from the <a href="http://translations.invoiceplane.com/" class="ext">translation
+        <li>Download the translation pack from the <a href="https://crowdin.com/project/invoiceplane" target="_blank" class="ext">translation
                 repository</a></li>
         <li>Open the folder of the language you want to install (<code>de</code> = German)</li>
         <li>Copy the folder that should be called something like <code>de_DE</code>, <code>fr_FR</code> or
