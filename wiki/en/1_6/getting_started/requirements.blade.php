@@ -17,6 +17,7 @@
             A webserver / shared hosting with the following specifications:
             <ul>
                 <li>MySQL >= 5.5 or the equivalent version of MariaDB</li>
+                <li>Apache >= 2.4 or Ngnix >=1.20.0
                 <li>PHP >= 8.0</li>
                 <li>
                     The following PHP extensions must be installed and activated:

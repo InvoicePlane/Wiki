@@ -96,7 +96,7 @@
     </div>
 
     <p>
-        <a href="https://invoiceplane.com/" class="btn btn-primary">Learn more on InvoicePlane.com</a>
+        <a href="https://invoiceplane.com/" target="_blank" class="btn btn-primary">Learn more on InvoicePlane.com</a>
     </p>
 
 @stop
