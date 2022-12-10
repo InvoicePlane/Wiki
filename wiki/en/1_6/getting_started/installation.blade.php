@@ -28,13 +28,7 @@
             Open the <code>ipconfig.php</code> file and add your URL in it like described in the file.
         </li>
         <li>
-            Rename the <code>ipconfig.php</code> file as described <a href="updating-ip#16-renaming-ipconfig" target="_blank">here</a>
-        </li>
-        <li>
-            Move outside of the root directory the <code>ipconfig.php</code> file you just renamed as described <a href="updating-ip#16-moving-ipconfig" target="_blank">here</a>
-        </li>
-        <li>
-            Protect the <code>ipconfig.php</code> file you just moved and renamed as described <a href="updating-ip#16-moving-ipconfig" target="_blank">here</a>
+            Comment out the first line of the <code>ipconfig.php</code> file by adding a <code>#</code> at the beginning of the line as described at <b>pt. 2</b> <a href="updating-ip#160-2-replace-files" target="_blank">here</a>
         </li>
         <li>
             Run the InvoicePlane installer from your web browser and follow his instructions: <code>http://your-domain.com/index.php/setup</code>
