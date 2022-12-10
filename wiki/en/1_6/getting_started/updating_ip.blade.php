@@ -16,10 +16,7 @@
         <li><a href="#1511-16-instructions">Upgrade instructions (v1.5.11 to v1.6.0)</a>
             <ol>
                 <li>Preliminary operations</li>
-                <li>Replace files</li>
-                <li>Rename <code>ipconfig.php</code></li>
-                <li>Move <code>ipconfig.php</code></li>
-                <li>Protect <code>ipconfig.php</code></li>
+                <li>Replace files & test </li>
             </ol>
         </li>
     </ul>
@@ -46,7 +43,7 @@
                                                 class="ext" target="_blank">InvoicePlane.com</a>.
         </li>
     </ol>
-    <h5 id="160-2-replace-files">2. Replace files <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#160-2-replace-files'); ?></h5>
+    <h5 id="160-2-replace-files">2. Replace files & test <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#160-2-replace-files'); ?></h5>
     <ol>
         <li>
             Copy all files to the root directory of your InvoicePlane installation but <b>do not</b> overwrite the
@@ -65,7 +62,8 @@
             <p>Now that the files are placed, it's time to fix the <code>ipconfig.php</code> file.</p>
             <ul>
                 <li>
-                    open <code>ipconfig.php</code> and remove the top line in the file <code>php exit('No direct script access allowed');</code>
+                    open <code>ipconfig.php</code> and comment out the top line in the file by adding a <code>#</code> at the beginning of the first line. The resoult shoudl be like this:
+                    <pre># &lt;?php exit('No direct script access allowed'); ?&gt;</pre>
                 </li>
                 <li>close the <code>ipconfig.php</code> file</li>
             </ul>
@@ -73,91 +71,14 @@
         <li>Open <code>http://yourdomain.com/index.php/setup</code> and follow the instructions. The app will run all
             updates on its own.
         </li>
-    </ol>
-    <h5 id="16-renaming-ipconfig">3. Renaming ipconfig file <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#16-renaming-ipconfig'); ?></h5>
-    <ol>
-        <li>For security reasons, rename the ipconfig.php file to something that only you know, like <code>cust123.env</code>. Remember that name</li>
-        <li>Open index.php</li>
-        <li>remove <code>if (!file_exists('ipconfig.php')) {
-            exit("The <b>ipconfig.php</b> file is missing! Please make a copy of the <b>ipconfig.php.example</b> file and rename it to <b>ipconfig.php</b>");
-        }</code></li>
-        <li>In this piece of code
-            <code>
-                $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, 'ipconfig.php');
-            </code>
-            Place the name of your newly renamed ipconfig.php file. So if you renamed it to <strong>cust123.env</strong> then your new code will be:
-            <code>
-                $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, 'cust123.env');
-            </code>
+        <li>Now that the <code>ipconfig.php</code> file is fixed, moved and protected, it's time to log in and see if everything is working</p>
+            <ul>
+                <li>Login again and check if everything is working.</li>
+                <li>If you were using the online payments module please navigate to <code>//your-domain.com/settings</code> and to the tab <code>online payment</code> and disable all payment methods that are not <i>stripe</i>. InvoicePlane 1.6 at the moment supports only Stripe as a payment gateway.</li>
+            </ul>
         </li>
     </ol>
-    <h5 id="16-moving-ipconfig">4. Moving ipconfig file <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#16-moving-ipconfig'); ?></h5>
-    <ol>
-        <li>Move the ipconfig.php file to a location that only you know, for example 1 directory higher than the current directory. We call that <i>moving it outside the document root</i>.</li>
-        <li>Open index.php</li>
-        <li>remove <code>if (!file_exists('ipconfig.php')) {
-            exit("The <b>ipconfig.php</b> file is missing! Please make a copy of the <b>ipconfig.php.example</b> file and rename it to <b>ipconfig.php</b>");
-        }</code></li>
-        <li>In this piece of code
-            <code>
-                $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, 'ipconfig.php');
-            </code>
-            Place the <strong>location</strong> of your newly moved ipconfig.php file. So if you moved it <strong>outside the document root</strong> then your new code will be:
-            <code>
-                $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, '/../ipconfig.php');
-            </code>
-            <strong>OR</strong>
-            <code>
-                $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__, 'ipconfig.php'));
-            </code>
-        </li>
-    </ol>
-
-    <p>Now that the <code>ipconfig.php</code> file is fixed, moved and protected, it's time to log in and see if everything is working</p>
-    <ul>
-        <li>Login again and check if everything is working.</li>
-        <li>If you were using the online payments module please navigate to <code>//your-domain.com/settings</code> and to the tab <code>online payment</code> and disable all payment methods that are not <i>stripe</i>. InvoicePlane 1.6 at the moment supports only Stripe as a payment gateway.</li>
-    </ul>
-    <h5 id="16-protecting-ipconfig">5. Protecting ipconfig file <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#16-protecting-ipconfig'); ?></h5>
-    <div class="alert alert-warning">
-        Protect your newly renamed .env file, <strong>Do not skip this step!</strong>
-    </div>
-    <p><b>Apache webserver</b></p>
-    <ul>
-        <li>Add a .htaccess file in the same directory as your newly named config file, for example cust123.env with the following contents:
-            <code>
-                <Files "cust123.env">
-                Require all denied
-                </Files>
-            </code>
-        </li>
-        <li>Other option: Add a .htaccess file in the same directory as your newly named config file, for example cust123.env with the following contents:
-            <code>
-                <pre>
-                    &lt;Files "cust123.env"&gt;
-                    Order Allow,Deny
-                    Deny from all
-                    &lt;/Files&gt;
-                </pre>
-            </code>
-        </li>
-    </ul>
-    <p><b>Nginx webserver</b></p>
-    <ul>
-        <li>In your nginx config file for your specific site, you can add:
-            <code>
-                <pre>
-                # Block access to dot files
-                location ~ /\. {
-                    deny  all;
-                }
-                </pre>
-            </code>
-            It will prevent all visitors for accessing files that start with a <code>dot</code>
-        </li>
-    </ul>
-    <p><b>Test the protection</b></p>
-    <p>If you did not move your <i>ipconfig</i> file outside the root (<a href="#16-moving-ipconfig">as described here</a>) try to access the ipconfig file from your web browser  and <u>make sure</u> you are not allowed to see the contents.</p>
+    
     <div class="alert alert-info">
         <?php echo trans('global.footernotice') ?>
     </div>
