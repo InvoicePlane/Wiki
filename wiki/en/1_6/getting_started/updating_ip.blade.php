@@ -55,14 +55,14 @@
                 </li>
             </ul>
             <div class="alert alert-info">
-                <p><b>Hint:</b> An <i>easy</i> way of performin this operation is to upload the whole new InvoicePlane version in a different folder, outside of your current installation root folder, and copy the abovementioend files in the new folder you just uploaded. Afterwards just rename your current folder to something like <code>my_current_folder<b>_old</b></code> and rename your new-version-folder with the name of <code>my_current_folder</code>.
+                <p><b>Hint:</b> An <i>easy</i> way of performing this operation is to upload the whole new InvoicePlane version in a different folder, outside of your current installation root folder, and copy the above mentioned files in the new folder you just uploaded. Afterwards just rename your current folder to something like <code>my_current_folder<b>_old</b></code> and rename your new-version-folder with the name of <code>my_current_folder</code>.
             </div>
         </li>
         <li>
             <p>Now that the files are placed, it's time to fix the <code>ipconfig.php</code> file.</p>
             <ul>
                 <li>
-                    open <code>ipconfig.php</code> and comment out the top line in the file by adding a <code>#</code> at the beginning of the first line. The resoult shoudl be like this:
+                    open <code>ipconfig.php</code> and comment out the top line in the file by adding a <code>#</code> at the beginning of the first line. The result should be like this:
                     <pre># &lt;?php exit('No direct script access allowed'); ?&gt;</pre>
                 </li>
                 <li>close the <code>ipconfig.php</code> file</li>
