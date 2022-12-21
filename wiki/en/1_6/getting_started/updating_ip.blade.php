@@ -53,6 +53,8 @@
                 <li>Customized templates in the <code>application/views/</code> folder</li>
                 <li>The files for custom styles: <code>assets/core/css/custom.css</code> and <code>assets/core/css/custom-pdf.css</code>
                 </li>
+                <li>Uploaded images in the <code>uploads/</code> folder (e. g. your company logo)</li>
+                <li>Custom language keys at <code>application/language/COUNTRY/custom_lang.php</code></li>
             </ul>
             <div class="alert alert-info">
                 <p><b>Hint:</b> An <i>easy</i> way of performing this operation is to upload the whole new InvoicePlane version in a different folder, outside of your current installation root folder, and copy the above mentioned files in the new folder you just uploaded. Afterwards just rename your current folder to something like <code>my_current_folder<b>_old</b></code> and rename your new-version-folder with the name of <code>my_current_folder</code>.
