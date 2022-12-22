@@ -58,7 +58,7 @@
             </tr>
             <tr>
                 <td><code>$items</code></td>
-                <td>Contians all invoice items with their corresponding data.</td>
+                <td>Contains all invoice items with their corresponding data.</td>
             </tr>
             <tr>
                 <td><code>$payment_method</code></td>
@@ -66,7 +66,7 @@
             </tr>
             <tr>
                 <td><code>$custom_fields</code></td>
-                <td>Contians custom fields for the invoice, the user, the client and if available for the parent
+                <td>Contains custom fields for the invoice, the user, the client and if available for the parent
                     quote.
                 </td>
             </tr>
@@ -99,11 +99,11 @@
             </tr>
             <tr>
                 <td><code>$items</code></td>
-                <td>Contians all quote items with their corresponding data.</td>
+                <td>Contains all quote items with their corresponding data.</td>
             </tr>
             <tr>
                 <td><code>$custom_fields</code></td>
-                <td>Contians custom fields for the quote, the user and the client.</td>
+                <td>Contains custom fields for the quote, the user and the client.</td>
             </tr>
             <tr>
                 <td><code>$show_item_discounts</code></td>
