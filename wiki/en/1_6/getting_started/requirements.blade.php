@@ -18,7 +18,7 @@
             <ul>
                 <li>MySQL >= 5.5 or the equivalent version of MariaDB</li>
                 <li>Apache >= 2.4 or Ngnix >=1.20.0
-                <li>PHP >= 8.0</li>
+                <li>PHP >= 8.0 and =< 8.1</li>
                 <li>
                     The following PHP extensions must be installed and activated:
                     <ul>
@@ -43,7 +43,7 @@
     </ul>
 
     <div class="alert alert-warning">
-        Please notice that PHP =< 8 is no longer supported and should <b>not</b> be used anymore for producton
+        Please notice that PHP < 8 is no longer supported and should <b>not</b> be used anymore for producton
         environments! (see <a href="https://www.php.net/supported-versions.php" target="_blank">php version support</a> for more information)
     </div>
 
