@@ -22,6 +22,7 @@
                 <li>
                     The following PHP extensions must be installed and activated:
                     <ul>
+                        <li>php-bcmath</li>
                         <li>php-gd</li>
                         <li>php-hash</li>
                         <li>php-json</li>
