@@ -8,7 +8,7 @@
 
     <h2 class="page-title">Online Payment Settings</h2>
 
-    <p>InvoicePlane 1.6 supports only <b>Stripe</b> by default as a payment gateway. The reason why the other providers were dropped can be fount <a href="/en/1.6/getting-started/updating-ip#16-breaking-changes" target="_blank">here</a>. Please let us know what payment method you are missing at <a href="https://github.com/InvoicePlane/InvoicePlane/issues" target="_blank">GitHub</a></p>
+    <p>InvoicePlane 1.6 supports only <b>Stripe</b> by default as a payment gateway. The reason why the other providers were dropped can be found <a href="/en/1.6/getting-started/updating-ip#16-breaking-changes" target="_blank">here</a>. Please let us know what payment method you are missing at <a href="https://github.com/InvoicePlane/InvoicePlane/issues" target="_blank">GitHub</a></p>
 
     <h4>Configure your payment provider</h4>
     <p>To configure your payment provider, select the provider from the dropdown list. If you don't know which provider should be selected please contact your provider. We cannot offer any support for specific provider settings.</p>
