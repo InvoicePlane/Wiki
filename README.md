@@ -9,7 +9,7 @@ If you want to contribute to this wiki please follow the general project structu
 
 If you want to add a new language please follow these steps:
 
-1. Duplicate the `wiki/en` folder and rename the folder to the two-letter-code of your language. Example: if oyu want to translate to german your folder should be `wiki/de`.
+1. Duplicate the `wiki/en` folder and rename the folder to the two-letter-code of your language. Example: if you want to translate to German your folder should be `wiki/de`.
 2. Make sure that you change all internal URLs from `en` to your language code.
 4. Translate the files.
 5. Submit a pull request after you translated all files.
