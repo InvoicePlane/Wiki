@@ -11,7 +11,7 @@
     <p>
         If you want to use <a href="{{ url('en/1.6/modules/recurring-invoices') }}">recurring invoices</a> you have to
         setup a cron
-        that opens the url listed on the recurring invoices page. A cron is basically a script that runs on predefined
+        that opens the URL listed on the recurring invoices page. A cron is basically a script that runs on predefined
         times. You can setup a cron that runs every minute, every third hour per day or yearly. For recurring invoices
         you should run the cron daily.
     </p>
@@ -52,7 +52,7 @@
         Open the crontab file with <code>crontab -e</code> and paste the following line:
     </p>
 
-    <pre>0 0 * * * wget -O - http://yoursite.com/invoices/cron/recur/your-cron-key >/dev/null 2>&1</pre>
+    <pre>0 0 * * * wget -O - https://yoursite.com/invoices/cron/recur/your-cron-key >/dev/null 2>&1</pre>
 
     <p>
         where <code>yoursite.com</code> is the domain you use for InvoicePlane and <code>your-cron-key</code> the cron
@@ -66,7 +66,7 @@
     <p>
         There are a lot of online services that offer running a cron for you, for example
         <a href="https://cron-job.org/en/" class="ext">cron-job.org</a>,
-        <a href="http://www.mywebcron.com" class="ext">mywebcron.com</a>
+        <a href="https://www.fastcron.com/tutorials/invoiceplane-cron" class="ext">FastCron</a>
         or any other.
         <br/>
         Please read the documentation of the service you use to know how to setup a cron with their
