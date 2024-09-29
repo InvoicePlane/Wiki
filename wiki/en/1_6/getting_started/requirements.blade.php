@@ -23,6 +23,7 @@
                     The following PHP extensions must be installed and activated:
                     <ul>
                         <li>php-bcmath</li>
+                        <li>php-dom</li>
                         <li>php-gd</li>
                         <li>php-hash</li>
                         <li>php-json</li>
@@ -31,6 +32,7 @@
                         <li>php-mysqli</li>
                         <li>php-openssl</li>
                         <li>php-recode</li>
+                        <li>php-xml</li>
                         <li>php-xmlrpc</li>
                         <li>php-zlib</li>
                     </ul>
