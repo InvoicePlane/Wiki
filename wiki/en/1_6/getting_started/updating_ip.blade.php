@@ -72,6 +72,9 @@
         </li>
         <li>Open <code>http://yourdomain.com/index.php/setup</code> and follow the instructions. The app will run all
             updates on its own.
+            <ul>
+                <li>If you encounter any errors when upgrading the table, press "Try Again" to resolve those errors and continue with the setup.</li>
+            </ul>
         </li>
         <li>Now that the <code>ipconfig.php</code> file is fixed, moved and protected, it's time to log in and see if everything is working</p>
             <ul>
