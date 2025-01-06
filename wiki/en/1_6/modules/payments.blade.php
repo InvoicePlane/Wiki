@@ -62,7 +62,7 @@
         <li>Click the <code>online payment</code> tab.</li>
         <li>Set <code>Enable Online Payments</code> to <code>Yes</code>.</li>
         <li>Choose <code>Stripe</code> as a merchant driver (only one available in InvoicePlane 1.6).</li>
-        <li>Enter the Secret Keyy and the Publishable Key obtained from Stripe.</li>
+        <li>Enter the Secret Key and the Publishable Key obtained from Stripe.</li>
         <li>Select the appropriate currency code.</li>
         <li>Press the <code>Save</code> button.</li>
     </ol>
