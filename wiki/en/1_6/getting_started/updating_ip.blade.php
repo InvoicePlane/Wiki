@@ -12,8 +12,14 @@
 
     <ul>
         <li><a href="#general">Upgrade information</a></li>
+        <li><a href="#161-162-instructions"><strong>Upgrade instructions (v1.6.1 to v1.6.2)</strong></a>
+            <ol>
+                <li>Preliminary operations</li>
+                <li>Replace files & test </li>
+            </ol>
+        </li>
         <li><a href="#16-breaking-changes">Breaking changes</a></li>
-        <li><a href="#1511-16-instructions">Upgrade instructions (v1.5.11 to v1.6.0)</a>
+        <li><a href="#">Upgrade instructions (v1.5.11 to v1.6)</a>
             <ol>
                 <li>Preliminary operations</li>
                 <li>Replace files & test </li>
@@ -32,8 +38,8 @@
         <li>InvoicePlane 1.6.0 supports only Stripe as a payment gateway for online payments (please let us know what payment method you are missing at <a href="https://github.com/InvoicePlane/InvoicePlane/issues" target="_blank">GitHub</a>).</li>
     </ul>
 
-    <h3 id="1511-16-instructions">Instructions to upgrade to 1.6.0 from 1.5.11 <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#1511-16-instructions'); ?></h3>
-    <h5 id="160-1-preliminary-operations">1. Preliminary operations <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#160-1-preliminary-operations'); ?></h5>
+    <h3 id="161-162-instructions">Instructions to upgrade to 1.6.1 from 1.6.2 <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#161-162-instructions'); ?></h3>
+    <h5 id="162-1-preliminary-operations">1. Preliminary operations <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#162-1-preliminary-operations'); ?></h5>
     <ol>
         <li>
             Make a backup of your database and all files. (This is <b>very important</b> to prevent any data loss)
@@ -43,7 +49,7 @@
                                                 class="ext" target="_blank">InvoicePlane.com</a>.
         </li>
     </ol>
-    <h5 id="160-2-replace-files">2. Replace files & test <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#160-2-replace-files'); ?></h5>
+    <h5 id="162-2-replace-files">2. Replace files & test <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#162-2-replace-files'); ?></h5>
     <ol>
         <li>
             Copy all files to the root directory of your InvoicePlane installation but <b>do not</b> overwrite the
@@ -70,8 +76,11 @@
                 <li>close the <code>ipconfig.php</code> file</li>
             </ul>
         </li>
-        <li>Open <code>http://yourdomain.com/index.php/setup</code> and follow the instructions. The app will run all
+        <li><h5>Open <code>http://yourdomain.com/index.php/setup</code> and follow the instructions</h5>. The app will run all
             updates on its own.
+            <ul>
+                <li>If you encounter any errors when upgrading the table, press "Try Again" to resolve those errors and continue with the setup.</li>
+            </ul>
         </li>
         <li>Now that the <code>ipconfig.php</code> file is fixed, moved and protected, it's time to log in and see if everything is working</p>
             <ul>
