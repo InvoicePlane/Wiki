@@ -32,7 +32,6 @@
         only that client. A guest account may also be created for an accountant, in which case you might create the
         account and grant access to more than just one client.</p>
 
-    ###
     <h3 id="view">
         Viewing Users <?= IP::headlineLink('/en/1.6/settings/user_accounts#view'); ?>
     </h3>
