@@ -5,17 +5,19 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.0.0",
-        "laravel/framework": "5.3.*",
-        "predis/predis": "^1.1"
+        "php": ">=8.0.0",
+        "laravel/framework": "11.*",
+        "predis/predis": "*"
     },
     "require-dev": {
-        "barryvdh/laravel-ide-helper": "^2.1",
-        "fzaninotto/faker": "~1.4",
-        "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~4.0",
-        "symfony/css-selector": "3.1.*",
-        "symfony/dom-crawler": "3.1.*"
+        "barryvdh/laravel-ide-helper": "*",
+        "fzaninotto/faker": "*",
+        "mockery/mockery": "*",
+        "phpunit/phpunit": "*",
+        "symfony/css-selector": "*",
+        "symfony/dom-crawler": "*",
+        "rector/rector": "^2.0",
+        "driftingly/rector-laravel": "*"
     },
     "autoload": {
         "classmap": [
