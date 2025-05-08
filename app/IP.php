@@ -83,7 +83,7 @@ class IP
     {
         return sprintf(
             '<a href="%s" class="headline-link" title="%s"><i class="fa fa-link"></i></a>&nbsp;',
-            $url,
+            url($url),
             trans('global.link_to_headline')
         );
     }
