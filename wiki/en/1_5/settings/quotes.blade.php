@@ -32,7 +32,7 @@
             </tr>
             <tr>
                 <td>Default Quotegroup</td>
-                <td>Select the <a href="{{ url('en/1.5/settings/invoicegroups') }}">Quotegroup (aka Invoicegroups)</a> that should be used by default</td>
+                <td>Select the <a href="{{ url('en/1.5/settings/invoice-groups') }}">Quotegroup (aka Invoicegroups)</a> that should be used by default</td>
             </tr>
             <tr>
                 <td>Mark Quotes as sent when PDF is generated</td>

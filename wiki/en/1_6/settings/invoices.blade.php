@@ -28,7 +28,7 @@
             </tr>
             <tr>
                 <td>Default Invoicegroup</td>
-                <td>Select the <a href="{{ url('en/1.6/settings/invoicegroups') }}">Invoicegroup</a> that should be used by default</td>
+                <td>Select the <a href="{{ url('en/1.6/settings/invoice-groups') }}">Invoicegroup</a> that should be used by default</td>
             </tr>
             <tr>
                 <td>Set the Invoice to read-only on</td>

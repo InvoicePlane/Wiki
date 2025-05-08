@@ -61,7 +61,7 @@
                     'type' => 'article'
             ),
             'next' => array(
-                    'url' => '/en/1.6/settings/invoicegroups',
+                    'url' => '/en/1.6/settings/invoice-groups',
                     'title' => 'Invoicegroups',
                     'type' => 'article'
             )
