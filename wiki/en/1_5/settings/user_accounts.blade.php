@@ -14,7 +14,7 @@
         restricted to see invoices, quotes and payments for the client or clients you specify.</p>
 
     <h3 id="types">
-        User Types <?= IP::headlineLink('/en/1.5/settings/user_accounts#types'); ?>
+        User Types <?= IP::headlineLink('/en/1.5/settings/user-accounts#types'); ?>
     </h3>
 
     <p><b>Administrator</b></p>
@@ -34,7 +34,7 @@
 
     ###
     <h3 id="view">
-        Viewing Users <?= IP::headlineLink('/en/1.5/settings/user_accounts#view'); ?>
+        Viewing Users <?= IP::headlineLink('/en/1.5/settings/user-accounts#view'); ?>
     </h3>
 
     <p>To view the user list, click the settings icon <code><i class="fa fa-cogs"></i></code> near the right hand side
@@ -52,7 +52,7 @@
     </p>
 
     <h3 id="add">
-        Add an User Account <?= IP::headlineLink('/en/1.5/settings/user_accounts#add'); ?>
+        Add an User Account <?= IP::headlineLink('/en/1.5/settings/user-accounts#add'); ?>
     </h3>
 
     <p>To add a new user account, click the settings icon <code><i class="fa fa-cogs"></i></code> near the right hand
