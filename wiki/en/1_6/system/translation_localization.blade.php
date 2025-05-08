@@ -47,15 +47,15 @@
 ├── assets/
 └── ...
     </pre>
-    
+
     <h3 id="customize">
         Customize translations <?= IP::headlineLink('/en/1.6/system/translation-localization#customize'); ?>
     </h3>
-    
+
     <p>You are able to replace all language strings in the application with your own strings. We added a file called <code>custom_lang.php</code> which is located in every language folder (see above).</p>
-    
+
     <p>To replace or alter a translation, search for the string in the main language files (ip_lang.php). You have to copy the whole line with the string into the <code>custom_lang.php</code> file that it looks like this:</p>
-    
+
     <pre><code>
 &lt;?php
 /**
@@ -67,11 +67,11 @@
 $lang = array(
 
     'language_string_key' => 'Actual content of the Language String',
-    
+
 );</code></pre>
 
     <p>Now, simply change the translation to whatever you need. But keep in mind that some strings are designed to fit into special spaces. Try to keep the character count or the original string.</p>
-    
+
     <div class="alert alert-danger">
         If you want to use the <code>'</code> character in your string you have to replace it with <code>\'</code>.<br>
         Example: <code>'language_string_key' => 'Description with \'quotes\'',</code>
