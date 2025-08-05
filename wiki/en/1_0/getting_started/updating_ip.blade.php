@@ -18,7 +18,7 @@
             </ul>
         </li>
         <li>Update the URL in the <code>/index.php</code> file.</li>
-        <li>Open <code>http://yourdomain.com/setup</code> and follow the instructions. The app will run all updates on
+        <li>Open <code><strong>http://yourdomain.com/setup</strong></code> and follow the instructions. The app will run all updates on
             it's own.
         </li>
         <li>Login again and check if everything is working.</li>

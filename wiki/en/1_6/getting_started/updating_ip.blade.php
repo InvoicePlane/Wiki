@@ -12,7 +12,7 @@
 
     <ul>
         <li><a href="#general">Upgrade information</a></li>
-        <li><a href="#161-162-instructions"><strong>Upgrade instructions (v1.6.1 to v1.6.2)</strong></a>
+        <li><a href="#162-163-instructions"><strong>Upgrade instructions (v1.6.2 to v1.6.3)</strong></a>
             <ol>
                 <li>Preliminary operations</li>
                 <li>Replace files & test </li>
@@ -38,8 +38,8 @@
         <li>InvoicePlane 1.6.0 supports only Stripe as a payment gateway for online payments (please let us know what payment method you are missing at <a href="https://github.com/InvoicePlane/InvoicePlane/issues" target="_blank">GitHub</a>).</li>
     </ul>
 
-    <h3 id="161-162-instructions">Instructions to upgrade to 1.6.1 from 1.6.2 <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#161-162-instructions'); ?></h3>
-    <h5 id="162-1-preliminary-operations">1. Preliminary operations <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#162-1-preliminary-operations'); ?></h5>
+    <h3 id="162-163-instructions">Instructions to upgrade to 1.6.2 from 1.6.3 <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#162-163-instructions'); ?></h3>
+    <h5 id="163-1-preliminary-operations">1. Preliminary operations <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#162-1-preliminary-operations'); ?></h5>
     <ol>
         <li>
             Make a backup of your database and all files. (This is <b>very important</b> to prevent any data loss)
@@ -49,7 +49,7 @@
                                                 class="ext" target="_blank">InvoicePlane.com</a>.
         </li>
     </ol>
-    <h5 id="162-2-replace-files">2. Replace files & test <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#162-2-replace-files'); ?></h5>
+    <h5 id="163-2-replace-files">2. Replace files & test <?= IP::headlineLink('/en/1.6/getting-started/updating-ip#162-2-replace-files'); ?></h5>
     <ol>
         <li>
             Copy all files to the root directory of your InvoicePlane installation but <b>do not</b> overwrite the
