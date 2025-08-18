@@ -32,7 +32,7 @@
         </li>
         <li>and a modern and up-to-date web browser.</li>
     </ul>
-    
+
     <div class="alert alert-danger">
         <p>Please notice that PHP 5.5 is no longer supported and should not be used anymore for producton environments!</p>
     </div>

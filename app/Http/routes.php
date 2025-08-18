@@ -11,8 +11,7 @@ Route::get('/', [
     }
 ]);
 
-Route::get('{locale}/{version?}/{dir?}/{page?}', 'WikiController@getPage')
+Route::get('{locale}/{version?}/{dir?}/{page?}', [WikiController::class, 'getPage'])
     ->where('version', '[0-9\.]+');
-
 
 Route::get('/test','WikiController@getTestPage');

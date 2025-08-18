@@ -35,7 +35,7 @@
         <li>Search for <code>$config['index_page'] = 'index.php';</code> in this file and replace it with <code>$config['index_page'] = '';</code></li>
         <li>Rename the <code>htaccess</code> file to <code>.htaccess</code></li>
     </ol>
-    
+
     <p>Now open <code>http://your-domain.com/setup</code> to run the setup.</p>
 
     <h3 id="subdir">

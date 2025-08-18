@@ -2,7 +2,7 @@
 
     <div class="sidebar-top">
         <a href="{{ config('app.url')  }}">@lang('global.wiki')</a>
-        <a href="#" class="sidebar-toggle pull-right"><i class="fa fa-close"></i></a>
+        <a href="#" class="sidebar-toggle pull-right d-lg-none d-xl-none"><i class="fa fa-close"></i></a>
     </div>
 
     <ul class="menu">

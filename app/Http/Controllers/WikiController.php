@@ -84,7 +84,7 @@ class WikiController extends Controller
         }
 
         // Load the page if found
-        if ($requested_page) {
+        if ($requested_page !== '' && $requested_page !== '0') {
             $sidebar_content_view = $locale . '.' . $version . '.sidebar';
 
             view()->share([
