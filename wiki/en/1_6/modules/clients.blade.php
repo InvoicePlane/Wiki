@@ -62,6 +62,11 @@
                 href="{{ url('en/1.6/settings/user-accounts') }}">User Accounts</a> page for instructions on creating logins for
         your clients.</p>
 
+How to assign client(s) to guest user:
+1: Go to index.php/users (Open Parameters menu and click on User accounts)
+2: In Row of user (guest) click on button Assigned Clients
+3: On the top right click on New button
+4: Choose a client (or check All) and click Save
 
     <?php
     $article_pagination = array(
