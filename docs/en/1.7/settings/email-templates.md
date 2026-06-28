@@ -29,3 +29,7 @@ To access the settings for your default templates, click the settings icon , sel
 - Overdue Email Template - The selected template would be used for invoices which are overdue.
 
 When manually sending an invoice or quote from within InvoicePlane, the appropriate email template will be selected prior to sending. Of course, you may make any last minute adjustments to the content of the email before sending it. Since recurring invoices send email on their own without any manual intervention, it is helpful to have a set of email templates created and the default settings configured so InvoicePlane knows which template to use each time it sends them out.
+
+## Template Preview
+
+The preview button shows the raw template source — the actual text and variable placeholders as they are stored, not a rendered result with real data substituted in. This lets you review and verify the template structure before it is used.

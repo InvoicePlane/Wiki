@@ -1,42 +1,35 @@
-# PDF Template Allow List
+# Custom PDF Templates
 
-InvoicePlane 1.7 introduces a static allow list for PDF templates to prevent a critical Remote Code Execution (RCE) vulnerability. Only templates explicitly listed in the allow list will be loaded when generating PDF invoices and quotes.
+InvoicePlane comes with a set of built-in PDF templates for invoices and quotes. If you need a different look, you can create your own templates and make them available alongside the built-in ones.
 
-## Background
+## Built-in templates
 
-Prior to 1.7, the system dynamically scanned the templates directory to build a list of available templates at runtime. This meant that any PHP file placed in the templates folder would automatically become available — and potentially executable — via the template selector. An attacker with admin access could exploit this to run arbitrary code.
+The following templates are included and available without any configuration:
 
-The fix replaces dynamic scanning with a two-tier static allow list:
-
-1. **Built-in templates** — hardcoded in the application source code (`Mdl_templates.php`)
-2. **Custom templates** — declared explicitly in `ipconfig.php`
-
-## Built-in Templates
-
-The following templates are always available without any configuration:
-
-| Template name | Type | Format |
+| Template name | Used for | Format |
 |---|---|---|
-| `InvoicePlane` | Invoice & Quote | PDF |
-| `InvoicePlane - paid` | Invoice | PDF |
-| `InvoicePlane_Web` | Invoice & Quote | Public (HTML) |
+| `InvoicePlane` | Invoices & Quotes | PDF |
+| `InvoicePlane - paid` | Invoices | PDF |
+| `InvoicePlane - overdue` | Invoices | PDF |
+| `InvoicePlane_Web` | Invoices & Quotes | Public link (HTML) |
 
-> **Note:**
-> These names are case-sensitive. The template will not load if the name in the database does not match exactly.
+Template names are case-sensitive. The name stored in the database must match exactly.
 
-## Adding Custom Templates
+## How template loading works
 
-To add a custom template you must both place the file on disk **and** declare its name in `ipconfig.php`. A file that exists on disk but is not in the allow list will be silently ignored.
+In InvoicePlane 1.7, templates are loaded from a fixed list rather than by scanning the templates directory. A template file that exists on disk will not appear in the selector and will not be loaded unless its name is declared in the configuration. This applies only to custom templates — the built-in templates listed above are always available.
 
-### Step 1 — Place template files outside the web root
+## Adding custom templates
 
-Store custom templates in a directory that is **not** accessible over HTTP. Set the path in `ipconfig.php`:
+### Step 1 — Create a templates folder outside the web root
+
+Store your custom template files in a directory that is not served over HTTP. This keeps the files separate from the application and makes it straightforward to preserve them across upgrades.
 
 ```ini
 CUSTOM_TEMPLATES_FOLDER=/srv/invoiceplane-templates/
 ```
 
-The directory must contain the standard sub-structure:
+The directory must follow this structure:
 
 ```
 /srv/invoiceplane-templates/
@@ -48,9 +41,9 @@ The directory must contain the standard sub-structure:
     public/       ← custom quote HTML (public link) templates
 ```
 
-### Step 2 — Declare template names in the allow list
+### Step 2 — Declare the template names in `ipconfig.php`
 
-Add only the names you want to allow. Names must consist of letters, numbers, spaces, hyphens, and underscores only — no path separators or file extensions.
+List every template name you want to make available. Names may contain letters, numbers, spaces, hyphens, and underscores. Do not include the `.php` file extension. Separate multiple names with commas.
 
 ```ini
 ; Custom invoice templates
@@ -62,11 +55,11 @@ CUSTOM_QUOTE_TEMPLATES_PDF=My Quote
 CUSTOM_QUOTE_TEMPLATES_PUBLIC=My Quote Web
 ```
 
-Multiple names are separated by commas. Templates not listed here will not appear in the template selector and will not be loaded, even if the file exists.
+Templates whose names are not listed here will not appear in the template selector, even if the file exists on disk.
 
-### Step 3 — Set restrictive file permissions
+### Step 3 — Set file permissions
 
-Prevent the web server from writing to the template directories:
+Make the template directories and files read-only so they cannot be modified while the application is running:
 
 ```bash
 chmod 555 /srv/invoiceplane-templates/invoice/pdf/
@@ -75,34 +68,27 @@ chmod 444 /srv/invoiceplane-templates/invoice/pdf/*.php
 chmod 444 /srv/invoiceplane-templates/quote/pdf/*.php
 ```
 
-## Security Validation
-
-When a template is requested, InvoicePlane applies the following checks in order:
-
-1. Reject empty or non-string values
-2. Reject path traversal characters (`..`, `/`, `\`)
-3. Validate the request type (`invoice` or `quote`)
-4. Validate the scope (`pdf` or `public`)
-5. Check the template name against the static allow list
-6. Validate the character set (alphanumeric, spaces, hyphens, underscores)
-7. Verify the file exists before loading it
-
-A template fails silently if it does not pass all seven checks.
-
 ## Upgrading from 1.6
 
-If you are upgrading from InvoicePlane 1.6 and have custom templates stored inside `application/views/`, you must move them and register them in `ipconfig.php` before the upgrade.
+If you are upgrading from InvoicePlane 1.6 and have custom templates inside `application/views/invoice_templates/` or `application/views/quote_templates/`, they will not be available automatically after upgrading. You have two options:
 
-Templates stored inside the application directory are **not** automatically trusted in 1.7. See [Updating InvoicePlane](/en/1.7/getting-started/updating-ip) for full upgrade steps.
+**Option A — Move them to the custom templates folder (recommended)**
 
-## Auditing Your Installation
+Move the template files to a directory outside the web root, set `CUSTOM_TEMPLATES_FOLDER` in `ipconfig.php`, and list the template names using the `CUSTOM_*_TEMPLATES_*` settings above.
 
-After upgrading, check the template directories for unexpected PHP files:
+**Option B — Keep them in the application directory**
+
+Add each template name to the `ALLOWED_INVOICE_TEMPLATES` or `ALLOWED_QUOTE_TEMPLATES` constant in `application/modules/invoices/models/Mdl_templates.php`. You will need to reapply this change each time you upgrade.
+
+## Checking what templates are installed
+
+To see which template files are present in the built-in directories:
 
 ```bash
-find application/views/invoice_templates/ -name "*.php" | sort
-find application/views/quote_templates/ -name "*.php" | sort
+ls application/views/invoice_templates/pdf/
+ls application/views/invoice_templates/public/
+ls application/views/quote_templates/pdf/
+ls application/views/quote_templates/public/
 ```
 
-Expected files are: `InvoicePlane.php`, `InvoicePlane - paid.php`, `InvoicePlane_Web.php`.
-Any other PHP file should be investigated and removed if not a legitimate custom template.
+The built-in directories should contain only the files that ship with InvoicePlane. Custom templates belong in the folder set by `CUSTOM_TEMPLATES_FOLDER`.

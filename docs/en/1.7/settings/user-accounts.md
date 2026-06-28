@@ -68,3 +68,19 @@ the `Save` button near the top of the page when finished.
 
 No matter if the account is an Administrator account or a Guest account, all users use the same URL to log in. Be
 sure and provide your login URL to any users who you create accounts for.
+
+## Password Reset
+
+If a user forgets their password, they can request a reset from the login page by clicking **Forgot your password?** and entering their email address. InvoicePlane sends a reset link to that address.
+
+The reset link expires after 15 minutes. If the link has expired by the time the user clicks it, they need to request a new one.
+
+To change the expiry time, add the following to `ipconfig.php`:
+
+```ini
+PASSWORD_RESET_TOKEN_EXPIRY_MINUTES=30
+```
+
+The value is in minutes. The maximum is 1440 (24 hours).
+
+Rate limiting applies: a given IP address or email address can only request a limited number of resets within an hour. This prevents automated tools from flooding the reset flow.

@@ -33,7 +33,7 @@ that are needed for some special purposes.
 | Disable the Sidebar | Choose if the sidebar should be disabled |
 | Custom Title | Set a custom title which will be shown on browser tabs |
 | Use Monospace font for Amounts | Choose if the application should use a monospace font for amounts. Example: `1.345,23 €` |
-| Login Logo | Upload an image that will be displayed above the login form.  Recommended size: about 300px width |
+| Login Logo | Upload an image that will be displayed above the login form. Recommended size: about 300px width. Accepted formats: JPG, JPEG, PNG, GIF, WEBP. |
 | Cron Key | You will need this cron key to setup [recurring invoices](/en/1.7/modules/recurring-invoices). |
 
 ## System settings
@@ -43,3 +43,15 @@ that are needed for some special purposes.
 | Send all outgoing emails as BCC to the admin account | If you enable this option **every** outgoing email is sent as an anonymous copy (BCC) to the administrator. The administrator is the user that was created during the InvoicePlane setup. |
 | Cron Key | You will need this cron key to setup [recurring invoices](/en/1.7/modules/recurring-invoices) |
 | Enable Debug Mode | The debug mode enables logging for the application. The logs can be found in the `/application/logs` folder or in your browser console. |
+
+## Logo upload
+
+The login logo and company logo fields accept JPG, JPEG, PNG, GIF, and WEBP files. SVG files are not accepted.
+
+Uploaded images may contain embedded metadata (EXIF) added by cameras or editing tools, including information such as GPS coordinates and device identifiers. To have this metadata stripped automatically on upload, add the following to `ipconfig.php`:
+
+```ini
+SEC_STRIP_EXIF_FROM_IMAGES=true
+```
+
+This is disabled by default. When enabled, stripping is applied to JPEG, PNG, GIF, and WEBP files. If stripping is not possible on your server, the image is still saved — only a warning is logged.

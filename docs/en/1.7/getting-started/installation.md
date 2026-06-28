@@ -11,8 +11,7 @@ less.
 6. Comment out the first line of the `ipconfig.php` file by adding a `#` at the beginning of the line as described at **pt. 2** [here](updating-ip#160-2-replace-files)
 7. Run the InvoicePlane installer from your web browser and follow his instructions: `http://your-domain.com/index.php/setup`
 
-Once the installer finished, the installation is complete and you may log into InvoicePlane using the email
-address and password you have chosen during the installation.
+Once the installer finishes, the installation is complete and you may log into InvoicePlane using the email address and password you chose during installation. The setup wizard is automatically disabled after a successful installation — navigating to `/index.php/setup` afterwards will return a 403 error.
 
 ## Run InvoicePlane in a sub directory
 
