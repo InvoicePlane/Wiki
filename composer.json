@@ -5,8 +5,9 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.0.0",
+        "php": ">=7.4.0",
         "laravel/framework": "5.3.*",
+        "league/commonmark": "^2.4",
         "predis/predis": "^1.1"
     },
     "require-dev": {
