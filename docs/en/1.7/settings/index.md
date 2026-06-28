@@ -1,0 +1,15 @@
+# Settings
+
+- [General Settings](/en/1.7/settings/general)
+- [Invoice Settings](/en/1.7/settings/invoices)
+- [Quotes Settings](/en/1.7/settings/quotes)
+- [Tax Settings](/en/1.7/settings/taxes)
+- [eMail Settings](/en/1.7/settings/email)
+- [Online Payments](/en/1.7/settings/online-payments)
+- [Updatecheck](/en/1.7/settings/updatecheck)
+- [Custom Fields](/en/1.7/settings/custom-fields)
+- [eMail Templates](/en/1.7/settings/email-templates)
+- [Invoice Groups](/en/1.7/settings/invoice-groups)
+- [Payment Methods](/en/1.7/settings/payment-methods)
+- [Taxrates](/en/1.7/settings/taxrates)
+- [User Accounts](/en/1.7/settings/user-accounts)
