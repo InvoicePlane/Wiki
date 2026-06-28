@@ -115,7 +115,7 @@ The digital signature is attached to the document root after signing, adding a `
 
 ## InvoicePlane template
 
-**Template name:** `FacturaeV321` (or similar) — download from the [InvoicePlane e-invoices repository](https://github.com/InvoicePlane/InvoicePlane-e-invoices).
+**Template name:** `Facturaev32` — download from the [InvoicePlane e-invoices repository](https://github.com/InvoicePlane/InvoicePlane-e-invoices).
 
 The template generates unsigned XML. You sign it separately before submitting.
 
@@ -142,7 +142,7 @@ For cross-border invoices to foreign clients, Peppol BIS Billing 3.0 is simpler 
 
 ## Examples
 
-All examples use the **`FacturaeV321`** template. The signing step after generating the XML applies to every Facturae invoice.
+All examples use the **`Facturaev32`** template. The signing step after generating the XML applies to every Facturae invoice.
 
 Spanish VAT numbers (**NIF/CIF**) start with `ES` followed by 9 characters.
 
