@@ -3,3 +3,6 @@
 _ide_helper.php
 .env
 .idea
+/site
+__pycache__
+*.pyc
