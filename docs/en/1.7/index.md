@@ -51,6 +51,10 @@ module.
 - [Customize Templates](/en/1.7/templates/customize-templates)
 - [PDF Template Allow List](/en/1.7/templates/pdf-template-allowlist)
 
+## Security
+
+- [Security Changes in 1.7](/en/1.7/security)
+
 ## System
 
 - [Translation / Localization](/en/1.7/system/translation-localization)

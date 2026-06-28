@@ -14,6 +14,9 @@
 
 ## Breaking changes
 
+> **Note:**
+> For a complete description of every security fix in 1.7, see [Security Changes in 1.7](/en/1.7/security).
+
 ### PDF template allow list (security fix)
 
 InvoicePlane 1.7 replaces dynamic template discovery with a static allow list to prevent Remote Code Execution. **Any custom PDF template that is not declared in `ipconfig.php` will no longer be available** after the upgrade.
