@@ -43,8 +43,6 @@ The main focus of this release was hardening the application across a broad rang
 - Output escaping added across invoice numbers, quote numbers, tax rate names, payment method names, custom field labels, client addresses, and several other fields to prevent stored content from being interpreted as HTML.
 - Email address fields now accept comma-separated and semicolon-separated lists. See [Email Settings](/en/1.7/settings/email).
 
-> **Note:** InvoicePlane 1.6.5 was released on the same date and applies these same fixes to the 1.6 series for users staying on PHP 8.1.
-
 ---
 
 ## v1.7.0 — 2025-01-19

@@ -1,17 +1,5 @@
 # Changelog
 
-## v1.6.5 — 2026-02-16
-
-Backport release for users staying on PHP 8.1. Applies the same XSS fixes and SVG logo change that shipped in [v1.7.1](#v171--2026-02-16).
-
-### Changed
-- SVG files are no longer accepted for logo uploads. Use PNG, JPG/JPEG, or GIF instead. See [General Settings](/en/1.6/settings/general).
-
-### Fixed
-- Output escaping added across invoice numbers, quote numbers, tax rate names, payment method names, custom field labels, client addresses, and several other fields to prevent stored content from being interpreted as HTML.
-
----
-
 ## v1.6.4 — 2025-01-19
 
 ### Added
