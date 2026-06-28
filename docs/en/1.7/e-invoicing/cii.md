@@ -91,17 +91,70 @@ For Factur-X and ZUGFeRD, the `GuidelineSpecifiedDocumentContextParameter/ID` in
 
 Choose CII-based formats when:
 
-- Your client is a German company (use ZUGFeRD)
-- You are invoicing a French company or the French government (use Factur-X)
-- You are invoicing the German federal or state government (use XRechnung)
+- Your client is a German company (use ZUGFeRD — see [Factur-X and ZUGFeRD](/en/1.7/e-invoicing/factur-x))
+- You are invoicing a French company or the French government (use Factur-X — see [Factur-X and ZUGFeRD](/en/1.7/e-invoicing/factur-x))
+- You are invoicing the German federal or state government (use XRechnung — see examples below)
 - Your client or their country specifically requires a CII-syntax invoice
 
 For countries using the Peppol network (Belgium, Sweden, Czech B2G, etc.), use [UBL via Peppol BIS Billing 3.0](/en/1.7/e-invoicing/ubl).
 
 ---
 
+## Examples
+
+### XRechnung — Germany B2G
+
+XRechnung is mandatory for invoices to German federal and state government entities. It is a standalone CII XML file — no PDF embedding. Stricter field requirements than ZUGFeRD EN16931.
+
+**Template:** `XRechnungv30` — download from the [InvoicePlane e-invoices repository](https://github.com/InvoicePlane/InvoicePlane-e-invoices).
+
+German VAT numbers start with `DE` followed by 9 digits.
+
+#### Federal government example
+
+| Field | Value |
+|---|---|
+| Company name | Bundesministerium der Finanzen |
+| Street address | Wilhelmstraße 97 |
+| Postal code | 10117 |
+| City | Berlin |
+| Country | Germany |
+| Tax ID / VAT number | DE122256884 |
+| Leitweg-ID | 991-00001-06 |
+| E-Invoicing version | XRechnung 3.0 |
+
+**Leitweg-ID:** A routing identifier that tells the portal which department should receive the invoice. It is provided by the contracting authority in the purchase order or on their supplier portal. Format: `{RouteCode}-{SubRoute}-{CheckDigit}`. Without it, the OZG-RE portal will reject the upload.
+
+**Delivery:** Upload the XML file at [www.ozg-re.de](https://www.ozg-re.de) (federal) or the relevant state portal listed in the purchase order.
+
+---
+
+#### State government example (Bavaria)
+
+| Field | Value |
+|---|---|
+| Company name | Bayerisches Staatsministerium für Finanzen |
+| Street address | Odeonsplatz 4 |
+| Postal code | 80539 |
+| City | München |
+| Country | Germany |
+| Tax ID / VAT number | DE811335839 |
+| Leitweg-ID | 09-0000-0 |
+| E-Invoicing version | XRechnung 3.0 |
+
+**Note:** Some Bavarian municipal entities accept ZUGFeRD instead of XRechnung. Confirm with the contracting authority before generating the invoice.
+
+---
+
+#### Validation
+
+- **KoSIT Validator** — the official German XRechnung validator: [projekte.kosit.org/kosit/validator](https://projekte.kosit.org/kosit/validator)
+- Validate before every first submission to a new government entity — field requirements vary slightly between federal and state portals.
+
+---
+
 ## Related pages
 
-- [Factur-X and ZUGFeRD](/en/1.7/e-invoicing/factur-x) — CII embedded in PDF; built-in templates
+- [Factur-X and ZUGFeRD](/en/1.7/e-invoicing/factur-x) — CII embedded in PDF; built-in templates (Germany B2B, France)
 - [UBL](/en/1.7/e-invoicing/ubl) — the other EN 16931 syntax; basis of Peppol
-- [Country guides](/en/1.7/e-invoicing) — per-country standard choices
+- [Setup guide](/en/1.7/e-invoicing/setup)

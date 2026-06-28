@@ -123,10 +123,153 @@ InvoicePlane generates the UBL XML document (corners 1 and the handoff to corner
 
 ---
 
+## Examples
+
+All examples use the same template: **`PeppolBISv3`** (Peppol BIS Billing 3.0, UBL 2.1). The client record fields are the same across countries — only the VAT number format and Peppol participant ID format differ.
+
+### Belgium — B2B invoice (mandatory from 2026)
+
+Belgian VAT numbers start with `BE` followed by 10 digits. Peppol participant IDs use the VAT-based scheme `9925:`.
+
+| Field | Value |
+|---|---|
+| Company name | ACME Belgium NV |
+| Street address | Wetstraat 16 |
+| Postal code | 1000 |
+| City | Brussel |
+| Country | Belgium |
+| Tax ID / VAT number | BE0123456789 |
+| E-Invoicing version | Peppol BIS Billing 3.0 |
+
+Recipient's Peppol participant ID: `9925:0123456789`
+
+---
+
+### Belgium — B2G invoice (mandatory since 2019)
+
+Same format as B2B. Government entities appear in the [Peppol directory](https://directory.peppol.eu/).
+
+| Field | Value |
+|---|---|
+| Company name | FOD Financiën |
+| Street address | Wetstraat 24 |
+| Postal code | 1000 |
+| City | Brussel |
+| Country | Belgium |
+| Tax ID / VAT number | BE0308357159 |
+| E-Invoicing version | Peppol BIS Billing 3.0 |
+
+Recipient's Peppol participant ID: look up in the Peppol directory.
+
+---
+
+### Sweden — private company
+
+Swedish VAT numbers start with `SE` followed by 12 digits (last two are always `01`). Participant IDs use GLN (Global Location Number) with scheme `0088:`.
+
+| Field | Value |
+|---|---|
+| Company name | Andersson AB |
+| Street address | Kungsgatan 1 |
+| Postal code | 111 43 |
+| City | Stockholm |
+| Country | Sweden |
+| Tax ID / VAT number | SE123456789001 |
+| E-Invoicing version | Peppol BIS Billing 3.0 |
+
+Recipient's Peppol participant ID: `0088:{13-digit GLN}` — look up in the [Peppol directory](https://directory.peppol.eu/) or ask the client for their GLN.
+
+---
+
+### Sweden — B2G (mandatory since 2008 for central government)
+
+| Field | Value |
+|---|---|
+| Company name | Skatteverket |
+| Street address | Solna Strandväg 22 |
+| Postal code | 171 94 |
+| City | Solna |
+| Country | Sweden |
+| Tax ID / VAT number | SE202100517901 |
+| E-Invoicing version | Peppol BIS Billing 3.0 |
+
+Recipient's Peppol participant ID: look up Skatteverket in the Peppol directory. Swedish municipalities sometimes centralise through a shared service — confirm with the contracting entity which ID to use.
+
+---
+
+### Czech Republic — B2G via NIPEZ
+
+Czech VAT numbers (**DIČ**) start with `CZ` followed by 8–10 digits. Czech Peppol participant IDs use the national ID scheme `0106:` with the company's IČO (registration number).
+
+| Field | Value |
+|---|---|
+| Company name | Ministerstvo financí |
+| Street address | Letenská 15 |
+| Postal code | 118 10 |
+| City | Praha 1 |
+| Country | Czech Republic |
+| Tax ID / VAT number | CZ00006947 |
+| E-Invoicing version | Peppol BIS Billing 3.0 |
+
+Recipient's Peppol participant ID: `0106:00006947` (scheme `0106:` + IČO without leading zeros may vary — look up in the Peppol directory or the NIPEZ portal).
+
+---
+
+### Netherlands — B2G (mandatory since 2020)
+
+Dutch VAT numbers start with `NL` followed by 12 characters (9 digits + `B` + 2 digits). Participant IDs use GLN (`0088:`) or KVK-based schemes.
+
+| Field | Value |
+|---|---|
+| Company name | Ministerie van Financiën |
+| Street address | Korte Voorhout 7 |
+| Postal code | 2511 CW |
+| City | Den Haag |
+| Country | Netherlands |
+| Tax ID / VAT number | NL001234567B01 |
+| E-Invoicing version | Peppol BIS Billing 3.0 |
+
+Recipient's Peppol participant ID: look up in the Peppol directory. Dutch government entities are registered under GLN or OIN (Organisatie-identificatienummer) scheme `0190:`.
+
+---
+
+### Norway — B2G (mandatory since 2019)
+
+Norwegian VAT numbers start with `NO` followed by 9 digits and the suffix `MVA`. In e-invoicing fields, the suffix is often omitted — use the 9-digit number only. Participant IDs use the organisation number scheme `0192:`.
+
+| Field | Value |
+|---|---|
+| Company name | Skatteetaten |
+| Street address | Postboks 9200 Grønland |
+| Postal code | 0134 |
+| City | Oslo |
+| Country | Norway |
+| Tax ID / VAT number | NO974761076 |
+| E-Invoicing version | Peppol BIS Billing 3.0 |
+
+Recipient's Peppol participant ID: `0192:974761076`
+
+---
+
+### Finland — B2G (mandatory since 2020)
+
+Finnish VAT numbers start with `FI` followed by 8 digits. Participant IDs use the business ID scheme `0037:`.
+
+| Field | Value |
+|---|---|
+| Company name | Verohallinto |
+| Street address | PL 325 |
+| Postal code | 00052 |
+| City | Vero |
+| Country | Finland |
+| Tax ID / VAT number | FI02454022 |
+| E-Invoicing version | Peppol BIS Billing 3.0 |
+
+Recipient's Peppol participant ID: `0037:0245402-2` — Finnish business IDs are 7 digits + hyphen + check digit. Confirm the participant ID in the Peppol directory.
+
+---
+
 ## Related pages
 
 - [UBL](/en/1.7/e-invoicing/ubl) — the XML format that Peppol carries
-- [Belgium country guide](/en/1.7/e-invoicing/country-belgium)
-- [Sweden country guide](/en/1.7/e-invoicing/country-sweden)
-- [Czech Republic country guide](/en/1.7/e-invoicing/country-czech-republic)
 - [Setup guide](/en/1.7/e-invoicing/setup)

@@ -97,8 +97,70 @@ There is no central hub for ISDOC the way Italy has SdI. The recipient imports t
 
 ---
 
+## Examples
+
+ISDOC is used exclusively for domestic Czech B2B invoices. The same template covers all scenarios; only the client data changes.
+
+**Template:** `ISDOCv6` — download from the [InvoicePlane e-invoices repository](https://github.com/InvoicePlane/InvoicePlane-e-invoices).
+
+Czech VAT numbers (**DIČ**) start with `CZ` followed by 8–10 digits. Czech companies also have an IČO (company registration number) of 8 digits without any prefix.
+
+---
+
+### B2B invoice to a Czech s.r.o. (private limited company)
+
+| Field | Value |
+|---|---|
+| Company name | Novák s.r.o. |
+| Street address | Václavské náměstí 1 |
+| Postal code | 110 00 |
+| City | Praha 1 |
+| Country | Czech Republic |
+| Tax ID / VAT number | CZ12345678 |
+| E-Invoicing version | ISDOC v6.0.1 |
+
+**Delivery:** Email the `.isdoc` XML file, or send via the client's datová schránka (data box) if they prefer that channel. Most Czech accounting software (POHODA, Money S3, Helios) will import the ISDOC file on the client's end automatically.
+
+---
+
+### B2B invoice to a Czech a.s. (joint-stock company)
+
+| Field | Value |
+|---|---|
+| Company name | Průmysl a.s. |
+| Street address | Průmyslová 15 |
+| Postal code | 612 00 |
+| City | Brno |
+| Country | Czech Republic |
+| Tax ID / VAT number | CZ987654321 |
+| E-Invoicing version | ISDOC v6.0.1 |
+
+---
+
+### B2B invoice to a Czech sole trader (OSVČ)
+
+Sole traders in the Czech Republic have a DIČ based on their birth number (rodné číslo), which is 10 digits.
+
+| Field | Value |
+|---|---|
+| Company name | Jan Kovář — živnostník |
+| Street address | Náměstí Míru 5 |
+| Postal code | 301 00 |
+| City | Plzeň |
+| Country | Czech Republic |
+| Tax ID / VAT number | CZ6512311234 |
+| E-Invoicing version | ISDOC v6.0.1 |
+
+---
+
+### B2G invoice to a Czech government entity — use Peppol instead
+
+Czech public bodies receive e-invoices via Peppol BIS Billing 3.0 through the NIPEZ portal, not via ISDOC. For B2G invoices, switch to the Peppol template and submit through a Peppol access point. See [Peppol — Czech Republic B2G example](/en/1.7/e-invoicing/peppol#czech-republic--b2g-via-nipez).
+
+---
+
 ## Related pages
 
-- [Czech Republic country guide](/en/1.7/e-invoicing/country-czech-republic) — both ISDOC and Peppol in context
 - [UBL](/en/1.7/e-invoicing/ubl) — the underlying XML syntax ISDOC derives from
 - [Peppol](/en/1.7/e-invoicing/peppol) — for B2G and cross-border invoices from Czech Republic
+- [Setup guide](/en/1.7/e-invoicing/setup)

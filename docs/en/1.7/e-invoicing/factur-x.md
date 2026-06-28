@@ -80,9 +80,92 @@ See [Setup — Step 3](/en/1.7/e-invoicing/setup#step-3--fill-in-the-required-cl
 
 ---
 
+## Examples
+
+### Germany — ZUGFeRD B2B invoice (built-in template)
+
+ZUGFeRD is the dominant format for domestic B2B invoices between German companies. Mandatory from 1 January 2025 under § 14 UStG.
+
+German VAT numbers (**USt-IdNr.**) start with `DE` followed by 9 digits.
+
+| Field | Value |
+|---|---|
+| Company name | Muster GmbH |
+| Street address | Unter den Linden 1 |
+| Postal code | 10117 |
+| City | Berlin |
+| Country | Germany |
+| Tax ID / VAT number | DE123456789 |
+| E-Invoicing version | ZUGFeRD 2.1 EN16931 |
+
+**Delivery:** Send the PDF by email or file transfer. The XML is embedded inside it. German ERP systems (SAP, DATEV, Lexware, Sage, Sevdesk) extract and import it automatically. To verify the embedded file, open in Adobe Acrobat Reader → Attachments panel — you should see `ZUGFeRD-invoice.xml`.
+
+> German B2G invoices require **XRechnung** (standalone CII), not ZUGFeRD. See [CII → XRechnung](/en/1.7/e-invoicing/cii#xrechnung--germany-b2g).
+
+---
+
+### France — Factur-X B2B invoice (built-in template)
+
+Factur-X is France's standard for B2B invoices. Mandatory in phases: large companies from September 2026, others following.
+
+French VAT numbers (**numéro TVA**) start with `FR` followed by 2 alphanumeric characters and 9 digits.
+
+| Field | Value |
+|---|---|
+| Company name | Dupont SARL |
+| Street address | 10 Rue de Rivoli |
+| Postal code | 75001 |
+| City | Paris |
+| Country | France |
+| Tax ID / VAT number | FR12345678901 |
+| E-Invoicing version | Factur-X EN16931 |
+
+**Delivery:** Send the PDF by email or upload to your PDP (Plateforme de Dématérialisation Partenaire) platform. The embedded XML filename is `factur-x.xml`.
+
+---
+
+### France — B2G via Chorus Pro
+
+Government invoices go through **Chorus Pro**, the French government e-invoice portal. Factur-X is accepted; the portal validates the embedded XML and routes it to the correct department.
+
+| Field | Value |
+|---|---|
+| Company name | Direction Générale des Finances Publiques |
+| Street address | 139 Rue de Bercy |
+| Postal code | 75572 |
+| City | Paris Cedex 12 |
+| Country | France |
+| Tax ID / VAT number | FR83000017594 |
+| E-Invoicing version | Factur-X EN16931 |
+
+**Before generating:** the government entity must provide you with their **service code** (SIRET + service identifier) and **engagement number** from the purchase order. Include these in the invoice's reference fields.
+
+**Delivery:** Log in to [chorus-pro.gouv.fr](https://chorus-pro.gouv.fr), upload the Factur-X PDF, and note the receipt tracking number.
+
+---
+
+### Austria — ZUGFeRD (cross-border, alternative to Peppol)
+
+Austria uses Peppol for B2G, but German-speaking companies sometimes exchange ZUGFeRD invoices directly for B2B.
+
+Austrian VAT numbers start with `AT` followed by `U` and 8 digits.
+
+| Field | Value |
+|---|---|
+| Company name | Wien Holding GmbH |
+| Street address | Franz-Josefs-Kai 47 |
+| Postal code | 1010 |
+| City | Wien |
+| Country | Austria |
+| Tax ID / VAT number | ATU12345678 |
+| E-Invoicing version | ZUGFeRD 2.1 EN16931 |
+
+**Note:** Austrian B2G requires Peppol BIS Billing 3.0, not ZUGFeRD. Use ZUGFeRD only for direct B2B exchanges where both parties agree on the format.
+
+---
+
 ## Related pages
 
-- [CII](/en/1.7/e-invoicing/cii) — the underlying XML syntax
-- [Germany country guide](/en/1.7/e-invoicing/country-germany) — ZUGFeRD for B2B; XRechnung for B2G
-- [France country guide](/en/1.7/e-invoicing/country-france) — Factur-X for B2B; Chorus Pro for government
+- [CII](/en/1.7/e-invoicing/cii) — the underlying XML syntax; also covers XRechnung (Germany B2G)
 - [Custom XML templates](/en/1.7/e-invoicing/custom-templates) — how to create a template for a different profile
+- [Setup guide](/en/1.7/e-invoicing/setup)

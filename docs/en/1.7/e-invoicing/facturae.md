@@ -136,12 +136,112 @@ DIR3 codes for B2G invoices are provided by the contracting authority in the pur
 
 ## Peppol as an alternative
 
-For cross-border invoices to foreign clients, Peppol BIS Billing 3.0 is simpler than Facturae and does not require a digital signature. Use Facturae specifically for Spanish B2G and B2B domestic invoices.
+For cross-border invoices to foreign clients, Peppol BIS Billing 3.0 is simpler than Facturae and does not require a digital signature. Use Facturae specifically for Spanish B2G and domestic B2B invoices.
+
+---
+
+## Examples
+
+All examples use the **`FacturaeV321`** template. The signing step after generating the XML applies to every Facturae invoice.
+
+Spanish VAT numbers (**NIF/CIF**) start with `ES` followed by 9 characters.
+
+| Entity type | Format | Example |
+|---|---|---|
+| Legal entity (CIF) | `ES` + letter + 7 digits + letter/digit | `ESB12345678` |
+| Individual (NIF) | `ES` + 8 digits + letter | `ES12345678Z` |
+| Foreign entity (NIE) | `ES` + X/Y/Z + 7 digits + letter | `ESX1234567Z` |
+
+---
+
+### B2G invoice — Spanish central government via FACe
+
+DIR3 codes are required. They are always provided in the purchase order from the contracting authority.
+
+| Field | Value |
+|---|---|
+| Company name | Agencia Estatal de Administración Tributaria |
+| Street address | Calle Alcalá 5 |
+| Postal code | 28014 |
+| City | Madrid |
+| Country | Spain |
+| Tax ID / VAT number | ESQ2826004J |
+| Órgano gestor (DIR3) | E00120001 |
+| Unidad tramitadora (DIR3) | E00120101 |
+| Oficina contable (DIR3) | E00120102 |
+| E-Invoicing version | Facturae 3.2.1 |
+
+**Delivery:**
+1. Generate XML in InvoicePlane
+2. Open AutoFirma, load the XML, sign with your certificate — produces a `.xsig` file
+3. Log in to [face.gob.es](https://face.gob.es) and upload the `.xsig`
+4. Note the tracking number for status follow-up
+
+---
+
+### B2G invoice — Spanish municipality
+
+Municipalities are on FACe too. The DIR3 codes for each municipality are in the [DIR3 directory](https://administracionelectronica.gob.es/ctt/dir3).
+
+| Field | Value |
+|---|---|
+| Company name | Ayuntamiento de Barcelona |
+| Street address | Plaça de Sant Jaume 1 |
+| Postal code | 08002 |
+| City | Barcelona |
+| Country | Spain |
+| Tax ID / VAT number | ESP0801933J |
+| Órgano gestor (DIR3) | L01080193 |
+| Unidad tramitadora (DIR3) | L01080193 |
+| Oficina contable (DIR3) | L01080193 |
+| E-Invoicing version | Facturae 3.2.1 |
+
+---
+
+### B2B invoice — Spanish private company
+
+The Verifactu system (B2B mandate from 2025/2026) uses Facturae. The signing requirement is the same.
+
+| Field | Value |
+|---|---|
+| Company name | García Construcciones SL |
+| Street address | Calle Mayor 5 |
+| Postal code | 28013 |
+| City | Madrid |
+| Country | Spain |
+| Tax ID / VAT number | ESB12345678 |
+| E-Invoicing version | Facturae 3.2.1 |
+
+**Delivery:** Sign the XML with AutoFirma and send the `.xsig` file to the client by email or via a B2B e-invoicing platform. The client's accounting software imports the signed XML directly.
+
+---
+
+### B2G invoice — Catalonia regional government via e.FACT
+
+Catalonia has its own portal, [e.FACT](https://efact.eacat.cat), which accepts Facturae. The workflow is the same as FACe — sign, then upload. DIR3 codes still apply.
+
+| Field | Value |
+|---|---|
+| Company name | Departament de Salut, Generalitat de Catalunya |
+| Street address | Travessera de les Corts 131-159 |
+| Postal code | 08028 |
+| City | Barcelona |
+| Country | Spain |
+| Tax ID / VAT number | ESQ0801175A |
+| Órgano gestor (DIR3) | A09018933 |
+| Unidad tramitadora (DIR3) | A09018933 |
+| Oficina contable (DIR3) | A09018933 |
+| E-Invoicing version | Facturae 3.2.1 |
+
+---
+
+### Cross-border invoice from Spain — use Peppol instead
+
+For invoices to foreign clients (EU or otherwise), use Peppol BIS Billing 3.0. It requires no digital signature and is delivered via the Peppol network. See [Peppol](/en/1.7/e-invoicing/peppol).
 
 ---
 
 ## Related pages
 
-- [Spain country guide](/en/1.7/e-invoicing/country-spain)
 - [Peppol](/en/1.7/e-invoicing/peppol) — for cross-border invoices from Spain
 - [Setup guide](/en/1.7/e-invoicing/setup)

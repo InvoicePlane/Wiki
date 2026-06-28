@@ -27,15 +27,9 @@ The e-invoicing documentation is organised into dedicated sections covering stan
 
 ---
 
-## Country guides
+## Country → standard
 
-- [Czech Republic](/en/1.7/e-invoicing/country-czech-republic) — ISDOC (B2B) and Peppol (B2G via NIPEZ)
-- [Belgium](/en/1.7/e-invoicing/country-belgium) — Peppol BIS Billing 3.0 (mandatory from 2026)
-- [Germany](/en/1.7/e-invoicing/country-germany) — ZUGFeRD (B2B) and XRechnung (B2G)
-- [France](/en/1.7/e-invoicing/country-france) — Factur-X (B2B) and Chorus Pro (B2G)
-- [Italy](/en/1.7/e-invoicing/country-italy) — FatturaPA via SdI (mandatory for all domestic)
-- [Spain](/en/1.7/e-invoicing/country-spain) — Facturae via FACe (B2G) and Peppol (cross-border)
-- [Sweden](/en/1.7/e-invoicing/country-sweden) — Peppol BIS Billing 3.0 (B2G mandatory)
+Each standard page includes worked examples for every country that uses it. See the [country lookup table](/en/1.7/e-invoicing#country--standard-lookup) on the overview page.
 
 ---
 

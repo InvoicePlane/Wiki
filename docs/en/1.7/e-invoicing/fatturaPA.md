@@ -156,8 +156,121 @@ Italian law requires you to store FatturaPA invoices for at least **10 years**. 
 
 ---
 
+## Examples
+
+All examples use the **`FatturaPAv12`** template. The Partita IVA format (`IT` + 11 digits) is consistent across all entity types; what changes is the routing address (codice destinatario vs PEC) and the document type.
+
+Italian VAT numbers (**Partita IVA**) start with `IT` followed by 11 digits.
+
+---
+
+### B2B invoice — routing via codice destinatario
+
+Most companies that regularly receive e-invoices have a 7-character codice destinatario registered with SdI. Ask your client for it before generating the first invoice.
+
+| Field | Value |
+|---|---|
+| Company name | Bianchi S.r.l. |
+| Street address | Via Roma 10 |
+| Postal code | 00100 |
+| City | Roma |
+| Country | Italy |
+| Tax ID / VAT number | IT12345678901 |
+| Codice destinatario | XJ5ETH7 |
+| E-Invoicing version | FatturaPA v1.2 |
+
+**Delivery:** Submit the XML via your SdI intermediary or the Fatture e Corrispettivi portal. SdI routes it directly to the client's SdI inbox.
+
+---
+
+### B2B invoice — routing via PEC (certified email)
+
+Smaller companies may not have a codice destinatario. Enter `0000000` in that field and fill in their PEC address instead. SdI delivers to the PEC.
+
+| Field | Value |
+|---|---|
+| Company name | Studio Rossi SRL |
+| Street address | Corso Umberto I 15 |
+| Postal code | 20121 |
+| City | Milano |
+| Country | Italy |
+| Tax ID / VAT number | IT98765432109 |
+| Codice destinatario | 0000000 |
+| PEC address | studio.rossi@pec.it |
+| E-Invoicing version | FatturaPA v1.2 |
+
+---
+
+### B2B invoice — client not registered with SdI
+
+Enter `0000000` for the codice destinatario and leave PEC blank. SdI marks the invoice as delivered and the client must retrieve it themselves from the SdI web area using their tax credentials. This is the fallback for clients who are slow to set up SdI routing.
+
+| Field | Value |
+|---|---|
+| Company name | Artigiano Verdi |
+| Codice destinatario | 0000000 |
+| PEC address | (leave blank) |
+| E-Invoicing version | FatturaPA v1.2 |
+
+---
+
+### B2G invoice — Italian central government
+
+Government entities have a **codice IPA** (from the IPA directory) that maps to their SdI inbox. The codice IPA is also a 6-character alphanumeric code and is used as the codice destinatario for public administration.
+
+| Field | Value |
+|---|---|
+| Company name | Ministero dell'Economia e delle Finanze |
+| Street address | Via XX Settembre 97 |
+| Postal code | 00187 |
+| City | Roma |
+| Country | Italy |
+| Tax ID / VAT number | IT97735020584 |
+| Codice destinatario | UFUHP5 |
+| Codice CIG / CUP | CIG: 12345678AB (from contract) |
+| E-Invoicing version | FatturaPA v1.2 |
+
+**CIG/CUP codes:** Public procurement invoices must include the CIG (Codice Identificativo Gara, from the tender) and/or CUP (Codice Unico di Progetto, from the project). These are provided in the purchase order. Without them, the government entity will reject the invoice.
+
+---
+
+### B2G invoice — Italian municipality
+
+| Field | Value |
+|---|---|
+| Company name | Comune di Firenze |
+| Street address | Piazza della Signoria 1 |
+| Postal code | 50122 |
+| City | Firenze |
+| Country | Italy |
+| Tax ID / VAT number | IT01307110484 |
+| Codice destinatario | UFE0V1 |
+| E-Invoicing version | FatturaPA v1.2 |
+
+The codice IPA for each municipality is in the [IPA directory](https://indicepa.gov.it).
+
+---
+
+### B2C invoice — private individual
+
+For invoices to private individuals, use the **codice fiscale** (fiscal code) instead of a Partita IVA. The codice fiscale is 16 alphanumeric characters.
+
+| Field | Value |
+|---|---|
+| First / Last name | Mario Rossi |
+| Street address | Via Garibaldi 5 |
+| Postal code | 50123 |
+| City | Firenze |
+| Country | Italy |
+| Codice fiscale | RSSMRA80A01H501Z |
+| Codice destinatario | 0000000 |
+| E-Invoicing version | FatturaPA v1.2 |
+
+SdI delivers the invoice to the individual's personal fiscal area on the Revenue Agency website.
+
+---
+
 ## Related pages
 
-- [Italy country guide](/en/1.7/e-invoicing/country-italy)
 - [CII](/en/1.7/e-invoicing/cii) — for comparison: the international CII-based formats
 - [Setup guide](/en/1.7/e-invoicing/setup)

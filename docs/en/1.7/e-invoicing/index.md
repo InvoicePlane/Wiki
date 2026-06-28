@@ -64,22 +64,36 @@ Peppol is the main transport network for EU e-invoicing. It carries UBL or CII d
 
 ### Standards reference
 
+Each standard page includes worked examples covering every country where that standard is used.
+
 - [UBL](/en/1.7/e-invoicing/ubl) — Universal Business Language; the syntax behind Peppol BIS Billing 3.0 and ISDOC
-- [CII](/en/1.7/e-invoicing/cii) — Cross Industry Invoice; the syntax behind Factur-X, ZUGFeRD, and XRechnung
-- [Factur-X and ZUGFeRD](/en/1.7/e-invoicing/factur-x) — CII XML embedded inside a PDF/A-3 file; built-in templates
-- [Peppol](/en/1.7/e-invoicing/peppol) — the EU transport network; access points, participant IDs, the four-corner model
-- [ISDOC](/en/1.7/e-invoicing/isdoc) — Czech national format derived from UBL
-- [FatturaPA](/en/1.7/e-invoicing/fatturaPA) — Italy's mandatory national format and SdI submission hub
-- [Facturae](/en/1.7/e-invoicing/facturae) — Spain's national format and FACe portal
+- [CII](/en/1.7/e-invoicing/cii) — Cross Industry Invoice; the syntax behind Factur-X, ZUGFeRD, and XRechnung; includes XRechnung examples (Germany B2G)
+- [Factur-X and ZUGFeRD](/en/1.7/e-invoicing/factur-x) — CII embedded in PDF/A-3; built-in templates; includes examples for Germany (ZUGFeRD B2B), France (Factur-X B2B and Chorus Pro B2G), Austria
+- [Peppol](/en/1.7/e-invoicing/peppol) — the EU transport network; includes examples for Belgium, Sweden, Czech Republic (B2G), Netherlands, Norway, Finland
+- [ISDOC](/en/1.7/e-invoicing/isdoc) — Czech national format; includes examples for s.r.o., a.s., and OSVČ clients
+- [FatturaPA](/en/1.7/e-invoicing/fatturaPA) — Italy's mandatory format and SdI hub; includes examples for B2B (codice destinatario and PEC), B2G (central and municipal), and B2C
+- [Facturae](/en/1.7/e-invoicing/facturae) — Spain's national format and FACe portal; includes examples for central government, municipality, private company, and Catalonia regional portal
 
-### Country guides
+---
 
-Each guide explains which standards apply, example client records with correct VAT number formats, and how to deliver the invoice.
+## Country → standard lookup
 
-- [Czech Republic](/en/1.7/e-invoicing/country-czech-republic)
-- [Belgium](/en/1.7/e-invoicing/country-belgium)
-- [Germany](/en/1.7/e-invoicing/country-germany)
-- [France](/en/1.7/e-invoicing/country-france)
-- [Italy](/en/1.7/e-invoicing/country-italy)
-- [Spain](/en/1.7/e-invoicing/country-spain)
-- [Sweden](/en/1.7/e-invoicing/country-sweden)
+| Country | Scenario | Standard | Page |
+|---|---|---|---|
+| Czech Republic | B2B domestic | ISDOC | [ISDOC](/en/1.7/e-invoicing/isdoc) |
+| Czech Republic | B2G (NIPEZ) | Peppol BIS Billing 3.0 | [Peppol](/en/1.7/e-invoicing/peppol) |
+| Czech Republic | Cross-border | Peppol BIS Billing 3.0 | [Peppol](/en/1.7/e-invoicing/peppol) |
+| Belgium | B2G and B2B (mandatory from 2026) | Peppol BIS Billing 3.0 | [Peppol](/en/1.7/e-invoicing/peppol) |
+| Germany | B2B domestic | ZUGFeRD 2.1 EN16931 | [Factur-X and ZUGFeRD](/en/1.7/e-invoicing/factur-x) |
+| Germany | B2G (federal and state) | XRechnung | [CII](/en/1.7/e-invoicing/cii) |
+| France | B2B | Factur-X EN16931 | [Factur-X and ZUGFeRD](/en/1.7/e-invoicing/factur-x) |
+| France | B2G (Chorus Pro) | Factur-X EN16931 | [Factur-X and ZUGFeRD](/en/1.7/e-invoicing/factur-x) |
+| Italy | B2B, B2G, B2C | FatturaPA via SdI | [FatturaPA](/en/1.7/e-invoicing/fatturaPA) |
+| Spain | B2G (FACe and regional portals) | Facturae 3.2.1 | [Facturae](/en/1.7/e-invoicing/facturae) |
+| Spain | B2B domestic | Facturae 3.2.1 | [Facturae](/en/1.7/e-invoicing/facturae) |
+| Spain | Cross-border | Peppol BIS Billing 3.0 | [Peppol](/en/1.7/e-invoicing/peppol) |
+| Sweden | B2G (mandatory) and B2B | Peppol BIS Billing 3.0 | [Peppol](/en/1.7/e-invoicing/peppol) |
+| Netherlands | B2G (mandatory) | Peppol BIS Billing 3.0 | [Peppol](/en/1.7/e-invoicing/peppol) |
+| Norway | B2G (mandatory) | Peppol BIS Billing 3.0 | [Peppol](/en/1.7/e-invoicing/peppol) |
+| Finland | B2G (mandatory) | Peppol BIS Billing 3.0 | [Peppol](/en/1.7/e-invoicing/peppol) |
+| Austria | B2G | Peppol BIS Billing 3.0 | [Peppol](/en/1.7/e-invoicing/peppol) |
