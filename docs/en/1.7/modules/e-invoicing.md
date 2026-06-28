@@ -2,6 +2,8 @@
 
 InvoicePlane 1.7 includes a built-in e-invoicing system that can generate structured XML files alongside or embedded in PDF invoices. This meets legal e-invoicing requirements in a growing number of countries.
 
+For step-by-step setup instructions and country-specific guidance (Czech Republic, Belgium, Germany, France, Italy, Spain, Sweden), see [E-Invoicing by Country](/en/1.7/modules/e-invoicing-by-country).
+
 ## Supported Standards
 
 | Standard | Format | Usage |
