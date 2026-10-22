@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a610cf27cb22dc245e2086ee4739e8e",
+    "content-hash": "d064c2a97c750cd1087daa03e0ae58d5",
     "packages": [
         {
             "name": "brick/math",
@@ -6185,16 +6185,16 @@
             "time": "2026-10-20T13:43:25+00:00"
         },
         {
-            "name": "fzaninotto/faker",
+            "name": "fakerphp/faker",
             "version": "v1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fzaninotto/Faker.git",
+                "url": "https://github.com/FakerPHP/Faker.git",
                 "reference": "d0190b156bcca848d401fb80f31f504f37141c8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/d0190b156bcca848d401fb80f31f504f37141c8d",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/d0190b156bcca848d401fb80f31f504f37141c8d",
                 "reference": "d0190b156bcca848d401fb80f31f504f37141c8d",
                 "shasum": ""
             },
@@ -6235,10 +6235,9 @@
                 "fixtures"
             ],
             "support": {
-                "issues": "https://github.com/fzaninotto/Faker/issues",
-                "source": "https://github.com/fzaninotto/Faker/tree/master"
+                "issues": "https://github.com/FakerPHP/Faker/issues",
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.5.0"
             },
-            "abandoned": true,
             "time": "2015-05-29T06:29:14+00:00"
         },
         {

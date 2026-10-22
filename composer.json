@@ -10,13 +10,13 @@
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "*",
-        "fzaninotto/faker": "*",
         "mockery/mockery": "*",
         "phpunit/phpunit": "*",
         "symfony/css-selector": "*",
         "symfony/dom-crawler": "*",
         "rector/rector": "^2.0",
-        "driftingly/rector-laravel": "*"
+        "driftingly/rector-laravel": "*",
+        "fakerphp/faker": "^1.5"
     },
     "autoload": {
         "classmap": [
