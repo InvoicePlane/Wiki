@@ -103,6 +103,13 @@ class WikiController extends Controller
         return redirect()->to('/' . $locale . '/' . str_replace('_', '.', $default_version));
     }
 
+    public function getHome()
+    {
+        $default_locale = Config::get('app.locale');
+        $default_version = Config::get('app.version');
+        return redirect()->to('/' . $default_locale . '/' . \App\IP::urlVersion($default_version));
+    }
+
     public function getTestPage()
     {
         return "TEST";
