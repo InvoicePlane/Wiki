@@ -5,9 +5,8 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=8.0.0",
-        "laravel/framework": "11.*",
-        "predis/predis": "*"
+        "php": ">=8.3.0",
+        "laravel/framework": "^11"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "*",
@@ -51,6 +50,9 @@
         "preferred-install": "dist",
         "allow-plugins": {
             "kylekatarnls/update-helper": true
+        },
+        "policy": {
+            "advisories": false
         }
     }
 }
