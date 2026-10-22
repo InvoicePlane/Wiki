@@ -92,22 +92,22 @@ class IP
      * @param $issue_id
      * @return string
      */
-    public static function devLink($issue_id)
-    {
-        // return '<a href="https://development.invoiceplane.com/browse/' . $issue_id . '">' . $issue_id . '</a>'; // origin
-        $arch = '';
-        $path = 'search?q=repo%3AInvoicePlane%2FInvoicePlane+' . $issue_id . '&type=pullrequests'; // commits
-        if (strpos($issue_id, 'IP') !== false) {
-            // Add search in web archives like : https://web.archive.org/web/*/https://development.invoiceplane.com/browse/IP-681*
-            $arch = ' - <a href="https://web.archive.org/web/*/https://development.invoiceplane.com/browse/' . $issue_id . '*">(Archive?)</a>';
-        }
-        elseif (strpos($issue_id, 'PR') !== false) {
-            $path = 'InvoicePlane/InvoicePlane/pull/' . ltrim($issue_id, 'PR');
-        }
-        elseif (strpos($issue_id, 'C') !== false) {
-            $path = 'InvoicePlane/InvoicePlane/commit/' . ltrim($issue_id, 'C');
-        }
+    // public static function devLink($issue_id)
+    // {
+    //     // return '<a href="https://development.invoiceplane.com/browse/' . $issue_id . '">' . $issue_id . '</a>'; // origin
+    //     $arch = '';
+    //     $path = 'search?q=repo%3AInvoicePlane%2FInvoicePlane+' . $issue_id . '&type=pullrequests'; // commits
+    //     if (strpos($issue_id, 'IP') !== false) {
+    //         // Add search in web archives like : https://web.archive.org/web/*/https://development.invoiceplane.com/browse/IP-681
+    //         $arch = ' - <a href="https://web.archive.org/web/*/https://development.invoiceplane.com/browse/' . $issue_id . '*">(Archive?)</a>';
+    //     }
+    //     elseif (strpos($issue_id, 'PR') !== false) {
+    //         $path = 'InvoicePlane/InvoicePlane/pull/' . ltrim($issue_id, 'PR');
+    //     }
+    //     elseif (strpos($issue_id, 'C') !== false) {
+    //         $path = 'InvoicePlane/InvoicePlane/commit/' . ltrim($issue_id, 'C');
+    //     }
 
-        return '<a href="https://github.com/' . $path . '">' . $issue_id . '</a>' . $arch;
-    }
+    //     return '<a href="https://github.com/' . $path . '">' . $issue_id . '</a>' . $arch;
+    // }
 }
