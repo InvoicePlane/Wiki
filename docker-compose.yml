@@ -3,34 +3,25 @@ version: "2"
 
 services:
 
-  # --- PHP 7.3
+  # --- PHP 8.3
   php:
     container_name: "invoiceplane-wiki-php"
-    image: bitnami/php-fpm:7.4
+    build: .
     volumes:
       - .:/app:delegated
-      - ./resources/docker/php/php-dev.ini:/opt/bitnami/php/etc/conf.d/php.ini:ro
+      - ./resources/docker/php/php-dev.ini:/usr/local/etc/php/conf.d/php-dev.ini:ro
 
   # --- nginx 1.16
   nginx:
     container_name: "invoiceplane-wiki-nginx"
-    image: bitnami/nginx:1.16
+    image: nginx:1.31-alpine
     ports:
-      - "80:8085"
+      - "8080:8085"
     depends_on:
       - php
     volumes:
       - .:/app:delegated
-      - ./resources/docker/nginx/site.conf:/opt/bitnami/nginx/conf/vhosts/site.conf:ro
-
-  # --- Redis 5.0
-  redis:
-    container_name: "invoiceplane-wiki-redis"
-    image: bitnami/redis:5.0
-    environment:
-      - REDIS_PASSWORD=invoiceplane
-    ports:
-      - "127.0.0.1:6379:6379"
+      - ./resources/docker/nginx/site.conf:/etc/nginx/conf.d/default.conf:ro
 
 volumes:
   invoiceplane-wiki-db:
