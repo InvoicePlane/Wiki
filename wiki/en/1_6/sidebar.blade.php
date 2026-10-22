@@ -38,6 +38,7 @@
         <li><a href="{{ url('en/1.6/modules/invoices') }}">Invoices</a></li>
         <li><a href="{{ url('en/1.6/modules/recurring-invoices') }}">Recurring Invoices</a></li>
         <li><a href="{{ url('en/1.6/modules/payments') }}">Payments</a></li>
+        <li><a href="{{ url('en/1.6/modules/tasks-projects') }}">Tasks & projects</a></li>
     </ul>
 </li>
 <li>
