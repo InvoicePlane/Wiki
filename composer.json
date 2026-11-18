@@ -5,18 +5,18 @@
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=8.3.0",
-        "laravel/framework": "^11"
+        "php": ">=7.4.0",
+        "laravel/framework": "5.3.*",
+        "league/commonmark": "^2.4",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
-        "barryvdh/laravel-ide-helper": "*",
-        "mockery/mockery": "*",
-        "phpunit/phpunit": "*",
-        "symfony/css-selector": "*",
-        "symfony/dom-crawler": "*",
-        "rector/rector": "^2.0",
-        "driftingly/rector-laravel": "*",
-        "fakerphp/faker": "^1.5"
+        "barryvdh/laravel-ide-helper": "^2.1",
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~4.0",
+        "symfony/css-selector": "3.1.*",
+        "symfony/dom-crawler": "3.1.*"
     },
     "autoload": {
         "classmap": [
@@ -50,9 +50,6 @@
         "preferred-install": "dist",
         "allow-plugins": {
             "kylekatarnls/update-helper": true
-        },
-        "policy": {
-            "advisories": false
         }
     }
 }
