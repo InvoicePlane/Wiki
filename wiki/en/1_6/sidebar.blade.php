@@ -1,5 +1,3 @@
-<!-- menu item missing `wiki/en/1_6/modules/tasks_projects.blade.php` -->
-
 <li>
     <a href="#" data-toggle="collapse" data-target="#submenu-10-general"
        class="has-submenu @if($current_dir != 'general') collapsed @endif">
@@ -38,7 +36,6 @@
         <li><a href="{{ url('en/1.6/modules/invoices') }}">Invoices</a></li>
         <li><a href="{{ url('en/1.6/modules/recurring-invoices') }}">Recurring Invoices</a></li>
         <li><a href="{{ url('en/1.6/modules/payments') }}">Payments</a></li>
-        <li><a href="{{ url('en/1.6/modules/tasks-projects') }}">Tasks & projects</a></li>
     </ul>
 </li>
 <li>

@@ -1,0 +1,98 @@
+site_name: InvoicePlane Wiki
+site_description: Documentation for InvoicePlane - self-hosted invoicing application
+site_url: https://invoiceplane.github.io/wiki/
+repo_url: https://github.com/invoiceplane/wiki
+repo_name: invoiceplane/wiki
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+nav:
+  - Home: en/1.7/index.md
+  - General:
+      - About InvoicePlane: en/1.7/general/about.md
+      - Changelog: en/1.7/general/changelog.md
+      - License: en/1.7/general/license.md
+      - FAQ: en/1.7/general/faq.md
+  - Getting Started:
+      - Overview: en/1.7/getting-started/index.md
+      - Requirements: en/1.7/getting-started/requirements.md
+      - Installation: en/1.7/getting-started/installation.md
+      - Quickstart: en/1.7/getting-started/quickstart.md
+      - Updating InvoicePlane: en/1.7/getting-started/updating-ip.md
+  - Modules:
+      - Overview: en/1.7/modules/index.md
+      - Clients: en/1.7/modules/clients.md
+      - Quotes: en/1.7/modules/quotes.md
+      - Invoices: en/1.7/modules/invoices.md
+      - Recurring Invoices: en/1.7/modules/recurring-invoices.md
+      - Payments: en/1.7/modules/payments.md
+      - Tasks & Projects: en/1.7/modules/tasks-projects.md
+      - E-Invoicing: en/1.7/modules/e-invoicing.md
+  - E-Invoicing:
+      - Overview: en/1.7/e-invoicing/index.md
+      - Setup: en/1.7/e-invoicing/setup.md
+      - UBL: en/1.7/e-invoicing/ubl.md
+      - CII: en/1.7/e-invoicing/cii.md
+      - Factur-X: en/1.7/e-invoicing/factur-x.md
+      - Facturae: en/1.7/e-invoicing/facturae.md
+      - FatturaPA: en/1.7/e-invoicing/fatturaPA.md
+      - ISDOC: en/1.7/e-invoicing/isdoc.md
+      - PEPPOL: en/1.7/e-invoicing/peppol.md
+      - Custom Templates: en/1.7/e-invoicing/custom-templates.md
+  - Settings:
+      - Overview: en/1.7/settings/index.md
+      - General Settings: en/1.7/settings/general.md
+      - Invoice Settings: en/1.7/settings/invoices.md
+      - Quote Settings: en/1.7/settings/quotes.md
+      - Tax Settings: en/1.7/settings/taxes.md
+      - Email Settings: en/1.7/settings/email.md
+      - Online Payments: en/1.7/settings/online-payments.md
+      - Updatecheck: en/1.7/settings/updatecheck.md
+      - Custom Fields: en/1.7/settings/custom-fields.md
+      - Email Templates: en/1.7/settings/email-templates.md
+      - Invoice Groups: en/1.7/settings/invoice-groups.md
+      - Payment Methods: en/1.7/settings/payment-methods.md
+      - Taxrates: en/1.7/settings/taxrates.md
+      - User Accounts: en/1.7/settings/user-accounts.md
+  - Templates:
+      - Overview: en/1.7/templates/index.md
+      - Using Templates: en/1.7/templates/using-templates.md
+      - Customize Templates: en/1.7/templates/customize-templates.md
+      - PDF Template Allowlist: en/1.7/templates/pdf-template-allowlist.md
+  - Security:
+      - Overview: en/1.7/security/index.md
+  - System:
+      - Overview: en/1.7/system/index.md
+      - Translation & Localization: en/1.7/system/translation-localization.md
+      - Importing Data: en/1.7/system/importing-data.md
+      - Upgrade from FusionInvoice: en/1.7/system/upgrade-from-fusioninvoice.md
+  - Help:
+      - Setup a Cron: en/1.7/help/setup-cron.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences

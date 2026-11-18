@@ -1,6 +1,8 @@
 /vendor
 /node_modules
-/storage/rector
 _ide_helper.php
 .env
 .idea
+/site
+__pycache__
+*.pyc

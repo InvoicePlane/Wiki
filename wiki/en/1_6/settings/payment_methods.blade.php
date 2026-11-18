@@ -33,7 +33,7 @@
     <?php
     $article_pagination = array(
             'previous' => array(
-                    'url' => '/en/1.6/settings/invoice-groups',
+                    'url' => '/en/1.6/settings/invoicegroups',
                     'title' => 'Invoicegroups',
                     'type' => 'article'
             ),
